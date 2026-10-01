@@ -1,0 +1,819 @@
+import type { Copy } from "./types";
+
+const budgets = {
+  portraits: [
+    { value: "lt-175", label: "Under €175" },
+    { value: "175-300", label: "€175–300" },
+    { value: "300-500", label: "€300–500" },
+    { value: "500+", label: "€500+" },
+  ],
+  weddings: [
+    { value: "lt-650", label: "Under €650" },
+    { value: "650-1100", label: "€650–1,100" },
+    { value: "1100-1650", label: "€1,100–1,650" },
+    { value: "1650+", label: "€1,650+" },
+  ],
+  retreats: [
+    { value: "lt-400", label: "Under €400" },
+    { value: "400-1000", label: "€400–1,000" },
+    { value: "1000-2000", label: "€1,000–2,000" },
+    { value: "2000+", label: "€2,000+" },
+  ],
+  artists: [
+    { value: "lt-110", label: "Under €110" },
+    { value: "110-300", label: "€110–300" },
+    { value: "300-600", label: "€300–600" },
+    { value: "600+", label: "€600+" },
+  ],
+  places: [
+    { value: "lt-475", label: "Under €475" },
+    { value: "475-900", label: "€475–900" },
+    { value: "900+", label: "€900+" },
+    { value: "monthly", label: "Monthly €500+" },
+  ],
+  other: [
+    { value: "lt-175", label: "Under €175" },
+    { value: "175-600", label: "€175–600" },
+    { value: "600-1500", label: "€600–1,500" },
+    { value: "1500+", label: "€1,500+" },
+  ],
+};
+
+export const en: Copy = {
+  meta: {
+    home: {
+      title: "Oracle of Freedom · Algarve & Lisbon Photo & Film",
+      description:
+        "Photo & film for free spirits, from the Algarve to Lisbon. Weddings, retreats, festivals and commercial shoots travel further across Portugal, Europe and beyond.",
+      keywords: "Algarve and Lisbon photographer; Algarve photographer; Lisbon photographer; boho photographer Portugal",
+    },
+    about: {
+      title: "About Agota · Algarve & Lisbon Photographer",
+      description:
+        "Meet Agota Urbikaite. Every session is covered from the Algarve to Lisbon. Weddings, retreats, festivals and commercial work can go further.",
+      keywords: "Agota Urbikaite photographer; Algarve and Lisbon photographer; candid photographer Portugal",
+    },
+    people: {
+      title: "People · Portraits & Intimate Boho Weddings",
+      description:
+        "Portraits and intimate boho weddings from the Algarve to Lisbon, coast included. Weddings can travel further. Sessions from €175.",
+      keywords: "Algarve couples photographer; Lisbon wedding photographer; boho wedding photographer Portugal",
+    },
+    portraits: {
+      title: "Couples & Engagement Photographer · Algarve & Lisbon",
+      description:
+        "Portrait sessions for one person, a couple, a family or friends, from the Algarve to Lisbon. Natural, no stiff posing. From €175.",
+      keywords:
+        "Algarve couples photographer; Lisbon engagement photographer; Algarve photoshoot; Lisbon couple photos; proposal photographer Lisbon",
+    },
+    elopements: {
+      title: "Boho Elopement Photographer · Algarve & Lisbon",
+      description:
+        "Intimate boho elopements from the Algarve to Lisbon, and further across Portugal, Europe and beyond. Small circles, up to about 30 guests. From €690.",
+      keywords:
+        "Algarve elopement photographer; Lisbon elopement photographer; boho elopement Portugal; intimate wedding photographer Portugal",
+    },
+    experiences: {
+      title: "Experiences · Retreats, Festivals & Artists",
+      description:
+        "Retreats, festivals, DJs and fire artists. Based from the Algarve to Lisbon, and travelling further for the bigger gatherings.",
+      keywords: "Algarve retreat photographer; Lisbon festival photographer; retreat photographer Portugal",
+    },
+    retreats: {
+      title: "Retreat Photographer · Algarve, Lisbon & beyond",
+      description:
+        "Retreat photo and film from the Algarve to Lisbon, and further across Portugal and Europe. Consent-first, commercial licence included. From €400/day.",
+      keywords:
+        "Algarve retreat photographer; Lisbon retreat photographer; yoga retreat photographer Portugal; retreat videographer Europe",
+    },
+    festivals: {
+      title: "Festival & DJ Photographer · Algarve & Lisbon",
+      description:
+        "Press shots, live sets, fire portraits and music videos. Based from the Algarve to Lisbon, travelling for festivals and commercial shoots. From €190.",
+      keywords:
+        "Algarve festival photographer; Lisbon DJ photographer; fire show photographer; music video Portugal",
+    },
+    places: {
+      title: "Eco-Stay Photographer · Algarve & Lisbon",
+      description:
+        "Photos and reels for eco-quintas, surf houses and boutique stays from the Algarve to Lisbon. Commercial shoots can travel further. From €475.",
+      keywords:
+        "Algarve hotel photographer; Lisbon surf house photography; eco hotel photographer Portugal; Airbnb photographer Algarve",
+    },
+    portfolio: {
+      title: "Portfolio · Oracle of Freedom",
+      description:
+        "Moments Agota didn't just watch — she was part of them. Portraits, gatherings, festivals, fire, DJs and film.",
+      keywords: "Agota Urbikaite portfolio; boho photographer portfolio Portugal",
+    },
+    journal: {
+      title: "Journal · Guides for Free Spirits",
+      description:
+        "Guides for eloping in Portugal, photographing a retreat so it sells, and golden-hour couple spots around Ericeira and Sintra.",
+      keywords: "Algarve elopement guide; Lisbon couple photoshoot; retreat photography tips",
+    },
+    inquire: {
+      title: "Inquire · Oracle of Freedom",
+      description:
+        "Tell me your story: date, place and dream. I reply within 48 hours. WhatsApp or email welcome.",
+      keywords: "book Algarve photographer; book Lisbon photographer; contact Oracle of Freedom",
+    },
+    privacy: {
+      title: "Privacy · Oracle of Freedom",
+      description:
+        "How Oracle of Freedom uses inquiry details, cookies and embedded video. A short GDPR notice.",
+      keywords: "Oracle of Freedom privacy; GDPR",
+    },
+  },
+  a11y: {
+    skip: "Skip to content",
+    menu: "Open menu",
+    closeMenu: "Close menu",
+    home: "Oracle of Freedom, home",
+    openPhoto: "Open photo",
+    close: "Close",
+    previous: "Previous",
+    next: "Next",
+    photoPlaceholder: "Low-resolution placeholder — to be replaced",
+    language: "Language",
+  },
+  nav: {
+    people: "People",
+    experiences: "Experiences",
+    places: "Places",
+    portfolio: "Portfolio",
+    about: "About",
+    journal: "Journal",
+    inquire: "Inquire",
+  },
+  footer: {
+    blurb:
+      "Photo & film by Agota Urbikaite, from the Algarve to Lisbon. Weddings, retreats, festivals and commercial shoots travel further.",
+    privacy: "Privacy",
+    rights: "All rights reserved.",
+  },
+  whatsapp: {
+    button: "Chat with me",
+    general:
+      "Hi Agota! I found you on oracleoffreedom.com and I'd love to chat 🌿",
+    portraits:
+      "Hi Agota! I'd love a portrait session around [date] in [place]. Here's who is coming and what I would like:",
+    elopements:
+      "Hi Agota! We're dreaming of an intimate boho elopement around [date] 💛",
+    retreats:
+      "Hi Agota! I'm hosting a retreat on [dates] and would love coverage",
+    festivals: "Hi Agota! I'm a DJ/artist and I need content for…",
+    places: "Hi Agota! I run [place] and I'd like to talk about content",
+  },
+  common: {
+    explore: "Explore",
+    viewPortfolio: "View the portfolio",
+    readGuides: "Read the guides",
+    meet: "Meet Agota",
+    from: "From",
+    priceNote: "From prices in EUR, excluding VAT. Weddings, stays and festivals are confirmed with a quote.",
+    offer: "Offer",
+    saveSeparately: "Save {amount} compared with booking them separately",
+    placeholderTitle: "Placeholder — not a published testimonial",
+    placeholderBody:
+      "Real quotes will replace this once Agota has permission to share them. Nothing here is invented.",
+    comingSoon: "Coming soon",
+    mostLoved: "most loved",
+    closingTitle: "Your story, felt from the inside.",
+    closingBody:
+      "Tell me what you're dreaming of — a sunset on the cliffs, a week of breathwork in the hills, a night of fire and drums. I'll tell you honestly how I can help.",
+    closingPrimary: "Check my availability",
+    closingSecondary: "or message me on WhatsApp",
+    checkAvailability: "Check my availability",
+    seeWork: "See the work",
+  },
+  cookies: {
+    text: "This site stores a language preference and, only if you agree, loads Instagram and YouTube embeds. No marketing cookies.",
+    accept: "Accept embeds",
+    essential: "Essential only",
+    privacy: "Privacy notice",
+  },
+  home: {
+    title: "For free spirits, sacred gatherings and places with soul.",
+    dek: "Photo & film for free spirits: couples in love, sacred gatherings, festival souls and the places that hold them. Every session from the Algarve to Lisbon; weddings, retreats, festivals and commercial work further afield.",
+    manifesto:
+      "I don't stand on the outside looking in. I dance at the edge of the fire, I walk into the sea with you, I sit in the circle. That's where the real moments live — and that's where my camera is.",
+    doorsTitle: "Three ways in",
+    peopleTitle: "People",
+    peopleBody:
+      "Portraits, engagement sessions and intimate boho weddings & elopements. Golden light, salty hair, real love.",
+    peoplePrice: "Sessions from {session} · Elopements from {elopement}",
+    experiencesTitle: "Experiences",
+    experiencesBody:
+      "Retreats, gatherings, festivals, DJs, fire and flow artists, music videos. The energy of the moment, captured from within.",
+    experiencesPrice: "Retreat coverage from {retreat}/day",
+    placesTitle: "Places",
+    placesBody:
+      "Eco-quintas, surf houses and conscious boutique stays. Images and reels that make guests feel the place before they arrive.",
+    placesPrice: "Content days from {places}",
+    howTitle: "How I work",
+    how: [
+      {
+        title: "I become part of it.",
+        body: "No stiff posing, no hovering. I move with the flow so you can forget the camera is there.",
+      },
+      {
+        title: "Photo + film, one person.",
+        body: "Stills and video from one eye and one heart — less crew, more intimacy.",
+      },
+      {
+        title: "Consent-first, always.",
+        body: "In circles, ceremonies and festivals, nobody is photographed or shared without their yes.",
+      },
+    ],
+    featuredTitle: "Featured work",
+    wordsTitle: "Kind words",
+    about:
+      "Hi, I'm Agota. For more than 10 years I've been photographing and filming the moments people don't pose for — the laughter mid-dance, the hands in the river, the look between two people when they think no one is watching.",
+    journalTitle: "Journal",
+    journalDek: "Guides for dreamers and planners.",
+    closingTitle: "Tell me about your story.",
+    follow: "Follow @oracle.of.freedom",
+    igNote: "A quiet grid from the portfolio. The living one is on Instagram.",
+  },
+  about: {
+    title: "Hi, I'm Agota.",
+    paragraphs: [
+      "I have been working with photography and video for over ten years — professionally and in passion projects that I simply couldn't stop myself from creating.",
+      "What I love most is the unposed moment. The breath before a laugh. The spark when a fire dancer spins. The quiet between two people who love each other. I work to bring the magic of an event, a community or a couple to life, in still images and in film.",
+      "My style is fluid and organic. It lives in the balance between two energies — action and calm. I'm not just capturing the moment, I'm in it. Not just around the action, but part of it. That's where the sweetest, most genuine moments happen, and it's what gives my work its depth: when you look at the images, you don't just see what happened, you feel like you were there.",
+      "I'm drawn to people and places with a free spirit — gatherings in the jungle, ceremonies by the river, barefoot vows on the beach, DJs lost in their set, eco-houses built with love. Every session is covered from the Algarve to Lisbon, coast in between included. For weddings, retreats, festivals and commercial shoots I travel the rest of Portugal, Europe and beyond.",
+    ],
+    promise: "Oracle of Freedom is my promise: to see you as you really are, and to set that moment free.",
+    valuesTitle: "What I believe in",
+    values: [
+      { title: "Presence", body: "I show up fully, so you can too." },
+      { title: "Consent", body: "Your moments belong to you. I ask, I listen, I respect the no-camera spaces." },
+      { title: "Freedom", body: "No scripts, no forced poses. Just gentle guidance when you want it." },
+      { title: "Community", body: "I'm part of the circles I photograph, and I treat them with care." },
+    ],
+    facts:
+      "10+ years in photo & video · Photo + film · Algarve to Lisbon for every session · Further for weddings, retreats, festivals and commercial work · Languages: {languages}",
+    bts: "PLACEHOLDER — photos of Agota at work, still to be taken. This block stays empty until they exist.",
+    closingTitle: "Let's create something real together.",
+  },
+  people: {
+    title: "People",
+    dek: "Portraits, love stories and intimate boho weddings — photographed with warmth, freedom and zero stiffness.",
+    portraitsTitle: "Portrait sessions",
+    portraitsBody:
+      "One session for individuals, couples, engagement, families and friends. The starting price is shaped around what you want.",
+    portraitsPrice: "From {price}",
+    weddingsTitle: "Boho Weddings & Elopements",
+    weddingsBody: "Barefoot vows, small circles of loved ones, ceremonies that feel like you.",
+    weddingsPrice: "From {price}",
+  },
+  experiences: {
+    title: "Experiences",
+    dek: "Retreats, gatherings, festivals, DJs, fire & flow artists and music videos — photographed and filmed from inside the circle.",
+    retreatsTitle: "Retreats & Gatherings",
+    retreatsBody: "Photos and reels that help you fill your next retreat.",
+    retreatsPrice: "From {price}/day",
+    festivalsTitle: "Festivals, DJs & Artists",
+    festivalsBody: "Press shots, live-set clips, fire shows, showreels and music videos.",
+    festivalsPrice: "From {price}",
+    consentTitle: "Consent-first, always.",
+    consent:
+      "Sacred spaces deserve respect. I agree no-camera moments with you, can use wristbands or signals for people who don't want to be photographed, and nothing is shared publicly without approval.",
+  },
+  portraits: {
+    eyebrow: "Portrait sessions",
+    title: "For the barefoot, the fire-lit and the free.",
+    subtitle: "Portrait sessions, from the Algarve to Lisbon",
+    dek: "One session for you, for two, or for the people you love. Individuals, couples, engagement, families and friends.",
+    cta: "Book your session",
+    personalizeCta: "Personalize your session",
+    personalizeWhatsapp: "or message on WhatsApp",
+    inquiry: "portraits",
+    whoTitle: "Who it's for",
+    who: [
+      "One person, a couple, an engagement, a family or a group of friends",
+      "Surprise proposals, anniversaries and holidays together",
+      "Anyone who wants natural photographs, with no stiff posing",
+      "Yoga teachers, therapists, facilitators, musicians and artists who need soulful images for their brand",
+    ],
+    packagesTitle: "Sessions",
+    filmsTitle: "Film",
+    combosTitle: "Photo + film",
+    packages: {
+      "portrait-sessions": {
+        name: "Portrait sessions",
+        items: [
+          "Individuals, couples, engagement, families, friends — any group",
+          "Starts at one hour. Length, edited photos, locations and how many people shape the final price",
+          "Gentle guidance, no stiff posing",
+          "A private gallery, ready to download and share",
+        ],
+      },
+      "couples-film": {
+        name: "Couples film",
+        items: [
+          "A short film of the session, about 60–90 seconds",
+          "One vertical cut for stories",
+          "Delivered with the same care as the photographs",
+        ],
+      },
+      "couples-combo": {
+        name: "Portrait session + film",
+        items: [
+          "The portrait session and the short film",
+          "One person, one afternoon",
+          "We shape the session around who is coming and what you want",
+        ],
+      },
+    },
+    travelNote:
+      "Travel within {baseArea} is included for every session. Weddings, retreats, festivals and commercial shoots can go further — the rest of Portugal, Europe and beyond — with travel quoted at cost.",
+    whereTitle: "Where we can shoot",
+    where:
+      "All of the Algarve, and the coast up to Lisbon: the south, the Costa Vicentina, the Alentejo shore, Comporta, Arrábida and the city itself. Ericeira and Sintra sit just north of Lisbon — tell me if that's the plan. For a wedding, retreat, festival or commercial shoot, the rest of Portugal, Europe and beyond are open.",
+    processTitle: "How it works",
+    process: [
+      { title: "Say hi", body: "Send the form or a WhatsApp with your date idea and what you're dreaming of." },
+      { title: "We plan", body: "I suggest locations, timing for the best light and what to wear." },
+      { title: "We shoot", body: "Relaxed, playful, real. I'll guide you when you need it and disappear when you don't." },
+      { title: "You relive it", body: "Your private gallery arrives, ready to download, share and print." },
+    ],
+    wordsTitle: "Kind words",
+    testimonialIds: ["couple", "soul-brand"],
+    faqTitle: "Questions",
+    faq: [
+      { q: "We're awkward in front of the camera. Is that okay?", a: "Totally. Most people are. I don't make you \"pose\" — I give you little prompts, we walk, we laugh, and the real you shows up." },
+      { q: "What should we wear?", a: "Soft, natural colours and textures that move in the wind work beautifully. I send a short style guide after booking." },
+      { q: "What time is best?", a: "Golden hour — the hour after sunrise or before sunset. I'll pick the timing for your date and place." },
+      { q: "What if it rains?", a: "We move the session to another day free of charge, or we embrace the drama of the clouds — your choice." },
+      { q: "Can you help plan a surprise proposal?", a: "Yes. I'll help you pick the spot and timing, and hide in plain sight." },
+      { q: "Where do you photograph?", a: "Every session includes travel from the Algarve to Lisbon, along the coast in between. Weddings, retreats, festivals and commercial shoots can go further, with travel quoted at cost." },
+      { q: "How do I book?", a: "Send the inquiry form. A {deposit} deposit secures your date." },
+    ],
+    guide: { post: "ericeira", label: "The most magical spots for a couple photoshoot around Ericeira & Sintra" },
+  },
+  elopements: {
+    eyebrow: "Boho weddings & elopements",
+    title: "For the barefoot, the fire-lit and the free.",
+    subtitle: "Boho elopements from the Algarve to Lisbon, and further",
+    dek: "Barefoot vows. A handful of people you love. A day that feels like freedom.",
+    cta: "Check my date",
+    inquiry: "elopement",
+    whoTitle: "This is for you if…",
+    who: [
+      "You're eloping, or inviting only your closest people (up to about 30 guests)",
+      "You'd rather say your vows on a cliff, in a forest or by the river than in a ballroom",
+      "Your dream day might include a handfasting, a cacao ceremony, flower crowns, drums, a fire circle or a long dinner under the stars",
+      "You want to be present, not directed",
+    ],
+    notFor:
+      "This is not for you if you're planning a large, traditional wedding — I focus only on small, intimate celebrations, so I can give each one my full heart.",
+    packagesTitle: "Collections",
+    filmsTitle: "Film",
+    combosTitle: "Photo + film",
+    packages: {
+      elopement: {
+        name: "Elopement",
+        items: [
+          "3–4 hours: getting ready if you want it, ceremony, portraits",
+          "Help choosing the place and the light",
+          "About 200 edited photos in a private gallery",
+          "Sneak peek within 48 hours",
+        ],
+      },
+      wedding: {
+        name: "Small wedding",
+        badge: "most loved",
+        items: [
+          "Up to about 30 guests",
+          "5–6 hours, from the ceremony into the night — fire, music, dancing",
+          "About 350 edited photos",
+          "Sneak peek within 48 hours",
+        ],
+      },
+      "elopement-film": {
+        name: "Elopement film",
+        items: ["A 3–5 minute film of the ceremony and portraits", "Shot by the same person, so the day stays small"],
+      },
+      "wedding-film": {
+        name: "Small wedding highlight",
+        items: ["A highlight film of the ceremony, portraits and the night", "Made to share with the people who couldn't be there"],
+      },
+      "elopement-combo": {
+        name: "Elopement photo + film",
+        items: ["Photographs and the film, across 3–4 hours", "One person for the whole coverage", "Less than booking photo and film separately"],
+      },
+      "wedding-combo": {
+        name: "Small wedding photo + film",
+        items: ["Photographs and the highlight film, across 5–6 hours", "Up to about 30 guests", "Less than booking photo and film separately"],
+      },
+    },
+    travelNote:
+      "Travel within {baseArea} is included. Elopements and intimate weddings further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
+    dayTitle: "What your day could look like",
+    day: "Sunrise vows on a wild beach. A walk through the forest with flowers in your hair. A ceremony led by a friend, a shaman or a celebrant. Your people in a circle, drums and laughter. A long table under fairy lights. A fire dance to close the night.",
+    comingSoon:
+      "Coming soon: our first full boho elopement story. Until then, these are couple and gathering photographs — not a wedding day.",
+    processTitle: "How it works",
+    process: [
+      { title: "Tell me your story", body: "Fill in the form: date, place (or \"no idea yet\"), how many people." },
+      { title: "Let's talk", body: "A relaxed video call to feel if we're a fit." },
+      { title: "Book", body: "A {deposit} deposit reserves your date." },
+      { title: "Dream together", body: "I help with the location, timing and flow of the day, and I can recommend like-minded celebrants, florists and places." },
+      { title: "The day & after", body: "I'm with you, part of it. Sneak peek in 48 hours, full gallery in {weeks}." },
+    ],
+    wordsTitle: "Love notes",
+    testimonialIds: ["elopement", "wedding"],
+    faqTitle: "Questions",
+    faq: [
+      { q: "Do you only photograph small weddings?", a: "Yes — elopements and intimate celebrations up to about 30 guests. That's where my style truly shines." },
+      { q: "Can we have a symbolic ceremony?", a: "Absolutely. Many couples marry legally at home and celebrate here in nature. I can recommend celebrants." },
+      { q: "We don't know where to elope yet. Can you help?", a: "That's one of my favourite parts. Tell me your vibe (ocean, forest, desert-like plains, mountains) and I'll suggest places." },
+      { q: "Do you do video too?", a: "Yes. An elopement film and a small-wedding highlight can be booked on their own, or together with the photographs for less than the two separately." },
+      { q: "Can you photograph fire, night and dancing?", a: "Night, fire and festival light are my speciality. Your after-party is safe with me." },
+      { q: "Do you travel?", a: "Yes. The Algarve-to-Lisbon coast is included. For a wedding I also travel the rest of Portugal, Europe and beyond, including tropical destinations, with travel quoted at cost." },
+      { q: "How far in advance should we book?", a: "For May–October, 6–12 months is ideal; for elopements, sometimes a few weeks is enough — just ask." },
+    ],
+    guide: { post: "boho", label: "Boho elopement in Portugal: places, seasons & real costs" },
+  },
+  retreats: {
+    eyebrow: "Retreats & gatherings",
+    title: "For the barefoot, the fire-lit and the free.",
+    subtitle: "Retreat photographer, from the Algarve to Lisbon and further",
+    dek: "Your next retreat sells on the feeling of the last one. Let's capture it.",
+    cta: "Plan your retreat coverage",
+    inquiry: "retreat",
+    whoTitle: "Who it's for",
+    who: [
+      "Yoga, surf, breathwork, dance, cacao, sound and wellness retreat organisers",
+      "Retreat centres and eco-venues hosting groups",
+      "Facilitators, healers and space-holders running workshops and ceremonies",
+      "Community gatherings, ecstatic dances and small conscious festivals",
+    ],
+    problemTitle: "Why it matters",
+    problem:
+      "People book retreats on a feeling. Honest images of real transformation — the circle, the silence, the laughter, the food, the landscape — are what make someone press \"book\" on BookRetreats, Retreat Guru or your website.",
+    packagesTitle: "Packages",
+    packages: {
+      "retreat-day": {
+        name: "Retreat · 1 day",
+        items: [
+          "One full day on site (sessions, rituals, meals, in-between moments)",
+          "150+ edited photos with a commercial licence for your website, listings and social media",
+          "Selection and editing during the retreat — delivered as soon as it ends",
+        ],
+      },
+      "retreat-journey": {
+        name: "Retreat · 3 days",
+        badge: "best for filling future dates",
+        items: [
+          "3 days documenting the full arc: arrival, deep work, integration, goodbyes",
+          "Photos + 5 short vertical reels ready for Instagram, TikTok and your listings",
+          "Portraits of your facilitators for your team page",
+          "Commercial licence included",
+        ],
+      },
+      "retreat-custom": {
+        name: "Custom",
+        items: ["Week-long retreats, festivals and ceremonies. Tell me your programme and I'll send a tailored quote."],
+      },
+    },
+    travelNote:
+      "Retreats on the coast from the Algarve to Lisbon include my travel. Further retreats — the rest of Portugal, Europe and beyond — are quoted at cost. Accommodation and meals on site are usually covered by the retreat.",
+    consentTitle: "How I work in sacred spaces",
+    consent: [
+      "I join your opening circle and introduce myself, so people feel safe.",
+      "We agree which moments are no-camera (ceremonies, breathwork peaks, integration shares).",
+      "Anyone can opt out — with a simple wristband or signal.",
+      "You approve the selection before anything is published.",
+    ],
+    processTitle: "How it works",
+    process: [
+      { title: "Share your programme", body: "Dates, place, group size, what you want to show." },
+      { title: "Plan the shot list", body: "What your future guests need to see: space, food, practice, people, landscape." },
+      { title: "I join the retreat", body: "Present, discreet, part of it." },
+      { title: "Delivery", body: "Galleries and reels ready for your next launch." },
+    ],
+    wordsTitle: "Kind words",
+    testimonialIds: ["retreat"],
+    faqTitle: "Questions",
+    faq: [
+      { q: "Will a photographer disturb the energy of the group?", a: "Not when they're part of it. I move gently, respect silence and step away when needed." },
+      { q: "Can I use the images for ads and listings?", a: "Yes — a commercial licence is included for your own marketing." },
+      { q: "Do you also film?", a: "Yes, reels and short films are part of the Journey package or available as an add-on." },
+      { q: "Do guests need to sign anything?", a: "I'll share a simple consent approach with you before the retreat, and anyone can opt out." },
+      { q: "Do you travel abroad?", a: "Yes. Retreats are one of the projects I leave the Algarve–Lisbon coast for: the rest of Portugal, Spain, Europe and tropical destinations, with travel quoted at cost." },
+      { q: "How early should I book?", a: "2–3 months ahead is ideal, especially for May–October." },
+    ],
+    guide: { post: "retreat", label: "How to photograph your retreat so it sells out next time" },
+  },
+  festivals: {
+    eyebrow: "Festivals, DJs & artists",
+    title: "Festival, DJ & fire-show photographer and videographer",
+    dek: "For the people who create the magic — on stage, behind the decks and inside the fire.",
+    cta: "Get your content",
+    inquiry: "artist",
+    whoTitle: "Who it's for",
+    who: [
+      "DJs & musicians who need press photos, live-set clips and a showreel to get booked",
+      "Fire, flow and performance artists — night portraits, fire and smoke are my speciality",
+      "Festivals, stages, workshops and crews wanting official, consent-first content",
+      "Bands and artists who want a music video with an organic, cinematic feel",
+    ],
+    packagesTitle: "Packages",
+    filmsTitle: "Film",
+    packages: {
+      "press-kit": {
+        name: "DJ / artist press kit",
+        items: [
+          "2-hour portrait / press session (location or night / fire setup)",
+          "20–30 edited photos for press, streaming covers and socials",
+        ],
+      },
+      "live-set": {
+        name: "Live-set content",
+        items: ["Performance photos and the room, per night", "Clips of the set, delivered within 48 hours"],
+      },
+      "festival-day": {
+        name: "Festival / event day",
+        items: ["A full day of official photographs", "Same-day selects for social media"],
+      },
+      "festival-half": {
+        name: "Festival / event half day",
+        items: ["Half a day of official photographs", "Selects for social media"],
+      },
+      aftermovie: {
+        name: "Festival aftermovie",
+        items: ["A short film of the day, per day of the event", "Made to post once the gathering is over"],
+      },
+      "music-video": {
+        name: "Music video",
+        items: ["Concept, filming and edit for an organic, performance or nature-based music video", "The final quote depends on the idea"],
+      },
+      "reels-pack": {
+        name: "Reels pack",
+        items: ["A set of short vertical films for Instagram and TikTok", "Cut from a session or an event"],
+      },
+      "single-reel": {
+        name: "Single reel",
+        items: ["One vertical film, ready to post"],
+      },
+    },
+    travelNote:
+      "Artist sessions from the Algarve to Lisbon include travel. Festivals and commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
+    videosTitle: "Watch",
+    videosNote:
+      "PLACEHOLDER — confirm which link is fire, bonfire, drums or DJ. These load only after you choose to play them.",
+    processTitle: "How it works",
+    process: [
+      { title: "Tell me the vision", body: "Artist, event, date, what you need it for." },
+      { title: "Plan", body: "Mood, locations, lighting. Fire shoots need a safe setup and a spotter." },
+      { title: "Shoot", body: "I move with the music and the fire." },
+      { title: "Delivery", body: "Fast selects for socials, then the full gallery and edits. Live-set clips within 48 hours; full galleries within {artistWeeks}." },
+    ],
+    wordsTitle: "Kind words",
+    testimonialIds: ["artist"],
+    faqTitle: "Questions",
+    faq: [
+      { q: "Do you shoot in dark clubs and at night?", a: "Yes — low light, stage lights, smoke and fire are my comfort zone." },
+      { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
+      { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
+      { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours; full galleries within {artistWeeks}." },
+    ],
+  },
+  places: {
+    eyebrow: "Places",
+    title: "Photo & video for eco-stays, surf houses and conscious boutique places",
+    dek: "Let guests feel your place before they arrive.",
+    cta: "Let's talk about your place",
+    inquiry: "place",
+    whoTitle: "Who it's for",
+    who: [
+      "Eco-quintas, rural guesthouses and farm stays",
+      "Surf houses, surf camps and surf-yoga retreats",
+      "Retreat centres, glamping and off-grid stays",
+      "Small boutique hotels with a soul",
+    ],
+    problemTitle: "The problem I solve",
+    problem:
+      "Your place is beautiful — but your photos are old, generic or taken on a phone, you have no time for social media, and you depend on Booking and Airbnb. I create honest, warm images and reels that show the experience: the morning light, the breakfast from the garden, the board wax and salty hair, the fire at night.",
+    packagesTitle: "Packages",
+    filmsTitle: "Film",
+    combosTitle: "Photo + video",
+    packages: {
+      "hotel-photo": {
+        name: "Stay content day · photo",
+        items: [
+          "1 content day, photographs only",
+          "Horizontal photos for your website, Booking, Airbnb and Google",
+          "Lifestyle photos of the place, food and surroundings",
+          "Commercial licence for your own marketing",
+        ],
+      },
+      "hotel-film": {
+        name: "Stay film",
+        items: ["A short film of the stay", "Vertical cuts for Instagram and TikTok", "Commercial licence for your own marketing"],
+      },
+      "hotel-combo": {
+        name: "Stay day · photo + video",
+        items: ["The content day in photographs and film", "One visit, both sets", "Less than booking the two separately"],
+      },
+      monthly: {
+        name: "Monthly content & social",
+        items: [
+          "1 visit per month",
+          "8–12 new pieces (photos and reels)",
+          "Management of 1–2 social accounts: planning, captions, posting",
+          "A simple monthly report: reach, saves, shares, profile visits and inquiries",
+        ],
+      },
+    },
+    deliverablesTitle: "What you receive",
+    deliverables: [
+      "Horizontal photos for OTAs and your website",
+      "Lifestyle images",
+      "Vertical reels",
+      "A commercial licence for your own marketing",
+    ],
+    travelNote:
+      "A content day from the Algarve to Lisbon includes travel. Commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
+    comingSoon:
+      "Coming soon — first place collaborations are in progress. The photographs here are nature and gathering stand-ins, not rooms or stays.",
+    processTitle: "How it works",
+    process: [
+      { title: "15-minute call", body: "Your place, your guests, your goals." },
+      { title: "Shot list & plan", body: "What to show, which rooms, which moments, best light and season." },
+      { title: "Content day", body: "I work around your guests quietly." },
+      { title: "Delivery", body: "Web-ready photos, vertical reels and a posting plan." },
+    ],
+    wordsTitle: "Kind words",
+    testimonialIds: ["place"],
+    faqTitle: "Questions",
+    faq: [
+      { q: "Will you disturb my guests?", a: "No — I plan around your occupancy and always ask before photographing anyone." },
+      { q: "Do you provide models?", a: "I can bring friends from my community or work with your willing guests." },
+      { q: "Are the photos right for Booking and Airbnb?", a: "Yes — I deliver a clean, horizontal set that follows platform guidelines, plus a warmer lifestyle set for social media." },
+      { q: "Do you manage our Instagram?", a: "Yes, with the monthly package." },
+      { q: "Can we trade a stay for content?", a: "For new partnerships in low season I sometimes offer hybrid collaborations — ask me." },
+    ],
+  },
+  portfolio: {
+    title: "Portfolio",
+    dek: "Moments I didn't just watch — I was part of them.",
+    filters: [
+      { id: "all", label: "All" },
+      { id: "portraits", label: "Portraits & Couples" },
+      { id: "elopements", label: "Elopements", soon: true },
+      { id: "retreats", label: "Retreats & Gatherings" },
+      { id: "festivals", label: "Festivals" },
+      { id: "djs", label: "DJs & Music" },
+      { id: "fire", label: "Fire" },
+      { id: "places", label: "Places", soon: true },
+      { id: "film", label: "Film" },
+    ],
+    empty: "Nothing in this filter yet.",
+    note: "Every photograph on this site is a low-resolution placeholder taken from the 2026 portfolio PDF. Swap the file in public/images/portfolio (same name) or upload a new one in the content editor.",
+  },
+  journal: {
+    title: "Journal",
+    dek: "Guides, stories and inspiration for free-spirited couples, retreat leaders and conscious places.",
+    read: "Read the guide",
+    related: "A guide that might help",
+    cta: "Tell me about your plans",
+  },
+  inquire: {
+    title: "Let's create something real.",
+    dek: "Tell me a little about you and what you're dreaming of. I read every message personally and reply within 48 hours.",
+    prefer: "Prefer to chat?",
+    email: "Email",
+    nextTitle: "What happens next?",
+    next: [
+      "I reply within 48 hours with availability and a few questions.",
+      "We have a short call (video or WhatsApp) to feel if we're a fit.",
+      "You receive a tailored proposal. A deposit secures your date.",
+    ],
+    confirm:
+      "Thank you, beautiful soul — your message has arrived. I'll be in touch within 48 hours. In the meantime, come say hi on Instagram @oracle.of.freedom.",
+  },
+  thankYou: {
+    title: "Message received",
+    body: "Thank you, beautiful soul — your message has arrived. I'll be in touch within 48 hours. In the meantime, come say hi on Instagram @oracle.of.freedom.",
+    preview:
+      "Preview: this inquiry was checked and saved in the response, but email is not configured yet. Add RESEND_API_KEY before launch.",
+    again: "Back home",
+  },
+  privacy: {
+    title: "Privacy notice",
+    updated: "Updated 29 September 2026. This is a short notice, not a full legal policy.",
+    sections: [
+      {
+        title: "Who",
+        body: [
+          "Oracle of Freedom is Agota Urbikaite, working from the Algarve to Lisbon. Email: agota@oracleoffreedom.com.",
+        ],
+      },
+      {
+        title: "What the inquiry form collects",
+        body: [
+          "Your name, email, the story you choose to tell, and any optional phone number, date, place, budget and how you found the site. You send it so Agota can reply about a possible collaboration.",
+          "Messages are emailed to agota@oracleoffreedom.com through Resend when that service is configured. Until then, the form still runs, but nothing is delivered.",
+          "PLACEHOLDER: confirm how long inquiries are kept. The intention is to keep them only as long as needed to reply and follow the conversation, then delete them.",
+        ],
+      },
+      {
+        title: "Your choices",
+        body: [
+          "You can ask to see, correct or delete what you sent by emailing agota@oracleoffreedom.com.",
+          "If you are unhappy with a reply about your data, you can contact the Portuguese data protection authority, CNPD.",
+        ],
+      },
+      {
+        title: "Cookies and embeds",
+        body: [
+          "A language cookie remembers EN, ES or PT. That is essential for the site to stay in the language you chose.",
+          "Instagram and YouTube are not loaded until you accept embeds and then press play. If you choose essential only, those films stay as still images and links.",
+          "The site can use Vercel Web Analytics, which does not use marketing cookies.",
+          "Hosting is on Vercel. Email delivery, when switched on, is Resend. Their own privacy terms apply to that processing.",
+        ],
+      },
+    ],
+  },
+  form: {
+    steps: ["The dream", "The details", "How to reach you"],
+    next: "Continue",
+    back: "Back",
+    submit: "Send my story",
+    sending: "Sending…",
+    name: "Your name(s)",
+    email: "Email",
+    phone: "WhatsApp / phone",
+    service: "What are you dreaming of?",
+    services: {
+      portraits: "Portrait session",
+      proposal: "Proposal",
+      "soul-brand": "Personal / soul-brand portrait",
+      elopement: "Elopement",
+      wedding: "Intimate boho wedding (up to about 30)",
+      retreat: "Retreat / gathering",
+      artist: "DJ / artist / fire show",
+      "music-video": "Music video",
+      festival: "Festival / event",
+      place: "Place (eco-stay / surf house / boutique)",
+      other: "Something else",
+    },
+    date: "Date (or approx.)",
+    flexible: "My date is flexible",
+    place: "Where? (the Algarve to Lisbon is included — or say if it's further)",
+    people: "How many people?",
+    peopleOptions: { "1": "1", "2": "2", "3-10": "3–10", "11-30": "11–30", "30+": "30+" },
+    eventOptions: { "lt-10": "Under 10", "10-20": "10–20", "20-40": "20–40", "40+": "40+" },
+    days: "How many days?",
+    dayOptions: { "1": "1", "2-3": "2–3", "4-7": "4–7", "7+": "7+" },
+    placeType: "Type of place",
+    placeTypes: {
+      quinta: "Eco-quinta",
+      surf: "Surf house / camp",
+      retreat: "Retreat centre",
+      boutique: "Boutique hotel",
+      glamping: "Glamping",
+      other: "Other",
+    },
+    website: "Website / Instagram",
+    budget: "Your budget for photo/film",
+    budgets,
+    media: "Photo, film or both",
+    mediaOptions: { photo: "Photo", film: "Film", both: "Both" },
+    story: "Tell me about you and your vision",
+    storyPlaceholder: "The vibe, the place, what matters most…",
+    found: "How did you find me?",
+    foundOptions: {
+      instagram: "Instagram",
+      google: "Google",
+      pinterest: "Pinterest",
+      tiktok: "TikTok",
+      friend: "A friend / past client",
+      retreat: "Retreat / venue / celebrant",
+      directory: "Directory (EscapeElopements, Photo Portugal…)",
+      festival: "Festival / event",
+      other: "Other",
+    },
+    language: "Preferred language",
+    languages: { en: "English", es: "Español", pt: "Português" },
+    consent: "I agree to be contacted about my inquiry.",
+    promoCode: "Promo code",
+    promoHint: "Optional. If you have one, it goes with your message.",
+    wish: "What would you like?",
+    wishPlaceholder: "Who is coming, how long, which place, and what you want the photographs to feel like.",
+    errors: {
+      required: "This field is needed.",
+      email: "Add an email address Agota can reply to.",
+      consent: "Consent is needed before the message can be sent.",
+      date: "Add a date, or tick that your date is flexible.",
+    },
+    weddingLimit:
+      "I only photograph intimate celebrations of up to about 30 guests, so I can give the day my full heart. A larger wedding is outside this work — a portrait session often still fits. You're welcome to send the note; I'll answer honestly.",
+    fail: "The message didn't send. Write to agota@oracleoffreedom.com and it will still reach me.",
+  },
+};

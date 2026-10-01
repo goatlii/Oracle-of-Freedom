@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "id": "couple",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — real quote from a couple, 1–2 sentences. Name, country",
+        "es": "PENDIENTE — cita real de una pareja. Nombre, país",
+        "pt": "PENDENTE — citação real de um casal. Nome, país"
+      }
+    },
+    {
+      "id": "retreat",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — real quote from a retreat organiser. Name, retreat name",
+        "es": "PENDIENTE — organizador/a de retiro. Nombre, retiro",
+        "pt": "PENDENTE — organizador/a de retiro. Nome, retiro"
+      }
+    },
+    {
+      "id": "artist",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — real quote from a DJ, artist or a place. Name, project",
+        "es": "PENDIENTE — DJ, artista o alojamiento. Nombre, proyecto",
+        "pt": "PENDENTE — DJ, artista ou alojamento. Nome, projeto"
+      }
+    },
+    {
+      "id": "soul-brand",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — portrait / soul brand. Name, profession",
+        "es": "PENDIENTE — retrato / Soul Brand. Nombre, profesión",
+        "pt": "PENDENTE — retrato / Soul Brand. Nome, profissão"
+      }
+    },
+    {
+      "id": "elopement",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — elopement couple. Names, country, location",
+        "es": "PENDIENTE — pareja de elopement. Nombres, país, lugar",
+        "pt": "PENDENTE — casal de elopement. Nomes, país, local"
+      }
+    },
+    {
+      "id": "wedding",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — intimate wedding. Names, country",
+        "es": "PENDIENTE — boda íntima. Nombres, país",
+        "pt": "PENDENTE — casamento íntimo. Nomes, país"
+      }
+    },
+    {
+      "id": "place",
+      "placeholder": true,
+      "quote": {
+        "en": "PLACEHOLDER — eco-quinta or surf house owner. Name, place",
+        "es": "PENDIENTE — propietario/a de eco-quinta o surf house. Nombre, lugar",
+        "pt": "PENDENTE — proprietário/a de eco-quinta ou surf house. Nome, espaço"
+      }
+    }
+  ]
+}
