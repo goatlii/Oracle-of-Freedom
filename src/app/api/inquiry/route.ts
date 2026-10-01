@@ -115,20 +115,28 @@ export async function POST(request: Request) {
   const reply = getCopy(data.language);
 
   try {
-    await resend.emails.send({
+    const admin = await resend.emails.send({
       from,
       to,
       replyTo: data.email,
       subject: `[${grade}] ${label(en.form.services, data.service)} — ${data.name}`,
       text: lines.join("\n"),
     });
-    await resend.emails.send({
+    if (admin.error) {
+      console.error("[inquiry] admin send failed", admin.error.name, admin.error.statusCode);
+      return NextResponse.json({ ok: false, emailed: false }, { status: 502 });
+    }
+    const confirm = await resend.emails.send({
       from,
       to: data.email,
       replyTo: to,
       subject: reply.thankYou.title,
       text: reply.inquire.confirm,
     });
+    if (confirm.error) {
+      console.error("[inquiry] confirm send failed", confirm.error.name, confirm.error.statusCode);
+      return NextResponse.json({ ok: false, emailed: false }, { status: 502 });
+    }
   } catch (error) {
     console.error("[inquiry] send failed", error);
     return NextResponse.json({ ok: false, emailed: false }, { status: 502 });
