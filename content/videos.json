@@ -1,0 +1,41 @@
+{
+  "note": "PLACEHOLDER — confirm which Instagram link matches which still (fire, bonfire, drums, DJ). Replace posters with real frames when the films are uploaded.",
+  "items": [
+    {
+      "id": "ig-1",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DZV1Sx6M3EJ/",
+      "posterId": "film-01",
+      "verify": true
+    },
+    {
+      "id": "ig-2",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DYfToHuh_bu/",
+      "posterId": "film-02",
+      "verify": true
+    },
+    {
+      "id": "ig-3",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DVq-Kd2FfV2/",
+      "posterId": "film-03",
+      "verify": true
+    },
+    {
+      "id": "ig-4",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DN5gtBOCIH7/",
+      "posterId": "fire-01",
+      "verify": true
+    },
+    {
+      "id": "yt-music-video",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=eSWG_FdrtlM",
+      "youtubeId": "eSWG_FdrtlM",
+      "posterId": "music-video",
+      "verify": false
+    }
+  ]
+}

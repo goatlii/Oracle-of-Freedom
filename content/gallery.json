@@ -1,0 +1,903 @@
+{
+  "images": [
+    {
+      "id": "cover-wide",
+      "src": "/images/portfolio/cover-wide.jpg",
+      "width": 1600,
+      "height": 901,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDEklVVypO3A4qiWLEmiipRTP/Z",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "home"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 0,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "about-portrait",
+      "src": "/images/portfolio/about-portrait.jpg",
+      "width": 861,
+      "height": 1289,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCvcXM2/chIic4BYccdRRWMLqZiImcmMEkL2FFQ1Y2Uj//Z",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "about",
+        "home"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 1,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "about-working",
+      "src": "/images/portfolio/about-working.jpg",
+      "width": 900,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDUyFXmiq00jAUVNpPYHOEdHc//2Q==",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "about"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 2,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "festival-01",
+      "src": "/images/portfolio/festival-01.jpg",
+      "width": 630,
+      "height": 939,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCpDdBbZVQE5jJPcj04oqq52KAvQsTiismkbLTY/9k=",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 10,
+      "alt": {
+        "en": "Festival photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de festival de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de festival de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "festival-02",
+      "src": "/images/portfolio/festival-02.jpg",
+      "width": 630,
+      "height": 931,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBdKvWtYFFy+VAAGBz+NFZS87M85YAk/hRWLijY/9k=",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 11,
+      "alt": {
+        "en": "Festival photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de festival de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de festival de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "festival-03",
+      "src": "/images/portfolio/festival-03.jpg",
+      "width": 620,
+      "height": 930,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwAjmEUJjWIK+QGZmzRSrGssYVgMZIwPTAormcYt6m6Vtj//2Q==",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 12,
+      "alt": {
+        "en": "Festival photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de festival de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de festival de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "festival-04",
+      "src": "/images/portfolio/festival-04.jpg",
+      "width": 1003,
+      "height": 669,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDOSGFREz7l9aW4kkklJiJ2AbR17UUVnua2tsf/2Q==",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 13,
+      "alt": {
+        "en": "Festival photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de festival de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de festival de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "festival-05",
+      "src": "/images/portfolio/festival-05.jpg",
+      "width": 1003,
+      "height": 669,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDIVI/NChRg9+4pbuSZrhth+VQFHPtRRUMvof/Z",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 14,
+      "alt": {
+        "en": "Festival photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de festival de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de festival de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "dj-01",
+      "src": "/images/portfolio/dj-01.jpg",
+      "width": 1034,
+      "height": 656,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDnoY5Bkqh45JNNuSDLlBtGBwKKKqyBuyR//9k=",
+      "category": "djs",
+      "categories": [
+        "djs"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 20,
+      "alt": {
+        "en": "DJ set photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Set de DJ fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Set de DJ fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "dj-02",
+      "src": "/images/portfolio/dj-02.jpg",
+      "width": 928,
+      "height": 1392,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDHcuYY7siNgpAC7cAgeooqk11KybCRtA24x2oqr2J5V2P/2Q==",
+      "category": "djs",
+      "categories": [
+        "djs"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 21,
+      "alt": {
+        "en": "DJ set photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Set de DJ fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Set de DJ fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "dj-03",
+      "src": "/images/portfolio/dj-03.jpg",
+      "width": 928,
+      "height": 1349,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDP1KCGNcRNvZuSwHWisZpGbqc0VCjZCb5nc//Z",
+      "category": "djs",
+      "categories": [
+        "djs"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 22,
+      "alt": {
+        "en": "DJ set photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Set de DJ fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Set de DJ fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "dj-04",
+      "src": "/images/portfolio/dj-04.jpg",
+      "width": 1033,
+      "height": 669,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDLS+lEToQo9wOf1qub2RDgswPtRRVRirXG5yva5//Z",
+      "category": "djs",
+      "categories": [
+        "djs"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 23,
+      "alt": {
+        "en": "DJ set photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Set de DJ fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Set de DJ fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "gathering-01",
+      "src": "/images/portfolio/gathering-01.jpg",
+      "width": 963,
+      "height": 707,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwA8zzGO51UnkFgSfzqvPI6yEBg3vimdqhf7xpWI5tD/2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "experiences",
+        "places",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": true,
+      "placeholder": true,
+      "order": 30,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "gathering-02",
+      "src": "/images/portfolio/gathering-02.jpg",
+      "width": 942,
+      "height": 1413,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDOhV1gkfGQeh9D3opkbE283sB/OioUblSaVj//2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats",
+        "elopements"
+      ],
+      "pages": [
+        "retreats",
+        "elopements",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 31,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "gathering-03",
+      "src": "/images/portfolio/gathering-03.jpg",
+      "width": 942,
+      "height": 1412,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCp8jRCQOGCgLuHf0yKKooxIYZI47UVnylOR//Z",
+      "category": "retreats",
+      "categories": [
+        "retreats",
+        "elopements"
+      ],
+      "pages": [
+        "retreats",
+        "elopements",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 32,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "gathering-04",
+      "src": "/images/portfolio/gathering-04.jpg",
+      "width": 962,
+      "height": 687,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCk+ptFrMu2V3jQgRovKnoCP581vS3Cl/llAGOhFcPD/r/zrqo/9Un0qGjWMmf/2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "places",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": true,
+      "placeholder": true,
+      "order": 33,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "fire-01",
+      "src": "/images/portfolio/fire-01.jpg",
+      "width": 932,
+      "height": 1398,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDDgt1aNCWVScg5/nRTYHK25IwSCTzRUu5Wh//Z",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "pages": [
+        "festivals",
+        "experiences",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 40,
+      "alt": {
+        "en": "Fire performance photographed at night by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Espect\u00e1culo de fuego fotografiado de noche por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Espet\u00e1culo de fogo fotografado de noite por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "fire-02",
+      "src": "/images/portfolio/fire-02.jpg",
+      "width": 934,
+      "height": 1398,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDPaA6fbpc24y7fODuzhf8AGimvcyJoUSDBAPBIyRmikkXJ2P/Z",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 41,
+      "alt": {
+        "en": "Fire performance photographed at night by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Espect\u00e1culo de fuego fotografiado de noche por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Espet\u00e1culo de fogo fotografado de noite por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "fire-03",
+      "src": "/images/portfolio/fire-03.jpg",
+      "width": 933,
+      "height": 1398,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCLUrlp9KKzO26PGMjkk+tFM10C1VY4RhSM889RRSimrlVLaH//2Q==",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 42,
+      "alt": {
+        "en": "Fire performance photographed at night by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Espect\u00e1culo de fuego fotografiado de noche por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Espet\u00e1culo de fogo fotografado de noite por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "community-01",
+      "src": "/images/portfolio/community-01.jpg",
+      "width": 1026,
+      "height": 619,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCD7StliOJtihsklB8w/Cq7apNM5aObYucYI6+/Siis4pbstn//2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 50,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "community-02",
+      "src": "/images/portfolio/community-02.jpg",
+      "width": 925,
+      "height": 1271,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCpPHHbwJI+wM/8KrnA+tVfJh/57TflV6S0juL1EkLlVwAAcVc+xW/9w/8AfR/xrO5rY//Z",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 51,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "community-03",
+      "src": "/images/portfolio/community-03.jpg",
+      "width": 1027,
+      "height": 624,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCu2tpt2oCjA5xj9M1ZW/VsmZmLZ4wO1FFRyo0u7H//2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "portraits",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 52,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "community-04",
+      "src": "/images/portfolio/community-04.jpg",
+      "width": 925,
+      "height": 1271,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDLE222dFt9yg4L4P51W8j/AG6dHqd0IiAy/wDfIqr5sn940iro/9k=",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "portraits",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 53,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "concert-01",
+      "src": "/images/portfolio/concert-01.jpg",
+      "width": 980,
+      "height": 1393,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDnTbMtmHeJgzHKtjqKKZ58jNguSFHAzRTHa5//2Q==",
+      "category": "concerts",
+      "categories": [
+        "concerts",
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 60,
+      "alt": {
+        "en": "Live music photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de concierto de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de concerto de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "concert-02",
+      "src": "/images/portfolio/concert-02.jpg",
+      "width": 928,
+      "height": 1392,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDD+zpBGjyOwLZBGzofzoqF5XNvsJyN+efpRQB//9k=",
+      "category": "concerts",
+      "categories": [
+        "concerts",
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 61,
+      "alt": {
+        "en": "Live music photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de concierto de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de concerto de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "concert-03",
+      "src": "/images/portfolio/concert-03.jpg",
+      "width": 928,
+      "height": 1392,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDBjRYEV02uzLyOuD6UVCx2rGw6gUVpewtXsf/Z",
+      "category": "concerts",
+      "categories": [
+        "concerts",
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 62,
+      "alt": {
+        "en": "Live music photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Fotograf\u00eda de concierto de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Fotografia de concerto de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "portrait-01",
+      "src": "/images/portfolio/portrait-01.jpg",
+      "width": 727,
+      "height": 1091,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCgtgDYxyqFG3qw/jPoaKqyXMvnfe4GPl7flRWLR0Jn/9k=",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": true,
+      "order": 70,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "portrait-02",
+      "src": "/images/portfolio/portrait-02.jpg",
+      "width": 727,
+      "height": 1091,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwBtzcC4ssFgSfmPsetFU2meW5dZMNuyScdaKxtY6Xq7n//Z",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 71,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "portrait-03",
+      "src": "/images/portfolio/portrait-03.jpg",
+      "width": 727,
+      "height": 1089,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwB19PdGcAzEIV+8qjiip4JGLSI3zBR/FzmiskzRq5//2Q==",
+      "category": "portraits",
+      "categories": [
+        "portraits",
+        "elopements"
+      ],
+      "pages": [
+        "portraits",
+        "elopements",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 72,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "portrait-04",
+      "src": "/images/portfolio/portrait-04.jpg",
+      "width": 727,
+      "height": 1091,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC+muO12F8oLEHKnkEtxx+tFZYCjXkjCrtLnIxRUXGz/9k=",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 73,
+      "alt": {
+        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "film-01",
+      "src": "/images/portfolio/film-01.jpg",
+      "width": 697,
+      "height": 1046,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCk7SJB520FiPlY8mioprp1DxlEZU4G4dKKhRvuXKVnZH//2Q==",
+      "category": "film",
+      "categories": [
+        "film"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 80,
+      "alt": {
+        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
+        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
+        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "film-02",
+      "src": "/images/portfolio/film-02.jpg",
+      "width": 697,
+      "height": 1046,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDB+x/6IJRkk44/nRWnpU7x28eNp6j5hntRUOVty+Tm2P/Z",
+      "category": "film",
+      "categories": [
+        "film"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 81,
+      "alt": {
+        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
+        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
+        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "film-03",
+      "src": "/images/portfolio/film-03.jpg",
+      "width": 697,
+      "height": 1046,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCjO3ETxRnIYhuOooqtNPIgGGJ5B5oqbGlz/9k=",
+      "category": "film",
+      "categories": [
+        "film"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 82,
+      "alt": {
+        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
+        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
+        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "music-video",
+      "src": "/images/portfolio/music-video.jpg",
+      "width": 1068,
+      "height": 594,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCj25BfPJwCPWrUBiMfzDJzRRWU1oNH//Z",
+      "category": "film",
+      "categories": [
+        "film"
+      ],
+      "pages": [
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 90,
+      "alt": {
+        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
+        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
+        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "closing-wide",
+      "src": "/images/portfolio/closing-wide.jpg",
+      "width": 1600,
+      "height": 899,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCvezbViYE5Qc47Anmi1luWi3bxtJ+XdycUUVBvtG5//9k=",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "home"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 100,
+      "alt": {
+        "en": "Gathering in nature, photographed by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
+        "es": "Encuentro en la naturaleza, fotografiado por Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
+        "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    }
+  ]
+}

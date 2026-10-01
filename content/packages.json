@@ -1,0 +1,209 @@
+{
+  "confirmBeforeLaunch": false,
+  "currency": "EUR",
+  "items": [
+    {
+      "id": "portrait-sessions",
+      "group": "portraits",
+      "kind": "photo",
+      "label": "Portrait sessions",
+      "from": 175,
+      "inquiry": "portraits",
+      "personalize": true
+    },
+    {
+      "id": "couples-film",
+      "group": "portraits",
+      "kind": "video",
+      "label": "Couples film",
+      "from": 250,
+      "inquiry": "portraits"
+    },
+    {
+      "id": "couples-combo",
+      "group": "portraits",
+      "kind": "combo",
+      "label": "Portrait session + film",
+      "from": 475,
+      "inquiry": "portraits"
+    },
+    {
+      "id": "elopement",
+      "group": "elopements",
+      "kind": "photo",
+      "label": "Elopement · 3–4 hours",
+      "from": 690,
+      "inquiry": "elopement"
+    },
+    {
+      "id": "wedding",
+      "group": "elopements",
+      "kind": "photo",
+      "label": "Small wedding · 5–6 hours",
+      "from": 1100,
+      "inquiry": "wedding",
+      "loved": true
+    },
+    {
+      "id": "elopement-film",
+      "group": "elopements",
+      "kind": "video",
+      "label": "Elopement film",
+      "from": 650,
+      "inquiry": "elopement"
+    },
+    {
+      "id": "wedding-film",
+      "group": "elopements",
+      "kind": "video",
+      "label": "Small wedding highlight film",
+      "from": 875,
+      "inquiry": "wedding"
+    },
+    {
+      "id": "elopement-combo",
+      "group": "elopements",
+      "kind": "combo",
+      "label": "Elopement photo + film",
+      "from": 1150,
+      "inquiry": "elopement",
+      "compare": ["elopement", "elopement-film"]
+    },
+    {
+      "id": "wedding-combo",
+      "group": "elopements",
+      "kind": "combo",
+      "label": "Small wedding photo + film",
+      "from": 1650,
+      "inquiry": "wedding",
+      "compare": ["wedding", "wedding-film"]
+    },
+    {
+      "id": "retreat-day",
+      "group": "retreats",
+      "kind": "photo",
+      "label": "Retreat · 1 day",
+      "from": 400,
+      "unit": "day",
+      "inquiry": "retreat"
+    },
+    {
+      "id": "retreat-journey",
+      "group": "retreats",
+      "kind": "photo",
+      "label": "Retreat · 3 days",
+      "from": 1000,
+      "inquiry": "retreat",
+      "loved": true
+    },
+    {
+      "id": "retreat-custom",
+      "group": "retreats",
+      "kind": "photo",
+      "label": "Retreat · custom",
+      "inquiry": "retreat",
+      "custom": true
+    },
+    {
+      "id": "press-kit",
+      "group": "festivals",
+      "kind": "photo",
+      "label": "DJ / artist press kit",
+      "from": 190,
+      "inquiry": "artist"
+    },
+    {
+      "id": "live-set",
+      "group": "festivals",
+      "kind": "photo",
+      "label": "Live-set content · per night",
+      "from": 235,
+      "unit": "night",
+      "inquiry": "artist"
+    },
+    {
+      "id": "festival-day",
+      "group": "festivals",
+      "kind": "photo",
+      "label": "Festival / event day",
+      "from": 550,
+      "unit": "day",
+      "inquiry": "festival"
+    },
+    {
+      "id": "festival-half",
+      "group": "festivals",
+      "kind": "photo",
+      "label": "Festival / event half day",
+      "from": 330,
+      "inquiry": "festival"
+    },
+    {
+      "id": "aftermovie",
+      "group": "festivals",
+      "kind": "video",
+      "label": "Festival aftermovie · per day",
+      "from": 500,
+      "unit": "day",
+      "inquiry": "festival"
+    },
+    {
+      "id": "music-video",
+      "group": "festivals",
+      "kind": "video",
+      "label": "Music video",
+      "from": 585,
+      "inquiry": "music-video"
+    },
+    {
+      "id": "reels-pack",
+      "group": "festivals",
+      "kind": "video",
+      "label": "Reels pack",
+      "from": 365,
+      "inquiry": "artist"
+    },
+    {
+      "id": "single-reel",
+      "group": "festivals",
+      "kind": "video",
+      "label": "Single reel",
+      "from": 110,
+      "inquiry": "artist"
+    },
+    {
+      "id": "hotel-photo",
+      "group": "places",
+      "kind": "photo",
+      "label": "Hotel / stay content day · photo",
+      "from": 475,
+      "inquiry": "place"
+    },
+    {
+      "id": "hotel-film",
+      "group": "places",
+      "kind": "video",
+      "label": "Hotel / stay film",
+      "from": 650,
+      "inquiry": "place"
+    },
+    {
+      "id": "hotel-combo",
+      "group": "places",
+      "kind": "combo",
+      "label": "Hotel day · photo + video",
+      "from": 875,
+      "inquiry": "place",
+      "compare": ["hotel-photo", "hotel-film"]
+    },
+    {
+      "id": "monthly",
+      "group": "places",
+      "kind": "photo",
+      "label": "Monthly content & social",
+      "from": 500,
+      "unit": "month",
+      "inquiry": "place"
+    }
+  ]
+}
