@@ -628,7 +628,7 @@ export const es: Copy = {
       { id: "film", label: "Vídeo" },
     ],
     empty: "Todavía no hay nada en este filtro.",
-    note: "Cada fotografía de esta web es un marcador en baja resolución extraído del PDF del portfolio 2026. Sustituye el archivo en public/images/portfolio (mismo nombre) o sube uno nuevo en el editor.",
+    note: "La mayoría de las fotografías siguen siendo marcadores en baja resolución del PDF del portfolio 2026. Sustituye el archivo en public/images/portfolio (mismo nombre) o sube uno nuevo en el editor.",
   },
   journal: {
     title: "Journal",
