@@ -3,9 +3,9 @@
     {
       "id": "cover-wide",
       "src": "/images/portfolio/cover-wide.jpg",
-      "width": 1600,
-      "height": 901,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDEklVVypO3A4qiWLEmiipRTP/Z",
+      "width": 3840,
+      "height": 2161,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAHAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBAAAQUAAwAAAAAAAAAAAAAAAQACAxESBCFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIRAxEAPwDLzcljY9Rk5yKHhrtSy7RslERCTf/Z",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -15,21 +15,21 @@
       ],
       "featured": false,
       "provisional": false,
-      "placeholder": true,
+      "placeholder": false,
       "order": 0,
       "alt": {
-        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
-        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
-        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+        "en": "Agota on a sunlit stone terrace, wind in her hair, wearing a white crochet dress.",
+        "es": "Agota en una terraza de piedra al sol, el viento en el pelo, con un vestido de crochet blanco.",
+        "pt": "Agota num terra\u00e7o de pedra ao sol, o vento no cabelo, com um vestido de croch\u00e9 branco."
       },
-      "source": "Agota Urbikaite Portfolio 2026 PDF"
+      "source": "Agota Urbikaite"
     },
     {
       "id": "about-portrait",
       "src": "/images/portfolio/about-portrait.jpg",
-      "width": 861,
-      "height": 1289,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCvcXM2/chIic4BYccdRRWMLqZiImcmMEkL2FFQ1Y2Uj//Z",
+      "width": 2560,
+      "height": 3840,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIDAAURIhJxseH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEiH/2gAMAwEAAhEDEQA/AMq73ee7RB5W2iGqrgDv5Sori2k3EBAwVSqjAOTn2lRkey3/2Q==",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -40,21 +40,21 @@
       ],
       "featured": false,
       "provisional": false,
-      "placeholder": true,
+      "placeholder": false,
       "order": 1,
       "alt": {
-        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
-        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
-        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+        "en": "Close portrait of Agota smiling, wind in her hair, ocean behind her.",
+        "es": "Retrato cercano de Agota sonriendo, el viento en el pelo y el mar detr\u00e1s.",
+        "pt": "Retrato pr\u00f3ximo da Agota a sorrir, o vento no cabelo e o mar atr\u00e1s."
       },
-      "source": "Agota Urbikaite Portfolio 2026 PDF"
+      "source": "Agota Urbikaite"
     },
     {
       "id": "about-working",
       "src": "/images/portfolio/about-working.jpg",
-      "width": 900,
-      "height": 1600,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDUyFXmiq00jAUVNpPYHOEdHc//2Q==",
+      "width": 2560,
+      "height": 3840,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAHhAAAgIBBQEAAAAAAAAAAAAAAQIAAwQREhMiUUH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAAMBAQAAAAAAAAAAAAAAAAABAhEx/9oADAMBAAIRAxEAPwCXJynRl4qqzS3TcyAKGA7DX2Jm3zsg2tQbCaeQts+a+xDc5woVaf/Z",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -64,14 +64,14 @@
       ],
       "featured": false,
       "provisional": false,
-      "placeholder": true,
+      "placeholder": false,
       "order": 2,
       "alt": {
-        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
-        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
-        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+        "en": "Agota photographing a couple outdoors, camera raised to her eye.",
+        "es": "Agota fotografiando a una pareja al aire libre, la c\u00e1mara junto al ojo.",
+        "pt": "Agota a fotografar um casal ao ar livre, a c\u00e2mara junto ao olho."
       },
-      "source": "Agota Urbikaite Portfolio 2026 PDF"
+      "source": "Agota Urbikaite"
     },
     {
       "id": "festival-01",
@@ -672,9 +672,9 @@
     {
       "id": "portrait-01",
       "src": "/images/portfolio/portrait-01.jpg",
-      "width": 727,
-      "height": 1091,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCgtgDYxyqFG3qw/jPoaKqyXMvnfe4GPl7flRWLR0Jn/9k=",
+      "width": 2561,
+      "height": 3840,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAIBAAAgICAAcAAAAAAAAAAAAAAQIABAMRBRITISIyUf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEAAwEAAAAAAAAAAAAAAAABABEhAv/aAAwDAQACEQMRAD8Avilq+bKg2WXGy+6IBqJqrZn6mbGx5wg15d97+xAGsYzzez//2Q==",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -687,14 +687,14 @@
       ],
       "featured": true,
       "provisional": false,
-      "placeholder": true,
+      "placeholder": false,
       "order": 70,
       "alt": {
-        "en": "Portrait photograph by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original.",
-        "es": "Retrato de Agota Urbikaite. Marcador de posici\u00f3n en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta.",
-        "pt": "Retrato de Agota Urbikaite. Marcador de posi\u00e7\u00e3o em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
+        "en": "Agota laughing on a stone terrace in a white crochet dress, ocean and cliffs behind her.",
+        "es": "Agota riendo en una terraza de piedra, vestido de crochet blanco, con el mar y los acantilados detr\u00e1s.",
+        "pt": "Agota a rir num terra\u00e7o de pedra, vestido de croch\u00e9 branco, com o mar e as fal\u00e9sias atr\u00e1s."
       },
-      "source": "Agota Urbikaite Portfolio 2026 PDF"
+      "source": "Agota Urbikaite"
     },
     {
       "id": "portrait-02",

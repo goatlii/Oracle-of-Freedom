@@ -674,7 +674,7 @@ export const en: Copy = {
       { id: "film", label: "Film" },
     ],
     empty: "Nothing in this filter yet.",
-    note: "Every photograph on this site is a low-resolution placeholder taken from the 2026 portfolio PDF. Swap the file in public/images/portfolio (same name) or upload a new one in the content editor.",
+    note: "Most photographs are still low-resolution placeholders from the 2026 portfolio PDF. Swap the file in public/images/portfolio (same name) or upload a new one in the content editor.",
   },
   journal: {
     title: "Journal",
