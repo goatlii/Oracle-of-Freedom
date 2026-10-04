@@ -25,8 +25,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const loc = (locale === "es" || locale === "pt" ? locale : "en") as Locale;
   const copy = getCopy(locale);
-  const portrait = imageById(settings.aboutImageId);
-  const working = imageById("about-working");
+  const primary = imageById(settings.aboutImageId);
+  const secondary = imageById("about-portrait");
 
   return (
     <article>
@@ -41,13 +41,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
         </div>
         <Image
-          src={portrait.src}
-          alt={portrait.alt[loc]}
-          width={portrait.width}
-          height={portrait.height}
+          src={primary.src}
+          alt={primary.alt[loc]}
+          width={primary.width}
+          height={primary.height}
           priority
           placeholder="blur"
-          blurDataURL={portrait.blur}
+          blurDataURL={primary.blur}
           className="w-full rounded-3xl object-cover"
           sizes="(max-width: 768px) 100vw, 40vw"
         />
@@ -57,12 +57,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-6">
           <p className="font-quote text-3xl leading-snug md:text-4xl">{copy.about.promise}</p>
           <Image
-            src={working.src}
-            alt={working.alt[loc]}
-            width={working.width}
-            height={working.height}
+            src={secondary.src}
+            alt={secondary.alt[loc]}
+            width={secondary.width}
+            height={secondary.height}
             placeholder="blur"
-            blurDataURL={working.blur}
+            blurDataURL={secondary.blur}
             className="w-full rounded-3xl object-cover"
             sizes="(max-width: 768px) 100vw, 45vw"
           />
