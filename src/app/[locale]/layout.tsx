@@ -49,6 +49,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Unknown single-segment paths (including /cover-wide.jpg when it is not a
+// public file) must 404 here. Rendering them calls next-intl requestLocale,
+// which reads headers() and turns this static route into a runtime 500.
+export const dynamicParams = false;
+
 export default async function LocaleLayout({
   children,
   params,
