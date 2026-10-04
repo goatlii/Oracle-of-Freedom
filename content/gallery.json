@@ -5,7 +5,7 @@
       "src": "/images/portfolio/cover-wide.jpg",
       "width": 3840,
       "height": 2161,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAHAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBAAAQUAAwAAAAAAAAAAAAAAAQACAxESBCFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIRAxEAPwDLzcljY9Rk5yKHhrtSy7RslERCTf/Z",
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAIhAAAQMDAwUAAAAAAAAAAAAAAgABAwQSIQUREzFBYWKx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAYEQACAwAAAAAAAAAAAAAAAAAAIhESMf/aAAwDAQACEQMRAD8Aw6a1NyGMgOTEGPXz8VSUschXxmQsWbduj90RBVtKJU//2Q==",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -18,9 +18,9 @@
       "placeholder": false,
       "order": 0,
       "alt": {
-        "en": "Agota on a sunlit stone terrace, wind in her hair, wearing a white crochet dress.",
-        "es": "Agota en una terraza de piedra al sol, el viento en el pelo, con un vestido de crochet blanco.",
-        "pt": "Agota num terra\u00e7o de pedra ao sol, o vento no cabelo, com um vestido de croch\u00e9 branco."
+        "en": "Palm fronds silhouetted against a setting sun over the water.",
+        "es": "Frondas de palmera en silueta contra un sol poniente sobre el agua.",
+        "pt": "Frondes de palmeira em silhueta contra um sol poente sobre a \u00e1gua."
       },
       "source": "Agota Urbikaite"
     },
