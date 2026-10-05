@@ -8,6 +8,7 @@ export function OmMark({ className = "h-8 w-8" }: { className?: string }) {
       width={247}
       height={247}
       className={className}
+      unoptimized
       aria-hidden="true"
     />
   );
