@@ -24,8 +24,9 @@
       "group": "portraits",
       "kind": "combo",
       "label": "Portrait session + film",
-      "from": 475,
-      "inquiry": "portraits"
+      "from": 375,
+      "inquiry": "portraits",
+      "compare": ["portrait-sessions", "couples-film"]
     },
     {
       "id": "elopement",
