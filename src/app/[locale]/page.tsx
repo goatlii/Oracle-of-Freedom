@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { GalleryGrid } from "@/components/gallery";
-import { SunMark } from "@/components/sun-mark";
+import { OmMark } from "@/components/om-mark";
 import { Testimonials } from "@/components/testimonials";
 import { Button } from "@/components/ui/button";
 import { getCopy } from "@/content";
@@ -89,7 +89,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-night/20" />
         <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pt-28 pb-16 md:px-6">
-          <SunMark className="h-10 w-10 text-ember" />
+          <OmMark className="h-10 w-10" />
           <p className="mt-4 text-xs tracking-[0.22em] text-ember uppercase">Oracle of Freedom</p>
           <h1 className="mt-3 max-w-4xl font-serif text-[2.4rem] leading-[1.05] text-white sm:text-5xl md:text-7xl">
             {copy.home.title}
