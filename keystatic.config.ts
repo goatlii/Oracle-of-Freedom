@@ -17,6 +17,10 @@ const packageItem = fields.object({
   loved: fields.checkbox({ label: "Most loved" }),
   custom: fields.checkbox({ label: "Custom quote, no public price" }),
   personalize: fields.checkbox({ label: "Show “Personalize your session”" }),
+  addon: fields.checkbox({
+    label: "Add-on",
+    description: "Shown in the Express / add-ons row, not as a session, film or combo card.",
+  }),
   compare: fields.array(fields.text({ label: "Package id" }), {
     label: "Compare with",
     description: "For a combo, the photo and film ids booked separately.",
@@ -60,8 +64,30 @@ export default config({
           label: "Languages spoken",
           description: "English phrase on the About page. Spanish and Portuguese name the same languages in the copy files. This is not the site language switcher.",
         }),
-        elopementGalleryWeeks: fields.text({ label: "Elopement gallery timing" }),
-        artistGalleryWeeks: fields.text({ label: "Artist gallery timing" }),
+        elopementGalleryWeeks: fields.text({
+          label: "Elopement photo gallery timing",
+          description: "Token {weeks}. Photos only — elopements and small weddings.",
+        }),
+        artistGalleryWeeks: fields.text({
+          label: "Artist / portrait photo gallery timing",
+          description: "Token {artistWeeks}. Photos only — portraits and artist galleries.",
+        }),
+        elopementFilmWeeks: fields.text({
+          label: "Elopement film timing",
+          description: "Token {filmWeeks}. Film and photo+film for elopements and small weddings.",
+        }),
+        artistFilmWeeks: fields.text({
+          label: "Artist / portrait film timing",
+          description: "Token {artistFilmWeeks}. Film and photo+film for portraits and artists.",
+        }),
+        expressPhotoDays: fields.text({
+          label: "Express photo timing",
+          description: "Token {expressPhoto}. Rush window for photographs.",
+        }),
+        expressFilmDays: fields.text({
+          label: "Express film timing",
+          description: "Token {expressFilm}. Rush window for film and photo+film.",
+        }),
         pricesAreProposals: fields.checkbox({ label: "Prices still need confirmation" }),
         heroImageId: fields.text({ label: "Desktop hero image id" }),
         mobileHeroImageId: fields.text({ label: "Mobile hero image id" }),

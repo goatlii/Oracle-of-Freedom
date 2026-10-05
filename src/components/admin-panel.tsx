@@ -92,7 +92,10 @@ export function AdminPanel({
   }, [priceState, promoState, router]);
 
   const ordered = useMemo(
-    () => [...catalog].sort((a, b) => kindOrder[a.kind] - kindOrder[b.kind]),
+    () =>
+      [...catalog].sort(
+        (a, b) => Number(Boolean(a.addon)) - Number(Boolean(b.addon)) || kindOrder[a.kind] - kindOrder[b.kind],
+      ),
     [catalog],
   );
 
@@ -134,7 +137,7 @@ export function AdminPanel({
                       <div>
                         <Label htmlFor={`from-${item.id}`}>{item.label}</Label>
                         <p className="text-xs tracking-[0.12em] text-ink/45 uppercase">
-                          {item.kind === "combo" ? "Photo + film" : item.kind}
+                          {item.addon ? "Add-on" : item.kind === "combo" ? "Photo + film" : item.kind}
                         </p>
                       </div>
                       {item.custom ? (

@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { InquiryForm } from "@/components/inquiry-form";
+import { TokenText } from "@/components/token-text";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { getCopy } from "@/content";
 import { getPathname } from "@/i18n/navigation";
@@ -70,7 +71,9 @@ export default async function InquirePage({
           {copy.inquire.next.map((step, index) => (
             <li key={step} className="grid grid-cols-[auto_1fr] gap-3">
               <span className="font-serif text-2xl text-ember">{index + 1}</span>
-              <span>{step}</span>
+              <span>
+                <TokenText text={step} />
+              </span>
             </li>
           ))}
         </ol>

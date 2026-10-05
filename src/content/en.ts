@@ -307,7 +307,7 @@ export const en: Copy = {
           "Individuals, couples, engagement, families, friends — any group",
           "Starts at one hour. Length, edited photos, locations and how many people shape the final price",
           "Gentle guidance, no stiff posing",
-          "A private gallery, ready to download and share",
+          "A private gallery in {artistWeeks}, ready to download and share",
         ],
       },
       "couples-film": {
@@ -315,7 +315,7 @@ export const en: Copy = {
         items: [
           "A short film of the session, about 60–90 seconds",
           "One vertical cut for stories",
-          "Delivered with the same care as the photographs",
+          "Delivered in {artistFilmWeeks}, with the same care as the photographs",
         ],
       },
       "couples-combo": {
@@ -323,7 +323,22 @@ export const en: Copy = {
         items: [
           "The portrait session and the short film",
           "One person, one afternoon",
-          "We shape the session around who is coming and what you want",
+          "Together in {artistFilmWeeks} — photo+film follows the film window",
+        ],
+      },
+      "express-portrait-film": {
+        name: "Express film",
+        items: [
+          "Rush finish for a portrait or couples film",
+          "Film in {expressFilm}",
+          "Photo-only sessions: photos in {expressPhoto}",
+        ],
+      },
+      "express-portrait-combo": {
+        name: "Express photo + film",
+        items: [
+          "Rush the portrait session and the film together",
+          "Photos in {expressPhoto}; film in {expressFilm}",
         ],
       },
     },
@@ -332,12 +347,16 @@ export const en: Copy = {
     whereTitle: "Where we can shoot",
     where:
       "All of the Algarve, and the coast up to Lisbon: the south, the Costa Vicentina, the Alentejo shore, Comporta, Arrábida and the city itself. Ericeira and Sintra sit just north of Lisbon — tell me if that's the plan. For a wedding, retreat, festival or commercial shoot, the rest of Portugal, Europe and beyond are open.",
+    addonsTitle: "Express delivery",
     processTitle: "How it works",
     process: [
       { title: "Say hi", body: "Send the form or a WhatsApp with your date idea and what you're dreaming of." },
       { title: "We plan", body: "I suggest locations, timing for the best light and what to wear." },
       { title: "We shoot", body: "Relaxed, playful, real. I'll guide you when you need it and disappear when you don't." },
-      { title: "You relive it", body: "Your private gallery arrives, ready to download, share and print." },
+      {
+        title: "You relive it",
+        body: "Your private gallery arrives, ready to download, share and print. Photos in {artistWeeks}; film and photo+film in {artistFilmWeeks}. Add Express if you need it sooner.",
+      },
     ],
     wordsTitle: "Kind words",
     testimonialIds: ["couple", "soul-brand"],
@@ -350,6 +369,10 @@ export const en: Copy = {
       { q: "Can you help plan a surprise proposal?", a: "Yes. I'll help you pick the spot and timing, and hide in plain sight." },
       { q: "Where do you photograph?", a: "Every session includes travel from the Algarve to Lisbon, along the coast in between. Weddings, retreats, festivals and commercial shoots can go further, with travel quoted at cost." },
       { q: "How do I book?", a: "Send the inquiry form. A {deposit} deposit secures your date." },
+      {
+        q: "How long until we get the photos and film?",
+        a: "Photos in {artistWeeks}. Film, and photo+film together, in {artistFilmWeeks}. Express is a paid add-on: photos in {expressPhoto}, film and combos in {expressFilm}. Portrait film rush from €75; the full photo+film rush from €200.",
+      },
     ],
     guide: { post: "ericeira", label: "The most magical spots for a couple photoshoot around Ericeira & Sintra" },
   },
@@ -379,7 +402,7 @@ export const en: Copy = {
           "3–4 hours: getting ready if you want it, ceremony, portraits",
           "Help choosing the place and the light",
           "About 200 edited photos in a private gallery",
-          "Sneak peek within 48 hours",
+          "Sneak peek within 48 hours; full photos in {weeks}",
         ],
       },
       wedding: {
@@ -389,28 +412,44 @@ export const en: Copy = {
           "Up to about 30 guests",
           "5–6 hours, from the ceremony into the night — fire, music, dancing",
           "About 350 edited photos",
-          "Sneak peek within 48 hours",
+          "Sneak peek within 48 hours; full photos in {weeks}",
         ],
       },
       "elopement-film": {
         name: "Elopement film",
-        items: ["A 3–5 minute film of the ceremony and portraits", "Shot by the same person, so the day stays small"],
+        items: ["A 3–5 minute film of the ceremony and portraits", "Shot by the same person, so the day stays small", "Ready in {filmWeeks}"],
       },
       "wedding-film": {
         name: "Small wedding highlight",
-        items: ["A highlight film of the ceremony, portraits and the night", "Made to share with the people who couldn't be there"],
+        items: ["A highlight film of the ceremony, portraits and the night", "Made to share with the people who couldn't be there", "Ready in {filmWeeks}"],
       },
       "elopement-combo": {
         name: "Elopement photo + film",
-        items: ["Photographs and the film, across 3–4 hours", "One person for the whole coverage", "Less than booking photo and film separately"],
+        items: ["Photographs and the film, across 3–4 hours", "One person for the whole coverage", "Together in {filmWeeks} — photo+film follows the film window", "Less than booking photo and film separately"],
       },
       "wedding-combo": {
         name: "Small wedding photo + film",
-        items: ["Photographs and the highlight film, across 5–6 hours", "Up to about 30 guests", "Less than booking photo and film separately"],
+        items: ["Photographs and the highlight film, across 5–6 hours", "Up to about 30 guests", "Together in {filmWeeks} — photo+film follows the film window", "Less than booking photo and film separately"],
+      },
+      "express-elopement-film": {
+        name: "Express film",
+        items: [
+          "Rush finish for an elopement or small-wedding film",
+          "Film in {expressFilm}",
+          "Photo-only collections: photos in {expressPhoto}",
+        ],
+      },
+      "express-elopement-combo": {
+        name: "Express photo + film",
+        items: [
+          "Rush the photographs and the film together",
+          "Photos in {expressPhoto}; film in {expressFilm}",
+        ],
       },
     },
     travelNote:
       "Travel within {baseArea} is included. Elopements and intimate weddings further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
+    addonsTitle: "Express delivery",
     dayTitle: "What your day could look like",
     day: "Sunrise vows on a wild beach. A walk through the forest with flowers in your hair. A ceremony led by a friend, a shaman or a celebrant. Your people in a circle, drums and laughter. A long table under fairy lights. A fire dance to close the night.",
     comingSoon:
@@ -419,9 +458,9 @@ export const en: Copy = {
     process: [
       { title: "Tell me your story", body: "Fill in the form: date, place (or \"no idea yet\"), how many people." },
       { title: "Let's talk", body: "A relaxed video call to feel if we're a fit." },
-      { title: "Book", body: "A {deposit} deposit reserves your date." },
+      { title: "Book", body: "A {deposit} deposit reserves your date. Add Express then if you need the gallery sooner." },
       { title: "Dream together", body: "I help with the location, timing and flow of the day, and I can recommend like-minded celebrants, florists and places." },
-      { title: "The day & after", body: "I'm with you, part of it. Sneak peek in 48 hours, full gallery in {weeks}." },
+      { title: "The day & after", body: "I'm with you, part of it. Sneak peek in 48 hours. Photos in {weeks}; film and photo+film in {filmWeeks}." },
     ],
     wordsTitle: "Love notes",
     testimonialIds: ["elopement", "wedding"],
@@ -434,6 +473,10 @@ export const en: Copy = {
       { q: "Can you photograph fire, night and dancing?", a: "Night, fire and festival light are my speciality. Your after-party is safe with me." },
       { q: "Do you travel?", a: "Yes. The Algarve-to-Lisbon coast is included. For a wedding I also travel the rest of Portugal, Europe and beyond, including tropical destinations, with travel quoted at cost." },
       { q: "How far in advance should we book?", a: "For May–October, 6–12 months is ideal; for elopements, sometimes a few weeks is enough — just ask." },
+      {
+        q: "When do we get the gallery and the film?",
+        a: "Photos in {weeks}. Film, and photo+film together, in {filmWeeks}. Express is a paid add-on: photos in {expressPhoto}, film and combos in {expressFilm}. Elopement and wedding film rush from €150; the full photo+film rush from €200.",
+      },
     ],
     guide: { post: "boho", label: "Boho elopement in Portugal: places, seasons & real costs" },
   },
@@ -529,6 +572,7 @@ export const en: Copy = {
         items: [
           "2-hour portrait / press session (location or night / fire setup)",
           "20–30 edited photos for press, streaming covers and socials",
+          "Gallery in {artistWeeks}",
         ],
       },
       "live-set": {
@@ -545,7 +589,7 @@ export const en: Copy = {
       },
       aftermovie: {
         name: "Festival aftermovie",
-        items: ["A short film of the day, per day of the event", "Made to post once the gathering is over"],
+        items: ["A short film of the day, per day of the event", "Made to post once the gathering is over", "Ready in {artistFilmWeeks}"],
       },
       "music-video": {
         name: "Music video",
@@ -553,15 +597,24 @@ export const en: Copy = {
       },
       "reels-pack": {
         name: "Reels pack",
-        items: ["A set of short vertical films for Instagram and TikTok", "Cut from a session or an event"],
+        items: ["A set of short vertical films for Instagram and TikTok", "Cut from a session or an event", "Ready in {artistFilmWeeks}"],
       },
       "single-reel": {
         name: "Single reel",
-        items: ["One vertical film, ready to post"],
+        items: ["One vertical film, ready to post in {artistFilmWeeks}"],
+      },
+      "express-artist-film": {
+        name: "Express film",
+        items: [
+          "Rush finish for artist film, reels or an aftermovie",
+          "Film in {expressFilm}",
+          "Photo-only galleries: photos in {expressPhoto}",
+        ],
       },
     },
     travelNote:
       "Artist sessions from the Algarve to Lisbon include travel. Festivals and commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
+    addonsTitle: "Express delivery",
     videosTitle: "Watch",
     videosNote:
       "PLACEHOLDER — confirm which link is fire, bonfire, drums or DJ. These load only after you choose to play them.",
@@ -570,7 +623,7 @@ export const en: Copy = {
       { title: "Tell me the vision", body: "Artist, event, date, what you need it for." },
       { title: "Plan", body: "Mood, locations, lighting. Fire shoots need a safe setup and a spotter." },
       { title: "Shoot", body: "I move with the music and the fire." },
-      { title: "Delivery", body: "Fast selects for socials, then the full gallery and edits. Live-set clips within 48 hours; full galleries within {artistWeeks}." },
+      { title: "Delivery", body: "Fast selects for socials, then the full gallery and edits. Live-set clips within 48 hours. Photos in {artistWeeks}; film in {artistFilmWeeks}. Add Express if you need it sooner." },
     ],
     wordsTitle: "Kind words",
     testimonialIds: ["artist"],
@@ -580,7 +633,11 @@ export const en: Copy = {
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours; full galleries within {artistWeeks}." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photos in {artistWeeks}; film in {artistFilmWeeks}." },
+      {
+        q: "Can I get the gallery or film sooner?",
+        a: "Yes — Express is a paid add-on. Photos in {expressPhoto}; film in {expressFilm}. Artist film rush from €75.",
+      },
     ],
   },
   places: {
@@ -693,6 +750,7 @@ export const en: Copy = {
       "I reply within 48 hours with availability and a few questions.",
       "We have a short call (video or WhatsApp) to feel if we're a fit.",
       "You receive a tailored proposal. A deposit secures your date.",
+      "The proposal includes photo and film delivery windows, and Express if you need the gallery sooner.",
     ],
     confirm:
       "Thank you, beautiful soul — your message has arrived. I'll be in touch within 48 hours. In the meantime, come say hi on Instagram @oracle.of.freedom.",

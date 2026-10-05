@@ -12,6 +12,7 @@ export type CatalogItem = {
   custom?: boolean;
   compare?: string[];
   personalize?: boolean;
+  addon?: boolean;
 };
 
 export type Promo = {

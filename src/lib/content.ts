@@ -34,6 +34,7 @@ export type PackageItem = {
   custom?: boolean;
   compare?: string[];
   personalize?: boolean;
+  addon?: boolean;
 };
 
 export const settings = settingsJson;

@@ -29,6 +29,24 @@
       "compare": ["portrait-sessions", "couples-film"]
     },
     {
+      "id": "express-portrait-film",
+      "group": "portraits",
+      "kind": "video",
+      "addon": true,
+      "label": "Express film delivery",
+      "from": 75,
+      "inquiry": "portraits"
+    },
+    {
+      "id": "express-portrait-combo",
+      "group": "portraits",
+      "kind": "combo",
+      "addon": true,
+      "label": "Express photo + film delivery",
+      "from": 200,
+      "inquiry": "portraits"
+    },
+    {
       "id": "elopement",
       "group": "elopements",
       "kind": "photo",
@@ -78,6 +96,24 @@
       "from": 1650,
       "inquiry": "wedding",
       "compare": ["wedding", "wedding-film"]
+    },
+    {
+      "id": "express-elopement-film",
+      "group": "elopements",
+      "kind": "video",
+      "addon": true,
+      "label": "Express film delivery",
+      "from": 150,
+      "inquiry": "elopement"
+    },
+    {
+      "id": "express-elopement-combo",
+      "group": "elopements",
+      "kind": "combo",
+      "addon": true,
+      "label": "Express photo + film delivery",
+      "from": 200,
+      "inquiry": "elopement"
     },
     {
       "id": "retreat-day",
@@ -170,6 +206,15 @@
       "kind": "video",
       "label": "Single reel",
       "from": 110,
+      "inquiry": "artist"
+    },
+    {
+      "id": "express-artist-film",
+      "group": "festivals",
+      "kind": "video",
+      "addon": true,
+      "label": "Express film delivery",
+      "from": 75,
       "inquiry": "artist"
     },
     {

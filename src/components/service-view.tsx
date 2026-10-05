@@ -6,7 +6,7 @@ import { GalleryGrid } from "@/components/gallery";
 import { FromPrice, PackageCards } from "@/components/packages";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { Testimonials } from "@/components/testimonials";
-import { TokenText } from "@/components/token-text";
+import { TokenText, replaceTokens } from "@/components/token-text";
 import { VideoGrid } from "@/components/video-grid";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
@@ -47,9 +47,10 @@ export async function ServiceView({
   const hero = images[0];
   const catalog = await getCatalog();
   const visible = catalog.filter((item) => item.group === group && item.visible);
-  const photos = visible.filter((item) => item.kind === "photo");
-  const films = visible.filter((item) => item.kind === "video");
-  const combos = visible.filter((item) => item.kind === "combo");
+  const addons = visible.filter((item) => item.addon);
+  const photos = visible.filter((item) => item.kind === "photo" && !item.addon);
+  const films = visible.filter((item) => item.kind === "video" && !item.addon);
+  const combos = visible.filter((item) => item.kind === "combo" && !item.addon);
   const lead = photos.find((item) => item.listFrom != null) ?? visible.find((item) => item.listFrom != null);
   const dark = tone !== "warm";
 
@@ -85,7 +86,7 @@ export async function ServiceView({
           mainEntity: copy.faq.map((item) => ({
             "@type": "Question",
             name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: item.a },
+            acceptedAnswer: { "@type": "Answer", text: replaceTokens(item.a) },
           })),
         }}
       />
@@ -185,6 +186,15 @@ export async function ServiceView({
             title={copy.combosTitle || (locale === "en" ? "Photo + film" : "Foto + vídeo")}
             locale={locale}
             items={combos}
+            copy={copy.packages}
+            cta={copy.cta}
+            offer={common.offer}
+            saveTemplate={common.saveSeparately}
+          />
+          <PackageSection
+            title={copy.addonsTitle || (locale === "en" ? "Express delivery" : "Entrega Express")}
+            locale={locale}
+            items={addons}
             copy={copy.packages}
             cta={copy.cta}
             offer={common.offer}

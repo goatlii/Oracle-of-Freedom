@@ -280,20 +280,36 @@ export const es: Copy = {
           "Personas, parejas, preboda, familias, amigos: cualquier grupo",
           "Empieza en una hora. La duración, las fotos editadas, los lugares y cuántas personas dan forma al precio final",
           "Guía suave, sin poses rígidas",
-          "Una galería privada, lista para descargar y compartir",
+          "Una galería privada en {artistWeeks}, lista para descargar y compartir",
         ],
       },
       "couples-film": {
         name: "Película de pareja",
-        items: ["Una película corta de la sesión, de unos 60–90 segundos", "Un corte vertical para stories", "Con el mismo cuidado que las fotografías"],
+        items: ["Una película corta de la sesión, de unos 60–90 segundos", "Un corte vertical para stories", "Entrega en {artistFilmWeeks}, con el mismo cuidado que las fotografías"],
       },
       "couples-combo": {
         name: "Sesión de retrato + vídeo",
-        items: ["La sesión de retrato y la película corta", "Una sola persona, una tarde", "Damos forma a la sesión según quién viene y qué quieres"],
+        items: ["La sesión de retrato y la película corta", "Una sola persona, una tarde", "Juntos en {artistFilmWeeks}: el combo foto+vídeo sigue el plazo del vídeo"],
+      },
+      "express-portrait-film": {
+        name: "Express vídeo",
+        items: [
+          "Entrega urgente de la película de retrato o de pareja",
+          "El vídeo, en {expressFilm}",
+          "Solo fotos: las fotografías, en {expressPhoto}",
+        ],
+      },
+      "express-portrait-combo": {
+        name: "Express foto + vídeo",
+        items: [
+          "Urgente: la sesión de retrato y la película juntas",
+          "Las fotos, en {expressPhoto}; el vídeo, en {expressFilm}",
+        ],
       },
     },
     travelNote:
       "El desplazamiento está incluido en cada sesión, del Algarve a Lisboa, con la costa de por medio. Bodas, retiros, festivales y trabajos comerciales pueden ir más lejos — el resto de Portugal, Europa y más allá — con el viaje a coste real.",
+    addonsTitle: "Entrega Express",
     whereTitle: "Dónde podemos hacer la sesión",
     where:
       "Todo el Algarve y la costa hasta Lisboa: el sur, la Costa Vicentina, el litoral del Alentejo, Comporta, Arrábida y la ciudad. Ericeira y Sintra quedan justo al norte de Lisboa: dímelo si ese es el plan. Para una boda, un retiro, un festival o un trabajo comercial, el resto de Portugal, Europa y más allá están abiertos.",
@@ -302,7 +318,7 @@ export const es: Copy = {
       { title: "Escríbeme", body: "Envía el formulario o un WhatsApp con tu idea de fecha y lo que sueñas." },
       { title: "Planificamos", body: "Te sugiero lugares, horario para la mejor luz y qué ponerte." },
       { title: "La sesión", body: "Relajada, divertida, real. Te guío cuando lo necesitas y desaparezco cuando no." },
-      { title: "Revívelo", body: "Llega tu galería privada, lista para descargar, compartir e imprimir." },
+      { title: "Revívelo", body: "Llega tu galería privada, lista para descargar, compartir e imprimir. Las fotos, en {artistWeeks}; el vídeo y el combo foto+vídeo, en {artistFilmWeeks}. Añade Express si lo necesitas antes." },
     ],
     wordsTitle: "Palabras bonitas",
     testimonialIds: ["couple", "soul-brand"],
@@ -315,6 +331,10 @@ export const es: Copy = {
       { q: "¿Me ayudas con una pedida sorpresa?", a: "Sí. Te ayudo a elegir el sitio y el momento, y me escondo a plena vista." },
       { q: "¿Dónde fotografías?", a: "Cada sesión incluye el desplazamiento del Algarve a Lisboa, por la costa de por medio. Bodas, retiros, festivales y trabajos comerciales pueden ir más lejos, con el viaje a coste real." },
       { q: "¿Cómo reservo?", a: "Envía el formulario. Una señal del {deposit} asegura tu fecha." },
+      {
+        q: "¿Cuándo llegan las fotos y el vídeo?",
+        a: "Las fotos, en {artistWeeks}. El vídeo — y el combo foto+vídeo — en {artistFilmWeeks}. Express es un extra de pago: fotos en {expressPhoto}, vídeo y combos en {expressFilm}. El rush de vídeo de retrato, desde 75 €; el combo foto+vídeo, desde 200 €.",
+      },
     ],
     guide: { post: "ericeira", label: "Los lugares más mágicos para una sesión de pareja en Ericeira y Sintra" },
   },
@@ -344,7 +364,7 @@ export const es: Copy = {
           "3–4 horas: preparativos si los queréis, ceremonia y retratos",
           "Ayuda para elegir el lugar y la luz",
           "Unas 200 fotos editadas en una galería privada",
-          "Adelanto en 48 horas",
+          "Adelanto en 48 horas; las fotos completas, en {weeks}",
         ],
       },
       wedding: {
@@ -354,28 +374,44 @@ export const es: Copy = {
           "Hasta unas 30 personas",
           "5–6 horas, de la ceremonia a la noche: fuego, música, baile",
           "Unas 350 fotos editadas",
-          "Adelanto en 48 horas",
+          "Adelanto en 48 horas; las fotos completas, en {weeks}",
         ],
       },
       "elopement-film": {
         name: "Película de elopement",
-        items: ["Una película de 3–5 minutos de la ceremonia y los retratos", "La misma persona, para que el día siga siendo pequeño"],
+        items: ["Una película de 3–5 minutos de la ceremonia y los retratos", "La misma persona, para que el día siga siendo pequeño", "Lista en {filmWeeks}"],
       },
       "wedding-film": {
         name: "Highlight de boda íntima",
-        items: ["Una película de la ceremonia, los retratos y la noche", "Para compartirla con quien no pudo estar"],
+        items: ["Una película de la ceremonia, los retratos y la noche", "Para compartirla con quien no pudo estar", "Lista en {filmWeeks}"],
       },
       "elopement-combo": {
         name: "Elopement foto + vídeo",
-        items: ["Fotografías y película, en 3–4 horas", "Una sola persona para toda la cobertura", "Menos que reservar foto y vídeo por separado"],
+        items: ["Fotografías y película, en 3–4 horas", "Una sola persona para toda la cobertura", "Juntos en {filmWeeks}: el combo sigue el plazo del vídeo", "Menos que reservar foto y vídeo por separado"],
       },
       "wedding-combo": {
         name: "Boda íntima foto + vídeo",
-        items: ["Fotografías y highlight, en 5–6 horas", "Hasta unas 30 personas", "Menos que reservar foto y vídeo por separado"],
+        items: ["Fotografías y highlight, en 5–6 horas", "Hasta unas 30 personas", "Juntos en {filmWeeks}: el combo sigue el plazo del vídeo", "Menos que reservar foto y vídeo por separado"],
+      },
+      "express-elopement-film": {
+        name: "Express vídeo",
+        items: [
+          "Entrega urgente de la película de elopement o de boda íntima",
+          "El vídeo, en {expressFilm}",
+          "Solo fotos: las fotografías, en {expressPhoto}",
+        ],
+      },
+      "express-elopement-combo": {
+        name: "Express foto + vídeo",
+        items: [
+          "Urgente: las fotografías y la película juntas",
+          "Las fotos, en {expressPhoto}; el vídeo, en {expressFilm}",
+        ],
       },
     },
     travelNote:
       "El desplazamiento del Algarve a Lisboa está incluido. Los elopements y las bodas íntimas más lejos — el resto de Portugal, Europa y más allá — se presupuestan a coste real.",
+    addonsTitle: "Entrega Express",
     dayTitle: "Cómo podría ser vuestro día",
     day: "Votos al amanecer en una playa salvaje. Un paseo por el bosque con flores en el pelo. Una ceremonia guiada por un amigo, un chamán o un oficiante. Vuestra gente en círculo, tambores y risas. Una mesa larga bajo guirnaldas de luz. Una danza de fuego para cerrar la noche.",
     comingSoon: "Próximamente: nuestra primera historia completa de elopement boho. Hasta entonces, estas son fotos de pareja y de encuentros, no un día de boda.",
@@ -383,9 +419,9 @@ export const es: Copy = {
     process: [
       { title: "Contadme vuestra historia", body: "Rellenad el formulario con la fecha, el lugar (o \"ni idea todavía\") y cuántas personas seréis." },
       { title: "Hablemos", body: "Una videollamada relajada para sentir si encajamos." },
-      { title: "Reserva", body: "Una señal del {deposit} asegura vuestra fecha." },
+      { title: "Reserva", body: "Una señal del {deposit} asegura vuestra fecha. Añadid Express entonces si necesitáis la galería antes." },
       { title: "Soñamos juntos", body: "Os ayudo con el lugar, el horario y el ritmo del día, y os recomiendo oficiantes, floristas y lugares afines." },
-      { title: "El día y después", body: "Estoy con vosotros, como parte de ello. Adelanto en 48 horas y galería completa en {weeks}." },
+      { title: "El día y después", body: "Estoy con vosotros, como parte de ello. Adelanto en 48 horas. Las fotos, en {weeks}; el vídeo y el combo foto+vídeo, en {filmWeeks}." },
     ],
     wordsTitle: "Notas de amor",
     testimonialIds: ["elopement", "wedding"],
@@ -398,6 +434,10 @@ export const es: Copy = {
       { q: "¿Fotografías fuego, noche y baile?", a: "La noche, el fuego y la luz de festival son mi especialidad. Vuestra fiesta está en buenas manos." },
       { q: "¿Viajas?", a: "Sí. La costa del Algarve a Lisboa está incluida. Para una boda también viajo por el resto de Portugal, Europa y más allá, incluidos destinos tropicales, con el desplazamiento a coste real." },
       { q: "¿Con cuánta antelación reservamos?", a: "Para mayo–octubre, lo ideal es con 6–12 meses; para un elopement a veces bastan unas semanas: pregúntame." },
+      {
+        q: "¿Cuándo llegan la galería y el vídeo?",
+        a: "Las fotos, en {weeks}. El vídeo — y el combo foto+vídeo — en {filmWeeks}. Express es un extra de pago: fotos en {expressPhoto}, vídeo y combos en {expressFilm}. El rush de vídeo de elopement o boda, desde 150 €; el combo foto+vídeo, desde 200 €.",
+      },
     ],
     guide: { post: "boho", label: "Elopement boho en Portugal: lugares, temporadas y precios reales" },
   },
@@ -490,7 +530,7 @@ export const es: Copy = {
     packages: {
       "press-kit": {
         name: "Kit de prensa DJ / artista",
-        items: ["Sesión de prensa de 2 horas, de día o de noche con fuego", "20–30 fotos editadas para prensa, portadas y redes"],
+        items: ["Sesión de prensa de 2 horas, de día o de noche con fuego", "20–30 fotos editadas para prensa, portadas y redes", "Galería en {artistWeeks}"],
       },
       "live-set": {
         name: "Contenido de set en directo",
@@ -506,7 +546,7 @@ export const es: Copy = {
       },
       aftermovie: {
         name: "Aftermovie de festival",
-        items: ["Una película corta del día, por cada día del evento", "Para publicarla cuando el encuentro termina"],
+        items: ["Una película corta del día, por cada día del evento", "Para publicarla cuando el encuentro termina", "Lista en {artistFilmWeeks}"],
       },
       "music-video": {
         name: "Videoclip",
@@ -514,15 +554,24 @@ export const es: Copy = {
       },
       "reels-pack": {
         name: "Pack de reels",
-        items: ["Varios vídeos verticales cortos para Instagram y TikTok", "Montados a partir de una sesión o un evento"],
+        items: ["Varios vídeos verticales cortos para Instagram y TikTok", "Montados a partir de una sesión o un evento", "Listos en {artistFilmWeeks}"],
       },
       "single-reel": {
         name: "Un reel",
-        items: ["Un vídeo vertical, listo para publicar"],
+        items: ["Un vídeo vertical, listo para publicar en {artistFilmWeeks}"],
+      },
+      "express-artist-film": {
+        name: "Express vídeo",
+        items: [
+          "Entrega urgente de película de artista, reels o aftermovie",
+          "El vídeo, en {expressFilm}",
+          "Solo fotos: las fotografías, en {expressPhoto}",
+        ],
       },
     },
     travelNote:
       "Las sesiones de artista del Algarve a Lisboa incluyen el desplazamiento. Festivales y trabajos comerciales más lejos — el resto de Portugal, Europa y más allá — se presupuestan a coste real.",
+    addonsTitle: "Entrega Express",
     videosTitle: "Mira",
     videosNote: "PENDIENTE — confirmar qué enlace es fuego, hoguera, tambores o DJ. Se cargan solo cuando eliges reproducirlos.",
     processTitle: "Cómo funciona",
@@ -530,7 +579,7 @@ export const es: Copy = {
       { title: "Cuéntame la visión", body: "Artista, evento, fecha y para qué lo necesitas." },
       { title: "Planificamos", body: "Ambiente, lugares e iluminación. El fuego requiere un montaje seguro y una persona de apoyo." },
       { title: "Rodamos", body: "Me muevo con la música y el fuego." },
-      { title: "Entrega", body: "Selección rápida para redes y, después, la galería completa y los montajes. Clips del set en 48 horas; galerías completas en {artistWeeks}." },
+      { title: "Entrega", body: "Selección rápida para redes y, después, la galería completa y los montajes. Clips del set en 48 horas. Las fotos, en {artistWeeks}; el vídeo, en {artistFilmWeeks}. Añade Express si lo necesitas antes." },
     ],
     wordsTitle: "Palabras bonitas",
     testimonialIds: ["artist"],
@@ -540,7 +589,11 @@ export const es: Copy = {
       { q: "¿Puedo usar las fotos en mi press kit y en plataformas de streaming?", a: "Sí, el uso promocional está incluido." },
       { q: "¿Trabajas con festivales?", a: "Sí, dentro de equipos de contenido oficiales o asociados, y siempre respetando las normas de foto y de consentimiento de cada festival." },
       { q: "¿Grabas un videoclip completo?", a: "Sí, del concepto a la edición final. Cuéntame tu idea y tu presupuesto." },
-      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas; las galerías completas, en {artistWeeks}." },
+      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotos, en {artistWeeks}; el vídeo, en {artistFilmWeeks}." },
+      {
+        q: "¿Puedo tener la galería o el vídeo antes?",
+        a: "Sí: Express es un extra de pago. Las fotos, en {expressPhoto}; el vídeo, en {expressFilm}. El rush de vídeo de artista, desde 75 €.",
+      },
     ],
   },
   places: {
@@ -647,6 +700,7 @@ export const es: Copy = {
       "Te respondo en 48 horas con mi disponibilidad y algunas preguntas.",
       "Hacemos una llamada corta (vídeo o WhatsApp) para sentir si encajamos.",
       "Recibes una propuesta a medida. Una señal asegura tu fecha.",
+      "La propuesta incluye los plazos de foto y vídeo, y Express si necesitáis la galería antes.",
     ],
     confirm:
       "Gracias, alma bonita: tu mensaje ha llegado. Te escribo en 48 horas. Mientras tanto, pásate a saludar en Instagram @oracle.of.freedom.",
