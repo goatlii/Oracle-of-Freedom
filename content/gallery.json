@@ -723,8 +723,8 @@
       "id": "portrait-05",
       "src": "/images/portfolio/portrait-05.jpg",
       "width": 2400,
-      "height": 3600,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAgEAACAQMEAwAAAAAAAAAAAAABAgMAETEEBRIhEyJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAMAwEAAhEDEQA/AKce/O+u8fBVjBtxBuzdZvjNKnLBGN/jQL6EElfh6pUQ3H//2Q==",
+      "height": 4266,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAOAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBAAAwACAwEAAAAAAAAAAAAAAQIDABEEBiEj/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAMAwEAAhEDEQA/ALc+xRbmiKSoJq5R6MuvdbGhjM8JInYJyC/N6E62fBjIGXC//9k=",
       "category": "portraits",
       "categories": [
         "portraits"
@@ -740,9 +740,9 @@
       "placeholder": false,
       "order": 51,
       "alt": {
-        "en": "A couple kissing in the ocean at golden hour, her long braids threaded with gold charms, both wearing leopard print.",
-        "es": "Una pareja bes\u00e1ndose en el oc\u00e9ano a la hora dorada, ella con trenzas largas y dijes de oro, ambos con estampado de leopardo.",
-        "pt": "Um casal a beijar-se no oceano \u00e0 hora dourada, ela com tranças longas e berloques de ouro, ambos com estampado de leopardo."
+        "en": "A couple kissing in the ocean at golden hour: she wears long dark braids with gold cuffs and a leopard bikini, he is bald and bearded in matching leopard trunks.",
+        "es": "Una pareja besándose en el océano a la hora dorada: ella con trenzas oscuras largas, puños de oro y bikini de leopardo; él calvo y con barba, en bañador de leopardo a juego.",
+        "pt": "Um casal a beijar-se no oceano à hora dourada: ela com tranças escuras longas, punhos de ouro e biquíni de leopardo; ele careca e de barba, com calções de leopardo a condizer."
       },
       "source": "Agota Urbikaite"
     },
