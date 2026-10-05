@@ -25,7 +25,7 @@ export type GalleryImage = {
 export type PackageItem = {
   id: string;
   group: string;
-  kind: "photo" | "video" | "combo";
+  kind: "photo" | "video" | "combo" | "addon";
   label: string;
   from?: number;
   unit?: "day" | "night" | "month";

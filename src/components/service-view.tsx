@@ -50,7 +50,10 @@ export async function ServiceView({
   const photos = visible.filter((item) => item.kind === "photo");
   const films = visible.filter((item) => item.kind === "video");
   const combos = visible.filter((item) => item.kind === "combo");
-  const lead = photos.find((item) => item.listFrom != null) ?? visible.find((item) => item.listFrom != null);
+  const addons = visible.filter((item) => item.kind === "addon");
+  const lead =
+    photos.find((item) => item.listFrom != null) ??
+    visible.find((item) => item.kind !== "addon" && item.listFrom != null);
   const dark = tone !== "warm";
 
   const offers = visible
@@ -185,6 +188,15 @@ export async function ServiceView({
             title={copy.combosTitle || (locale === "en" ? "Photo + film" : "Foto + vídeo")}
             locale={locale}
             items={combos}
+            copy={copy.packages}
+            cta={copy.cta}
+            offer={common.offer}
+            saveTemplate={common.saveSeparately}
+          />
+          <PackageSection
+            title={copy.addonsTitle || (locale === "en" ? "Express delivery" : locale === "es" ? "Entrega exprés" : "Entrega expressa")}
+            locale={locale}
+            items={addons}
             copy={copy.packages}
             cta={copy.cta}
             offer={common.offer}

@@ -273,6 +273,7 @@ export const pt: Copy = {
     packagesTitle: "Sessões",
     filmsTitle: "Vídeo",
     combosTitle: "Foto + vídeo",
+    addonsTitle: "Entrega expressa",
     packages: {
       "portrait-sessions": {
         name: "Sessões de retrato",
@@ -280,16 +281,32 @@ export const pt: Copy = {
           "Pessoas, casais, noivado, famílias, amigos: qualquer grupo",
           "Começa numa hora. A duração, as fotografias editadas, os locais e quantas pessoas dão forma ao preço final",
           "Orientação suave, sem poses rígidas",
-          "Uma galeria privada, pronta a descarregar e partilhar",
+          "Uma galeria privada em {artistWeeks}, pronta a descarregar e partilhar",
         ],
       },
       "couples-film": {
         name: "Filme de casal",
-        items: ["Um filme curto da sessão, cerca de 60–90 segundos", "Um corte vertical para stories", "Com o mesmo cuidado das fotografias"],
+        items: ["Um filme curto da sessão, cerca de 60–90 segundos", "Um corte vertical para stories", "Entrega em {artistFilmWeeks}"],
       },
       "couples-combo": {
         name: "Sessão de retrato + vídeo",
-        items: ["A sessão de retrato e o filme curto", "Uma só pessoa, uma tarde", "Damos forma à sessão conforme quem vem e o que queres"],
+        items: ["A sessão de retrato e o filme curto", "Uma só pessoa, uma tarde", "Fotografias e filme em {artistFilmWeeks}: foto+vídeo segue o prazo do filme"],
+      },
+      "portrait-film-express": {
+        name: "Filme expresso",
+        items: [
+          "Acelera o filme de casal",
+          "Pronto em {expressFilm} em vez de {artistFilmWeeks}",
+          "Um extra pago: acrescenta-o na marcação",
+        ],
+      },
+      "portrait-combo-express": {
+        name: "Foto + vídeo expresso",
+        items: [
+          "Acelera a sessão de retrato e o filme juntos",
+          "Os dois em {expressFilm} em vez de {artistFilmWeeks}",
+          "As fotografias sozinhas podem ir expressas em {expressPhoto}",
+        ],
       },
     },
     travelNote:
@@ -302,7 +319,7 @@ export const pt: Copy = {
       { title: "Diz olá", body: "Envia o formulário ou uma mensagem de WhatsApp com a data que imaginas e aquilo que sonhas." },
       { title: "Planeamos", body: "Sugiro locais, o horário para a melhor luz e o que vestir." },
       { title: "A sessão", body: "Descontraída, divertida, verdadeira. Oriento-te quando precisas e desapareço quando não." },
-      { title: "Revive tudo", body: "Chega a tua galeria privada, pronta a descarregar, partilhar e imprimir." },
+      { title: "Revive tudo", body: "Chega a tua galeria privada em {artistWeeks}, pronta a descarregar, partilhar e imprimir. Os filmes e as coleções foto+vídeo seguem o prazo do filme, {artistFilmWeeks}." },
     ],
     wordsTitle: "Palavras bonitas",
     testimonialIds: ["couple", "soul-brand"],
@@ -315,6 +332,7 @@ export const pt: Copy = {
       { q: "Ajudas num pedido de casamento surpresa?", a: "Sim. Ajudo-te a escolher o sítio e o momento, e escondo-me à vista de todos." },
       { q: "Onde fotografas?", a: "Cada sessão inclui a deslocação do Algarve a Lisboa, pela costa pelo meio. Casamentos, retiros, festivais e trabalhos comerciais podem ir mais longe, com a viagem ao custo real." },
       { q: "Como marco?", a: "Envia o formulário. Um sinal de {deposit} garante a tua data." },
+      { q: "Quando chega a galeria?", a: "As fotografias, em {artistWeeks}. Os filmes e as coleções foto+vídeo, em {artistFilmWeeks}. A entrega expressa é um extra pago: fotografias em {expressPhoto}, filme ou o combo completo em {expressFilm}." },
     ],
     guide: { post: "ericeira", label: "Os sítios mais mágicos para uma sessão de casal na Ericeira e em Sintra" },
   },
@@ -337,6 +355,7 @@ export const pt: Copy = {
     packagesTitle: "Coleções",
     filmsTitle: "Vídeo",
     combosTitle: "Foto + vídeo",
+    addonsTitle: "Entrega expressa",
     packages: {
       elopement: {
         name: "Elopement",
@@ -344,7 +363,7 @@ export const pt: Copy = {
           "3–4 horas: preparativos se os quiserem, cerimónia e retratos",
           "Ajuda na escolha do local e da luz",
           "Cerca de 200 fotografias editadas numa galeria privada",
-          "Antevisão em 48 horas",
+          "Antevisão em 48 horas, galeria completa em {weeks}",
         ],
       },
       wedding: {
@@ -354,24 +373,40 @@ export const pt: Copy = {
           "Até cerca de 30 pessoas",
           "5–6 horas, da cerimónia à noite: fogo, música, dança",
           "Cerca de 350 fotografias editadas",
-          "Antevisão em 48 horas",
+          "Antevisão em 48 horas, galeria completa em {weeks}",
         ],
       },
       "elopement-film": {
         name: "Filme de elopement",
-        items: ["Um filme de 3–5 minutos da cerimónia e dos retratos", "A mesma pessoa, para o dia continuar pequeno"],
+        items: ["Um filme de 3–5 minutos da cerimónia e dos retratos", "A mesma pessoa, para o dia continuar pequeno", "Entrega em {filmWeeks}"],
       },
       "wedding-film": {
         name: "Highlight de casamento íntimo",
-        items: ["Um filme da cerimónia, dos retratos e da noite", "Para partilhar com quem não pôde estar"],
+        items: ["Um filme da cerimónia, dos retratos e da noite", "Para partilhar com quem não pôde estar", "Entrega em {filmWeeks}"],
       },
       "elopement-combo": {
         name: "Elopement foto + vídeo",
-        items: ["Fotografias e filme, em 3–4 horas", "Uma só pessoa para toda a cobertura", "Menos do que reservar foto e vídeo em separado"],
+        items: ["Fotografias e filme, em 3–4 horas", "Uma só pessoa para toda a cobertura", "Os dois em {filmWeeks}: foto+vídeo segue o prazo do filme", "Menos do que reservar foto e vídeo em separado"],
       },
       "wedding-combo": {
         name: "Casamento íntimo foto + vídeo",
-        items: ["Fotografias e highlight, em 5–6 horas", "Até cerca de 30 pessoas", "Menos do que reservar foto e vídeo em separado"],
+        items: ["Fotografias e highlight, em 5–6 horas", "Até cerca de 30 pessoas", "Os dois em {filmWeeks}: foto+vídeo segue o prazo do filme", "Menos do que reservar foto e vídeo em separado"],
+      },
+      "elopement-film-express": {
+        name: "Filme expresso",
+        items: [
+          "Acelera o filme de elopement ou o highlight de casamento íntimo",
+          "Pronto em {expressFilm} em vez de {filmWeeks}",
+          "Um extra pago: acrescenta-o na marcação",
+        ],
+      },
+      "elopement-combo-express": {
+        name: "Foto + vídeo expresso",
+        items: [
+          "Acelera as fotografias e o filme juntos",
+          "Os dois em {expressFilm} em vez de {filmWeeks}",
+          "As fotografias sozinhas podem ir expressas em {expressPhoto}",
+        ],
       },
     },
     travelNote:
@@ -383,9 +418,9 @@ export const pt: Copy = {
     process: [
       { title: "Contem-me a vossa história", body: "Preencham o formulário com a data, o local (ou \"ainda não sabemos\") e quantas pessoas vão ser." },
       { title: "Vamos conversar", body: "Uma videochamada descontraída para sentirmos se há sintonia." },
-      { title: "Reserva", body: "Um sinal de {deposit} garante a vossa data." },
+      { title: "Reserva", body: "Um sinal de {deposit} garante a vossa data. A entrega expressa pode acrescentar-se nessa altura." },
       { title: "Sonhamos juntos", body: "Ajudo com o local, o horário e o ritmo do dia, e recomendo celebrantes, floristas e espaços afins." },
-      { title: "O dia e depois", body: "Estou convosco, como parte do momento. Antevisão em 48 horas e galeria completa em {weeks}." },
+      { title: "O dia e depois", body: "Estou convosco, como parte do momento. Antevisão em 48 horas. As fotografias, em {weeks}; os filmes e as coleções foto+vídeo, em {filmWeeks}." },
     ],
     wordsTitle: "Notas de amor",
     testimonialIds: ["elopement", "wedding"],
@@ -398,6 +433,7 @@ export const pt: Copy = {
       { q: "Fotografas fogo, noite e dança?", a: "A noite, o fogo e a luz de festival são a minha especialidade. A vossa festa está em boas mãos." },
       { q: "Viajas?", a: "Sim. A costa do Algarve a Lisboa está incluída. Para um casamento também viajo pelo resto de Portugal, pela Europa e mais além, incluindo destinos tropicais, com a deslocação ao custo real." },
       { q: "Com quanta antecedência devemos reservar?", a: "Para maio–outubro, o ideal são 6–12 meses; para um elopement às vezes bastam algumas semanas: perguntem." },
+      { q: "Quando chegam as fotografias e o filme?", a: "As fotografias, em {weeks}. Os filmes e as coleções foto+vídeo seguem o prazo do filme, {filmWeeks}. A antevisão sai em 48 horas. A entrega expressa é um extra pago: fotografias em {expressPhoto}, filme ou o combo completo em {expressFilm}." },
     ],
     guide: { post: "boho", label: "Elopement boho em Portugal: locais, épocas e preços reais" },
   },
@@ -487,38 +523,47 @@ export const pt: Copy = {
     ],
     packagesTitle: "Pacotes",
     filmsTitle: "Vídeo",
+    addonsTitle: "Entrega expressa",
     packages: {
       "press-kit": {
         name: "Kit de imprensa DJ / artista",
-        items: ["Sessão de imprensa de 2 horas, de dia ou de noite com fogo", "20–30 fotografias editadas para imprensa, capas e redes"],
+        items: ["Sessão de imprensa de 2 horas, de dia ou de noite com fogo", "20–30 fotografias editadas para imprensa, capas e redes", "Galeria em {artistWeeks}"],
       },
       "live-set": {
         name: "Conteúdo de set ao vivo",
-        items: ["Fotografias da atuação e da sala, por noite", "Clips do set em 48 horas"],
+        items: ["Fotografias da atuação e da sala, por noite", "Clips do set em 48 horas", "Galeria completa em {artistWeeks}"],
       },
       "festival-day": {
         name: "Dia de festival ou evento",
-        items: ["Um dia inteiro de fotografias oficiais", "Seleção no próprio dia para as redes"],
+        items: ["Um dia inteiro de fotografias oficiais", "Seleção no próprio dia para as redes", "Galeria completa em {artistWeeks}"],
       },
       "festival-half": {
         name: "Meio dia de festival",
-        items: ["Meio dia de fotografias oficiais", "Seleção para as redes"],
+        items: ["Meio dia de fotografias oficiais", "Seleção para as redes", "Galeria completa em {artistWeeks}"],
       },
       aftermovie: {
         name: "Aftermovie de festival",
-        items: ["Um filme curto do dia, por cada dia do evento", "Para publicar quando o encontro termina"],
+        items: ["Um filme curto do dia, por cada dia do evento", "Para publicar quando o encontro termina", "Entrega em {artistFilmWeeks}"],
       },
       "music-video": {
         name: "Videoclipe",
-        items: ["Conceito, filmagem e edição de um videoclipe orgânico, de atuação ou na natureza", "O orçamento final depende da ideia"],
+        items: ["Conceito, filmagem e edição de um videoclipe orgânico, de atuação ou na natureza", "O orçamento final depende da ideia", "Entrega em {artistFilmWeeks}"],
       },
       "reels-pack": {
         name: "Pack de reels",
-        items: ["Vários vídeos verticais curtos para Instagram e TikTok", "Montados a partir de uma sessão ou de um evento"],
+        items: ["Vários vídeos verticais curtos para Instagram e TikTok", "Montados a partir de uma sessão ou de um evento", "Entrega em {artistFilmWeeks}"],
       },
       "single-reel": {
         name: "Um reel",
-        items: ["Um vídeo vertical, pronto a publicar"],
+        items: ["Um vídeo vertical, pronto a publicar", "Entrega em {artistFilmWeeks}"],
+      },
+      "artist-film-express": {
+        name: "Filme expresso",
+        items: [
+          "Acelera um aftermovie, um videoclipe ou os reels",
+          "Pronto em {expressFilm} em vez de {artistFilmWeeks}",
+          "Um extra pago: acrescenta-o na marcação",
+        ],
       },
     },
     travelNote:
@@ -530,7 +575,7 @@ export const pt: Copy = {
       { title: "Conta-me a visão", body: "Artista, evento, data e para que precisas." },
       { title: "Planeamos", body: "Ambiente, locais e iluminação. O fogo exige uma montagem segura e uma pessoa de apoio." },
       { title: "Filmamos", body: "Movo-me com a música e com o fogo." },
-      { title: "Entrega", body: "Seleção rápida para as redes e, depois, a galeria completa e as montagens. Clips do set em 48 horas; galerias completas em {artistWeeks}." },
+      { title: "Entrega", body: "Seleção rápida para as redes e, depois, a galeria completa e as montagens. Clips do set em 48 horas; fotografias em {artistWeeks}; filmes em {artistFilmWeeks}." },
     ],
     wordsTitle: "Palavras bonitas",
     testimonialIds: ["artist"],
@@ -540,7 +585,7 @@ export const pt: Copy = {
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas; as galerias completas, em {artistWeeks}." },
+      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas; as fotografias, em {artistWeeks}; os filmes, em {artistFilmWeeks}. A entrega expressa é um extra pago: fotografias em {expressPhoto}, filme em {expressFilm}." },
     ],
   },
   places: {
@@ -646,7 +691,7 @@ export const pt: Copy = {
     next: [
       "Respondo em 48 horas com a minha disponibilidade e algumas perguntas.",
       "Fazemos uma chamada curta (vídeo ou WhatsApp) para sentir se há sintonia.",
-      "Recebes uma proposta à medida. Um sinal garante a tua data.",
+      "Recebes uma proposta à medida. Um sinal de {deposit} garante a tua data. A entrega expressa é um extra pago se precisares da galeria mais cedo.",
     ],
     confirm:
       "Obrigada, alma bonita: a tua mensagem chegou. Respondo-te em 48 horas. Entretanto, passa pelo Instagram @oracle.of.freedom para dizer olá.",

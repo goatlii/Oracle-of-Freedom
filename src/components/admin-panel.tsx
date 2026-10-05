@@ -15,7 +15,13 @@ const groups = [
   { id: "places", label: "Hotels & stays" },
 ] as const;
 
-const kindOrder = { photo: 0, video: 1, combo: 2 };
+const kindOrder = { photo: 0, video: 1, combo: 2, addon: 3 };
+
+function kindLabel(kind: CatalogItem["kind"]) {
+  if (kind === "combo") return "Photo + film";
+  if (kind === "addon") return "Add-on";
+  return kind;
+}
 
 const storageNote: Record<StorageMode, string> = {
   blob: "Saves go live on the website within a few seconds. The same price is used in English, Spanish and Portuguese.",
@@ -134,7 +140,7 @@ export function AdminPanel({
                       <div>
                         <Label htmlFor={`from-${item.id}`}>{item.label}</Label>
                         <p className="text-xs tracking-[0.12em] text-ink/45 uppercase">
-                          {item.kind === "combo" ? "Photo + film" : item.kind}
+                          {kindLabel(item.kind)}
                         </p>
                       </div>
                       {item.custom ? (
