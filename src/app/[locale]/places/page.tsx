@@ -28,7 +28,7 @@ export default async function PlacesPage({ params }: { params: Promise<{ locale:
       page="places"
       group="places"
       tone="moss"
-      heroPosition="center 18%"
+      heroPosition="center 12%"
       common={copy.common}
       a11y={copy.a11y}
       whatsappText={copy.whatsapp.places}
