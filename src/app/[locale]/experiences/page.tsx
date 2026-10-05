@@ -50,7 +50,7 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
         <h1 className="mt-3 max-w-4xl font-serif text-5xl leading-[1.05] md:text-7xl">{copy.experiences.title}</h1>
         <p className="mt-5 max-w-2xl text-lg text-ink/80">{copy.experiences.dek}</p>
       </header>
-      <section className="mx-auto grid max-w-6xl gap-4 px-4 md:grid-cols-2 md:px-6">
+      <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-6 md:grid-cols-2 md:px-6">
         {doors.map((door) => (
           <Link key={door.href} href={door.href} className="rounded-3xl bg-night p-8 text-sand transition-colors hover:bg-ink">
             <h2 className="font-serif text-4xl">{door.title}</h2>
