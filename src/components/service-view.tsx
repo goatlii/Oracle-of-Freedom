@@ -6,7 +6,7 @@ import { GalleryGrid } from "@/components/gallery";
 import { FromPrice, PackageCards } from "@/components/packages";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { Testimonials } from "@/components/testimonials";
-import { TokenText } from "@/components/token-text";
+import { TokenText, replaceTokens } from "@/components/token-text";
 import { VideoGrid } from "@/components/video-grid";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
@@ -88,7 +88,7 @@ export async function ServiceView({
           mainEntity: copy.faq.map((item) => ({
             "@type": "Question",
             name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: item.a },
+            acceptedAnswer: { "@type": "Answer", text: replaceTokens(item.a) },
           })),
         }}
       />

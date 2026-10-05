@@ -16,6 +16,10 @@ const TOKENS: Record<string, string> = {
 const TOKEN_SPLIT =
   /(\{(?:baseArea|deposit|artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm|languages)\})/g;
 
+export function replaceTokens(text: string) {
+  return text.replace(TOKEN_SPLIT, (match) => TOKENS[match] ?? match);
+}
+
 export function TokenText({ text, className }: { text: string; className?: string }) {
   const parts = text.split(TOKEN_SPLIT);
   return (
