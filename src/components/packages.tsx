@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import type { PackageCopy } from "@/content/types";
+import { TokenText } from "@/components/token-text";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { Button } from "@/components/ui/button";
 import { formatEuro, formatFrom } from "@/lib/content";
@@ -14,7 +15,7 @@ export function FromPrice({
   mutedClassName,
 }: {
   locale: string;
-  item: Pick<PricedPackage, "custom" | "listFrom" | "promoFrom" | "unit" | "promoName">;
+  item: Pick<PricedPackage, "custom" | "listFrom" | "promoFrom" | "unit" | "promoName" | "kind">;
   offer?: string;
   className?: string;
   mutedClassName?: string;
@@ -27,14 +28,15 @@ export function FromPrice({
     );
   }
   const onOffer = item.promoFrom != null && item.promoFrom < item.listFrom;
+  const addon = item.kind === "addon";
   if (!onOffer) {
-    return <p className={className}>{formatFrom(locale, item.listFrom, item.unit)}</p>;
+    return <p className={className}>{formatFrom(locale, item.listFrom, item.unit, addon)}</p>;
   }
   return (
     <p className={className}>
-      <span className={cn("line-through", mutedClassName)}>{formatFrom(locale, item.listFrom, item.unit)}</span>
+      <span className={cn("line-through", mutedClassName)}>{formatFrom(locale, item.listFrom, item.unit, addon)}</span>
       <span className="mt-1 block">
-        {formatFrom(locale, item.promoFrom, item.unit)}
+        {formatFrom(locale, item.promoFrom, item.unit, addon)}
         {offer ? <span className="ml-2 text-xs font-semibold tracking-[0.14em] uppercase">{offer}</span> : null}
       </span>
     </p>
@@ -92,7 +94,9 @@ export function PackageCards({
             ) : null}
             <ul className="mt-4 flex-1 space-y-2 text-sm text-ink/80">
               {text.items.map((line) => (
-                <li key={line}>{line}</li>
+                <li key={line}>
+                  <TokenText text={line} />
+                </li>
               ))}
             </ul>
             {item.personalize && personalizeCta ? (

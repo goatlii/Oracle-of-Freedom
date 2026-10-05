@@ -9,7 +9,7 @@ const localized = fields.object({
 const packageItem = fields.object({
   id: fields.text({ label: "ID" }),
   group: fields.text({ label: "Page group", description: "portraits, elopements, retreats, festivals or places" }),
-  kind: fields.text({ label: "Kind", description: "photo, video or combo" }),
+  kind: fields.text({ label: "Kind", description: "photo, video, combo or addon" }),
   label: fields.text({ label: "Name in the price editor" }),
   from: fields.integer({ label: "From (EUR)", validation: { isRequired: false } }),
   unit: fields.text({ label: "Unit", description: "day, night, month, or leave empty" }),
@@ -60,8 +60,30 @@ export default config({
           label: "Languages spoken",
           description: "English phrase on the About page. Spanish and Portuguese name the same languages in the copy files. This is not the site language switcher.",
         }),
-        elopementGalleryWeeks: fields.text({ label: "Elopement gallery timing" }),
-        artistGalleryWeeks: fields.text({ label: "Artist gallery timing" }),
+        elopementGalleryWeeks: fields.text({
+          label: "Elopement / wedding photo timing",
+          description: "Photographs for elopements and small weddings. Used as {weeks}.",
+        }),
+        artistGalleryWeeks: fields.text({
+          label: "Portrait / artist photo timing",
+          description: "Photographs for portraits and artists. Used as {artistWeeks}.",
+        }),
+        elopementFilmWeeks: fields.text({
+          label: "Elopement / wedding film timing",
+          description: "Film and photo+film collections for elopements and small weddings. Used as {filmWeeks}.",
+        }),
+        artistFilmWeeks: fields.text({
+          label: "Portrait / artist film timing",
+          description: "Film and photo+film collections for portraits and artists. Used as {artistFilmWeeks}.",
+        }),
+        expressPhotoDays: fields.text({
+          label: "Express photo timing",
+          description: "Paid rush window for photographs. Used as {expressPhoto}.",
+        }),
+        expressFilmDays: fields.text({
+          label: "Express film / combo timing",
+          description: "Paid rush window for film and photo+film. Used as {expressFilm}.",
+        }),
         pricesAreProposals: fields.checkbox({ label: "Prices still need confirmation" }),
         heroImageId: fields.text({ label: "Desktop hero image id" }),
         mobileHeroImageId: fields.text({ label: "Mobile hero image id" }),

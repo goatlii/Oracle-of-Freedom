@@ -3,7 +3,7 @@ import packagesJson from "../../content/packages.json";
 export type CatalogItem = {
   id: string;
   group: string;
-  kind: "photo" | "video" | "combo";
+  kind: "photo" | "video" | "combo" | "addon";
   label: string;
   from?: number;
   unit?: "day" | "night" | "month";

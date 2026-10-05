@@ -6,11 +6,22 @@ const TOKENS: Record<string, string> = {
   "{deposit}": settings.depositPercent,
   "{weeks}": settings.elopementGalleryWeeks,
   "{artistWeeks}": settings.artistGalleryWeeks,
+  "{filmWeeks}": settings.elopementFilmWeeks,
+  "{artistFilmWeeks}": settings.artistFilmWeeks,
+  "{expressPhoto}": settings.expressPhotoDays,
+  "{expressFilm}": settings.expressFilmDays,
   "{languages}": settings.languagesSpoken,
 };
 
+const TOKEN_SPLIT =
+  /(\{(?:baseArea|deposit|artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm|languages)\})/g;
+
+export function replaceTokens(text: string) {
+  return text.replace(TOKEN_SPLIT, (match) => TOKENS[match] ?? match);
+}
+
 export function TokenText({ text, className }: { text: string; className?: string }) {
-  const parts = text.split(/(\{(?:baseArea|deposit|weeks|artistWeeks|languages)\})/g);
+  const parts = text.split(TOKEN_SPLIT);
   return (
     <span className={className}>
       {parts.map((part, index) => {
