@@ -28,6 +28,8 @@ export default async function RetreatsPage({ params }: { params: Promise<{ local
       page="retreats"
       group="retreats"
       tone="warm"
+      heroId="gathering-05"
+      heroPosition="center 40%"
       common={copy.common}
       a11y={copy.a11y}
       whatsappText={copy.whatsapp.retreats}

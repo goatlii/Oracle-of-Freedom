@@ -28,6 +28,8 @@ export default async function ElopementsPage({ params }: { params: Promise<{ loc
       page="elopements"
       group="elopements"
       tone="warm"
+      heroId="elopement-01"
+      heroPosition="center 28%"
       common={copy.common}
       a11y={copy.a11y}
       whatsappText={copy.whatsapp.elopements}

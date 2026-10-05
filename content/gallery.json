@@ -853,6 +853,137 @@
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
+      "id": "portrait-06",
+      "src": "/images/portfolio/portrait-06.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAAnZ4P/8QAHRAAAgEEAwAAAAAAAAAAAAAAAQIDAAQSMREhkf/aAAgBAQABPwCe4k5hRQuBBG6uGxjQjaDryv/EABcRAAMBAAAAAAAAAAAAAAAAAAABAiH/2gAIAQIBAT8AjUf/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADEmH/2gAIAQMBAT8AsXOeqDP/2Q==",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 74,
+      "alt": {
+        "en": "A woman with wet dark hair and closed eyes stands in clear shallow water, wearing a terracotta top, a botanical tattoo along her arm, pine needles in the foreground.",
+        "es": "Una mujer con el pelo oscuro mojado y los ojos cerrados, de pie en agua clara y poco profunda, con un top terracota, un tatuaje bot\u00e1nico en el brazo y agujas de pino en primer plano.",
+        "pt": "Uma mulher com o cabelo escuro molhado e os olhos fechados, de p\u00e9 em \u00e1gua clara e pouco profunda, com um top terracota, uma tatuagem bot\u00e2nica no bra\u00e7o e agulhas de pinheiro em primeiro plano."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "portrait-07",
+      "src": "/images/portfolio/portrait-07.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAjhP/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADBAUR/9oACAEBAAE/AMjYWqGQKOET/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAwEBPwB//9k=",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 75,
+      "alt": {
+        "en": "A woman lies in dark shallow water holding white calla lilies, wearing a black lace top, her wet hair spread around her.",
+        "es": "Una mujer tumbada en agua oscura y poco profunda sostiene calas blancas, con un top de encaje negro y el pelo mojado extendido a su alrededor.",
+        "pt": "Uma mulher deitada em \u00e1gua escura e pouco profunda segura copos-de-leite brancos, com um top de renda preto e o cabelo molhado espalhado \u00e0 volta."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "portrait-08",
+      "src": "/images/portfolio/portrait-08.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAMpU3//EAB0QAAIBBAMAAAAAAAAAAAAAAAECAwAEERIygaH/2gAIAQEAAT8AcI8Ak1xtnypwq22AOLADsV//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAVEQEBAAAAAAAAAAAAAAAAAAARAP/aAAgBAwEBPwBb/9k=",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 76,
+      "alt": {
+        "en": "A blonde woman in an olive bodysuit stands in profile in a mossy forest, a tattoo sleeve visible along her arm.",
+        "es": "Una mujer rubia con un body verde oliva de perfil en un bosque cubierto de musgo, con una manga de tatuajes en el brazo.",
+        "pt": "Uma mulher loura com um body verde-azeitona de perfil numa floresta coberta de musgo, com uma manga de tatuagens no bra\u00e7o."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "portrait-09",
+      "src": "/images/portfolio/portrait-09.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAM5Ok//EAB0QAAICAQUAAAAAAAAAAAAAAAIRAAEhAwQVgqH/2gAIAQEAAT8ALRAts7ViQtrNUslDu+N7L2f/xAAXEQADAQAAAAAAAAAAAAAAAAAAASEx/9oACAECAQE/AFkP/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAIAQMBAT8AW//Z",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 77,
+      "alt": {
+        "en": "A blonde woman in an olive bodysuit lies on bright green moss and looks toward the camera, tattoos running along her arms.",
+        "es": "Una mujer rubia con un body verde oliva tumbada sobre musgo verde intenso, mirando hacia la c\u00e1mara, con tatuajes a lo largo de los brazos.",
+        "pt": "Uma mulher loura com um body verde-azeitona deitada sobre musgo verde vivo, a olhar para a c\u00e2mara, com tatuagens ao longo dos bra\u00e7os."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "elopement-01",
+      "src": "/images/portfolio/elopement-01.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAKzPof/EABsQAQACAgMAAAAAAAAAAAAAAAIBAwASBAVC/9oACAEBAAE/AB3CV8HSCYsR19LLKTVzaqQlBUzn/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPwBXT//EABgRAAIDAAAAAAAAAAAAAAAAAAARAQJx/9oACAEDAQE/ALKFh//Z",
+      "category": "elopements",
+      "categories": [
+        "elopements",
+        "portraits"
+      ],
+      "pages": [
+        "elopements",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 78,
+      "alt": {
+        "en": "A couple stands waist-deep in golden-hour waves, eyes closed and foreheads nearly touching: she faces forward in long dark braids with gold cuffs and a leopard bikini, he is bald and bearded in matching trunks.",
+        "es": "Una pareja metida hasta la cintura en las olas a la hora dorada, ojos cerrados y frentes a punto de tocarse: ella de frente, con trenzas oscuras largas, pu\u00f1os de oro y bikini de leopardo; \u00e9l calvo y con barba, en ba\u00f1ador de leopardo a juego.",
+        "pt": "Um casal metido at\u00e9 \u00e0 cintura nas ondas \u00e0 hora dourada, de olhos fechados e testas quase a tocar-se: ela de frente, com tran\u00e7as escuras longas, punhos de ouro e biqu\u00edni de leopardo; ele careca e de barba, com cal\u00e7\u00f5es de leopardo a condizer."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
       "id": "film-01",
       "src": "/images/portfolio/film-01.jpg",
       "width": 697,
@@ -975,6 +1106,455 @@
         "pt": "Encontro na natureza, fotografado por Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "experience-01",
+      "src": "/images/portfolio/experience-01.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/9oADAMBAAIQAxAAAACKDT//xAAcEAABAwUAAAAAAAAAAAAAAAAhAAECAxESImH/2gAIAQEAAT8AgGrYjQcuv//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABYRAAMAAAAAAAAAAAAAAAAAAAABQf/aAAgBAwEBPwBw/9k=",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 101,
+      "alt": {
+        "en": "A woman with blonde and black micro-braids holds a neon-red fan that reads \u201cDADDY,\u201d wearing an olive bikini and a patterned wrap among tropical festival foliage.",
+        "es": "Una mujer con microtrenzas rubias y negras sostiene un abanico rojo ne\u00f3n que dice \u201cDADDY\u201d, con bikini verde oliva y un pareo estampado entre follaje tropical de festival.",
+        "pt": "Uma mulher com microtran\u00e7as loiras e pretas segura um leque vermelho n\u00e9on onde se l\u00ea \u201cDADDY\u201d, com biqu\u00edni verde-azeitona e um pareo estampado entre folhagem tropical de festival."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-02",
+      "src": "/images/portfolio/experience-02.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/aAAwDAQACEAMQAAAAjQgp/8QAHRAAAQQCAwAAAAAAAAAAAAAAAQACAxEEMRIiMv/aAAgBAQABPwCLKDIGgEm4rva8dW65uX//xAAYEQADAQEAAAAAAAAAAAAAAAABAhEAIf/aAAgBAgEBPwAhb1bv/8QAGREAAQUAAAAAAAAAAAAAAAAAAAERITGR/9oACAEDAQE/AEimw//Z",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 102,
+      "alt": {
+        "en": "A shirtless man in sunglasses dances in a brown fabric wrap pulled over his head, golden light on a festival crowd behind him.",
+        "es": "Un hombre sin camisa y con gafas de sol baila con una tela marr\u00f3n a modo de capucha, con luz dorada y p\u00fablico de festival detr\u00e1s.",
+        "pt": "Um homem sem camisa e de \u00f3culos de sol dan\u00e7a com um pano castanho sobre a cabe\u00e7a, com luz dourada e multid\u00e3o de festival atr\u00e1s."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-03",
+      "src": "/images/portfolio/experience-03.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/9oADAMBAAIQAxAAAAAoav/EABkQAAMBAQEAAAAAAAAAAAAAAAECAxEAEv/aAAgBAQABPwBKicjMSCtoDFm3lmlUCsBnojO//8QAGREAAgMBAAAAAAAAAAAAAAAAAQIAAyGR/9oACAECAQE/AGSsnRyf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAgARMf/aAAgBAwEBPwAmsn//2Q==",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 103,
+      "alt": {
+        "en": "A blonde woman with green highlights, yellow sunglasses, and a sequined red bikini holds a holographic umbrella at a tropical festival.",
+        "es": "Una mujer rubia con mechas verdes, gafas amarillas y bikini rojo de lentejuelas sostiene un paraguas hologr\u00e1fico en un festival tropical.",
+        "pt": "Uma mulher loura com madeixas verdes, \u00f3culos amarelos e biqu\u00edni vermelho de lantejoulas segura um chap\u00e9u-de-chuva hologr\u00e1fico num festival tropical."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-04",
+      "src": "/images/portfolio/experience-04.jpg",
+      "width": 2400,
+      "height": 3546,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/aAAwDAQACEAMQAAAApiDI/8QAHRAAAgIBBQAAAAAAAAAAAAAAAREAAgQDBRMhQv/aAAgBAQABPwDbcw42lXnuwAEhB4fbsAzP/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQACMf/aAAgBAgEBPwBoLs//xAAVEQEBAAAAAAAAAAAAAAAAAAAhAP/aAAgBAwEBPwBL/9k=",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 104,
+      "alt": {
+        "en": "A blonde woman dances under fabric canopies with a patterned fan and a pink drink can, in a gold-embroidered bikini and wrap skirt.",
+        "es": "Una mujer rubia baila bajo toldos de tela con un abanico estampado y una lata rosa, bikini bordado en oro y falda pareo.",
+        "pt": "Uma mulher loura dan\u00e7a sob toldos de tecido com um leque estampado e uma lata rosa, biqu\u00edni bordado a ouro e saia pareo."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-05",
+      "src": "/images/portfolio/experience-05.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAACYD//EABsQAAIBBQAAAAAAAAAAAAAAAAIDAAQFESJC/9oACAEBAAE/AHXapaKz1DB8z//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8AW0//2Q==",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 105,
+      "alt": {
+        "en": "A man with a teal towel over his shoulders smiles at the camera on a beach at sunset, a crowd behind him.",
+        "es": "Un hombre con una toalla verde azulado sobre los hombros sonr\u00ede a la c\u00e1mara en la playa al atardecer, con gente detr\u00e1s.",
+        "pt": "Um homem com uma toalha verde-azulada sobre os ombros sorri para a c\u00e2mara na praia ao p\u00f4r do sol, com gente atr\u00e1s."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-06",
+      "src": "/images/portfolio/experience-06.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAAgCP/xAAaEAACAgMAAAAAAAAAAAAAAAACEQABAxJR/9oACAEBAAE/ADzXqbb65//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPwA0L//Z",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 106,
+      "alt": {
+        "en": "A man in a grey felt hat and orange aviator sunglasses stands in teal water holding a pink fan, with a playful smirk.",
+        "es": "Un hombre con sombrero de fieltro gris y gafas aviador naranjas, en agua verde azulada, sostiene un abanico rosa con una sonrisa p\u00edcara.",
+        "pt": "Um homem de chap\u00e9u de feltro cinzento e \u00f3culos aviador cor de laranja, em \u00e1gua verde-azulada, segura um leque rosa com um sorriso maroto."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-07",
+      "src": "/images/portfolio/experience-07.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAME/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAKMIaP/EAB8QAAIBAgcAAAAAAAAAAAAAAAECAwAxBBESEzIzcf/aAAgBAQABPwCDYMqtDYc8jY1h5GiSMIB26PQ1f//EABgRAAIDAAAAAAAAAAAAAAAAAAABAhEh/9oACAECAQE/AGo3qP/EABgRAAIDAAAAAAAAAAAAAAAAAAABERIi/9oACAEDAQE/AFaMs//Z",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 107,
+      "alt": {
+        "en": "A close view of two clasped hands with festival wristbands and glitter nails, a handpan soft in the background.",
+        "es": "Un primer plano de dos manos entrelazadas con pulseras de festival y u\u00f1as con purpurina, un handpan desenfocado detr\u00e1s.",
+        "pt": "Um plano pr\u00f3ximo de duas m\u00e3os dadas com pulseiras de festival e unhas com purpurina, um handpan desfocado atr\u00e1s."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-08",
+      "src": "/images/portfolio/experience-08.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAAziBX/8QAGxABAQACAwEAAAAAAAAAAAAAAQIAAwQRQWH/2gAIAQEAAT8A0ceaiFoFUe/nuabZ00+iuf/EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQIBAT8Adun/xAAYEQACAwAAAAAAAAAAAAAAAAAAAREhIv/aAAgBAwEBPwDMKj//2Q==",
+      "category": "fire",
+      "categories": [
+        "fire",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 108,
+      "alt": {
+        "en": "A man in a skull headdress and red bandana holds a staff during a firelit night performance.",
+        "es": "Un hombre con tocado de calavera y pa\u00f1uelo rojo sostiene un bast\u00f3n en una performance nocturna a la luz del fuego.",
+        "pt": "Um homem com um adere\u00e7o de caveira e len\u00e7o vermelho segura um cajado numa performance noturna \u00e0 luz do fogo."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-09",
+      "src": "/images/portfolio/experience-09.jpg",
+      "width": 2400,
+      "height": 3598,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAIWak//EABsQAQABBQEAAAAAAAAAAAAAAAECAAMREiKx/9oACAEBAAE/AOG2XCZIIkdvMlQV2MpzX//EABcRAAMBAAAAAAAAAAAAAAAAAAABEmH/2gAIAQIBAT8AjWf/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQJh/9oACAEDAQE/AHeH/9k=",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "experiences",
+        "retreats",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 109,
+      "alt": {
+        "en": "Two tattooed arms reach into clear shallow water over river rocks, gold bracelets catching the light.",
+        "es": "Dos brazos tatuados se meten en agua clara y poco profunda sobre piedras de r\u00edo, con pulseras de oro.",
+        "pt": "Dois bra\u00e7os tatuados entram em \u00e1gua clara e pouco profunda sobre pedras de rio, com pulseiras de ouro."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-10",
+      "src": "/images/portfolio/experience-10.jpg",
+      "width": 2400,
+      "height": 3598,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAMlNN//EABsQAAMAAgMAAAAAAAAAAAAAAAECAwARQVFh/9oACAEBAAE/AJK6yq2tjg9HJsTG/gGf/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQACESH/2gAIAQIBAT8AKDvCf//EABgRAAMBAQAAAAAAAAAAAAAAAAECMQAS/9oACAEDAQE/AGYDmzf/2Q==",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "experiences",
+        "retreats",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 110,
+      "alt": {
+        "en": "A woman in profile, eyes closed, holds a red torch ginger flower near her throat, river rocks behind her in golden hour light.",
+        "es": "Una mujer de perfil, ojos cerrados, sostiene una flor de jengibre roja junto a la garganta, con piedras de r\u00edo detr\u00e1s a la hora dorada.",
+        "pt": "Uma mulher de perfil, de olhos fechados, segura uma flor de gengibre vermelha junto \u00e0 garganta, com pedras de rio atr\u00e1s \u00e0 hora dourada."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-11",
+      "src": "/images/portfolio/experience-11.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAAnhb/xAAbEAEAAQUBAAAAAAAAAAAAAAABAwACBBESE//aAAgBAQABPwC/In8tMi8rX//EABcRAQADAAAAAAAAAAAAAAAAAAEAAiH/2gAIAQIBAT8AAKmT/8QAGhEAAQUBAAAAAAAAAAAAAAAAAQACERIiMf/aAAgBAwEBPwC7pOj1f//Z",
+      "category": "djs",
+      "categories": [
+        "djs",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 111,
+      "alt": {
+        "en": "A DJ seen from behind, arms outstretched under a tent at night, a Denon deck in front and the crowd beyond.",
+        "es": "Un DJ de espaldas, brazos abiertos bajo una carpa de noche, con una mesa Denon delante y el p\u00fablico m\u00e1s all\u00e1.",
+        "pt": "Um DJ visto de costas, bra\u00e7os abertos sob uma tenda \u00e0 noite, com uma mesa Denon \u00e0 frente e o p\u00fablico al\u00e9m."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-12",
+      "src": "/images/portfolio/experience-12.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAJTPpn//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADBBESMf/aAAgBAQABPwDPpx0Gqm6Y6JaM7H0z/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAgBAgEBPwCYxH//xAAYEQACAwAAAAAAAAAAAAAAAAABAgARMf/aAAgBAwEBPwBiWN5P/9k=",
+      "category": "djs",
+      "categories": [
+        "djs",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 112,
+      "alt": {
+        "en": "A woman DJ with wavy hair and headphones stands behind a Pioneer deck, warm orange and red stage lights, a lace tank, tattoos along her arm.",
+        "es": "Una DJ con el pelo ondulado y auriculares detr\u00e1s de una mesa Pioneer, luces de escenario naranja y rojo, top de encaje y tatuajes en el brazo.",
+        "pt": "Uma DJ com cabelo ondulado e auscultadores atr\u00e1s de uma mesa Pioneer, luzes de palco laranja e vermelho, top de renda e tatuagens no bra\u00e7o."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-13",
+      "src": "/images/portfolio/experience-13.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAACAnkP/xAAcEAEAAgMAAwAAAAAAAAAAAAABAgMABBIRQVH/2gAIAQEAAT8Amza69pK3lAjz6j9Mdq6UOFOQI+M//8QAFxEBAAMAAAAAAAAAAAAAAAAAAQARQf/aAAgBAgEBPwC02f/EABgRAAIDAAAAAAAAAAAAAAAAAAABAhJC/9oACAEDAQE/AKQeT//Z",
+      "category": "djs",
+      "categories": [
+        "djs",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 113,
+      "alt": {
+        "en": "A blonde DJ in a white jacket that reads \u201cHAPPINESS / GOOD MOOD,\u201d wearing headphones at a Pioneer controller under cyan and amber stage lights.",
+        "es": "Una DJ rubia con una chaqueta blanca que dice \u201cHAPPINESS / GOOD MOOD\u201d y auriculares, en un controlador Pioneer bajo luces cian y \u00e1mbar.",
+        "pt": "Uma DJ loura com um casaco branco onde se l\u00ea \u201cHAPPINESS / GOOD MOOD\u201d e auscultadores, num controlador Pioneer sob luzes ciano e \u00e2mbar."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-14",
+      "src": "/images/portfolio/experience-14.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAAyyYX/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAEkEDIf/aAAgBAQABPwDmECBWrZ4unR6DP//EABcRAAMBAAAAAAAAAAAAAAAAAAACESH/2gAIAQIBAT8AZWyQ/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEDMVH/2gAIAQMBAT8AUmqj/9k=",
+      "category": "djs",
+      "categories": [
+        "djs",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 114,
+      "alt": {
+        "en": "A blonde DJ with bangs and black glasses, in a knotted tee that reads \u201cIMMORTAL,\u201d hands in her hair, red and orange light behind a Pioneer deck.",
+        "es": "Una DJ rubia con flequillo y gafas negras, camiseta anudada que dice \u201cIMMORTAL\u201d, las manos en el pelo, luz roja y naranja detr\u00e1s de una mesa Pioneer.",
+        "pt": "Uma DJ loura com franja e \u00f3culos pretos, t-shirt atada onde se l\u00ea \u201cIMMORTAL\u201d, m\u00e3os no cabelo, luz vermelha e laranja atr\u00e1s de uma mesa Pioneer."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "experience-15",
+      "src": "/images/portfolio/experience-15.jpg",
+      "width": 2400,
+      "height": 1350,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAEAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAACVCf/EABkQAQACAwAAAAAAAAAAAAAAAAEAAgMSQf/aAAgBAQABPwANcFk7P//EABYRAAMAAAAAAAAAAAAAAAAAAAACQf/aAAgBAgEBPwBof//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z",
+      "category": "djs",
+      "categories": [
+        "djs",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 115,
+      "alt": {
+        "en": "A platinum-blonde DJ with glasses at the CDJs and mixer, a woman in a \u201cGOD\u2019S FAVORITE\u201d tee beside her and a dancer behind, in blue, purple, and orange club light.",
+        "es": "Una DJ rubio platino con gafas en los CDJ y la mesa, a su lado una mujer con una camiseta que dice \u201cGOD\u2019S FAVORITE\u201d y una bailarina detr\u00e1s, con luces azules, moradas y naranjas.",
+        "pt": "Uma DJ loira platinada de \u00f3culos nos CDJs e na mesa, ao lado uma mulher com uma t-shirt onde se l\u00ea \u201cGOD\u2019S FAVORITE\u201d e uma bailarina atr\u00e1s, com luzes azuis, roxas e laranja."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "gathering-05",
+      "src": "/images/portfolio/gathering-05.jpg",
+      "width": 2400,
+      "height": 3598,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAJWQmv/EABsQAAIDAAMAAAAAAAAAAAAAAAIDAAERMUFR/9oACAEBAAE/ABBSk3YNAh32tqKEeM6n/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQASMf/aAAgBAgEBPwCo7P/EABgRAAIDAAAAAAAAAAAAAAAAAAABAhEx/9oACAEDAQE/AHOsP//Z",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "experiences",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 116,
+      "alt": {
+        "en": "Cupped tattooed hands reach into a clear rocky stream, gold bangles and a wide turquoise cuff catching the light.",
+        "es": "Unas manos tatuadas en cuenco se meten en un arroyo claro entre piedras, con pulseras de oro y un brazalete ancho de turquesa.",
+        "pt": "M\u00e3os tatuadas em concha entram num ribeiro claro entre pedras, com pulseiras de ouro e uma pulseira larga de turquesa."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "fire-05",
+      "src": "/images/portfolio/fire-05.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAnQv/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADBCFS/9oACAEBAAE/AL9YyMOioE//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJBcf/aAAgBAgEBPwCN6z//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJCcv/aAAgBAwEBPwCdco//2Q==",
+      "category": "fire",
+      "categories": [
+        "fire",
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "experiences",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 117,
+      "alt": {
+        "en": "A woman in a gold chain-mail veil and crescent headdress dances in firelit smoke, tribal-fusion jewelry and tattoos along her arm.",
+        "es": "Una mujer con velo de malla dorada y tocado de luna creciente baila entre humo iluminado por el fuego, con joyer\u00eda tribal-fusi\u00f3n y tatuajes en el brazo.",
+        "pt": "Uma mulher com v\u00e9u de malha dourada e adere\u00e7o de lua crescente dan\u00e7a em fumo iluminado pelo fogo, com joalharia tribal-fusion e tatuagens no bra\u00e7o."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
