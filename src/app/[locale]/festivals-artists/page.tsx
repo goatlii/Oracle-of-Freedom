@@ -28,6 +28,8 @@ export default async function FestivalsPage({ params }: { params: Promise<{ loca
       page="festivals"
       group="festivals"
       tone="night"
+      heroId="fire-05"
+      heroPosition="center 40%"
       common={copy.common}
       a11y={copy.a11y}
       whatsappText={copy.whatsapp.festivals}

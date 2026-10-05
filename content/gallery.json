@@ -1528,6 +1528,33 @@
         "pt": "M\u00e3os tatuadas em concha entram num ribeiro claro entre pedras, com pulseiras de ouro e uma pulseira larga de turquesa."
       },
       "source": "Agota Urbikaite"
+    },
+    {
+      "id": "fire-05",
+      "src": "/images/portfolio/fire-05.jpg",
+      "width": 2400,
+      "height": 1600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAnQv/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADBCFS/9oACAEBAAE/AL9YyMOioE//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJBcf/aAAgBAgEBPwCN6z//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJCcv/aAAgBAwEBPwCdco//2Q==",
+      "category": "fire",
+      "categories": [
+        "fire",
+        "festivals"
+      ],
+      "pages": [
+        "festivals",
+        "experiences",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 117,
+      "alt": {
+        "en": "A woman in a gold chain-mail veil and crescent headdress dances in firelit smoke, tribal-fusion jewelry and tattoos along her arm.",
+        "es": "Una mujer con velo de malla dorada y tocado de luna creciente baila entre humo iluminado por el fuego, con joyer\u00eda tribal-fusi\u00f3n y tatuajes en el brazo.",
+        "pt": "Uma mulher com v\u00e9u de malha dourada e adere\u00e7o de lua crescente dan\u00e7a em fumo iluminado pelo fogo, com joalharia tribal-fusion e tatuagens no bra\u00e7o."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
