@@ -339,7 +339,6 @@
       ],
       "pages": [
         "retreats",
-        "experiences",
         "portfolio",
         "home"
       ],
@@ -435,6 +434,34 @@
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
+      "id": "fire-04",
+      "src": "/images/portfolio/fire-04.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAfEAABAwMFAAAAAAAAAAAAAAABAAMRAgQFBiFBYrH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAAMAAwAAAAAAAAAAAAAAAAABEQIDIf/aAAwDAQACEQMRAD8Anmb5y6xQqcchxqOIJJ8RQ1BFrQWWxNHbcojBPtK2SqH/2Q==",
+      "category": "fire",
+      "categories": [
+        "fire",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": false,
+      "order": 39,
+      "alt": {
+        "en": "A fire performer in a gold chainmail veil and crescent headpiece, holding a flaming prop amid smoke and warm firelight.",
+        "es": "Una artista de fuego con velo de malla dorada y tocado de luna creciente, sosteniendo un accesorio en llamas entre humo y luz c\u00e1lida.",
+        "pt": "Uma artista de fogo com v\u00e9u de malha dourada e adere\u00e7o de lua crescente, com uma tocha em chamas entre fumo e luz quente."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
       "id": "fire-01",
       "src": "/images/portfolio/fire-01.jpg",
       "width": 932,
@@ -446,7 +473,6 @@
       ],
       "pages": [
         "festivals",
-        "experiences",
         "portfolio",
         "home"
       ],
