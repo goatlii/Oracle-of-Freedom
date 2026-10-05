@@ -302,6 +302,32 @@
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
+      "id": "places-01",
+      "src": "/images/portfolio/places-01.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAfEAABBQABBQAAAAAAAAAAAAABAAIDBCEREjEyQZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERUf/aAAwDAQACEQMRAD8AV7VGaoYHhzd0uIaOd4+aikSSGMzdIHk3v6xEKjCf/9k=",
+      "category": "places",
+      "categories": [
+        "places"
+      ],
+      "pages": [
+        "places",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": false,
+      "order": 49,
+      "alt": {
+        "en": "Sage-green Range Rover on a gravel shore beside turquoise water, under palm fronds and festoon lights, with coffee and a bottle on a wooden ledge in front.",
+        "es": "Range Rover verde salvia en una orilla de grava junto al agua turquesa, bajo palmeras y luces de guirnalda, con café y una botella sobre un saliente de madera en primer plano.",
+        "pt": "Range Rover verde-sálvia numa margem de gravilha junto a água turquesa, sob palmeiras e luzes de festão, com café e uma garrafa num parapeito de madeira em primeiro plano."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
       "id": "gathering-01",
       "src": "/images/portfolio/gathering-01.jpg",
       "width": 963,
@@ -314,7 +340,6 @@
       "pages": [
         "retreats",
         "experiences",
-        "places",
         "portfolio",
         "home"
       ],
@@ -396,7 +421,6 @@
       ],
       "pages": [
         "retreats",
-        "places",
         "portfolio"
       ],
       "featured": false,
