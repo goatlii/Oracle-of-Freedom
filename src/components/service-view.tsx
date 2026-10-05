@@ -34,8 +34,6 @@ export async function ServiceView({
   showVideos = false,
   heroId,
   heroPosition = "center",
-  mobileHeroId,
-  mobileHeroPosition = "center",
 }: {
   locale: Locale;
   copy: ServiceCopy;
@@ -48,12 +46,9 @@ export async function ServiceView({
   showVideos?: boolean;
   heroId?: string;
   heroPosition?: string;
-  mobileHeroId?: string;
-  mobileHeroPosition?: string;
 }) {
   const images = imagesForPage(page).filter((image) => image.id !== "cover-wide");
   const hero = (heroId ? images.find((image) => image.id === heroId) : undefined) ?? images[0];
-  const mobileHero = mobileHeroId ? images.find((image) => image.id === mobileHeroId) : undefined;
   const catalog = await getCatalog();
   const visible = catalog.filter((item) => item.group === group && item.visible);
   const photos = visible.filter((item) => item.kind === "photo");
@@ -112,21 +107,8 @@ export async function ServiceView({
             sizes="100vw"
             placeholder="blur"
             blurDataURL={hero.blur}
-            className={mobileHero ? "hidden object-cover md:block" : "object-cover"}
+            className="object-cover"
             style={{ objectPosition: heroPosition }}
-          />
-        ) : null}
-        {mobileHero ? (
-          <Image
-            src={mobileHero.src}
-            alt={mobileHero.alt[locale]}
-            fill
-            priority
-            sizes="100vw"
-            placeholder="blur"
-            blurDataURL={mobileHero.blur}
-            className="object-cover md:hidden"
-            style={{ objectPosition: mobileHeroPosition }}
           />
         ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/35 to-night/10" />
