@@ -29,7 +29,6 @@ const budgets = {
     { value: "lt-475", label: "Menos de 475 €" },
     { value: "475-900", label: "475–900 €" },
     { value: "900+", label: "900 € ou mais" },
-    { value: "monthly", label: "Mensal, 500 € ou mais" },
   ],
   other: [
     { value: "lt-175", label: "Menos de 175 €" },
@@ -655,15 +654,6 @@ export const pt: Copy = {
         name: "Dia foto + vídeo",
         items: ["O dia em fotografias e em vídeo", "Uma visita, os dois conjuntos", "Menos do que reservar os dois em separado"],
       },
-      monthly: {
-        name: "Conteúdo e redes mensal",
-        items: [
-          "1 visita por mês",
-          "8–12 peças novas (fotografias e reels)",
-          "Gestão de 1–2 contas: planeamento, textos e publicação",
-          "Relatório mensal simples: alcance, guardados, partilhas, visitas ao perfil e pedidos de informação",
-        ],
-      },
     },
     deliverablesTitle: "O que recebes",
     deliverables: ["Fotografias horizontais para OTAs e o teu site", "Imagens lifestyle", "Reels verticais", "Licença comercial para o teu próprio marketing"],
@@ -684,7 +674,6 @@ export const pt: Copy = {
       { q: "Vais incomodar os meus hóspedes?", a: "Não: organizo-me de acordo com a tua ocupação e peço sempre autorização antes de fotografar alguém." },
       { q: "Trazes modelos?", a: "Posso trazer amigos da minha comunidade ou trabalhar com hóspedes que queiram participar." },
       { q: "As fotografias servem para o Booking e o Airbnb?", a: "Sim: entrego um conjunto limpo e horizontal que segue as regras das plataformas, e outro mais caloroso, de lifestyle, para as redes." },
-      { q: "Geres o nosso Instagram?", a: "Sim, com o pacote mensal." },
       { q: "Podemos trocar estadia por conteúdo?", a: "Na época baixa, e para novas parcerias, às vezes proponho colaborações híbridas: pergunta-me." },
     ],
   },

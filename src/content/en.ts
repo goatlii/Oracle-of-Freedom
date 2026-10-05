@@ -29,7 +29,6 @@ const budgets = {
     { value: "lt-475", label: "Under €475" },
     { value: "475-900", label: "€475–900" },
     { value: "900+", label: "€900+" },
-    { value: "monthly", label: "Monthly €500+" },
   ],
   other: [
     { value: "lt-175", label: "Under €175" },
@@ -696,15 +695,6 @@ export const en: Copy = {
         name: "Stay day · photo + video",
         items: ["The content day in photographs and film", "One visit, both sets", "Less than booking the two separately"],
       },
-      monthly: {
-        name: "Monthly content & social",
-        items: [
-          "1 visit per month",
-          "8–12 new pieces (photos and reels)",
-          "Management of 1–2 social accounts: planning, captions, posting",
-          "A simple monthly report: reach, saves, shares, profile visits and inquiries",
-        ],
-      },
     },
     deliverablesTitle: "What you receive",
     deliverables: [
@@ -731,7 +721,6 @@ export const en: Copy = {
       { q: "Will you disturb my guests?", a: "No — I plan around your occupancy and always ask before photographing anyone." },
       { q: "Do you provide models?", a: "I can bring friends from my community or work with your willing guests." },
       { q: "Are the photos right for Booking and Airbnb?", a: "Yes — I deliver a clean, horizontal set that follows platform guidelines, plus a warmer lifestyle set for social media." },
-      { q: "Do you manage our Instagram?", a: "Yes, with the monthly package." },
       { q: "Can we trade a stay for content?", a: "For new partnerships in low season I sometimes offer hybrid collaborations — ask me." },
     ],
   },

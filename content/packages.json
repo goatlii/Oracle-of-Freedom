@@ -265,15 +265,6 @@
       "from": 875,
       "inquiry": "place",
       "compare": ["hotel-photo", "hotel-film"]
-    },
-    {
-      "id": "monthly",
-      "group": "places",
-      "kind": "photo",
-      "label": "Monthly content & social",
-      "from": 500,
-      "unit": "month",
-      "inquiry": "place"
     }
   ]
 }
