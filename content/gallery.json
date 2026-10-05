@@ -35,8 +35,7 @@
         "portraits"
       ],
       "pages": [
-        "about",
-        "home"
+        "about"
       ],
       "featured": false,
       "provisional": false,
@@ -85,10 +84,9 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 10,
@@ -161,10 +159,9 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 13,
@@ -237,10 +234,9 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 21,
@@ -339,10 +335,9 @@
       ],
       "pages": [
         "retreats",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": true,
       "placeholder": true,
       "order": 30,
@@ -367,10 +362,9 @@
       "pages": [
         "retreats",
         "elopements",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 31,
@@ -473,10 +467,9 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 40,
@@ -549,10 +542,9 @@
       ],
       "pages": [
         "retreats",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 50,
@@ -653,10 +645,9 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": true,
       "order": 60,
@@ -865,9 +856,10 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 74,
@@ -891,9 +883,10 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 75,
@@ -917,9 +910,10 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 76,
@@ -943,9 +937,10 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 77,
@@ -1093,9 +1088,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "home"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -1120,9 +1113,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 101,
@@ -1146,9 +1140,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 102,
@@ -1170,7 +1165,6 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
         "portfolio"
       ],
@@ -1196,7 +1190,6 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
         "portfolio"
       ],
@@ -1222,7 +1215,6 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
         "portfolio"
       ],
@@ -1250,9 +1242,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 106,
@@ -1276,9 +1269,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 107,
@@ -1303,9 +1297,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 108,
@@ -1329,9 +1324,10 @@
       "pages": [
         "experiences",
         "retreats",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 109,
@@ -1355,9 +1351,10 @@
       "pages": [
         "experiences",
         "retreats",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 110,
@@ -1382,9 +1379,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 111,
@@ -1407,7 +1405,6 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
         "portfolio"
       ],
@@ -1436,9 +1433,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 113,
@@ -1461,7 +1459,6 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
         "portfolio"
       ],
@@ -1490,9 +1487,10 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
       "order": 115,
@@ -1534,7 +1532,7 @@
       "src": "/images/portfolio/fire-05.jpg",
       "width": 2400,
       "height": 1600,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAnQv/xAAaEAACAgMAAAAAAAAAAAAAAAABAgADBCFS/9oACAEBAAE/AL9YyMOioE//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJBcf/aAAgBAgEBPwCN6z//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJCcv/aAAgBAwEBPwCdco//2Q==",
+      "blur": "data:image/jpeg;base64,/9j/2wBDABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////2wBDARAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7/////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAnAv/xAAaEAACAgMAAAAAAAAAAAAAAAABAgAEAyFS/9oACAEBAAE/ALOqmNh0ygT/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJBcf/aAAgBAgEBPwCN6z//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQJCcv/aAAgBAwEBPwCdco//2Q==",
       "category": "fire",
       "categories": [
         "fire",
