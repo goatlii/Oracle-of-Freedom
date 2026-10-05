@@ -32,6 +32,7 @@ export async function ServiceView({
   a11y,
   whatsappText,
   showVideos = false,
+  heroPosition = "center",
 }: {
   locale: Locale;
   copy: ServiceCopy;
@@ -42,6 +43,7 @@ export async function ServiceView({
   a11y: Copy["a11y"];
   whatsappText: string;
   showVideos?: boolean;
+  heroPosition?: string;
 }) {
   const images = imagesForPage(page).filter((image) => image.id !== "cover-wide");
   const hero = images[0];
@@ -104,6 +106,7 @@ export async function ServiceView({
             placeholder="blur"
             blurDataURL={hero.blur}
             className="object-cover"
+            style={{ objectPosition: heroPosition }}
           />
         ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/35 to-night/10" />

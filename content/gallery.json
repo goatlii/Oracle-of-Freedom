@@ -302,6 +302,32 @@
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
+      "id": "places-01",
+      "src": "/images/portfolio/places-01.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAfEAABBQABBQAAAAAAAAAAAAABAAIDBCEREjEyQZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERUf/aAAwDAQACEQMRAD8AV7VGaoYHhzd0uIaOd4+aikSSGMzdIHk3v6xEKjCf/9k=",
+      "category": "places",
+      "categories": [
+        "places"
+      ],
+      "pages": [
+        "places",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": false,
+      "order": 49,
+      "alt": {
+        "en": "Sage-green Range Rover on a gravel shore beside turquoise water, under palm fronds and festoon lights, with coffee and a bottle on a wooden ledge in front.",
+        "es": "Range Rover verde salvia en una orilla de grava junto al agua turquesa, bajo palmeras y luces de guirnalda, con café y una botella sobre un saliente de madera en primer plano.",
+        "pt": "Range Rover verde-sálvia numa margem de gravilha junto a água turquesa, sob palmeiras e luzes de festão, com café e uma garrafa num parapeito de madeira em primeiro plano."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
       "id": "gathering-01",
       "src": "/images/portfolio/gathering-01.jpg",
       "width": 963,
@@ -313,8 +339,6 @@
       ],
       "pages": [
         "retreats",
-        "experiences",
-        "places",
         "portfolio",
         "home"
       ],
@@ -396,7 +420,6 @@
       ],
       "pages": [
         "retreats",
-        "places",
         "portfolio"
       ],
       "featured": false,
@@ -411,6 +434,34 @@
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
+      "id": "fire-04",
+      "src": "/images/portfolio/fire-04.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAfEAABAwMFAAAAAAAAAAAAAAABAAMRAgQFBiFBYrH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAAMAAwAAAAAAAAAAAAAAAAABEQIDIf/aAAwDAQACEQMRAD8Anmb5y6xQqcchxqOIJJ8RQ1BFrQWWxNHbcojBPtK2SqH/2Q==",
+      "category": "fire",
+      "categories": [
+        "fire",
+        "festivals"
+      ],
+      "pages": [
+        "experiences",
+        "festivals",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": false,
+      "order": 39,
+      "alt": {
+        "en": "A fire performer in a gold chainmail veil and crescent headpiece, holding a flaming prop amid smoke and warm firelight.",
+        "es": "Una artista de fuego con velo de malla dorada y tocado de luna creciente, sosteniendo un accesorio en llamas entre humo y luz c\u00e1lida.",
+        "pt": "Uma artista de fogo com v\u00e9u de malha dourada e adere\u00e7o de lua crescente, com uma tocha em chamas entre fumo e luz quente."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
       "id": "fire-01",
       "src": "/images/portfolio/fire-01.jpg",
       "width": 932,
@@ -422,7 +473,6 @@
       ],
       "pages": [
         "festivals",
-        "experiences",
         "portfolio",
         "home"
       ],
@@ -668,6 +718,33 @@
         "pt": "Fotografia de concerto de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "portrait-05",
+      "src": "/images/portfolio/portrait-05.jpg",
+      "width": 2400,
+      "height": 3600,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAgEAACAQMEAwAAAAAAAAAAAAABAgMAETEEBRIhEyJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAMAwEAAhEDEQA/AKce/O+u8fBVjBtxBuzdZvjNKnLBGN/jQL6EElfh6pUQ3H//2Q==",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio",
+        "home"
+      ],
+      "featured": true,
+      "provisional": false,
+      "placeholder": false,
+      "order": 51,
+      "alt": {
+        "en": "A couple kissing in the ocean at golden hour, her long braids threaded with gold charms, both wearing leopard print.",
+        "es": "Una pareja bes\u00e1ndose en el oc\u00e9ano a la hora dorada, ella con trenzas largas y dijes de oro, ambos con estampado de leopardo.",
+        "pt": "Um casal a beijar-se no oceano \u00e0 hora dourada, ela com tranças longas e berloques de ouro, ambos com estampado de leopardo."
+      },
+      "source": "Agota Urbikaite"
     },
     {
       "id": "portrait-01",

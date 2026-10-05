@@ -26,9 +26,6 @@ export function PortfolioBrowser({
   const [filter, setFilter] = useState("all");
   const visible = useMemo(() => {
     if (filter === "all") return images.filter((image) => image.category !== "portraits" || image.id !== "cover-wide");
-    if (filter === "places") {
-      return images.filter((image) => image.provisional || image.categories.includes("places"));
-    }
     return images.filter((image) => image.categories.includes(filter) || image.category === filter);
   }, [filter, images]);
   const current = filters.find((item) => item.id === filter);

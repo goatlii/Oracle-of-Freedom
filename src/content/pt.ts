@@ -659,7 +659,7 @@ export const pt: Copy = {
     deliverables: ["Fotografias horizontais para OTAs e o teu site", "Imagens lifestyle", "Reels verticais", "Licença comercial para o teu próprio marketing"],
     travelNote:
       "Um dia de conteúdo do Algarve a Lisboa inclui a deslocação. Trabalhos comerciais mais longe — o resto de Portugal, a Europa e mais além — orçamentam-se ao custo real.",
-    comingSoon: "Em breve: as primeiras colaborações com alojamentos estão a caminho. Estas fotografias são de natureza e de encontros, não de quartos.",
+    comingSoon: "As colaborações dedicadas com alojamentos e quartos continuam a caminho.",
     processTitle: "Como funciona",
     process: [
       { title: "Chamada de 15 minutos", body: "O teu espaço, os teus hóspedes, os teus objetivos." },
@@ -688,7 +688,7 @@ export const pt: Copy = {
       { id: "festivals", label: "Festivais" },
       { id: "djs", label: "DJs e música" },
       { id: "fire", label: "Fogo" },
-      { id: "places", label: "Lugares", soon: true },
+      { id: "places", label: "Lugares" },
       { id: "film", label: "Vídeo" },
     ],
     empty: "Ainda não há nada neste filtro.",

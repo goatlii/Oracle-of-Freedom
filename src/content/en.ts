@@ -705,8 +705,7 @@ export const en: Copy = {
     ],
     travelNote:
       "A content day from the Algarve to Lisbon includes travel. Commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
-    comingSoon:
-      "Coming soon — first place collaborations are in progress. The photographs here are nature and gathering stand-ins, not rooms or stays.",
+    comingSoon: "Dedicated stay and room collaborations are still in progress.",
     processTitle: "How it works",
     process: [
       { title: "15-minute call", body: "Your place, your guests, your goals." },
@@ -735,7 +734,7 @@ export const en: Copy = {
       { id: "festivals", label: "Festivals" },
       { id: "djs", label: "DJs & Music" },
       { id: "fire", label: "Fire" },
-      { id: "places", label: "Places", soon: true },
+      { id: "places", label: "Places" },
       { id: "film", label: "Film" },
     ],
     empty: "Nothing in this filter yet.",
