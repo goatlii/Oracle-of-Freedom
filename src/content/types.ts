@@ -22,6 +22,8 @@ export type ServiceCopy = {
   combosTitle?: string;
   packages: Record<string, PackageCopy>;
   addonsTitle?: string;
+  addonsNote?: string;
+  addonsCta?: string;
   travelNote?: string;
   whereTitle?: string;
   where?: string;

@@ -523,7 +523,10 @@ export const pt: Copy = {
     ],
     packagesTitle: "Pacotes",
     filmsTitle: "Vídeo",
-    addonsTitle: "Entrega expressa",
+    addonsTitle: "Entrega expressa e prioritária",
+    addonsNote:
+      "A prioridade de um fim de semana completo começa desde 200 €. O valor segue os dias e as horas de cobertura, a rapidez com que precisas dos ficheiros e se queres fotografias, filme ou os dois. Foto e filme juntos demoram mais do que só as fotografias. O filme padrão continua a chegar em {artistFilmWeeks}. São extras de prioridade, por cima da cobertura. Escreve-me como é o encontro e ficas com o valor claro antes do sinal de {deposit}.",
+    addonsCta: "Perguntar sobre a entrega",
     packages: {
       "press-kit": {
         name: "Kit de imprensa DJ / artista",
@@ -557,12 +560,39 @@ export const pt: Copy = {
         name: "Um reel",
         items: ["Um vídeo vertical, pronto a publicar", "Entrega em {artistFilmWeeks}"],
       },
-      "artist-film-express": {
-        name: "Filme expresso",
+      "festival-express-photos": {
+        name: "Seleção de fotos no dia seguinte",
         items: [
-          "Acelera um aftermovie, um videoclipe ou os reels",
-          "Pronto em {expressFilm} em vez de {artistFilmWeeks}",
-          "Um extra pago: acrescenta-o na marcação",
+          "Um dia de fotografias, com a seleção no dia seguinte",
+          "Um extra de prioridade, por cima do pacote de cobertura",
+          "As horas e a edição definem o valor, confirmado antes do sinal de {deposit}",
+        ],
+      },
+      "festival-express-teaser": {
+        name: "Antevisão no próprio dia",
+        items: [
+          "Um punhado de fotos para as redes, no próprio dia, quando a agenda permite",
+          "Só fotografias, por cima da cobertura desse dia",
+          "Uma nota breve com a ordem do dia e, depois, o valor antes do sinal de {deposit}",
+        ],
+      },
+      "festival-express-film-day": {
+        name: "Um dia de filme ou foto + filme",
+        items: [
+          "Um dia em filme, ou em fotografias e filme juntos",
+          "Foto e filme juntos demoram mais do que só as fotografias",
+          "O filme padrão segue o prazo de {artistFilmWeeks}, salvo se acordarmos esta prioridade",
+          "O valor fica claro antes do sinal de {deposit}",
+        ],
+      },
+      "festival-express-weekend": {
+        name: "Prioridade de fim de semana",
+        badge: "Desde 200 €",
+        items: [
+          "Cerca de três dias de entrega expressa ou prioritária para o pacote completo",
+          "Orçamenta-se pelos dias, pelas horas e se é foto, filme ou os dois",
+          "Foto e filme juntos demoram mais do que as fotografias sozinhas",
+          "Uma conversa curta e, depois, o valor claro antes do sinal de {deposit}",
         ],
       },
     },
@@ -575,7 +605,7 @@ export const pt: Copy = {
       { title: "Conta-me a visão", body: "Artista, evento, data e para que precisas." },
       { title: "Planeamos", body: "Ambiente, locais e iluminação. O fogo exige uma montagem segura e uma pessoa de apoio." },
       { title: "Filmamos", body: "Movo-me com a música e com o fogo." },
-      { title: "Entrega", body: "Seleção rápida para as redes e, depois, a galeria completa e as montagens. Clips do set em 48 horas; fotografias em {artistWeeks}; filmes em {artistFilmWeeks}." },
+      { title: "Entrega", body: "Seleção para as redes e, depois, a galeria completa e as montagens. Clips do set em 48 horas. Fotografias em {artistWeeks}. Filmes em {artistFilmWeeks}: foto e filme juntos demoram mais do que só as fotografias. A entrega prioritária é um extra em escala, com o valor antes do sinal de {deposit}." },
     ],
     wordsTitle: "Palavras bonitas",
     testimonialIds: ["artist"],
@@ -585,7 +615,7 @@ export const pt: Copy = {
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas; as fotografias, em {artistWeeks}; os filmes, em {artistFilmWeeks}. A entrega expressa é um extra pago: fotografias em {expressPhoto}, filme em {expressFilm}." },
+      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, um dia de filme ou foto e filme desde 150–200 €, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
     ],
   },
   places: {

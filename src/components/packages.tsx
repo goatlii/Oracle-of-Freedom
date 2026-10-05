@@ -15,7 +15,7 @@ export function FromPrice({
   mutedClassName,
 }: {
   locale: string;
-  item: Pick<PricedPackage, "custom" | "listFrom" | "promoFrom" | "unit" | "promoName" | "kind">;
+  item: Pick<PricedPackage, "custom" | "listFrom" | "promoFrom" | "unit" | "promoName" | "kind" | "to" | "plus">;
   offer?: string;
   className?: string;
   mutedClassName?: string;
@@ -27,16 +27,23 @@ export function FromPrice({
       </p>
     );
   }
-  const onOffer = item.promoFrom != null && item.promoFrom < item.listFrom;
+  const promoFrom = item.promoFrom;
+  const listFrom = item.listFrom;
+  const onOffer = promoFrom != null && listFrom != null && promoFrom < listFrom;
   const addon = item.kind === "addon";
+  const guide = { to: item.to, plus: item.plus };
+  const offerGuide =
+    onOffer && item.to != null && promoFrom != null && listFrom != null && listFrom > 0
+      ? { to: Math.max(promoFrom, Math.round((item.to * promoFrom) / listFrom)), plus: item.plus }
+      : guide;
   if (!onOffer) {
-    return <p className={className}>{formatFrom(locale, item.listFrom, item.unit, addon)}</p>;
+    return <p className={className}>{formatFrom(locale, item.listFrom, item.unit, addon, guide)}</p>;
   }
   return (
     <p className={className}>
-      <span className={cn("line-through", mutedClassName)}>{formatFrom(locale, item.listFrom, item.unit, addon)}</span>
+      <span className={cn("line-through", mutedClassName)}>{formatFrom(locale, item.listFrom, item.unit, addon, guide)}</span>
       <span className="mt-1 block">
-        {formatFrom(locale, item.promoFrom, item.unit, addon)}
+        {formatFrom(locale, item.promoFrom, item.unit, addon, offerGuide)}
         {offer ? <span className="ml-2 text-xs font-semibold tracking-[0.14em] uppercase">{offer}</span> : null}
       </span>
     </p>

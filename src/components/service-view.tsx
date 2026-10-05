@@ -65,6 +65,7 @@ export async function ServiceView({
       priceSpecification: {
         "@type": "PriceSpecification",
         minPrice: item.promoFrom ?? item.listFrom,
+        ...(item.to != null ? { maxPrice: item.to } : {}),
         priceCurrency: "EUR",
       },
     }));
@@ -195,10 +196,11 @@ export async function ServiceView({
           />
           <PackageSection
             title={copy.addonsTitle || (locale === "en" ? "Express delivery" : locale === "es" ? "Entrega exprés" : "Entrega expressa")}
+            note={copy.addonsNote}
             locale={locale}
             items={addons}
             copy={copy.packages}
-            cta={copy.cta}
+            cta={copy.addonsCta || copy.cta}
             offer={common.offer}
             saveTemplate={common.saveSeparately}
           />
@@ -377,6 +379,7 @@ export async function ServiceView({
 
 function PackageSection({
   title,
+  note,
   locale,
   items,
   copy,
@@ -390,6 +393,7 @@ function PackageSection({
   wishLabel,
 }: {
   title: string;
+  note?: string;
   locale: Locale;
   items: PricedPackage[];
   copy: ServiceCopy["packages"];
@@ -406,6 +410,11 @@ function PackageSection({
   return (
     <div className="mt-10 first:mt-0">
       <h2 className="font-serif text-4xl first:text-4xl">{title}</h2>
+      {note ? (
+        <p className="mt-4 max-w-3xl text-ink/80">
+          <TokenText text={note} />
+        </p>
+      ) : null}
       <div className="mt-8">
         <PackageCards
           locale={locale}

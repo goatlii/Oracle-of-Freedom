@@ -205,12 +205,41 @@
       "inquiry": "artist"
     },
     {
-      "id": "artist-film-express",
+      "id": "festival-express-photos",
       "group": "festivals",
       "kind": "addon",
-      "label": "Artist film rush",
+      "label": "Express · 1 day photos, next day",
       "from": 75,
-      "inquiry": "artist"
+      "to": 100,
+      "inquiry": "festival"
+    },
+    {
+      "id": "festival-express-teaser",
+      "group": "festivals",
+      "kind": "addon",
+      "label": "Express · same-day teaser",
+      "from": 100,
+      "to": 150,
+      "inquiry": "festival"
+    },
+    {
+      "id": "festival-express-film-day",
+      "group": "festivals",
+      "kind": "addon",
+      "label": "Express · 1 day film or photo+film",
+      "from": 150,
+      "to": 200,
+      "inquiry": "festival"
+    },
+    {
+      "id": "festival-express-weekend",
+      "group": "festivals",
+      "kind": "addon",
+      "label": "Express · full weekend priority",
+      "from": 200,
+      "plus": true,
+      "loved": true,
+      "inquiry": "festival"
     },
     {
       "id": "hotel-photo",
