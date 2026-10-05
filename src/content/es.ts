@@ -29,7 +29,6 @@ const budgets = {
     { value: "lt-475", label: "Menos de 475 €" },
     { value: "475-900", label: "475–900 €" },
     { value: "900+", label: "900 € o más" },
-    { value: "monthly", label: "Mensual, 500 € o más" },
   ],
   other: [
     { value: "lt-175", label: "Menos de 175 €" },
@@ -523,7 +522,10 @@ export const es: Copy = {
     ],
     packagesTitle: "Paquetes",
     filmsTitle: "Vídeo",
-    addonsTitle: "Entrega exprés",
+    addonsTitle: "Entrega exprés y prioritaria",
+    addonsNote:
+      "La prioridad de un fin de semana completo empieza desde 200 €. La tarifa sigue los días y las horas de cobertura, la rapidez con la que necesitas los archivos y si quieres fotografías, vídeo o las dos cosas. Foto y vídeo juntos llevan más tiempo que solo las fotografías. El vídeo estándar sigue llegando en {artistFilmWeeks}. Son extras de prioridad, encima de la cobertura. Escríbeme cómo es el encuentro y tendrás la tarifa clara antes de la señal del {deposit}.",
+    addonsCta: "Consultar la entrega",
     packages: {
       "press-kit": {
         name: "Kit de prensa DJ / artista",
@@ -557,12 +559,39 @@ export const es: Copy = {
         name: "Un reel",
         items: ["Un vídeo vertical, listo para publicar", "Entrega en {artistFilmWeeks}"],
       },
-      "artist-film-express": {
-        name: "Vídeo exprés",
+      "festival-express-photos": {
+        name: "Selección de fotos al día siguiente",
         items: [
-          "Acelera un aftermovie, un videoclip o los reels",
-          "Listo en {expressFilm} en lugar de {artistFilmWeeks}",
-          "Un extra de pago: añádelo al reservar",
+          "Un día de fotografías, con la selección al día siguiente",
+          "Un extra de prioridad, encima del paquete de cobertura",
+          "Las horas y la edición marcan la tarifa, confirmada antes de la señal del {deposit}",
+        ],
+      },
+      "festival-express-teaser": {
+        name: "Adelanto el mismo día",
+        items: [
+          "Un puñado de fotos para redes, el mismo día, si la agenda lo permite",
+          "Solo fotografías, encima de la cobertura de ese día",
+          "Una nota breve con el orden del día y, después, la tarifa antes de la señal del {deposit}",
+        ],
+      },
+      "festival-express-film-day": {
+        name: "Un día de vídeo o foto + vídeo",
+        items: [
+          "Un día en vídeo, o en fotografías y vídeo juntos",
+          "Foto y vídeo juntos llevan más tiempo que solo las fotografías",
+          "El vídeo estándar sigue el plazo de {artistFilmWeeks}, salvo que acordemos esta prioridad",
+          "La tarifa queda clara antes de la señal del {deposit}",
+        ],
+      },
+      "festival-express-weekend": {
+        name: "Prioridad de fin de semana",
+        badge: "Desde 200 €",
+        items: [
+          "Unos tres días de entrega exprés o prioritaria para el paquete completo",
+          "Se presupuesta según los días, las horas y si es foto, vídeo o las dos cosas",
+          "Foto y vídeo juntos llevan más tiempo que las fotografías solas",
+          "Una conversación corta y, después, la tarifa clara antes de la señal del {deposit}",
         ],
       },
     },
@@ -575,7 +604,7 @@ export const es: Copy = {
       { title: "Cuéntame la visión", body: "Artista, evento, fecha y para qué lo necesitas." },
       { title: "Planificamos", body: "Ambiente, lugares e iluminación. El fuego requiere un montaje seguro y una persona de apoyo." },
       { title: "Rodamos", body: "Me muevo con la música y el fuego." },
-      { title: "Entrega", body: "Selección rápida para redes y, después, la galería completa y los montajes. Clips del set en 48 horas; fotografías en {artistWeeks}; vídeos en {artistFilmWeeks}." },
+      { title: "Entrega", body: "Selección para redes y, después, la galería completa y los montajes. Clips del set en 48 horas. Fotografías en {artistWeeks}. Vídeos en {artistFilmWeeks}: foto y vídeo juntos llevan más tiempo que solo las fotografías. La entrega prioritaria es un extra a escala, con tarifa antes de la señal del {deposit}." },
     ],
     wordsTitle: "Palabras bonitas",
     testimonialIds: ["artist"],
@@ -585,7 +614,7 @@ export const es: Copy = {
       { q: "¿Puedo usar las fotos en mi press kit y en plataformas de streaming?", a: "Sí, el uso promocional está incluido." },
       { q: "¿Trabajas con festivales?", a: "Sí, dentro de equipos de contenido oficiales o asociados, y siempre respetando las normas de foto y de consentimiento de cada festival." },
       { q: "¿Grabas un videoclip completo?", a: "Sí, del concepto a la edición final. Cuéntame tu idea y tu presupuesto." },
-      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas; las fotografías, en {artistWeeks}; los vídeos, en {artistFilmWeeks}. La entrega exprés es un extra de pago: fotografías en {expressPhoto}, vídeo en {expressFilm}." },
+      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotografías, en {artistWeeks}. El vídeo, y la foto con vídeo, en {artistFilmWeeks}: juntos llevan más tiempo que solo las fotografías. La entrega exprés y prioritaria es un extra aparte, presupuestado al trabajo: selección de fotos al día siguiente desde 75–100 €, un adelanto el mismo día desde 100–150 € si la agenda lo permite, un día de vídeo o foto y vídeo desde 150–200 €, y un fin de semana completo desde 200 €. Cuéntame los días, las horas y la rapidez que necesitas. Confirmo la tarifa antes de la señal del {deposit}." },
     ],
   },
   places: {
@@ -625,15 +654,6 @@ export const es: Copy = {
         name: "Día foto + vídeo",
         items: ["La jornada en fotografías y en vídeo", "Una visita, los dos conjuntos", "Menos que reservarlos por separado"],
       },
-      monthly: {
-        name: "Contenido y redes mensual",
-        items: [
-          "1 visita al mes",
-          "8–12 piezas nuevas (fotos y reels)",
-          "Gestión de 1–2 cuentas: planificación, textos y publicación",
-          "Informe mensual sencillo: alcance, guardados, compartidos, visitas al perfil y consultas",
-        ],
-      },
     },
     deliverablesTitle: "Qué recibes",
     deliverables: ["Fotos horizontales para OTAs y tu web", "Imágenes lifestyle", "Reels verticales", "Licencia comercial para tu propio marketing"],
@@ -654,7 +674,6 @@ export const es: Copy = {
       { q: "¿Molestarás a mis huéspedes?", a: "No: me organizo según tu ocupación y siempre pregunto antes de fotografiar a nadie." },
       { q: "¿Traes modelos?", a: "Puedo venir con amigos de mi comunidad o trabajar con huéspedes que quieran participar." },
       { q: "¿Las fotos sirven para Booking y Airbnb?", a: "Sí: entrego un set limpio y horizontal que sigue las pautas de las plataformas, y otro más cálido, de lifestyle, para redes." },
-      { q: "¿Gestionas nuestro Instagram?", a: "Sí, con el paquete mensual." },
       { q: "¿Podemos cambiar estancia por contenido?", a: "En temporada baja, y para nuevas colaboraciones, a veces ofrezco colaboraciones híbridas: pregúntame." },
     ],
   },

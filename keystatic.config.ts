@@ -12,6 +12,15 @@ const packageItem = fields.object({
   kind: fields.text({ label: "Kind", description: "photo, video, combo or addon" }),
   label: fields.text({ label: "Name in the price editor" }),
   from: fields.integer({ label: "From (EUR)", validation: { isRequired: false } }),
+  to: fields.integer({
+    label: "Guide range up to (EUR)",
+    description: "Optional. With From, the public price reads as a range, such as from €75–100. Leave empty for a single from-price.",
+    validation: { isRequired: false },
+  }),
+  plus: fields.checkbox({
+    label: "Open-ended from price",
+    description: "Show from €…+ instead of a closed range.",
+  }),
   unit: fields.text({ label: "Unit", description: "day, night, month, or leave empty" }),
   inquiry: fields.text({ label: "Inquiry service id" }),
   loved: fields.checkbox({ label: "Most loved" }),

@@ -28,6 +28,8 @@ export type PackageItem = {
   kind: "photo" | "video" | "combo" | "addon";
   label: string;
   from?: number;
+  to?: number;
+  plus?: boolean;
   unit?: "day" | "night" | "month";
   inquiry: string;
   loved?: boolean;
@@ -72,14 +74,31 @@ export function formatEuro(locale: string, amount: number) {
   return `${amount.toLocaleString(tag)} €`;
 }
 
+function guidePrice(locale: string, amount: number, guide?: { to?: number; plus?: boolean }) {
+  const high = guide?.to;
+  const open = guide?.plus === true;
+  if (open) {
+    if (locale === "en") return `€${amount.toLocaleString("en-GB")}+`;
+    const tag = locale === "pt" ? "pt-PT" : "es-ES";
+    return `${amount.toLocaleString(tag)}+ €`;
+  }
+  if (high == null || high <= amount) return null;
+  if (locale === "en") {
+    return `€${amount.toLocaleString("en-GB")}–${high.toLocaleString("en-GB")}`;
+  }
+  const tag = locale === "pt" ? "pt-PT" : "es-ES";
+  return `${amount.toLocaleString(tag)}–${high.toLocaleString(tag)} €`;
+}
+
 export function formatFrom(
   locale: string,
   amount: number | undefined,
   unit?: PackageItem["unit"],
   addon = false,
+  guide?: { to?: number; plus?: boolean },
 ) {
   if (amount == null) return "";
-  const price = formatEuro(locale, amount);
+  const price = guidePrice(locale, amount, guide) ?? formatEuro(locale, amount);
   const unitLabel =
     unit === "day"
       ? locale === "en"

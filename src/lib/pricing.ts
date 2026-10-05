@@ -6,6 +6,8 @@ export type CatalogItem = {
   kind: "photo" | "video" | "combo" | "addon";
   label: string;
   from?: number;
+  to?: number;
+  plus?: boolean;
   unit?: "day" | "night" | "month";
   inquiry: string;
   loved?: boolean;

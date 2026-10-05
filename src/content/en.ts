@@ -29,7 +29,6 @@ const budgets = {
     { value: "lt-475", label: "Under €475" },
     { value: "475-900", label: "€475–900" },
     { value: "900+", label: "€900+" },
-    { value: "monthly", label: "Monthly €500+" },
   ],
   other: [
     { value: "lt-175", label: "Under €175" },
@@ -559,7 +558,10 @@ export const en: Copy = {
     ],
     packagesTitle: "Packages",
     filmsTitle: "Film",
-    addonsTitle: "Express delivery",
+    addonsTitle: "Express & priority delivery",
+    addonsNote:
+      "Full weekend priority starts from €200. The fee follows the days and hours of coverage, how fast you need the files, and whether you want photographs, film, or both. Photo and film together take longer than photographs alone. Standard film still arrives in {artistFilmWeeks}. These are priority add-ons on top of coverage. Inquire with the shape of the gathering and you’ll have a clear fee before the {deposit} deposit.",
+    addonsCta: "Inquire about delivery",
     packages: {
       "press-kit": {
         name: "DJ / artist press kit",
@@ -597,12 +599,39 @@ export const en: Copy = {
         name: "Single reel",
         items: ["One vertical film, ready to post", "Delivered in {artistFilmWeeks}"],
       },
-      "artist-film-express": {
-        name: "Express film",
+      "festival-express-photos": {
+        name: "Next-day photo selects",
         items: [
-          "Rush an aftermovie, music video or reels",
-          "Ready in {expressFilm} instead of {artistFilmWeeks}",
-          "A paid add-on — add it when you book",
+          "One day of photographs, with selects the next day",
+          "A priority add-on on top of the coverage package",
+          "Hours and the edit set the fee, confirmed before the {deposit} deposit",
+        ],
+      },
+      "festival-express-teaser": {
+        name: "Same-day teaser",
+        items: [
+          "A handful of social selects, the same day, when the schedule allows",
+          "Photographs only, on top of that day’s coverage",
+          "A short note on the running order, then the fee before the {deposit} deposit",
+        ],
+      },
+      "festival-express-film-day": {
+        name: "One-day film or photo + film",
+        items: [
+          "One day as film, or as photographs and film together",
+          "Photo and film together take longer than photographs alone",
+          "Standard film still follows {artistFilmWeeks} unless this priority is agreed",
+          "The fee is clear before the {deposit} deposit",
+        ],
+      },
+      "festival-express-weekend": {
+        name: "Full weekend priority",
+        badge: "From €200",
+        items: [
+          "About three days of Express or priority for the whole package",
+          "Quoted from the days, the hours, and photographs, film, or both",
+          "Photo and film together take longer than photographs on their own",
+          "A short conversation, then a clear fee before the {deposit} deposit",
         ],
       },
     },
@@ -616,7 +645,7 @@ export const en: Copy = {
       { title: "Tell me the vision", body: "Artist, event, date, what you need it for." },
       { title: "Plan", body: "Mood, locations, lighting. Fire shoots need a safe setup and a spotter." },
       { title: "Shoot", body: "I move with the music and the fire." },
-      { title: "Delivery", body: "Fast selects for socials, then the full gallery and edits. Live-set clips within 48 hours; photographs within {artistWeeks}; films within {artistFilmWeeks}." },
+      { title: "Delivery", body: "Selects for socials, then the full gallery and edits. Live-set clips within 48 hours. Photographs within {artistWeeks}. Films within {artistFilmWeeks} — photo and film together take longer than photographs alone. Priority delivery is a sliding-scale add-on, quoted before the {deposit} deposit." },
     ],
     wordsTitle: "Kind words",
     testimonialIds: ["artist"],
@@ -626,7 +655,7 @@ export const en: Copy = {
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours; photographs within {artistWeeks}; films within {artistFilmWeeks}. Express delivery is a paid add-on: photographs in {expressPhoto}, film in {expressFilm}." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, one day of film or photo and film from €150–200, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
     ],
   },
   places: {
@@ -666,15 +695,6 @@ export const en: Copy = {
         name: "Stay day · photo + video",
         items: ["The content day in photographs and film", "One visit, both sets", "Less than booking the two separately"],
       },
-      monthly: {
-        name: "Monthly content & social",
-        items: [
-          "1 visit per month",
-          "8–12 new pieces (photos and reels)",
-          "Management of 1–2 social accounts: planning, captions, posting",
-          "A simple monthly report: reach, saves, shares, profile visits and inquiries",
-        ],
-      },
     },
     deliverablesTitle: "What you receive",
     deliverables: [
@@ -701,7 +721,6 @@ export const en: Copy = {
       { q: "Will you disturb my guests?", a: "No — I plan around your occupancy and always ask before photographing anyone." },
       { q: "Do you provide models?", a: "I can bring friends from my community or work with your willing guests." },
       { q: "Are the photos right for Booking and Airbnb?", a: "Yes — I deliver a clean, horizontal set that follows platform guidelines, plus a warmer lifestyle set for social media." },
-      { q: "Do you manage our Instagram?", a: "Yes, with the monthly package." },
       { q: "Can we trade a stay for content?", a: "For new partnerships in low season I sometimes offer hybrid collaborations — ask me." },
     ],
   },

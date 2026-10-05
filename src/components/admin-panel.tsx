@@ -142,6 +142,11 @@ export function AdminPanel({
                         <p className="text-xs tracking-[0.12em] text-ink/45 uppercase">
                           {kindLabel(item.kind)}
                         </p>
+                        {item.plus ? (
+                          <p className="text-xs text-ink/55">Shown on the site as from €{amount}+</p>
+                        ) : item.to ? (
+                          <p className="text-xs text-ink/55">Shown on the site as from €{amount}–{item.to}</p>
+                        ) : null}
                       </div>
                       {item.custom ? (
                         <p className="text-sm text-ink/60">Quote only</p>
