@@ -28,7 +28,8 @@ export default async function PortraitsPage({ params }: { params: Promise<{ loca
       page="portraits"
       group="portraits"
       tone="warm"
-      heroPosition="center 18%"
+      heroId="portrait-07"
+      heroPosition="center"
       common={copy.common}
       a11y={copy.a11y}
       whatsappText={copy.whatsapp.portraits}

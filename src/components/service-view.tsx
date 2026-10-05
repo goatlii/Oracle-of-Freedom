@@ -32,6 +32,7 @@ export async function ServiceView({
   a11y,
   whatsappText,
   showVideos = false,
+  heroId,
   heroPosition = "center",
 }: {
   locale: Locale;
@@ -43,10 +44,11 @@ export async function ServiceView({
   a11y: Copy["a11y"];
   whatsappText: string;
   showVideos?: boolean;
+  heroId?: string;
   heroPosition?: string;
 }) {
   const images = imagesForPage(page).filter((image) => image.id !== "cover-wide");
-  const hero = images[0];
+  const hero = (heroId ? images.find((image) => image.id === heroId) : undefined) ?? images[0];
   const catalog = await getCatalog();
   const visible = catalog.filter((item) => item.group === group && item.visible);
   const photos = visible.filter((item) => item.kind === "photo");
