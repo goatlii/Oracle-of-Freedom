@@ -1502,6 +1502,32 @@
         "pt": "Uma DJ loira platinada de \u00f3culos nos CDJs e na mesa, ao lado uma mulher com uma t-shirt onde se l\u00ea \u201cGOD\u2019S FAVORITE\u201d e uma bailarina atr\u00e1s, com luzes azuis, roxas e laranja."
       },
       "source": "Agota Urbikaite"
+    },
+    {
+      "id": "gathering-05",
+      "src": "/images/portfolio/gathering-05.jpg",
+      "width": 2400,
+      "height": 3598,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAJWQmv/EABsQAAIDAAMAAAAAAAAAAAAAAAIDAAERMUFR/9oACAEBAAE/ABBSk3YNAh32tqKEeM6n/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQASMf/aAAgBAgEBPwCo7P/EABgRAAIDAAAAAAAAAAAAAAAAAAABAhEx/9oACAEDAQE/AHOsP//Z",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "pages": [
+        "retreats",
+        "experiences",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 116,
+      "alt": {
+        "en": "Cupped tattooed hands reach into a clear rocky stream, gold bangles and a wide turquoise cuff catching the light.",
+        "es": "Unas manos tatuadas en cuenco se meten en un arroyo claro entre piedras, con pulseras de oro y un brazalete ancho de turquesa.",
+        "pt": "M\u00e3os tatuadas em concha entram num ribeiro claro entre pedras, com pulseiras de ouro e uma pulseira larga de turquesa."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
