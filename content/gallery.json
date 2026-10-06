@@ -910,10 +910,9 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": false,
       "order": 76,

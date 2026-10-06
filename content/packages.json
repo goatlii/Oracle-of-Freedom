@@ -265,6 +265,70 @@
       "from": 875,
       "inquiry": "place",
       "compare": ["hotel-photo", "hotel-film"]
+    },
+    {
+      "id": "places-drone-stills",
+      "group": "places",
+      "kind": "photo",
+      "label": "Aerial stills mini",
+      "from": 185,
+      "inquiry": "place"
+    },
+    {
+      "id": "places-drone-story",
+      "group": "places",
+      "kind": "combo",
+      "label": "Aerial story · photo + film",
+      "from": 295,
+      "inquiry": "place"
+    },
+    {
+      "id": "places-drone-addon-stills",
+      "group": "places",
+      "kind": "addon",
+      "label": "Drone stills add-on",
+      "from": 150,
+      "inquiry": "place"
+    },
+    {
+      "id": "places-drone-addon-story",
+      "group": "places",
+      "kind": "addon",
+      "label": "Drone photo + film add-on",
+      "from": 250,
+      "inquiry": "place"
+    },
+    {
+      "id": "festival-drone-addon",
+      "group": "festivals",
+      "kind": "addon",
+      "label": "Drone hop · same day",
+      "from": 165,
+      "inquiry": "festival"
+    },
+    {
+      "id": "retreat-drone-addon",
+      "group": "retreats",
+      "kind": "addon",
+      "label": "Drone stills add-on",
+      "from": 185,
+      "inquiry": "retreat"
+    },
+    {
+      "id": "elopement-drone-stills",
+      "group": "elopements",
+      "kind": "addon",
+      "label": "Drone stills add-on",
+      "from": 275,
+      "inquiry": "elopement"
+    },
+    {
+      "id": "elopement-drone-story",
+      "group": "elopements",
+      "kind": "addon",
+      "label": "Drone photo + film add-on",
+      "from": 350,
+      "inquiry": "elopement"
     }
   ]
 }

@@ -389,7 +389,7 @@ export const en: Copy = {
     packagesTitle: "Collections",
     filmsTitle: "Film",
     combosTitle: "Photo + film",
-    addonsTitle: "Express delivery",
+    addonsTitle: "Add-ons",
     packages: {
       elopement: {
         name: "Elopement",
@@ -442,6 +442,22 @@ export const en: Copy = {
           "Photographs on their own can be rushed in {expressPhoto}",
         ],
       },
+      "elopement-drone-stills": {
+        name: "Drone stills add-on",
+        items: [
+          "A short aerial set added to your elopement or small wedding",
+          "The place, the two of you in the landscape, the gathering from above",
+          "We fly only when the weather and the airspace allow",
+        ],
+      },
+      "elopement-drone-story": {
+        name: "Drone photo + film add-on",
+        items: [
+          "Aerial stills and a short film, added to the day",
+          "One flight beside the ground coverage, not a separate production",
+          "We fly only when the weather and the airspace allow",
+        ],
+      },
     },
     travelNote:
       "Travel within {baseArea} is included. Elopements and intimate weddings further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
@@ -490,6 +506,9 @@ export const en: Copy = {
     problem:
       "People book retreats on a feeling. Honest images of real transformation — the circle, the silence, the laughter, the food, the landscape — are what make someone press \"book\" on BookRetreats, Retreat Guru or your website.",
     packagesTitle: "Packages",
+    addonsTitle: "Add-ons",
+    addonsNote:
+      "Added to a retreat day you're already booking. A quiet flight when the weather is kind and the airspace allows — not a separate aerial day.",
     packages: {
       "retreat-day": {
         name: "Retreat · 1 day",
@@ -512,6 +531,14 @@ export const en: Copy = {
       "retreat-custom": {
         name: "Custom",
         items: ["Week-long retreats, festivals and ceremonies. Tell me your programme and I'll send a tailored quote."],
+      },
+      "retreat-drone-addon": {
+        name: "Drone stills add-on",
+        items: [
+          "A quiet aerial set added to retreat coverage you're already booking",
+          "The land, the circle from above, the path in — for your next listing",
+          "We fly when the weather is kind and the airspace allows",
+        ],
       },
     },
     travelNote:
@@ -558,10 +585,10 @@ export const en: Copy = {
     ],
     packagesTitle: "Packages",
     filmsTitle: "Film",
-    addonsTitle: "Express & priority delivery",
+    addonsTitle: "Add-ons",
     addonsNote:
-      "Full weekend priority starts from €200. The fee follows the days and hours of coverage, how fast you need the files, and whether you want photographs, film, or both. Photo and film together take longer than photographs alone. Standard film still arrives in {artistFilmWeeks}. These are priority add-ons on top of coverage. Inquire with the shape of the gathering and you’ll have a clear fee before the {deposit} deposit.",
-    addonsCta: "Inquire about delivery",
+      "Full weekend priority starts from €200. The fee follows the days and hours of coverage, how fast you need the files, and whether you want photographs, film, or both. Photo and film together take longer than photographs alone. Standard film still arrives in {artistFilmWeeks}. These are priority add-ons on top of coverage. Inquire with the shape of the gathering and you’ll have a clear fee before the {deposit} deposit. The drone hop is separate: a same-day flight while I’m already booked for that festival day, weather-dependent and only in legal airspace. It is not full-event coverage from the air.",
+    addonsCta: "Inquire about an add-on",
     packages: {
       "press-kit": {
         name: "DJ / artist press kit",
@@ -634,6 +661,14 @@ export const en: Copy = {
           "A short conversation, then a clear fee before the {deposit} deposit",
         ],
       },
+      "festival-drone-addon": {
+        name: "Drone hop · same day",
+        items: [
+          "A same-day hop while I'm already with you for a booked festival day",
+          "Not full-event coverage from the air — a short look at the site, the stage and the land",
+          "Weather-dependent, and only where flying is legally allowed",
+        ],
+      },
     },
     travelNote:
       "Artist sessions from the Algarve to Lisbon include travel. Festivals and commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
@@ -677,6 +712,9 @@ export const en: Copy = {
     packagesTitle: "Packages",
     filmsTitle: "Film",
     combosTitle: "Photo + video",
+    addonsTitle: "Add-ons",
+    addonsNote:
+      "These sit on top of a stay content day. The aerial packages above can also be booked on their own. We fly when the weather is kind and the airspace allows.",
     packages: {
       "hotel-photo": {
         name: "Stay content day · photo",
@@ -694,6 +732,40 @@ export const en: Copy = {
       "hotel-combo": {
         name: "Stay day · photo + video",
         items: ["The content day in photographs and film", "One visit, both sets", "Less than booking the two separately"],
+      },
+      "places-drone-stills": {
+        name: "Aerial stills mini",
+        items: [
+          "A short flight over the place: the roofs, the garden, the path down to the water",
+          "A small set of edited aerial photographs for your site and listings",
+          "We fly when the weather is kind and the airspace allows",
+          "Commercial licence for your own marketing",
+        ],
+      },
+      "places-drone-story": {
+        name: "Aerial story · photo + film",
+        items: [
+          "The same short flight, in stills and a short aerial film",
+          "Enough to show the land, the light, and how the place sits in it",
+          "We fly when the weather is kind and the airspace allows",
+          "Commercial licence for your own marketing",
+        ],
+      },
+      "places-drone-addon-stills": {
+        name: "Drone stills add-on",
+        items: [
+          "A short aerial set added to a stay content day",
+          "Edited photographs from above: the house, the land, the way in",
+          "Only when the weather and the airspace allow",
+        ],
+      },
+      "places-drone-addon-story": {
+        name: "Drone photo + film add-on",
+        items: [
+          "Aerial stills and a short film, added to a content day",
+          "One flight, both sets, beside the coverage on the ground",
+          "Weather and permitted airspace come first",
+        ],
       },
     },
     deliverablesTitle: "What you receive",
