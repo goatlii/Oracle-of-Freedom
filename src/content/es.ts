@@ -213,12 +213,11 @@ export const es: Copy = {
   about: {
     title: "Hola, soy Agota.",
     paragraphs: [
-      "Llevo más de diez años trabajando con fotografía y vídeo, tanto de forma profesional como en proyectos personales que nacen de la pura pasión.",
-      "Lo que más amo es el momento sin posar: el suspiro antes de una carcajada, la chispa cuando gira una bailarina de fuego, el silencio entre dos personas que se quieren. Mi trabajo consiste en dar vida a la magia de un evento, una comunidad o una pareja, en fotografía y en vídeo.",
-      "Mi estilo es fluido y orgánico. Vive en el equilibrio entre dos energías opuestas, la acción y la calma. No solo capturo el momento: estoy en él. No estoy alrededor de la acción, sino que formo parte de ella. Ahí surgen los momentos más dulces y genuinos, y eso es lo que da profundidad a mi trabajo: al mirar las imágenes no solo ves lo que pasó, sientes que estabas allí.",
-      "Me atraen las personas y los lugares con espíritu libre: encuentros en la jungla, ceremonias junto al río, votos descalzos en la playa, DJs perdidos en su set, casas ecológicas construidas con amor. Cada sesión está cubierta del Algarve a Lisboa, costa de por medio incluida. Para bodas, retiros, festivales y trabajos comerciales viajo por el resto de Portugal, Europa y más allá.",
+      "Llevo más de 10 años trabajando con la fotografía y el vídeo, tanto de forma profesional como en proyectos de pasión. Me especializo en capturar momentos espontáneos de verdad y en dar vida a la magia de un evento o de una comunidad, en imágenes y en montajes de vídeo.",
+      "Mi estilo es fluido y orgánico: un equilibrio delicado entre energías opuestas, la acción y la calma. No se trata solo de capturar el momento, sino de estar en él; no solo de estar cerca de la acción, sino de formar parte de ella. Eso es lo que da profundidad a mi trabajo, y donde se capturan los momentos más dulces y genuinos, aquellos en los que quien mira pasa a formar parte de todo.",
+      "Me atraen las personas y los lugares con espíritu libre: encuentros en la jungla, ceremonias junto al río, votos descalzos en la playa, DJs perdidos en su set, casas ecológicas construidas con amor. Y esa es la magia que quiero capturar.",
     ],
-    promise: "Oracle of Freedom es mi promesa: verte tal como eres y dejar ese momento en libertad.",
+    promise: "La promesa de Oracle of Freedom: verte tal como eres y dejar ese momento en libertad.",
     valuesTitle: "En lo que creo",
     values: [
       { title: "Presencia", body: "Me entrego por completo para que tú también puedas hacerlo." },
@@ -226,7 +225,7 @@ export const es: Copy = {
       { title: "Libertad", body: "Sin guiones ni poses forzadas; solo una guía suave cuando la quieras." },
       { title: "Comunidad", body: "Formo parte de los círculos que fotografío y los trato con cuidado." },
     ],
-    facts: "Más de 10 años en foto y vídeo · Foto y vídeo · Del Algarve a Lisboa en cada sesión · Más lejos para bodas, retiros, festivales y trabajos comerciales · Idiomas: inglés y lituano con fluidez, y español de conversación",
+    facts: "Más de 10 años en foto y vídeo · Foto y vídeo · Idiomas: inglés y lituano con fluidez, y español de conversación",
     bts: "PENDIENTE — fotos de Agota trabajando, aún por hacer. Este bloque se queda vacío hasta que existan.",
     closingTitle: "Creemos algo real juntos.",
   },

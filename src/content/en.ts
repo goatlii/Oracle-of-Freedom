@@ -238,12 +238,11 @@ export const en: Copy = {
   about: {
     title: "Hi, I'm Agota.",
     paragraphs: [
-      "I have been working with photography and video for over ten years — professionally and in passion projects that I simply couldn't stop myself from creating.",
-      "What I love most is the unposed moment. The breath before a laugh. The spark when a fire dancer spins. The quiet between two people who love each other. I work to bring the magic of an event, a community or a couple to life, in still images and in film.",
-      "My style is fluid and organic. It lives in the balance between two energies — action and calm. I'm not just capturing the moment, I'm in it. Not just around the action, but part of it. That's where the sweetest, most genuine moments happen, and it's what gives my work its depth: when you look at the images, you don't just see what happened, you feel like you were there.",
-      "I'm drawn to people and places with a free spirit — gatherings in the jungle, ceremonies by the river, barefoot vows on the beach, DJs lost in their set, eco-houses built with love. Every session is covered from the Algarve to Lisbon, coast in between included. For weddings, retreats, festivals and commercial shoots I travel the rest of Portugal, Europe and beyond.",
+      "I have been working with photography and video for over 10 years, both professionally and in passion projects. I specialise in capturing pure candid moments and bringing the magic of an event or community to life in still images and video edits.",
+      "My style is fluid and organic, it is a delicate balance between opposing energies of action and calm - not just capturing the moment, but being in it; not just around the action but part of it. It’s what gives my work depth and where the sweetest most genuine moments are captured, where the viewer becomes part of it all.",
+      "I'm drawn to people and places with a free spirit — gatherings in the jungle, ceremonies by the river, barefoot vows on the beach, DJs lost in their set, eco-houses built with love. And that's the magic I want to capture.",
     ],
-    promise: "Oracle of Freedom is my promise: to see you as you really are, and to set that moment free.",
+    promise: "The Oracle of Freedom promise: to see you as you really are, and to set that moment free.",
     valuesTitle: "What I believe in",
     values: [
       { title: "Presence", body: "I show up fully, so you can too." },
@@ -252,7 +251,7 @@ export const en: Copy = {
       { title: "Community", body: "I'm part of the circles I photograph, and I treat them with care." },
     ],
     facts:
-      "10+ years in photo & video · Photo + film · Algarve to Lisbon for every session · Further for weddings, retreats, festivals and commercial work · Languages: {languages}",
+      "10+ years in photo & video · Photo + film · Languages: {languages}",
     bts: "PLACEHOLDER — photos of Agota at work, still to be taken. This block stays empty until they exist.",
     closingTitle: "Let's create something real together.",
   },
