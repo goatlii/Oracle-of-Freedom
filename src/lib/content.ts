@@ -15,6 +15,8 @@ export type GalleryImage = {
   category: string;
   categories: string[];
   pages: string[];
+  /** Portfolio tabs that may show this image. When set, "all" is included only if listed. */
+  portfolioTabs?: string[];
   featured: boolean;
   provisional: boolean;
   placeholder: boolean;
