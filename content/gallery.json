@@ -910,10 +910,9 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": false,
       "order": 76,
@@ -1510,10 +1509,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": false,

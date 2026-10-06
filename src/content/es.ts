@@ -354,7 +354,7 @@ export const es: Copy = {
     packagesTitle: "Colecciones",
     filmsTitle: "Vídeo",
     combosTitle: "Foto + vídeo",
-    addonsTitle: "Entrega exprés",
+    addonsTitle: "Extras",
     packages: {
       elopement: {
         name: "Elopement",
@@ -407,6 +407,22 @@ export const es: Copy = {
           "Las fotografías solas pueden ir exprés en {expressPhoto}",
         ],
       },
+      "elopement-drone-stills": {
+        name: "Extra de fotos con dron",
+        items: [
+          "Un conjunto aéreo corto, añadido a vuestro elopement o boda íntima",
+          "El lugar, los dos en el paisaje, el encuentro visto desde arriba",
+          "Volamos solo cuando el tiempo y el espacio aéreo lo permiten",
+        ],
+      },
+      "elopement-drone-story": {
+        name: "Extra de foto + vídeo con dron",
+        items: [
+          "Fotos aéreas y una película corta, añadidas al día",
+          "Un vuelo junto a la cobertura en tierra, no una producción aparte",
+          "Volamos solo cuando el tiempo y el espacio aéreo lo permiten",
+        ],
+      },
     },
     travelNote:
       "El desplazamiento del Algarve a Lisboa está incluido. Los elopements y las bodas íntimas más lejos — el resto de Portugal, Europa y más allá — se presupuestan a coste real.",
@@ -454,6 +470,9 @@ export const es: Copy = {
     problem:
       "La gente reserva un retiro por lo que siente. Las imágenes honestas de una transformación real (el círculo, el silencio, las risas, la comida, el paisaje) son lo que hace que alguien pulse \"reservar\" en BookRetreats, Retreat Guru o tu web.",
     packagesTitle: "Paquetes",
+    addonsTitle: "Extras",
+    addonsNote:
+      "Se añade a un día de retiro que ya estás reservando. Un vuelo tranquilo cuando el tiempo acompaña y el espacio aéreo lo permite: no es un día aéreo aparte.",
     packages: {
       "retreat-day": {
         name: "Retiro · 1 día",
@@ -476,6 +495,14 @@ export const es: Copy = {
       "retreat-custom": {
         name: "A medida",
         items: ["Retiros de una semana, festivales y ceremonias. Cuéntame el programa y te envío un presupuesto personalizado."],
+      },
+      "retreat-drone-addon": {
+        name: "Extra de fotos con dron",
+        items: [
+          "Un conjunto aéreo tranquilo, añadido a la cobertura de retiro que ya estás reservando",
+          "La tierra, el círculo desde arriba, el camino de llegada — para tu próximo anuncio",
+          "Volamos cuando el tiempo acompaña y el espacio aéreo lo permite",
+        ],
       },
     },
     travelNote:
@@ -522,10 +549,10 @@ export const es: Copy = {
     ],
     packagesTitle: "Paquetes",
     filmsTitle: "Vídeo",
-    addonsTitle: "Entrega exprés y prioritaria",
+    addonsTitle: "Extras",
     addonsNote:
-      "La prioridad de un fin de semana completo empieza desde 200 €. La tarifa sigue los días y las horas de cobertura, la rapidez con la que necesitas los archivos y si quieres fotografías, vídeo o las dos cosas. Foto y vídeo juntos llevan más tiempo que solo las fotografías. El vídeo estándar sigue llegando en {artistFilmWeeks}. Son extras de prioridad, encima de la cobertura. Escríbeme cómo es el encuentro y tendrás la tarifa clara antes de la señal del {deposit}.",
-    addonsCta: "Consultar la entrega",
+      "La prioridad de un fin de semana completo empieza desde 200 €. La tarifa sigue los días y las horas de cobertura, la rapidez con la que necesitas los archivos y si quieres fotografías, vídeo o las dos cosas. Foto y vídeo juntos llevan más tiempo que solo las fotografías. El vídeo estándar sigue llegando en {artistFilmWeeks}. Son extras de prioridad, encima de la cobertura. Escríbeme cómo es el encuentro y tendrás la tarifa clara antes de la señal del {deposit}. El vuelo con dron es aparte: un salto el mismo día, mientras ya estoy reservada para ese día de festival. Depende del tiempo y solo donde el espacio aéreo lo permite legalmente. No es la cobertura completa del evento desde el aire.",
+    addonsCta: "Consultar este extra",
     packages: {
       "press-kit": {
         name: "Kit de prensa DJ / artista",
@@ -594,6 +621,14 @@ export const es: Copy = {
           "Una conversación corta y, después, la tarifa clara antes de la señal del {deposit}",
         ],
       },
+      "festival-drone-addon": {
+        name: "Vuelo corto con dron · el mismo día",
+        items: [
+          "Un vuelo el mismo día, mientras ya estoy contigo en un día de festival reservado",
+          "No es la cobertura completa del evento desde el aire: una mirada breve al recinto, al escenario y a la tierra",
+          "Depende del tiempo, y solo donde volar está permitido",
+        ],
+      },
     },
     travelNote:
       "Las sesiones de artista del Algarve a Lisboa incluyen el desplazamiento. Festivales y trabajos comerciales más lejos — el resto de Portugal, Europa y más allá — se presupuestan a coste real.",
@@ -636,6 +671,9 @@ export const es: Copy = {
     packagesTitle: "Paquetes",
     filmsTitle: "Vídeo",
     combosTitle: "Foto + vídeo",
+    addonsTitle: "Extras",
+    addonsNote:
+      "Se añaden a una jornada de contenido. Los paquetes aéreos de arriba también se pueden reservar solos. Volamos cuando el tiempo acompaña y el espacio aéreo lo permite.",
     packages: {
       "hotel-photo": {
         name: "Día de contenido · foto",
@@ -653,6 +691,40 @@ export const es: Copy = {
       "hotel-combo": {
         name: "Día foto + vídeo",
         items: ["La jornada en fotografías y en vídeo", "Una visita, los dos conjuntos", "Menos que reservarlos por separado"],
+      },
+      "places-drone-stills": {
+        name: "Fotos aéreas mini",
+        items: [
+          "Un vuelo corto sobre el lugar: los tejados, el jardín, el camino hacia el agua",
+          "Un conjunto pequeño de fotos aéreas editadas para tu web y tus anuncios",
+          "Volamos cuando el tiempo acompaña y el espacio aéreo lo permite",
+          "Licencia comercial para tu propio marketing",
+        ],
+      },
+      "places-drone-story": {
+        name: "Historia aérea · foto + vídeo",
+        items: [
+          "El mismo vuelo corto, en fotos y en una película aérea breve",
+          "Lo justo para mostrar la tierra, la luz y cómo se asienta el lugar",
+          "Volamos cuando el tiempo acompaña y el espacio aéreo lo permite",
+          "Licencia comercial para tu propio marketing",
+        ],
+      },
+      "places-drone-addon-stills": {
+        name: "Extra de fotos con dron",
+        items: [
+          "Un conjunto aéreo corto, añadido a una jornada de contenido",
+          "Fotos editadas desde arriba: la casa, la tierra, el camino de llegada",
+          "Solo cuando el tiempo y el espacio aéreo lo permiten",
+        ],
+      },
+      "places-drone-addon-story": {
+        name: "Extra de foto + vídeo con dron",
+        items: [
+          "Fotos aéreas y una película corta, añadidas a la jornada",
+          "Un vuelo, los dos conjuntos, junto a la cobertura en tierra",
+          "El tiempo y el espacio aéreo permitido van primero",
+        ],
       },
     },
     deliverablesTitle: "Qué recibes",
