@@ -6,6 +6,12 @@ import type { GalleryImage } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
+function matchesPortfolioFilter(image: GalleryImage, filter: string) {
+  if (image.portfolioTabs !== undefined) return image.portfolioTabs.includes(filter);
+  if (filter === "all") return image.category !== "portraits" || image.id !== "cover-wide";
+  return image.categories.includes(filter) || image.category === filter;
+}
+
 export function PortfolioBrowser({
   images,
   locale,
@@ -24,8 +30,7 @@ export function PortfolioBrowser({
   const [filter, setFilter] = useState("all");
   const visible = useMemo(() => {
     const published = images.filter((image) => !image.placeholder);
-    if (filter === "all") return published.filter((image) => image.category !== "portraits" || image.id !== "cover-wide");
-    return published.filter((image) => image.categories.includes(filter) || image.category === filter);
+    return published.filter((image) => matchesPortfolioFilter(image, filter));
   }, [filter, images]);
 
   return (
