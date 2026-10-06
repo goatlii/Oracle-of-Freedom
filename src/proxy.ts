@@ -57,5 +57,9 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
+  // Skip paths with a dot so public files are not rewritten to /en/... .
+  // That rewrite would miss public/ and the request would render as a locale
+  // page. Root image names that are not files are mapped in next.config.ts
+  // before [locale] is matched.
   matcher: ["/((?!api|keystatic|admin|_next|_vercel|.*\\..*).*)"],
 };
