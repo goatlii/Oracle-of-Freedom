@@ -217,7 +217,7 @@ export const pt: Copy = {
       "O meu estilo é fluido e orgânico: um equilíbrio delicado entre energias opostas, a ação e a calma. Não se trata apenas de captar o momento, mas de estar nele; não apenas de estar à volta da ação, mas de fazer parte dela. É isso que dá profundidade ao meu trabalho, e é aí que se captam os momentos mais doces e genuínos, aqueles em que quem vê passa a fazer parte de tudo.",
       "Sinto-me atraída por pessoas e lugares de espírito livre: encontros na selva, cerimónias junto ao rio, votos descalços na praia, DJs perdidos no seu set, casas ecológicas construídas com amor. E é essa a magia que quero captar.",
     ],
-    promise: "A promessa de Oracle of Freedom: ver-te como realmente és e libertar esse momento.",
+    promise: "Oracle of Freedom é a minha promessa: ver-te como realmente és e libertar esse momento.",
     valuesTitle: "Aquilo em que acredito",
     values: [
       { title: "Presença", body: "Entrego-me por inteiro, para que também tu o possas fazer." },

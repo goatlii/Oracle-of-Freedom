@@ -242,7 +242,7 @@ export const en: Copy = {
       "My style is fluid and organic, it is a delicate balance between opposing energies of action and calm - not just capturing the moment, but being in it; not just around the action but part of it. It’s what gives my work depth and where the sweetest most genuine moments are captured, where the viewer becomes part of it all.",
       "I'm drawn to people and places with a free spirit — gatherings in the jungle, ceremonies by the river, barefoot vows on the beach, DJs lost in their set, eco-houses built with love. And that's the magic I want to capture.",
     ],
-    promise: "The Oracle of Freedom promise: to see you as you really are, and to set that moment free.",
+    promise: "Oracle of Freedom is my promise: to see you as you really are, and to set that moment free.",
     valuesTitle: "What I believe in",
     values: [
       { title: "Presence", body: "I show up fully, so you can too." },
