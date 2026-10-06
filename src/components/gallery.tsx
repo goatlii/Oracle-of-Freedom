@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useId, useRef, useState } from "react";
 import type { GalleryImage } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
+import { isPublishedPhoto } from "@/lib/utils";
 
 export function GalleryGrid({
   images,
@@ -17,6 +18,7 @@ export function GalleryGrid({
   const [active, setActive] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const titleId = useId();
+  const photos = images.filter((image) => isPublishedPhoto(image));
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -32,24 +34,24 @@ export function GalleryGrid({
     function onKey(event: KeyboardEvent) {
       if (active == null) return;
       if (event.key === "ArrowRight") {
-        setActive((index) => (index == null ? index : (index + 1) % images.length));
+        setActive((index) => (index == null ? index : (index + 1) % photos.length));
       }
       if (event.key === "ArrowLeft") {
         setActive((index) =>
-          index == null ? index : (index - 1 + images.length) % images.length,
+          index == null ? index : (index - 1 + photos.length) % photos.length,
         );
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [active, images.length]);
+  }, [active, photos.length]);
 
-  const current = active == null ? null : images[active];
+  const current = active == null ? null : photos[active];
 
   return (
     <>
       <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
-        {images.map((image, index) => (
+        {photos.map((image, index) => (
           <button
             key={image.id}
             type="button"
@@ -93,11 +95,6 @@ export function GalleryGrid({
               sizes="92vw"
               priority
             />
-            {current.placeholder ? (
-              <p className="absolute bottom-6 left-1/2 max-w-md -translate-x-1/2 rounded-full bg-night/80 px-3 py-1 text-center text-xs text-sand">
-                {labels.placeholder}
-              </p>
-            ) : null}
             <button
               type="button"
               className="absolute top-4 right-4 rounded-full bg-sand px-4 py-2 text-sm text-ink"
@@ -110,7 +107,7 @@ export function GalleryGrid({
               className="absolute top-1/2 left-3 -translate-y-1/2 rounded-full bg-sand px-3 py-2 text-sm"
               onClick={() =>
                 setActive((index) =>
-                  index == null ? index : (index - 1 + images.length) % images.length,
+                  index == null ? index : (index - 1 + photos.length) % photos.length,
                 )
               }
             >
@@ -120,7 +117,7 @@ export function GalleryGrid({
               type="button"
               className="absolute top-1/2 right-3 -translate-y-1/2 rounded-full bg-sand px-3 py-2 text-sm"
               onClick={() =>
-                setActive((index) => (index == null ? index : (index + 1) % images.length))
+                setActive((index) => (index == null ? index : (index + 1) % photos.length))
               }
             >
               {labels.next}

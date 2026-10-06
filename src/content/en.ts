@@ -102,7 +102,7 @@ export const en: Copy = {
     portfolio: {
       title: "Portfolio · Oracle of Freedom",
       description:
-        "Moments Agota didn't just watch — she was part of them. Portraits, gatherings, festivals, fire, DJs and film.",
+        "Real moments of the wild ones. Portraits, gatherings, festivals, fire, DJs and film.",
       keywords: "Agota Urbikaite portfolio; boho photographer portfolio Portugal",
     },
     journal: {
@@ -797,7 +797,7 @@ export const en: Copy = {
   },
   portfolio: {
     title: "Portfolio",
-    dek: "Moments I didn't just watch — I was part of them.",
+    dek: "Real moments of the wild ones.",
     filters: [
       { id: "all", label: "All" },
       { id: "portraits", label: "Portraits & Couples" },
@@ -810,7 +810,6 @@ export const en: Copy = {
       { id: "film", label: "Film" },
     ],
     empty: "Nothing in this filter yet.",
-    note: "Most photographs are still low-resolution placeholders from the 2026 portfolio PDF. Swap the file in public/images/portfolio (same name) or upload a new one in the content editor.",
   },
   journal: {
     title: "Journal",

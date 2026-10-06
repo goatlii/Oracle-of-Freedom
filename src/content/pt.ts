@@ -96,7 +96,7 @@ export const pt: Copy = {
     },
     portfolio: {
       title: "Portefólio · Oracle of Freedom",
-      description: "Momentos que não me limitei a ver: fiz parte deles. Retratos, encontros, festivais, fogo, DJs e vídeo.",
+      description: "Momentos reais das almas indomáveis. Retratos, encontros, festivais, fogo, DJs e vídeo.",
       keywords: "portefólio Agota Urbikaite; fotógrafa boho Portugal",
     },
     journal: {
@@ -751,7 +751,7 @@ export const pt: Copy = {
   },
   portfolio: {
     title: "Portefólio",
-    dek: "Momentos que não me limitei a ver: fiz parte deles.",
+    dek: "Momentos reais das almas indomáveis.",
     filters: [
       { id: "all", label: "Tudo" },
       { id: "portraits", label: "Retratos e casais" },
@@ -764,7 +764,6 @@ export const pt: Copy = {
       { id: "film", label: "Vídeo" },
     ],
     empty: "Ainda não há nada neste filtro.",
-    note: "A maioria das fotografias continua a ser um marcador em baixa resolução do PDF do portefólio 2026. Substitui o ficheiro em public/images/portfolio (o mesmo nome) ou carrega um novo no editor.",
   },
   journal: {
     title: "Journal",

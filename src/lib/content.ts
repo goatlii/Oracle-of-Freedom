@@ -4,6 +4,7 @@ import settingsJson from "../../content/settings.json";
 import testimonialsJson from "../../content/testimonials.json";
 import videosJson from "../../content/videos.json";
 import type { Locale } from "@/i18n/routing";
+import { isPublishedPhoto } from "@/lib/utils";
 
 export type GalleryImage = {
   id: string;
@@ -52,13 +53,13 @@ export function imageById(id: string) {
 
 export function imagesForPage(page: string) {
   return gallery
-    .filter((image) => image.pages.includes(page))
+    .filter((image) => image.pages.includes(page) && isPublishedPhoto(image))
     .sort((a, b) => a.order - b.order);
 }
 
 export function featuredImages() {
   return gallery
-    .filter((image) => image.featured)
+    .filter((image) => image.featured && isPublishedPhoto(image))
     .sort((a, b) => a.order - b.order);
 }
 

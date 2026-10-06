@@ -167,7 +167,6 @@ export type Copy = {
     dek: string;
     filters: { id: string; label: string; soon?: boolean }[];
     empty: string;
-    note: string;
   };
   journal: {
     title: string;
