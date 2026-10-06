@@ -23,7 +23,7 @@ const schema = z.object({
   media: z.string().max(40).optional(),
   story: z.string().max(4000).optional(),
   found: z.string().min(1).max(40),
-  language: z.enum(["en", "es", "lt"]),
+  language: z.enum(["en", "es", "pt", "lt", "other"]),
   consent: z.boolean().refine((value) => value),
   promoCode: z.string().max(40).optional(),
   wish: z.string().max(400).optional(),

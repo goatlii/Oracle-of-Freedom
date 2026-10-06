@@ -97,7 +97,7 @@ export function InquiryForm({
       media: "",
       story: "",
       found: "",
-      language: locale === "es" ? "es" : "en",
+      language: locale === "pt" || locale === "es" ? locale : "en",
       consent: false,
       promoCode: "",
       wish: "",

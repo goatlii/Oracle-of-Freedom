@@ -937,7 +937,7 @@ export const en: Copy = {
       other: "Other",
     },
     language: "Preferred language",
-    languages: { en: "English", es: "Español", lt: "Lietuvių" },
+    languages: { en: "English", es: "Español", pt: "Português", lt: "Lietuvių", other: "Other" },
     consent: "I agree to be contacted about my inquiry.",
     promoCode: "Promo code",
     promoHint: "Optional. If you have one, it goes with your message.",
