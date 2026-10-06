@@ -27,6 +27,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const copy = getCopy(locale);
   const primary = imageById(settings.aboutImageId);
   const secondary = imageById("about-portrait");
+  const atWork = ["about-work-01", "about-work-02", "about-work-03"].map((id) => imageById(id));
 
   return (
     <article>
@@ -82,9 +83,21 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <p className="mt-8 max-w-3xl text-ink/80">
           <TokenText text={copy.about.facts} />
         </p>
-        <p className="mt-6 max-w-3xl rounded-3xl border border-dashed border-terracotta/50 bg-clay/40 p-5 text-sm">
-          {copy.about.bts}
-        </p>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {atWork.map((image) => (
+            <Image
+              key={image.id}
+              src={image.src}
+              alt={image.alt[loc]}
+              width={image.width}
+              height={image.height}
+              placeholder="blur"
+              blurDataURL={image.blur}
+              className="w-full rounded-3xl object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          ))}
+        </div>
       </section>
 
       <section className="grain bg-night text-sand">
