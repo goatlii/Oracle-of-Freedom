@@ -60,7 +60,7 @@ export function multiDayCoverage(service: string, days?: string) {
 }
 
 export function peopleMode(service: string): "people" | "event" | "none" {
-  if (service === "proposal") return "none";
+  if (service === "proposal" || service === "festival") return "none";
   if (
     service === "portraits" ||
     service === "couple" ||
@@ -71,7 +71,7 @@ export function peopleMode(service: string): "people" | "event" | "none" {
   ) {
     return "people";
   }
-  if (service === "retreat" || service === "festival") return "event";
+  if (service === "retreat") return "event";
   return "none";
 }
 

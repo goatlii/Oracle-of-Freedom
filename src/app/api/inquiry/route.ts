@@ -4,7 +4,7 @@ import { z } from "zod";
 import { getCopy } from "@/content";
 import { en } from "@/content/en";
 import { settings } from "@/lib/content";
-import { BUDGET_UNSURE, budgetGroup, gradeInquiry, multiDayCoverage } from "@/lib/lead";
+import { BUDGET_UNSURE, budgetGroup, gradeInquiry, multiDayCoverage, peopleMode } from "@/lib/lead";
 
 const schema = z.object({
   name: z.string().trim().min(1).max(200),
@@ -70,7 +70,7 @@ export async function POST(request: Request) {
   }
   const multiDay = multiDayCoverage(data.service, data.days);
   const dateEnd = multiDay ? data.dateEnd?.trim() : undefined;
-  const people = data.service === "proposal" ? undefined : data.people;
+  const people = peopleMode(data.service) === "none" ? undefined : data.people;
   if (!data.flexible && !data.date) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }

@@ -119,7 +119,7 @@ export function InquiryForm({
   }, [service]);
 
   useEffect(() => {
-    if (service === "proposal" && form.getValues("people")) {
+    if (peopleMode(service) === "none" && form.getValues("people")) {
       form.setValue("people", "");
     }
   }, [service, form]);
@@ -155,7 +155,7 @@ export function InquiryForm({
         ...values,
         locale,
         dateEnd: coverageSpan ? values.dateEnd : "",
-        people: values.service === "proposal" ? "" : values.people,
+        people: peopleMode(values.service) === "none" ? "" : values.people,
       }),
     });
     if (!response.ok) {
