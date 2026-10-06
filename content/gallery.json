@@ -94,53 +94,10 @@
         "es": "Agota junto a un r\u00edo con un envoltorio rojo y dreadlocks azules, con una c\u00e1mara.",
         "pt": "Agota junto a um rio com um envolt\u00f3rio vermelho e dreadlocks azuis, com uma c\u00e2mara."
       },
-      "source": "Agota Urbikaite"
-    },
-    {
-      "id": "about-work-02",
-      "src": "/images/portfolio/about-work-02.jpg",
-      "width": 853,
-      "height": 580,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAQTGF2YzYxLjE5LjEwMQD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCBYSTjI+nQ1G0Lbjnj2NFFc12kB//Z",
-      "category": "portraits",
-      "categories": [
-        "portraits"
-      ],
-      "pages": [
-        "about"
-      ],
-      "featured": false,
-      "provisional": false,
-      "placeholder": false,
-      "order": 4,
-      "alt": {
-        "en": "Agota on a mountain trail photographing a donkey.",
-        "es": "Agota en un sendero de monta\u00f1a fotografiando un burro.",
-        "pt": "Agota num trilho de montanha a fotografar um burro."
-      },
-      "source": "Agota Urbikaite"
-    },
-    {
-      "id": "about-work-03",
-      "src": "/images/portfolio/about-work-03.jpg",
-      "width": 940,
-      "height": 622,
-      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAQTGF2YzYxLjE5LjEwMQD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCCO1kZnVSrg9BnJpksDb8BQmOMUUVzX0uM/9k=",
-      "category": "portraits",
-      "categories": [
-        "portraits"
-      ],
-      "pages": [
-        "about"
-      ],
-      "featured": false,
-      "provisional": false,
-      "placeholder": false,
-      "order": 5,
-      "alt": {
-        "en": "Agota stroking a donkey while holding her camera.",
-        "es": "Agota acariciando un burro mientras sostiene su c\u00e1mara.",
-        "pt": "Agota a acariciar um burro enquanto segura a c\u00e2mara."
+      "caption": {
+        "en": "Bliss Burn, Costa Rica",
+        "es": "Bliss Burn, Costa Rica",
+        "pt": "Bliss Burn, Costa Rica"
       },
       "source": "Agota Urbikaite"
     },
@@ -719,7 +676,6 @@
       "categories": [
         "portraits"
       ],
-      "portfolioTabs": [],
       "pages": [
         "portraits",
         "people",

@@ -22,6 +22,8 @@ export type GalleryImage = {
   placeholder: boolean;
   order: number;
   alt: Record<Locale, string>;
+  /** Location or event line. Pages render it under the photo when set. */
+  caption?: Record<Locale, string>;
   source: string;
 };
 
