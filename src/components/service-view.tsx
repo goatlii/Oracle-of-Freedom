@@ -10,7 +10,7 @@ import { TokenText, replaceTokens } from "@/components/token-text";
 import { VideoGrid } from "@/components/video-grid";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
-import { imagesForPage, settings, siteUrl } from "@/lib/content";
+import { gallery, imagesForPage, settings, siteUrl } from "@/lib/content";
 import { getCatalog } from "@/lib/offers";
 import type { PricedPackage } from "@/lib/pricing";
 import type { Locale } from "@/i18n/routing";
@@ -48,7 +48,8 @@ export async function ServiceView({
   heroPosition?: string;
 }) {
   const images = imagesForPage(page).filter((image) => image.id !== "cover-wide");
-  const hero = (heroId ? images.find((image) => image.id === heroId) : undefined) ?? images[0];
+  const hero =
+    (heroId ? gallery.find((image) => image.id === heroId) : undefined) ?? images[0];
   const catalog = await getCatalog();
   const visible = catalog.filter((item) => item.group === group && item.visible);
   const photos = visible.filter((item) => item.kind === "photo");
