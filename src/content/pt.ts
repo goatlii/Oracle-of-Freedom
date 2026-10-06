@@ -885,7 +885,7 @@ export const pt: Copy = {
       other: "Outro",
     },
     language: "Língua preferida",
-    languages: { en: "English", es: "Español", pt: "Português" },
+    languages: { en: "English", es: "Español", lt: "Lietuvių" },
     consent: "Aceito ser contactado/a sobre o meu pedido.",
     promoCode: "Código promocional",
     promoHint: "Opcional. Se tiveres um, segue com a tua mensagem.",
