@@ -22,7 +22,6 @@ const schema = z.object({
   budget: z.string().min(1).max(40),
   media: z.string().max(40).optional(),
   story: z.string().max(4000).optional(),
-  notes: z.string().max(4000).optional(),
   found: z.string().min(1).max(40),
   language: z.enum(["en", "es", "lt"]),
   consent: z.boolean().refine((value) => value),
@@ -120,7 +119,6 @@ export async function POST(request: Request) {
     ...(data.promoCode?.trim() ? [`Promo code: ${data.promoCode.trim()}`] : []),
     `Found via: ${label(en.form.foundOptions, data.found)}`,
     `Preferred language: ${label(en.form.languages, data.language)}`,
-    `Notes: ${data.notes?.trim() || "—"}`,
     "",
     data.story || "(no story)",
   ];

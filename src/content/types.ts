@@ -217,8 +217,6 @@ export type Copy = {
     mediaOptions: Record<string, string>;
     story: string;
     storyPlaceholder: string;
-    notes: string;
-    notesPlaceholder: string;
     found: string;
     foundOptions: Record<string, string>;
     language: string;
