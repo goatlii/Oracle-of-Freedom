@@ -4,7 +4,7 @@ import { z } from "zod";
 import { getCopy } from "@/content";
 import { en } from "@/content/en";
 import { settings } from "@/lib/content";
-import { budgetGroup, gradeInquiry } from "@/lib/lead";
+import { BUDGET_UNSURE, budgetGroup, gradeInquiry, multiDayCoverage } from "@/lib/lead";
 
 const schema = z.object({
   name: z.string().trim().min(1).max(200),
@@ -12,6 +12,7 @@ const schema = z.object({
   phone: z.string().max(40).optional(),
   service: z.string().min(1).max(40),
   date: z.string().max(40).optional(),
+  dateEnd: z.string().max(40).optional(),
   flexible: z.boolean(),
   place: z.string().trim().min(1).max(300),
   people: z.string().max(20).optional(),
@@ -67,7 +68,16 @@ export async function POST(request: Request) {
   if (data.company?.trim()) {
     return NextResponse.json({ ok: true, emailed: false });
   }
+  const multiDay = multiDayCoverage(data.service, data.days);
+  const dateEnd = multiDay ? data.dateEnd?.trim() : undefined;
+  const people = data.service === "proposal" ? undefined : data.people;
   if (!data.flexible && !data.date) {
+    return NextResponse.json({ ok: false }, { status: 400 });
+  }
+  if (multiDay && !data.flexible && !dateEnd) {
+    return NextResponse.json({ ok: false }, { status: 400 });
+  }
+  if (multiDay && data.date && dateEnd && dateEnd < data.date) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
 
@@ -77,10 +87,20 @@ export async function POST(request: Request) {
     date: data.date,
     flexible: data.flexible,
     phone: data.phone,
-    people: data.people,
+    people,
   });
   const group = budgetGroup(data.service);
-  const budgetLabel = en.form.budgets[group]?.find((item) => item.value === data.budget)?.label || data.budget;
+  const budgetLabel =
+    data.budget === BUDGET_UNSURE
+      ? en.form.budgetUnsure
+      : en.form.budgets[group]?.find((item) => item.value === data.budget)?.label || data.budget;
+  const dateLine = data.flexible
+    ? multiDay && data.date && dateEnd
+      ? `Flexible (${data.date} – ${dateEnd})`
+      : "Flexible"
+    : multiDay && data.date && dateEnd
+      ? `${data.date} – ${dateEnd}`
+      : data.date || "—";
   const lines = [
     `Grade: ${grade}`,
     `Name: ${data.name}`,
@@ -88,9 +108,9 @@ export async function POST(request: Request) {
     `Phone: ${data.phone || "—"}`,
     `Service: ${label(en.form.services, data.service)}`,
     `Media: ${label(en.form.mediaOptions, data.media)}`,
-    `Date: ${data.flexible ? "Flexible" : data.date}`,
+    `Date: ${dateLine}`,
     `Place: ${data.place}`,
-    `People / size: ${data.people || "—"}`,
+    `People / size: ${people || "—"}`,
     `Duration: ${data.days || "—"}`,
     `Place type: ${data.placeType || "—"}`,
     `Website: ${data.website || "—"}`,
