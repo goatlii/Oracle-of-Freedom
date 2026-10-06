@@ -344,7 +344,7 @@ export const es: Copy = {
     whoTitle: "Esto es para vosotros si…",
     who: [
       "Os fugáis a solas o invitáis solo a los más cercanos (hasta unas 30 personas)",
-      "Preferís decir los votos en un acantilado, un bosque o junto al río antes que en un gran salón",
+      "Preferís decir los votos en una playa, un bosque o junto al río antes que en un gran salón",
       "Vuestro día soñado incluye un handfasting, una ceremonia de cacao, coronas de flores, tambores, un círculo de fuego o una cena larga bajo las estrellas",
       "Queréis estar presentes, no que os dirijan",
     ],

@@ -379,7 +379,7 @@ export const en: Copy = {
     whoTitle: "This is for you if…",
     who: [
       "You're eloping, or inviting only your closest people (up to about 30 guests)",
-      "You'd rather say your vows on a cliff, in a forest or by the river than in a ballroom",
+      "You'd rather say your vows on a beach, in a forest or by the river than in a ballroom",
       "Your dream day might include a handfasting, a cacao ceremony, flower crowns, drums, a fire circle or a long dinner under the stars",
       "You want to be present, not directed",
     ],
