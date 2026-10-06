@@ -83,19 +83,23 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <p className="mt-8 max-w-3xl text-ink/80">
           <TokenText text={copy.about.facts} />
         </p>
-        <div className="mt-10 max-w-md">
+        <div className="mt-10 max-w-md space-y-8">
           {atWork.map((image) => (
-            <Image
-              key={image.id}
-              src={image.src}
-              alt={image.alt[loc]}
-              width={image.width}
-              height={image.height}
-              placeholder="blur"
-              blurDataURL={image.blur}
-              className="w-full rounded-3xl object-cover"
-              sizes="(max-width: 768px) 100vw, 28rem"
-            />
+            <figure key={image.id}>
+              <Image
+                src={image.src}
+                alt={image.alt[loc]}
+                width={image.width}
+                height={image.height}
+                placeholder="blur"
+                blurDataURL={image.blur}
+                className="w-full rounded-3xl object-cover"
+                sizes="(max-width: 768px) 100vw, 28rem"
+              />
+              {image.caption?.[loc] ? (
+                <figcaption className="mt-3 text-sm text-ink/60">{image.caption[loc]}</figcaption>
+              ) : null}
+            </figure>
           ))}
         </div>
       </section>
