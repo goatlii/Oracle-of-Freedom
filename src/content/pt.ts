@@ -96,7 +96,7 @@ export const pt: Copy = {
     },
     portfolio: {
       title: "Portefólio · Oracle of Freedom",
-      description: "Momentos que não me limitei a ver: fiz parte deles. Retratos, encontros, festivais, fogo, DJs e vídeo.",
+      description: "Momentos reais das almas indomáveis. Retratos, encontros, festivais, fogo, DJs e vídeo.",
       keywords: "portefólio Agota Urbikaite; fotógrafa boho Portugal",
     },
     journal: {
@@ -213,10 +213,9 @@ export const pt: Copy = {
   about: {
     title: "Olá, sou a Agota.",
     paragraphs: [
-      "Trabalho com fotografia e vídeo há mais de dez anos, profissionalmente e em projetos pessoais que nascem da pura paixão.",
-      "O que mais amo é o momento sem pose: o suspiro antes de uma gargalhada, a faísca quando uma bailarina de fogo gira, o silêncio entre duas pessoas que se amam. O meu trabalho é dar vida à magia de um evento, de uma comunidade ou de um casal, em fotografia e em vídeo.",
-      "O meu estilo é fluido e orgânico. Vive no equilíbrio entre duas energias opostas, a ação e a calma. Não me limito a captar o momento: estou nele. Não estou à volta da ação, faço parte dela. É aí que acontecem os momentos mais doces e genuínos, e é isso que dá profundidade ao meu trabalho: ao olhar para as imagens, não vês só o que aconteceu, sentes que lá estiveste.",
-      "Sinto-me atraída por pessoas e lugares de espírito livre: encontros na selva, cerimónias junto ao rio, votos descalços na praia, DJs perdidos no seu set, casas ecológicas construídas com amor. Cada sessão está coberta do Algarve a Lisboa, com a costa pelo meio. Para casamentos, retiros, festivais e trabalhos comerciais viajo pelo resto de Portugal, pela Europa e mais além.",
+      "Trabalho com fotografia e vídeo há mais de 10 anos, tanto a nível profissional como em projetos de paixão. Especializo-me em captar momentos espontâneos a sério e em dar vida à magia de um evento ou de uma comunidade, em imagens fixas e em edições de vídeo.",
+      "O meu estilo é fluido e orgânico: um equilíbrio delicado entre energias opostas, a ação e a calma. Não se trata apenas de captar o momento, mas de estar nele; não apenas de estar à volta da ação, mas de fazer parte dela. É isso que dá profundidade ao meu trabalho, e é aí que se captam os momentos mais doces e genuínos, aqueles em que quem vê passa a fazer parte de tudo.",
+      "Sinto-me atraída por pessoas e lugares de espírito livre: encontros na selva, cerimónias junto ao rio, votos descalços na praia, DJs perdidos no seu set, casas ecológicas construídas com amor. E é essa a magia que quero captar.",
     ],
     promise: "Oracle of Freedom é a minha promessa: ver-te como realmente és e libertar esse momento.",
     valuesTitle: "Aquilo em que acredito",
@@ -226,7 +225,7 @@ export const pt: Copy = {
       { title: "Liberdade", body: "Sem guiões nem poses forçadas; apenas uma orientação suave quando quiseres." },
       { title: "Comunidade", body: "Faço parte dos círculos que fotografo e trato-os com cuidado." },
     ],
-    facts: "Mais de 10 anos em fotografia e vídeo · Fotografia e vídeo · Do Algarve a Lisboa em cada sessão · Mais longe para casamentos, retiros, festivais e trabalhos comerciais · Línguas: inglês e lituano com fluência, e espanhol de conversação",
+    facts: "Mais de 10 anos em fotografia e vídeo · Fotografia e vídeo · Línguas: inglês e lituano com fluência, e espanhol de conversação",
     bts: "PENDENTE — fotografias da Agota a trabalhar, ainda por fazer. Este bloco fica vazio até existirem.",
     closingTitle: "Vamos criar algo verdadeiro juntos.",
   },
@@ -751,7 +750,7 @@ export const pt: Copy = {
   },
   portfolio: {
     title: "Portefólio",
-    dek: "Momentos que não me limitei a ver: fiz parte deles.",
+    dek: "Momentos reais das almas indomáveis.",
     filters: [
       { id: "all", label: "Tudo" },
       { id: "portraits", label: "Retratos e casais" },
@@ -764,7 +763,6 @@ export const pt: Copy = {
       { id: "film", label: "Vídeo" },
     ],
     empty: "Ainda não há nada neste filtro.",
-    note: "A maioria das fotografias continua a ser um marcador em baixa resolução do PDF do portefólio 2026. Substitui o ficheiro em public/images/portfolio (o mesmo nome) ou carrega um novo no editor.",
   },
   journal: {
     title: "Journal",

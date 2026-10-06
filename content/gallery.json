@@ -82,10 +82,7 @@
       "categories": [
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -107,10 +104,7 @@
       "categories": [
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -132,10 +126,7 @@
       "categories": [
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -157,10 +148,7 @@
       "categories": [
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -182,10 +170,7 @@
       "categories": [
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -207,10 +192,7 @@
       "categories": [
         "djs"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -232,10 +214,7 @@
       "categories": [
         "djs"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -257,10 +236,7 @@
       "categories": [
         "djs"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -282,10 +258,7 @@
       "categories": [
         "djs"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -333,10 +306,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": true,
       "placeholder": true,
@@ -359,11 +329,7 @@
         "retreats",
         "elopements"
       ],
-      "pages": [
-        "retreats",
-        "elopements",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -386,11 +352,7 @@
         "retreats",
         "elopements"
       ],
-      "pages": [
-        "retreats",
-        "elopements",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -412,10 +374,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": true,
       "placeholder": true,
@@ -465,10 +424,7 @@
       "categories": [
         "fire"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -490,10 +446,7 @@
       "categories": [
         "fire"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -515,10 +468,7 @@
       "categories": [
         "fire"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -540,10 +490,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -565,10 +512,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -590,11 +534,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portraits",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -616,11 +556,7 @@
       "categories": [
         "retreats"
       ],
-      "pages": [
-        "retreats",
-        "portraits",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -643,10 +579,7 @@
         "concerts",
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -669,10 +602,7 @@
         "concerts",
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -695,10 +625,7 @@
         "concerts",
         "festivals"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -774,11 +701,7 @@
       "categories": [
         "portraits"
       ],
-      "pages": [
-        "portraits",
-        "people",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -801,11 +724,7 @@
         "portraits",
         "elopements"
       ],
-      "pages": [
-        "portraits",
-        "elopements",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -827,11 +746,7 @@
       "categories": [
         "portraits"
       ],
-      "pages": [
-        "portraits",
-        "people",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -986,10 +901,7 @@
       "categories": [
         "film"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -1011,10 +923,7 @@
       "categories": [
         "film"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -1036,10 +945,7 @@
       "categories": [
         "film"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -1061,10 +967,7 @@
       "categories": [
         "film"
       ],
-      "pages": [
-        "festivals",
-        "portfolio"
-      ],
+      "pages": [],
       "featured": false,
       "provisional": false,
       "placeholder": true,
@@ -1399,8 +1302,7 @@
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAJTPpn//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADBBESMf/aAAgBAQABPwDPpx0Gqm6Y6JaM7H0z/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAgBAgEBPwCYxH//xAAYEQACAwAAAAAAAAAAAAAAAAABAgARMf/aAAgBAwEBPwBiWN5P/9k=",
       "category": "djs",
       "categories": [
-        "djs",
-        "festivals"
+        "djs"
       ],
       "pages": [
         "festivals",
@@ -1425,8 +1327,7 @@
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAACAnkP/xAAcEAEAAgMAAwAAAAAAAAAAAAABAgMABBIRQVH/2gAIAQEAAT8Amza69pK3lAjz6j9Mdq6UOFOQI+M//8QAFxEBAAMAAAAAAAAAAAAAAAAAAQARQf/aAAgBAgEBPwC02f/EABgRAAIDAAAAAAAAAAAAAAAAAAABAhJC/9oACAEDAQE/AKQeT//Z",
       "category": "djs",
       "categories": [
-        "djs",
-        "festivals"
+        "djs"
       ],
       "pages": [
         "experiences",
@@ -1453,8 +1354,7 @@
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAAyyYX/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAEkEDIf/aAAgBAQABPwDmECBWrZ4unR6DP//EABcRAAMBAAAAAAAAAAAAAAAAAAACESH/2gAIAQIBAT8AZWyQ/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEDMVH/2gAIAQMBAT8AUmqj/9k=",
       "category": "djs",
       "categories": [
-        "djs",
-        "festivals"
+        "djs"
       ],
       "pages": [
         "festivals",
@@ -1479,8 +1379,7 @@
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAEAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAACVCf/EABkQAQACAwAAAAAAAAAAAAAAAAEAAgMSQf/aAAgBAQABPwANcFk7P//EABYRAAMAAAAAAAAAAAAAAAAAAAACQf/aAAgBAgEBPwBof//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z",
       "category": "djs",
       "categories": [
-        "djs",
-        "festivals"
+        "djs"
       ],
       "pages": [
         "experiences",

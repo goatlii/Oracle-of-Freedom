@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { readConsent } from "@/components/cookie-banner";
 import { imageById, videos } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
+import { isPublishedPhoto } from "@/lib/utils";
 
 export function VideoGrid({
   locale,
@@ -36,6 +37,7 @@ export function VideoGrid({
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {videos.items.map((video) => {
           const poster = imageById(video.posterId);
+          const showPoster = isPublishedPhoto(poster);
           const playing = active === video.id && consent;
           const src =
             video.platform === "youtube" && video.youtubeId
@@ -45,7 +47,7 @@ export function VideoGrid({
             <article key={video.id} className="overflow-hidden rounded-3xl bg-night">
               {playing ? (
                 <iframe
-                  title={poster.alt[locale]}
+                  title={showPoster ? poster.alt[locale] : title}
                   src={src}
                   className="aspect-video w-full"
                   allow="autoplay; encrypted-media; picture-in-picture"
@@ -60,14 +62,18 @@ export function VideoGrid({
                     setActive(video.id);
                   }}
                 >
-                  <Image
-                    src={poster.src}
-                    alt={poster.alt[locale]}
-                    width={poster.width}
-                    height={poster.height}
-                    className="aspect-video w-full object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                  {showPoster ? (
+                    <Image
+                      src={poster.src}
+                      alt={poster.alt[locale]}
+                      width={poster.width}
+                      height={poster.height}
+                      className="aspect-video w-full object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  ) : (
+                    <div className="aspect-video w-full bg-ink" />
+                  )}
                   <span className="absolute inset-0 flex items-center justify-center">
                     <span className="rounded-full bg-sand px-4 py-2 text-sm text-ink">
                       {consent ? play : allow}

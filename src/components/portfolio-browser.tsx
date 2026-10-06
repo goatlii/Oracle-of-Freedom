@@ -11,7 +11,6 @@ export function PortfolioBrowser({
   locale,
   filters,
   empty,
-  note,
   soon,
   labels,
 }: {
@@ -19,16 +18,15 @@ export function PortfolioBrowser({
   locale: Locale;
   filters: { id: string; label: string; soon?: boolean }[];
   empty: string;
-  note: string;
   soon: string;
   labels: { open: string; close: string; previous: string; next: string; placeholder: string };
 }) {
   const [filter, setFilter] = useState("all");
   const visible = useMemo(() => {
-    if (filter === "all") return images.filter((image) => image.category !== "portraits" || image.id !== "cover-wide");
-    return images.filter((image) => image.categories.includes(filter) || image.category === filter);
+    const published = images.filter((image) => !image.placeholder);
+    if (filter === "all") return published.filter((image) => image.category !== "portraits" || image.id !== "cover-wide");
+    return published.filter((image) => image.categories.includes(filter) || image.category === filter);
   }, [filter, images]);
-  const current = filters.find((item) => item.id === filter);
 
   return (
     <div>
@@ -50,9 +48,7 @@ export function PortfolioBrowser({
           </button>
         ))}
       </div>
-      {current?.soon ? <p className="mb-4 text-sm text-ink/70">{note}</p> : null}
       {visible.length ? <GalleryGrid images={visible} locale={locale} labels={labels} /> : <p>{empty}</p>}
-      <p className="mt-8 text-sm text-ink/60">{note}</p>
     </div>
   );
 }

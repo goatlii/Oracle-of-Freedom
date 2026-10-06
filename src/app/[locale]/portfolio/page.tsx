@@ -3,6 +3,7 @@ import { PortfolioBrowser } from "@/components/portfolio-browser";
 import { getCopy } from "@/content";
 import type { Locale } from "@/i18n/routing";
 import { gallery } from "@/lib/content";
+import { isPublishedPhoto } from "@/lib/utils";
 import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,7 +23,9 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
   setRequestLocale(locale);
   const loc = (locale === "es" || locale === "pt" ? locale : "en") as Locale;
   const copy = getCopy(locale);
-  const images = gallery.filter((image) => image.pages.includes("portfolio") || image.featured);
+  const images = gallery.filter(
+    (image) => isPublishedPhoto(image) && (image.pages.includes("portfolio") || image.featured),
+  );
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
@@ -35,7 +38,6 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
           locale={loc}
           filters={copy.portfolio.filters}
           empty={copy.portfolio.empty}
-          note={copy.portfolio.note}
           soon={copy.common.comingSoon}
           labels={{
             open: copy.a11y.openPhoto,
