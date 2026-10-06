@@ -851,7 +851,7 @@ export const en: Copy = {
       {
         title: "What the inquiry form collects",
         body: [
-          "Your name, email, the story you choose to tell, and any optional phone number, date, place, budget and how you found the site. You send it so Agota can reply about a possible collaboration.",
+          "Your name, email, the story you choose to tell, and any optional phone number, date, place, budget, notes and how you found the site. You send it so Agota can reply about a possible collaboration.",
           "Messages are emailed to agota@oracleoffreedom.com through Resend when that service is configured. Until then, the form still runs, but nothing is delivered.",
           "PLACEHOLDER: confirm how long inquiries are kept. The intention is to keep them only as long as needed to reply and follow the conversation, then delete them.",
         ],
@@ -924,6 +924,8 @@ export const en: Copy = {
     mediaOptions: { photo: "Photo", film: "Film", both: "Both" },
     story: "Tell me about you and your vision",
     storyPlaceholder: "The vibe, the place, what matters most…",
+    notes: "Anything else I should know?",
+    notesPlaceholder: "What you need, or any context that helps me reply.",
     found: "How did you find me?",
     foundOptions: {
       instagram: "Instagram",

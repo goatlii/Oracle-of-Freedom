@@ -32,6 +32,7 @@ function schemaFor(copy: FormCopy) {
       budget: z.string().min(1, copy.errors.required),
       media: z.string().optional(),
       story: z.string().optional(),
+      notes: z.string().max(4000).optional(),
       found: z.string().min(1, copy.errors.required),
       language: z.string().min(1, copy.errors.required),
       consent: z.boolean().refine((value) => value, { error: copy.errors.consent }),
@@ -96,6 +97,7 @@ export function InquiryForm({
       budget: "",
       media: "",
       story: "",
+      notes: "",
       found: "",
       language: locale === "es" ? "es" : "en",
       consent: false,
@@ -327,6 +329,10 @@ export function InquiryForm({
           <div>
             <Label htmlFor="story">{copy.story}</Label>
             <Textarea id="story" placeholder={copy.storyPlaceholder} {...form.register("story")} />
+          </div>
+          <div>
+            <Label htmlFor="notes">{copy.notes}</Label>
+            <Textarea id="notes" placeholder={copy.notesPlaceholder} {...form.register("notes")} />
           </div>
           <div>
             <Label htmlFor="found">{copy.found} *</Label>

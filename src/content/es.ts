@@ -799,7 +799,7 @@ export const es: Copy = {
       {
         title: "Qué recoge el formulario",
         body: [
-          "Tu nombre, email, la historia que quieras contar y, si los das, teléfono, fecha, lugar, presupuesto y cómo me encontraste. Lo envías para que Agota pueda responder sobre una posible colaboración.",
+          "Tu nombre, email, la historia que quieras contar y, si los das, teléfono, fecha, lugar, presupuesto, notas y cómo me encontraste. Lo envías para que Agota pueda responder sobre una posible colaboración.",
           "Los mensajes se envían a agota@oracleoffreedom.com a través de Resend cuando ese servicio está configurado. Hasta entonces el formulario funciona, pero no se entrega nada.",
           "PENDIENTE: confirmar cuánto tiempo se guardan las consultas. La intención es conservarlas solo el tiempo necesario para responder y seguir la conversación, y después borrarlas.",
         ],
@@ -872,6 +872,8 @@ export const es: Copy = {
     mediaOptions: { photo: "Foto", film: "Vídeo", both: "Ambos" },
     story: "Cuéntame sobre ti y tu visión",
     storyPlaceholder: "La vibra, el lugar, lo que más importa…",
+    notes: "¿Algo más que deba saber?",
+    notesPlaceholder: "Lo que necesitas, o cualquier contexto que me ayude a responder.",
     found: "¿Cómo me encontraste?",
     foundOptions: {
       instagram: "Instagram",
