@@ -79,7 +79,7 @@ export default config({
         }),
         elopementFilmWeeks: fields.text({
           label: "Elopement / wedding film timing",
-          description: "Film and photo+film collections for elopements and small weddings. Used as {filmWeeks}.",
+          description: "Film for elopements and small weddings. Used as {filmWeeks}.",
         }),
         artistFilmWeeks: fields.text({
           label: "Portrait / artist film timing",

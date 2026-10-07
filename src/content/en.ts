@@ -388,7 +388,6 @@ export const en: Copy = {
       "This is not for you if you're planning a large, traditional wedding — I focus only on small, intimate celebrations, so I can give each one my full heart.",
     packagesTitle: "Collections",
     filmsTitle: "Film",
-    combosTitle: "Photo + film",
     addonsTitle: "Add-ons",
     packages: {
       elopement: {
@@ -418,28 +417,12 @@ export const en: Copy = {
         name: "Small wedding highlight",
         items: ["A highlight film of the ceremony, portraits and the night", "Made to share with the people who couldn't be there", "Delivered in {filmWeeks}"],
       },
-      "elopement-combo": {
-        name: "Elopement photo + film",
-        items: ["Photographs and the film, across 3–4 hours", "One person for the whole coverage", "Both in {filmWeeks} — photo+film follows the film timeline", "Less than booking photo and film separately"],
-      },
-      "wedding-combo": {
-        name: "Small wedding photo + film",
-        items: ["Photographs and the highlight film, across 5–6 hours", "Up to about 30 guests", "Both in {filmWeeks} — photo+film follows the film timeline", "Less than booking photo and film separately"],
-      },
       "elopement-film-express": {
         name: "Express film",
         items: [
           "Rush an elopement film or a small-wedding highlight",
           "Ready in {expressFilm} instead of {filmWeeks}",
           "A paid add-on — add it when you book",
-        ],
-      },
-      "elopement-combo-express": {
-        name: "Express photo + film",
-        items: [
-          "Rush the photographs and the film together",
-          "Both in {expressFilm} instead of {filmWeeks}",
-          "Photographs on their own can be rushed in {expressPhoto}",
         ],
       },
       "elopement-drone-stills": {
@@ -471,7 +454,7 @@ export const en: Copy = {
       { title: "Let's talk", body: "A relaxed video call to feel if we're a fit." },
       { title: "Book", body: "A {deposit} deposit reserves your date. Express delivery can be added then." },
       { title: "Dream together", body: "I help with the location, timing and flow of the day, and I can recommend like-minded celebrants, florists and places." },
-      { title: "The day & after", body: "I'm with you, part of it. Sneak peek in 48 hours. Photographs in {weeks}; films and photo+film collections in {filmWeeks}." },
+      { title: "The day & after", body: "I'm with you, part of it. Sneak peek in 48 hours. Photographs in {weeks}; films in {filmWeeks}." },
     ],
     wordsTitle: "Love notes",
     testimonialIds: ["elopement", "wedding"],
@@ -480,11 +463,11 @@ export const en: Copy = {
       { q: "Do you only photograph small weddings?", a: "Yes — elopements and intimate celebrations up to about 30 guests. That's where my style truly shines." },
       { q: "Can we have a symbolic ceremony?", a: "Absolutely. Many couples marry legally at home and celebrate here in nature. I can recommend celebrants." },
       { q: "We don't know where to elope yet. Can you help?", a: "That's one of my favourite parts. Tell me your vibe (ocean, forest, desert-like plains, mountains) and I'll suggest places." },
-      { q: "Do you do video too?", a: "Yes. An elopement film and a small-wedding highlight can be booked on their own, or together with the photographs for less than the two separately." },
+      { q: "Do you do video too?", a: "Yes. An elopement film and a small-wedding highlight can be booked on their own." },
       { q: "Can you photograph fire, night and dancing?", a: "Night, fire and festival light are my speciality. Your after-party is safe with me." },
       { q: "Do you travel?", a: "Yes. The Algarve-to-Lisbon coast is included. For a wedding I also travel the rest of Portugal, Europe and beyond, including tropical destinations, with travel quoted at cost." },
       { q: "How far in advance should we book?", a: "For May–October, 6–12 months is ideal; for elopements, sometimes a few weeks is enough — just ask." },
-      { q: "When do we receive the photographs and the film?", a: "Photographs in {weeks}. Films and photo+film collections follow the film timeline, {filmWeeks}. A sneak peek goes out within 48 hours. Express delivery is a paid add-on: photographs in {expressPhoto}, film or the full combo in {expressFilm}." },
+      { q: "When do we receive the photographs and the film?", a: "Photographs in {weeks}. Films follow the film timeline, {filmWeeks}. A sneak peek goes out within 48 hours. Express delivery is a paid add-on: photographs in {expressPhoto}, film in {expressFilm}." },
     ],
     guide: { post: "boho", label: "Boho elopement in Portugal: places, seasons & real costs" },
   },
