@@ -1,6 +1,36 @@
 {
   "items": [
     {
+      "id": "india",
+      "placeholder": false,
+      "name": "India, Ireland",
+      "shoot": {
+        "en": "Portrait",
+        "es": "Retrato",
+        "pt": "Retrato"
+      },
+      "quote": {
+        "en": "I really appreciate the space Agota created for me to be free!! - the photos really capture exactly what I was envisioning. Kudos!",
+        "es": "¡Aprecio de verdad el espacio que Agota creó para que pudiera ser libre! Las fotos capturan exactamente lo que estaba imaginando. ¡Bravo!",
+        "pt": "Aprecio mesmo o espaço que a Agota criou para eu poder ser livre! As fotos captam exatamente o que eu imaginava. Parabéns!"
+      }
+    },
+    {
+      "id": "sage",
+      "placeholder": false,
+      "name": "Sage Farris, US",
+      "shoot": {
+        "en": "DJ press kit",
+        "es": "Kit de prensa de DJ",
+        "pt": "Kit de imprensa de DJ"
+      },
+      "quote": {
+        "en": "The photos are exactly what I had envisioned. Agota nailed it!",
+        "es": "Las fotos son exactamente lo que había imaginado. ¡Agota lo clavó!",
+        "pt": "As fotos são exatamente o que eu tinha imaginado. A Agota acertou em cheio!"
+      }
+    },
+    {
       "id": "couple",
       "placeholder": true,
       "quote": {

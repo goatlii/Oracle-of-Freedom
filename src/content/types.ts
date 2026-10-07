@@ -144,6 +144,7 @@ export type Copy = {
     weddingsTitle: string;
     weddingsBody: string;
     weddingsPrice: string;
+    wordsTitle: string;
   };
   experiences: {
     title: string;

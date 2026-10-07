@@ -124,6 +124,16 @@ export default config({
           fields.object({
             id: fields.text({ label: "ID" }),
             placeholder: fields.checkbox({ label: "Still a placeholder" }),
+            name: fields.text({
+              label: "Attribution",
+              description: "Name and place, for example India, Ireland. Leave empty on placeholders.",
+              validation: { isRequired: false },
+            }),
+            shoot: fields.object({
+              en: fields.text({ label: "Shoot label (English)", validation: { isRequired: false } }),
+              es: fields.text({ label: "Shoot label (Español)", validation: { isRequired: false } }),
+              pt: fields.text({ label: "Shoot label (Português)", validation: { isRequired: false } }),
+            }),
             quote: localized,
           }),
           { label: "Quotes", itemLabel: (props) => props.fields.id.value },

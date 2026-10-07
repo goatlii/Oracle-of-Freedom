@@ -43,10 +43,21 @@ export type PackageItem = {
   personalize?: boolean;
 };
 
+export type Testimonial = {
+  id: string;
+  /** False for a published client quote. Missing or true keeps the placeholder card. */
+  placeholder?: boolean;
+  /** Name and place, for example "India, Ireland". */
+  name?: string;
+  /** Shoot-type label shown with the attribution. */
+  shoot?: Partial<Record<Locale, string>>;
+  quote: Record<Locale, string>;
+};
+
 export const settings = settingsJson;
 export const packages = packagesJson;
 export const gallery = galleryJson.images as GalleryImage[];
-export const testimonials = testimonialsJson.items;
+export const testimonials = testimonialsJson.items as Testimonial[];
 export const videos = videosJson;
 
 export function imageById(id: string) {
