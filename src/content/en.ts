@@ -683,7 +683,7 @@ export const en: Copy = {
       { title: "Delivery", body: "Selects for socials, then the full gallery and edits. Live-set clips within 48 hours. Photographs within {artistWeeks}. Films within {artistFilmWeeks} — photo and film together take longer than photographs alone. Priority delivery is a sliding-scale add-on, quoted before the {deposit} deposit." },
     ],
     wordsTitle: "Kind words",
-    testimonialIds: ["rewild", "sage", "artist"],
+    testimonialIds: ["rewild", "quinton", "sage", "artist"],
     faqTitle: "Questions",
     faq: [
       { q: "Do you shoot in dark clubs and at night?", a: "Yes — low light, stage lights, smoke and fire are my comfort zone." },
