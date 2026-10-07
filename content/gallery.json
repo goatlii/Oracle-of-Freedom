@@ -1672,6 +1672,90 @@
         "pt": "Uma DJ loura ajusta os auscultadores atr\u00e1s de uma cabine cristalina com luz verde-azulada, fundo psicad\u00e9lico e lasers de clube."
       },
       "source": "Agota Urbikaite"
+    },
+    {
+      "id": "fire-06",
+      "src": "/images/portfolio/fire-06.jpg",
+      "width": 2133,
+      "height": 3200,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAAjgv/xAAdEAACAgEFAAAAAAAAAAAAAAABAgADIQQFERQy/9oACAEBAAE/AFo6VNWqVS5PDgYICQ3umz1rj3P/xAAXEQADAQAAAAAAAAAAAAAAAAAAASFB/9oACAECAQE/AEnbp//EABgRAAIDAAAAAAAAAAAAAAAAAAACEiFx/9oACAEDAQE/AGqOH//Z",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "portfolioTabs": [
+        "all",
+        "fire"
+      ],
+      "pages": [
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 125,
+      "alt": {
+        "en": "A tattooed fire dancer at night, one arm raised, a long-exposure streak of white-orange flame crossing her torso, smoke behind her.",
+        "es": "Una bailarina de fuego tatuada de noche, un brazo en alto, una estela de larga exposici\u00f3n de llama blanca y naranja cruzando el torso, humo detr\u00e1s.",
+        "pt": "Uma bailarina de fogo tatuada de noite, um bra\u00e7o erguido, um rasto de longa exposi\u00e7\u00e3o de chama branca e laranja a cruzar o tronco, fumo atr\u00e1s."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "fire-07",
+      "src": "/images/portfolio/fire-07.jpg",
+      "width": 2132,
+      "height": 3200,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAMxeX//EAB8QAAIBAwUBAAAAAAAAAAAAAAECAwAEEQUSISIxMv/aAAgBAQABPwCzciI7LVZGk6t6fmtDVZbVsjlZxhq//8QAFhEBAQEAAAAAAAAAAAAAAAAAARIA/9oACAECAQE/AJpXf//EABYRAQEBAAAAAAAAAAAAAAAAABIAIf/aAAgBAwEBPwBHL//Z",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "portfolioTabs": [
+        "all",
+        "fire"
+      ],
+      "pages": [
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 126,
+      "alt": {
+        "en": "A fire performer with an ornate metal headpiece and neck tattoos, swirling orange flames around her under teal stage lights.",
+        "es": "Una artista de fuego con un tocado de metal ornamentado y tatuajes en el cuello, llamas naranjas en espiral y luces de escenario verde azulado.",
+        "pt": "Uma artista de fogo com um adere\u00e7o de metal ornamentado e tatuagens no pesco\u00e7o, chamas laranja em espiral e luzes de palco verde-azuladas."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "fire-08",
+      "src": "/images/portfolio/fire-08.jpg",
+      "width": 412,
+      "height": 627,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAMNGp//EABsQAAICAwEAAAAAAAAAAAAAAAECAxEAEjEi/9oACAEBAAE/AJpWMCNXkjU1jyPXeHP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAhJC/9oACAECAQE/AFjR/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAISQv/aAAgBAwEBPwBqyf/Z",
+      "category": "fire",
+      "categories": [
+        "fire"
+      ],
+      "portfolioTabs": [
+        "all",
+        "fire"
+      ],
+      "pages": [
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 127,
+      "alt": {
+        "en": "A fire performer with a wire headpiece raises a flaming prop, teal stage lights and smoke around her, a coin belt at her waist.",
+        "es": "Una artista de fuego con un tocado de alambre levanta un accesorio en llamas, luces de escenario verde azulado y humo, cintur\u00f3n de monedas en la cintura.",
+        "pt": "Uma artista de fogo com um adere\u00e7o de arame ergue um prop em chamas, luzes de palco verde-azuladas e fumo, cinto de moedas na cintura."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
