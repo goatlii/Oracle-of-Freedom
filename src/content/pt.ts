@@ -572,7 +572,7 @@ export const pt: Copy = {
       },
       aftermovie: {
         name: "Aftermovie de festival",
-        items: ["Um filme curto do dia, por cada dia do evento", "Para publicar quando o encontro termina", "Entrega em {artistFilmWeeks}"],
+        items: ["Um filme curto do dia, por cada dia do evento", "Para publicar quando o encontro termina", "Entrega em 2–4 semanas, conforme a duração do festival"],
       },
       "music-video": {
         name: "Videoclipe",
