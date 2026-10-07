@@ -826,12 +826,13 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
       "featured": true,
       "provisional": false,
       "placeholder": false,
-      "order": 75,
+      "order": 200,
       "alt": {
         "en": "A woman lies in dark shallow water holding white calla lilies, wearing a black lace top, her wet hair spread around her.",
         "es": "Una mujer tumbada en agua oscura y poco profunda sostiene calas blancas, con un top de encaje negro y el pelo mojado extendido a su alrededor.",
@@ -1451,12 +1452,13 @@
       ],
       "pages": [
         "festivals",
-        "portfolio"
+        "portfolio",
+        "home"
       ],
-      "featured": false,
+      "featured": true,
       "provisional": false,
       "placeholder": false,
-      "order": 117,
+      "order": 201,
       "alt": {
         "en": "A woman in a gold chain-mail veil and crescent headdress dances in firelit smoke, tribal-fusion jewelry and tattoos along her arm.",
         "es": "Una mujer con velo de malla dorada y tocado de luna creciente baila entre humo iluminado por el fuego, con joyer\u00eda tribal-fusi\u00f3n y tatuajes en el brazo.",
