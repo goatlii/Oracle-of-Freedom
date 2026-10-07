@@ -78,37 +78,11 @@
       "inquiry": "wedding"
     },
     {
-      "id": "elopement-combo",
-      "group": "elopements",
-      "kind": "combo",
-      "label": "Elopement photo + film",
-      "from": 1150,
-      "inquiry": "elopement",
-      "compare": ["elopement", "elopement-film"]
-    },
-    {
-      "id": "wedding-combo",
-      "group": "elopements",
-      "kind": "combo",
-      "label": "Small wedding photo + film",
-      "from": 1650,
-      "inquiry": "wedding",
-      "compare": ["wedding", "wedding-film"]
-    },
-    {
       "id": "elopement-film-express",
       "group": "elopements",
       "kind": "addon",
       "label": "Elopement / wedding film rush",
       "from": 150,
-      "inquiry": "elopement"
-    },
-    {
-      "id": "elopement-combo-express",
-      "group": "elopements",
-      "kind": "addon",
-      "label": "Elopement / wedding photo+film rush",
-      "from": 200,
       "inquiry": "elopement"
     },
     {

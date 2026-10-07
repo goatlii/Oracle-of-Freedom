@@ -353,7 +353,6 @@ export const es: Copy = {
       "No es para vosotros si planeáis una boda grande y tradicional: me dedico solo a celebraciones pequeñas e íntimas para poner todo mi corazón en cada una.",
     packagesTitle: "Colecciones",
     filmsTitle: "Vídeo",
-    combosTitle: "Foto + vídeo",
     addonsTitle: "Extras",
     packages: {
       elopement: {
@@ -383,28 +382,12 @@ export const es: Copy = {
         name: "Highlight de boda íntima",
         items: ["Una película de la ceremonia, los retratos y la noche", "Para compartirla con quien no pudo estar", "Entrega en {filmWeeks}"],
       },
-      "elopement-combo": {
-        name: "Elopement foto + vídeo",
-        items: ["Fotografías y película, en 3–4 horas", "Una sola persona para toda la cobertura", "Las dos en {filmWeeks}: foto+vídeo sigue el plazo del vídeo", "Menos que reservar foto y vídeo por separado"],
-      },
-      "wedding-combo": {
-        name: "Boda íntima foto + vídeo",
-        items: ["Fotografías y highlight, en 5–6 horas", "Hasta unas 30 personas", "Las dos en {filmWeeks}: foto+vídeo sigue el plazo del vídeo", "Menos que reservar foto y vídeo por separado"],
-      },
       "elopement-film-express": {
         name: "Vídeo exprés",
         items: [
           "Acelera la película de elopement o el highlight de boda íntima",
           "Lista en {expressFilm} en lugar de {filmWeeks}",
           "Un extra de pago: añádelo al reservar",
-        ],
-      },
-      "elopement-combo-express": {
-        name: "Foto + vídeo exprés",
-        items: [
-          "Acelera las fotografías y la película juntas",
-          "Las dos en {expressFilm} en lugar de {filmWeeks}",
-          "Las fotografías solas pueden ir exprés en {expressPhoto}",
         ],
       },
       "elopement-drone-stills": {
@@ -435,7 +418,7 @@ export const es: Copy = {
       { title: "Hablemos", body: "Una videollamada relajada para sentir si encajamos." },
       { title: "Reserva", body: "Una señal del {deposit} asegura vuestra fecha. Entonces se puede añadir la entrega exprés." },
       { title: "Soñamos juntos", body: "Os ayudo con el lugar, el horario y el ritmo del día, y os recomiendo oficiantes, floristas y lugares afines." },
-      { title: "El día y después", body: "Estoy con vosotros, como parte de ello. Adelanto en 48 horas. Las fotografías, en {weeks}; el vídeo y las colecciones foto+vídeo, en {filmWeeks}." },
+      { title: "El día y después", body: "Estoy con vosotros, como parte de ello. Adelanto en 48 horas. Las fotografías, en {weeks}; el vídeo, en {filmWeeks}." },
     ],
     wordsTitle: "Notas de amor",
     testimonialIds: ["elopement", "wedding"],
@@ -444,11 +427,11 @@ export const es: Copy = {
       { q: "¿Solo fotografías bodas pequeñas?", a: "Sí: elopements y celebraciones íntimas de hasta unas 30 personas. Ahí es donde mi estilo brilla de verdad." },
       { q: "¿Podemos hacer una ceremonia simbólica?", a: "Por supuesto. Muchas parejas se casan legalmente en su país y lo celebran aquí, en la naturaleza. Puedo recomendaros oficiantes." },
       { q: "Aún no sabemos dónde. ¿Nos ayudas?", a: "Es una de mis partes favoritas. Decidme vuestra vibra (océano, bosque, llanuras, montaña) y os propongo lugares." },
-      { q: "¿También haces vídeo?", a: "Sí. La película de elopement y el highlight de boda íntima se reservan solos, o junto con las fotografías, por menos que los dos por separado." },
+      { q: "¿También haces vídeo?", a: "Sí. La película de elopement y el highlight de boda íntima se reservan solos." },
       { q: "¿Fotografías fuego, noche y baile?", a: "La noche, el fuego y la luz de festival son mi especialidad. Vuestra fiesta está en buenas manos." },
       { q: "¿Viajas?", a: "Sí. La costa del Algarve a Lisboa está incluida. Para una boda también viajo por el resto de Portugal, Europa y más allá, incluidos destinos tropicales, con el desplazamiento a coste real." },
       { q: "¿Con cuánta antelación reservamos?", a: "Para mayo–octubre, lo ideal es con 6–12 meses; para un elopement a veces bastan unas semanas: pregúntame." },
-      { q: "¿Cuándo llegan las fotografías y el vídeo?", a: "Las fotografías, en {weeks}. El vídeo y las colecciones foto+vídeo siguen el plazo del vídeo, {filmWeeks}. El adelanto sale en 48 horas. La entrega exprés es un extra de pago: fotografías en {expressPhoto}, vídeo o el combo completo en {expressFilm}." },
+      { q: "¿Cuándo llegan las fotografías y el vídeo?", a: "Las fotografías, en {weeks}. El vídeo sigue el plazo del vídeo, {filmWeeks}. El adelanto sale en 48 horas. La entrega exprés es un extra de pago: fotografías en {expressPhoto}, vídeo en {expressFilm}." },
     ],
     guide: { post: "boho", label: "Elopement boho en Portugal: lugares, temporadas y precios reales" },
   },
