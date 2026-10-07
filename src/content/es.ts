@@ -577,7 +577,7 @@ export const es: Copy = {
       },
       "music-video": {
         name: "Videoclip",
-        items: ["Concepto, rodaje y edición de un videoclip orgánico, de actuación o en la naturaleza", "El presupuesto final depende de la idea", "Entrega en 3–4 semanas"],
+        items: ["Concepto, rodaje y edición de un videoclip orgánico, de actuación o en la naturaleza", "El presupuesto final depende de la idea", "Entrega en 3–5 semanas"],
       },
       "reels-pack": {
         name: "Pack de reels",
