@@ -106,21 +106,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-20 md:grid-cols-[1.1fr_0.9fr] md:px-6 md:py-28">
-        <p className="font-quote text-3xl leading-snug text-ink md:text-5xl">{copy.home.manifesto}</p>
-        <Image
-          src={about.src}
-          alt={about.alt[loc]}
-          width={about.width}
-          height={about.height}
-          placeholder="blur"
-          blurDataURL={about.blur}
-          className="aspect-[4/5] w-full rounded-[2rem] object-cover"
-          sizes="(max-width: 768px) 100vw, 40vw"
-        />
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6">
+      <section className="mx-auto max-w-6xl px-4 pt-20 pb-8 md:px-6 md:pt-28">
         <h2 className="font-serif text-4xl md:text-5xl">{copy.home.doorsTitle}</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {doors.map((door) => (
@@ -144,6 +130,20 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-20 md:grid-cols-[1.1fr_0.9fr] md:px-6 md:py-28">
+        <p className="font-quote text-3xl leading-snug text-ink md:text-5xl">{copy.home.manifesto}</p>
+        <Image
+          src={about.src}
+          alt={about.alt[loc]}
+          width={about.width}
+          height={about.height}
+          placeholder="blur"
+          blurDataURL={about.blur}
+          className="aspect-[4/5] w-full rounded-[2rem] object-cover"
+          sizes="(max-width: 768px) 100vw, 40vw"
+        />
       </section>
 
       <section className="mt-16 bg-clay/70">
