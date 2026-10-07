@@ -602,15 +602,6 @@ export const pt: Copy = {
           "Uma nota breve com a ordem do dia e, depois, o valor antes do sinal de {deposit}",
         ],
       },
-      "festival-express-film-day": {
-        name: "Um dia de filme ou foto + filme",
-        items: [
-          "Um dia em filme, ou em fotografias e filme juntos",
-          "Foto e filme juntos demoram mais do que só as fotografias",
-          "O filme padrão segue o prazo de {artistFilmWeeks}, salvo se acordarmos esta prioridade",
-          "O valor fica claro antes do sinal de {deposit}",
-        ],
-      },
       "festival-express-weekend": {
         name: "Prioridade de fim de semana",
         badge: "Desde 200 €",
@@ -649,7 +640,7 @@ export const pt: Copy = {
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, um dia de filme ou foto e filme desde 150–200 €, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
+      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
     ],
   },
   places: {

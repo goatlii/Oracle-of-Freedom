@@ -602,15 +602,6 @@ export const es: Copy = {
           "Una nota breve con el orden del día y, después, la tarifa antes de la señal del {deposit}",
         ],
       },
-      "festival-express-film-day": {
-        name: "Un día de vídeo o foto + vídeo",
-        items: [
-          "Un día en vídeo, o en fotografías y vídeo juntos",
-          "Foto y vídeo juntos llevan más tiempo que solo las fotografías",
-          "El vídeo estándar sigue el plazo de {artistFilmWeeks}, salvo que acordemos esta prioridad",
-          "La tarifa queda clara antes de la señal del {deposit}",
-        ],
-      },
       "festival-express-weekend": {
         name: "Prioridad de fin de semana",
         badge: "Desde 200 €",
@@ -649,7 +640,7 @@ export const es: Copy = {
       { q: "¿Puedo usar las fotos en mi press kit y en plataformas de streaming?", a: "Sí, el uso promocional está incluido." },
       { q: "¿Trabajas con festivales?", a: "Sí, dentro de equipos de contenido oficiales o asociados, y siempre respetando las normas de foto y de consentimiento de cada festival." },
       { q: "¿Grabas un videoclip completo?", a: "Sí, del concepto a la edición final. Cuéntame tu idea y tu presupuesto." },
-      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotografías, en {artistWeeks}. El vídeo, y la foto con vídeo, en {artistFilmWeeks}: juntos llevan más tiempo que solo las fotografías. La entrega exprés y prioritaria es un extra aparte, presupuestado al trabajo: selección de fotos al día siguiente desde 75–100 €, un adelanto el mismo día desde 100–150 € si la agenda lo permite, un día de vídeo o foto y vídeo desde 150–200 €, y un fin de semana completo desde 200 €. Cuéntame los días, las horas y la rapidez que necesitas. Confirmo la tarifa antes de la señal del {deposit}." },
+      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotografías, en {artistWeeks}. El vídeo, y la foto con vídeo, en {artistFilmWeeks}: juntos llevan más tiempo que solo las fotografías. La entrega exprés y prioritaria es un extra aparte, presupuestado al trabajo: selección de fotos al día siguiente desde 75–100 €, un adelanto el mismo día desde 100–150 € si la agenda lo permite, y un fin de semana completo desde 200 €. Cuéntame los días, las horas y la rapidez que necesitas. Confirmo la tarifa antes de la señal del {deposit}." },
     ],
   },
   places: {

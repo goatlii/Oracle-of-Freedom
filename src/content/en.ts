@@ -642,15 +642,6 @@ export const en: Copy = {
           "A short note on the running order, then the fee before the {deposit} deposit",
         ],
       },
-      "festival-express-film-day": {
-        name: "One-day film or photo + film",
-        items: [
-          "One day as film, or as photographs and film together",
-          "Photo and film together take longer than photographs alone",
-          "Standard film still follows {artistFilmWeeks} unless this priority is agreed",
-          "The fee is clear before the {deposit} deposit",
-        ],
-      },
       "festival-express-weekend": {
         name: "Full weekend priority",
         badge: "From €200",
@@ -690,7 +681,7 @@ export const en: Copy = {
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, one day of film or photo and film from €150–200, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
     ],
   },
   places: {
