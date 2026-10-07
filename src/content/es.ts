@@ -203,7 +203,7 @@ export const es: Copy = {
     featuredTitle: "Trabajo destacado",
     wordsTitle: "Palabras bonitas",
     about:
-      "Hola, soy Agota. Llevo más de 10 años fotografiando y grabando los momentos en los que nadie posa: la risa en mitad del baile, las manos en el río, la mirada entre dos personas cuando creen que nadie las ve.",
+      "Hola, soy Agota. Llevo más de 10 años fotografiando y grabando los momentos en los que nadie posa, capturando la esencia y la magia de los eventos, las comunidades y las almas indómitas.",
     journalTitle: "Journal",
     journalDek: "Guías para soñadores y para quien organiza.",
     closingTitle: "Cuéntame tu historia.",

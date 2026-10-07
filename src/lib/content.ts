@@ -63,7 +63,7 @@ export function imagesForPage(page: string) {
 
 export function featuredImages() {
   return gallery
-    .filter((image) => image.featured && isPublishedPhoto(image))
+    .filter((image) => image.featured && image.pages.includes("home") && isPublishedPhoto(image))
     .sort((a, b) => a.order - b.order);
 }
 

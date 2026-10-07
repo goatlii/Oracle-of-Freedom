@@ -706,8 +706,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -827,8 +826,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -853,7 +851,6 @@
       ],
       "pages": [
         "portraits",
-        "people",
         "portfolio"
       ],
       "featured": false,
@@ -880,8 +877,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1167,17 +1163,12 @@
       "width": 2400,
       "height": 1600,
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAAgCP/xAAaEAACAgMAAAAAAAAAAAAAAAACEQABAxJR/9oACAEBAAE/ADzXqbb65//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPwA0L//Z",
-      "category": "festivals",
-      "categories": [
-        "festivals"
-      ],
+      "category": "",
+      "categories": [],
       "pages": [
-        "experiences",
-        "festivals",
-        "portfolio",
-        "home"
+        "experiences"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": false,
       "order": 106,
@@ -1201,8 +1192,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1283,8 +1273,7 @@
       "pages": [
         "experiences",
         "retreats",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1311,8 +1300,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1415,8 +1403,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1884,6 +1871,7 @@
         "retreats"
       ],
       "pages": [
+        "retreats",
         "portfolio"
       ],
       "featured": false,
@@ -1964,8 +1952,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -2045,8 +2032,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -2070,10 +2056,8 @@
         "festivals"
       ],
       "pages": [
-        "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -2120,15 +2104,16 @@
       "width": 1600,
       "height": 2400,
       "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAkEAACAAQGAgMAAAAAAAAAAAABAgADBBEFEhMhIlEUQWFxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABoRAQEAAgMAAAAAAAAAAAAAAAEAAhEhMVH/2gAMAwEAAhEDEQA/AN1eXiVYgpnLU8vk5IsL9X9xRnT5ScM8kNa9iRv9RzOGMk1GujaEpczFTv8AkMURp656zSk50BXLmBFtu+4yxNnMl8puH18ykop0iWBqzdluO4d8hcOpX8TkgPK5vnb2fiCCAruuPTf/2Q==",
-      "category": "retreats",
+      "category": "portraits",
       "categories": [
-        "retreats"
+        "portraits"
       ],
       "portfolioTabs": [
         "all",
-        "retreats"
+        "portraits"
       ],
       "pages": [
+        "portraits",
         "portfolio"
       ],
       "featured": false,
