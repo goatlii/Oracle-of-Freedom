@@ -223,15 +223,6 @@
       "inquiry": "festival"
     },
     {
-      "id": "festival-express-film-day",
-      "group": "festivals",
-      "kind": "addon",
-      "label": "Express · 1 day film or photo+film",
-      "from": 150,
-      "to": 200,
-      "inquiry": "festival"
-    },
-    {
       "id": "festival-express-weekend",
       "group": "festivals",
       "kind": "addon",
