@@ -228,7 +228,7 @@ export const en: Copy = {
     featuredTitle: "Featured work",
     wordsTitle: "Kind words",
     about:
-      "Hi, I'm Agota. For more than 10 years I've been photographing and filming the moments people don't pose for — the laughter mid-dance, the hands in the river, the look between two people when they think no one is watching.",
+      "Hi, I'm Agota. For more than 10 years I've been photographing and filming the moments people don't pose for, capturing the very essence and magic of events, communities and wild souls.",
     journalTitle: "Journal",
     journalDek: "Guides for dreamers and planners.",
     closingTitle: "Tell me about your story.",
