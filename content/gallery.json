@@ -2118,15 +2118,16 @@
       "width": 1600,
       "height": 2400,
       "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAkEAACAAQGAgMAAAAAAAAAAAABAgADBBEFEhMhIlEUQWFxgf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABoRAQEAAgMAAAAAAAAAAAAAAAEAAhEhMVH/2gAMAwEAAhEDEQA/AN1eXiVYgpnLU8vk5IsL9X9xRnT5ScM8kNa9iRv9RzOGMk1GujaEpczFTv8AkMURp656zSk50BXLmBFtu+4yxNnMl8puH18ykop0iWBqzdluO4d8hcOpX8TkgPK5vnb2fiCCAruuPTf/2Q==",
-      "category": "retreats",
+      "category": "portraits",
       "categories": [
-        "retreats"
+        "portraits"
       ],
       "portfolioTabs": [
         "all",
-        "retreats"
+        "portraits"
       ],
       "pages": [
+        "portraits",
         "portfolio"
       ],
       "featured": false,
