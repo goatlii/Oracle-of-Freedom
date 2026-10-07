@@ -395,7 +395,7 @@ export const en: Copy = {
         items: [
           "3–4 hours: getting ready if you want it, ceremony, portraits",
           "Help choosing the place and the light",
-          "About 200 edited photos in a private gallery",
+          "About 100 edited photos in a private gallery",
           "Sneak peek within 48 hours, full gallery in {weeks}",
         ],
       },
@@ -405,13 +405,13 @@ export const en: Copy = {
         items: [
           "Up to about 30 guests",
           "5–6 hours, from the ceremony into the night — fire, music, dancing",
-          "About 350 edited photos",
+          "200+ edited photos",
           "Sneak peek within 48 hours, full gallery in {weeks}",
         ],
       },
       "elopement-film": {
         name: "Elopement film",
-        items: ["A 3–5 minute film of the ceremony and portraits", "Shot by the same person, so the day stays small", "Delivered in {filmWeeks}"],
+        items: ["A 3–5 minute film of the ceremony and portraits", "Delivered in {filmWeeks}"],
       },
       "wedding-film": {
         name: "Small wedding highlight",
