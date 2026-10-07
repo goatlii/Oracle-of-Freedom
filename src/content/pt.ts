@@ -549,6 +549,7 @@ export const pt: Copy = {
     ],
     packagesTitle: "Pacotes",
     filmsTitle: "Vídeo",
+    combosTitle: "Foto + vídeo",
     addonsTitle: "Extras",
     addonsNote:
       "A prioridade de um fim de semana completo começa desde 200 €. O valor segue os dias e as horas de cobertura, a rapidez com que precisas dos ficheiros e se queres fotografias, filme ou os dois. Foto e filme juntos demoram mais do que só as fotografias. O filme padrão continua a chegar em {artistFilmWeeks}. São extras de prioridade, por cima da cobertura. Escreve-me como é o encontro e ficas com o valor claro antes do sinal de {deposit}. O voo de drone é à parte: um salto no próprio dia, enquanto já estou marcada para esse dia de festival. Depende do tempo e só onde o espaço aéreo o permite legalmente. Não é a cobertura completa do evento a partir do ar.",
@@ -564,7 +565,7 @@ export const pt: Copy = {
       },
       "festival-day": {
         name: "Dia de festival ou evento",
-        items: ["Um dia inteiro de fotografias oficiais", "Seleção no próprio dia para as redes", "Galeria completa em {artistWeeks}"],
+        items: ["Um dia inteiro de fotografias oficiais", "Seleção no próprio dia para as redes", "Entrega em 2–4 semanas, conforme o número de dias do evento"],
       },
       "festival-half": {
         name: "Meio dia de festival",
@@ -585,6 +586,31 @@ export const pt: Copy = {
       "single-reel": {
         name: "Um reel",
         items: ["Um vídeo vertical, pronto a publicar", "Entrega em {artistFilmWeeks}"],
+      },
+      "festival-combo": {
+        name: "Dia de festival, foto + aftermovie",
+        items: [
+          "Um dia inteiro de fotografias oficiais e um aftermovie curto desse dia",
+          "Seleção no próprio dia para as redes",
+          "Entrega em 3–5 semanas, conforme a duração do evento",
+        ],
+      },
+      "press-kit-combo": {
+        name: "Kit de imprensa + pack de reels",
+        items: [
+          "A sessão de imprensa de 2 horas e 20–30 fotografias editadas",
+          "Um conjunto de reels verticais curtos da mesma sessão",
+          "Entrega em 3–4 semanas",
+        ],
+      },
+      "live-set-combo": {
+        name: "Fotos de set ao vivo + pack de reels",
+        items: [
+          "Fotografias da atuação e da sala, nessa noite",
+          "Um conjunto de reels montados a partir do set",
+          "Clips do set em 48 horas",
+          "Entrega em 3–4 semanas",
+        ],
       },
       "festival-express-photos": {
         name: "Seleção de fotos no dia seguinte",
@@ -640,7 +666,7 @@ export const pt: Copy = {
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
+      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. Os pacotes de foto + vídeo estão com os restantes: um dia de festival com aftermovie em 3–5 semanas, conforme a duração do evento, e um kit de imprensa ou um set ao vivo com reels em 3–4 semanas. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
     ],
   },
   places: {

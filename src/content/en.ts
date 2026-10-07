@@ -585,6 +585,7 @@ export const en: Copy = {
     ],
     packagesTitle: "Packages",
     filmsTitle: "Film",
+    combosTitle: "Photo + film",
     addonsTitle: "Add-ons",
     addonsNote:
       "Full weekend priority starts from €200. The fee follows the days and hours of coverage, how fast you need the files, and whether you want photographs, film, or both. Photo and film together take longer than photographs alone. Standard film still arrives in {artistFilmWeeks}. These are priority add-ons on top of coverage. Inquire with the shape of the gathering and you’ll have a clear fee before the {deposit} deposit. The drone hop is separate: a same-day flight while I’m already booked for that festival day, weather-dependent and only in legal airspace. It is not full-event coverage from the air.",
@@ -604,7 +605,7 @@ export const en: Copy = {
       },
       "festival-day": {
         name: "Festival / event day",
-        items: ["A full day of official photographs", "Same-day selects for social media", "Full gallery in {artistWeeks}"],
+        items: ["A full day of official photographs", "Same-day selects for social media", "Delivered in 2–4 weeks, depending on the number of event days"],
       },
       "festival-half": {
         name: "Festival / event half day",
@@ -625,6 +626,31 @@ export const en: Copy = {
       "single-reel": {
         name: "Single reel",
         items: ["One vertical film, ready to post", "Delivered in {artistFilmWeeks}"],
+      },
+      "festival-combo": {
+        name: "Festival day photo + aftermovie",
+        items: [
+          "A full day of official photographs, plus a short aftermovie of that day",
+          "Same-day selects for social media",
+          "Delivered in 3–5 weeks, depending on event length",
+        ],
+      },
+      "press-kit-combo": {
+        name: "Artist press kit + reels pack",
+        items: [
+          "The 2-hour press session and 20–30 edited photos",
+          "A set of short vertical reels from the same session",
+          "Delivered in 3–4 weeks",
+        ],
+      },
+      "live-set-combo": {
+        name: "Live-set photos + reels pack",
+        items: [
+          "Performance and room photos for the night",
+          "A set of reels cut from the set",
+          "Set clips within 48 hours",
+          "Delivered in 3–4 weeks",
+        ],
       },
       "festival-express-photos": {
         name: "Next-day photo selects",
@@ -681,7 +707,7 @@ export const en: Copy = {
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Photo + film bundles are with the packages: a festival day with aftermovie in 3–5 weeks, depending on event length, and a press kit or live set with reels in 3–4 weeks. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
     ],
   },
   places: {

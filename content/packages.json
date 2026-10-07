@@ -205,6 +205,35 @@
       "inquiry": "artist"
     },
     {
+      "id": "festival-combo",
+      "group": "festivals",
+      "kind": "combo",
+      "label": "Festival day photo + aftermovie",
+      "from": 895,
+      "unit": "day",
+      "inquiry": "festival",
+      "compare": ["festival-day", "aftermovie"]
+    },
+    {
+      "id": "press-kit-combo",
+      "group": "festivals",
+      "kind": "combo",
+      "label": "Artist press kit + reels pack",
+      "from": 475,
+      "inquiry": "artist",
+      "compare": ["press-kit", "reels-pack"]
+    },
+    {
+      "id": "live-set-combo",
+      "group": "festivals",
+      "kind": "combo",
+      "label": "Live-set photos + reels pack",
+      "from": 510,
+      "unit": "night",
+      "inquiry": "artist",
+      "compare": ["live-set", "reels-pack"]
+    },
+    {
       "id": "festival-express-photos",
       "group": "festivals",
       "kind": "addon",
