@@ -1924,6 +1924,34 @@
         "pt": "Um homem com um chap\u00e9u de balde cinzento e \u00f3culos de lentes laranja, metido at\u00e9 ao peito em \u00e1gua verde-azulada, com um leque rosa."
       },
       "source": "Agota Urbikaite"
+    },
+    {
+      "id": "gathering-13",
+      "src": "/images/portfolio/gathering-13.jpg",
+      "width": 2132,
+      "height": 3200,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAALYCd//EABwQAAIBBQEAAAAAAAAAAAAAAAECEgADBBETIv/aAAgBAQABPwC3mckuruTB1X1WWsSwkdFxX//EABYRAAMAAAAAAAAAAAAAAAAAAAABE//aAAgBAgEBPwCaP//EABkRAAEFAAAAAAAAAAAAAAAAAAIAARESIf/aAAgBAwEBPwASq0av/9k=",
+      "category": "retreats",
+      "categories": [
+        "retreats"
+      ],
+      "portfolioTabs": [
+        "all",
+        "retreats"
+      ],
+      "pages": [
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 134,
+      "alt": {
+        "en": "A woman in a rainbow zebra bodysuit smiles and holds out a cucumber beneath palm trees, a Bliss Stage sign behind her.",
+        "es": "Una mujer con un body de cebra arco\u00edris sonr\u00ede y tiende un pepino bajo palmeras, con un cartel de Bliss Stage detr\u00e1s.",
+        "pt": "Uma mulher com um body de zebra arco-\u00edris sorri e estende um pepino sob palmeiras, com um letreiro Bliss Stage atr\u00e1s."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
