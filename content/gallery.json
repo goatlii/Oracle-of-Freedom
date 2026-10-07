@@ -1166,14 +1166,10 @@
       "width": 2400,
       "height": 1600,
       "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAAgCP/xAAaEAACAgMAAAAAAAAAAAAAAAACEQABAxJR/9oACAEBAAE/ADzXqbb65//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPwA0L//Z",
-      "category": "festivals",
-      "categories": [
-        "festivals"
-      ],
+      "category": "",
+      "categories": [],
       "pages": [
         "experiences",
-        "festivals",
-        "portfolio",
         "home"
       ],
       "featured": true,
@@ -1883,6 +1879,7 @@
         "retreats"
       ],
       "pages": [
+        "retreats",
         "portfolio"
       ],
       "featured": false,
