@@ -642,7 +642,7 @@ export const pt: Copy = {
       { title: "Entrega", body: "Seleção para as redes e, depois, a galeria completa e as montagens. Clips do set em 48 horas. Fotografias em {artistWeeks}. Filmes em {artistFilmWeeks}: foto e filme juntos demoram mais do que só as fotografias. A entrega prioritária é um extra em escala, com o valor antes do sinal de {deposit}." },
     ],
     wordsTitle: "Palavras bonitas",
-    testimonialIds: ["rewild", "quinton", "sage", "artist"],
+    testimonialIds: ["rewild", "quinton", "nixie", "sage", "artist"],
     faqTitle: "Perguntas frequentes",
     faq: [
       { q: "Fotografas em clubes escuros e à noite?", a: "Sim: pouca luz, luzes de palco, fumo e fogo são a minha zona de conforto." },
