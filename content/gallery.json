@@ -1506,34 +1506,6 @@
       "source": "Agota Urbikaite"
     },
     {
-      "id": "dj-05",
-      "src": "/images/portfolio/dj-05.jpg",
-      "width": 2133,
-      "height": 3200,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAzacP/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIDABESExQhMaH/2gAIAQEAAT8A26QpG7uwyuLY9Gnlcw4E8al/K//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z",
-      "category": "djs",
-      "categories": [
-        "djs"
-      ],
-      "portfolioTabs": [
-        "all",
-        "djs"
-      ],
-      "pages": [
-        "portfolio"
-      ],
-      "featured": false,
-      "provisional": false,
-      "placeholder": false,
-      "order": 119,
-      "alt": {
-        "en": "Black-and-white close-up of a man singing into a microphone, one hand at his collar and the other holding the mic, shot at a Dutch angle.",
-        "es": "Primer plano en blanco y negro de un hombre cantando al micr\u00f3fono, una mano en el cuello y la otra en el micro, con un \u00e1ngulo holand\u00e9s.",
-        "pt": "Grande plano a preto e branco de um homem a cantar ao microfone, uma m\u00e3o no colarinho e a outra no micro, num \u00e2ngulo holand\u00eas."
-      },
-      "source": "Agota Urbikaite"
-    },
-    {
       "id": "dj-06",
       "src": "/images/portfolio/dj-06.jpg",
       "width": 2133,
@@ -1926,34 +1898,6 @@
       "source": "Agota Urbikaite"
     },
     {
-      "id": "gathering-13",
-      "src": "/images/portfolio/gathering-13.jpg",
-      "width": 2132,
-      "height": 3200,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAALYCd//EABwQAAIBBQEAAAAAAAAAAAAAAAECEgADBBETIv/aAAgBAQABPwC3mckuruTB1X1WWsSwkdFxX//EABYRAAMAAAAAAAAAAAAAAAAAAAABE//aAAgBAgEBPwCaP//EABkRAAEFAAAAAAAAAAAAAAAAAAIAARESIf/aAAgBAwEBPwASq0av/9k=",
-      "category": "retreats",
-      "categories": [
-        "retreats"
-      ],
-      "portfolioTabs": [
-        "all",
-        "retreats"
-      ],
-      "pages": [
-        "portfolio"
-      ],
-      "featured": false,
-      "provisional": false,
-      "placeholder": false,
-      "order": 134,
-      "alt": {
-        "en": "A woman in a rainbow zebra bodysuit smiles and holds out a cucumber beneath palm trees, a Bliss Stage sign behind her.",
-        "es": "Una mujer con un body de cebra arco\u00edris sonr\u00ede y tiende un pepino bajo palmeras, con un cartel de Bliss Stage detr\u00e1s.",
-        "pt": "Uma mulher com um body de zebra arco-\u00edris sorri e estende um pepino sob palmeiras, com um letreiro Bliss Stage atr\u00e1s."
-      },
-      "source": "Agota Urbikaite"
-    },
-    {
       "id": "festival-07",
       "src": "/images/portfolio/festival-07.jpg",
       "width": 2133,
@@ -1978,6 +1922,32 @@
         "en": "A man in a straw hat and animal-print shirt leans on a wooden booth window framed by glowing blue moon phases and purple curtains, fairy lights below.",
         "es": "Un hombre con sombrero de paja y camisa de estampado animal se apoya en la ventana de una caseta de madera enmarcada por fases lunares azules y cortinas moradas, con luces de hadas debajo.",
         "pt": "Um homem com chap\u00e9u de palha e camisa de estampa animal apoia-se na janela de uma cabine de madeira emoldurada por fases da lua azuis e cortinas roxas, com luzes de fada por baixo."
+      },
+      "source": "Agota Urbikaite"
+    },
+    {
+      "id": "portrait-11",
+      "src": "/images/portfolio/portrait-11.jpg",
+      "width": 3200,
+      "height": 2133,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wgARCAAFAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGaE//EABYQAAMAAAAAAAAAAAAAAAAAAAECIv/aAAgBAQABBQINP//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Bf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Bf//EABUQAQEAAAAAAAAAAAAAAAAAAAAx/9oACAEBAAY/Ao//xAAWEAEBAQAAAAAAAAAAAAAAAAABEQD/2gAIAQEAAT8hqqFu/9oADAMBAAIAAwAAABAD/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAIAQMBAT8Qr//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oACAECAQE/EI//xAAYEAACAwAAAAAAAAAAAAAAAAAAAREhUf/aAAgBAQABPxBUpCW8P//Z",
+      "category": "portraits",
+      "categories": [
+        "portraits"
+      ],
+      "pages": [
+        "portraits",
+        "people",
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 136,
+      "alt": {
+        "en": "A woman with a long braid looks over her shoulder in dark bubbling water at night, wearing an olive bikini top.",
+        "es": "Una mujer con una trenza larga mira por encima del hombro en agua oscura y burbujeante de noche, con un top de bikini verde oliva.",
+        "pt": "Uma mulher com uma tran\u00e7a longa olha por cima do ombro em \u00e1gua escura e borbulhante \u00e0 noite, com um top de biqu\u00edni verde-azeitona."
       },
       "source": "Agota Urbikaite"
     }
