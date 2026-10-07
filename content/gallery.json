@@ -1952,6 +1952,34 @@
         "pt": "Uma mulher com um body de zebra arco-\u00edris sorri e estende um pepino sob palmeiras, com um letreiro Bliss Stage atr\u00e1s."
       },
       "source": "Agota Urbikaite"
+    },
+    {
+      "id": "festival-07",
+      "src": "/images/portfolio/festival-07.jpg",
+      "width": 2133,
+      "height": 3200,
+      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAMVEL//EAB0QAAEEAgMAAAAAAAAAAAAAAAEAAgMTESEEFTH/2gAIAQEAAT8AL8wFtB9xZtdhyzGWW6IX/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Aj//EABcRAAMBAAAAAAAAAAAAAAAAAAACEVH/2gAIAQMBAT8Aq4f/2Q==",
+      "category": "festivals",
+      "categories": [
+        "festivals"
+      ],
+      "portfolioTabs": [
+        "all",
+        "festivals"
+      ],
+      "pages": [
+        "portfolio"
+      ],
+      "featured": false,
+      "provisional": false,
+      "placeholder": false,
+      "order": 135,
+      "alt": {
+        "en": "A man in a straw hat and animal-print shirt leans on a wooden booth window framed by glowing blue moon phases and purple curtains, fairy lights below.",
+        "es": "Un hombre con sombrero de paja y camisa de estampado animal se apoya en la ventana de una caseta de madera enmarcada por fases lunares azules y cortinas moradas, con luces de hadas debajo.",
+        "pt": "Um homem com chap\u00e9u de palha e camisa de estampa animal apoia-se na janela de uma cabine de madeira emoldurada por fases da lua azuis e cortinas roxas, com luzes de fada por baixo."
+      },
+      "source": "Agota Urbikaite"
     }
   ]
 }
