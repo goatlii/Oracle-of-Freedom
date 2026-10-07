@@ -182,8 +182,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         ids={["india", "sage", "rewild", "kliq", "nixie", "couple", "retreat", "artist"]}
         locale={loc}
         title={copy.home.wordsTitle}
-        badge={copy.common.placeholderTitle}
-        note={copy.common.placeholderBody}
       />
 
       <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-8 md:grid-cols-2 md:px-6">

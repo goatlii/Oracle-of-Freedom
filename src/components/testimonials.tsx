@@ -5,18 +5,14 @@ export function Testimonials({
   ids,
   locale,
   title,
-  badge,
-  note,
 }: {
   ids: string[];
   locale: Locale;
   title: string;
-  badge: string;
-  note: string;
 }) {
   const items = ids
     .map((id) => testimonials.find((item) => item.id === id))
-    .filter((item) => item != null);
+    .filter((item): item is Testimonial => item != null && item.placeholder === false);
 
   if (!items.length) return null;
 
@@ -24,24 +20,9 @@ export function Testimonials({
     <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
       <h2 className="font-serif text-4xl text-ink">{title}</h2>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        {items.map((item) =>
-          item.placeholder === false ? (
-            <RealTestimonial key={item.id} item={item} locale={locale} />
-          ) : (
-            <figure
-              key={item.id}
-              className="min-w-0 rounded-3xl border border-dashed border-terracotta/50 bg-clay/40 p-6"
-            >
-              <figcaption className="text-xs font-semibold tracking-[0.16em] text-terracotta-ink uppercase">
-                {badge}
-              </figcaption>
-              <blockquote className="mt-4 font-quote text-2xl leading-snug text-pretty break-words text-ink/80">
-                {item.quote[locale]}
-              </blockquote>
-              <p className="mt-4 text-sm text-ink/70">{note}</p>
-            </figure>
-          ),
-        )}
+        {items.map((item) => (
+          <RealTestimonial key={item.id} item={item} locale={locale} />
+        ))}
       </div>
     </section>
   );
