@@ -74,13 +74,7 @@ export default async function PeoplePage({ params }: { params: Promise<{ locale:
           }}
         />
       </section>
-      <Testimonials
-        ids={["india"]}
-        locale={loc}
-        title={copy.people.wordsTitle}
-        badge={copy.common.placeholderTitle}
-        note={copy.common.placeholderBody}
-      />
+      <Testimonials ids={["india"]} locale={loc} title={copy.people.wordsTitle} />
     </article>
   );
 }

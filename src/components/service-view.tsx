@@ -306,13 +306,7 @@ export async function ServiceView({
           </ol>
         </section>
 
-        <Testimonials
-          ids={copy.testimonialIds}
-          locale={locale}
-          title={copy.wordsTitle}
-          badge={common.placeholderTitle}
-          note={common.placeholderBody}
-        />
+        <Testimonials ids={copy.testimonialIds} locale={locale} title={copy.wordsTitle} />
 
         <section className="mx-auto max-w-3xl px-4 pb-8 md:px-6">
           <h2 className="font-serif text-4xl">{copy.faqTitle}</h2>
