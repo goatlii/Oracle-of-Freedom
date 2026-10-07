@@ -62,6 +62,7 @@ export function PackageCards({
   whatsappLabel,
   codeLabel,
   wishLabel,
+  className,
 }: {
   locale: string;
   items: PricedPackage[];
@@ -74,9 +75,10 @@ export function PackageCards({
   whatsappLabel?: string;
   codeLabel?: string;
   wishLabel?: string;
+  className?: string;
 }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={cn("grid gap-4 md:grid-cols-2 xl:grid-cols-3", className)}>
       {items.map((item) => {
         const text = copy[item.id];
         if (!text) return null;

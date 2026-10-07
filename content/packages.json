@@ -78,6 +78,14 @@
       "inquiry": "wedding"
     },
     {
+      "id": "elopement-photo-express",
+      "group": "elopements",
+      "kind": "addon",
+      "label": "Elopement / wedding photo rush",
+      "from": 100,
+      "inquiry": "elopement"
+    },
+    {
       "id": "elopement-film-express",
       "group": "elopements",
       "kind": "addon",

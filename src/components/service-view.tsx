@@ -209,6 +209,7 @@ export async function ServiceView({
             cta={copy.addonsCta || copy.cta}
             offer={common.offer}
             saveTemplate={common.saveSeparately}
+            cardsClassName={group === "elopements" ? "xl:grid-cols-2" : undefined}
           />
           {copy.travelNote ? (
             <p className="mt-6 text-sm text-ink/70">
@@ -391,6 +392,7 @@ function PackageSection({
   whatsappLabel,
   codeLabel,
   wishLabel,
+  cardsClassName,
 }: {
   title: string;
   note?: string;
@@ -405,6 +407,7 @@ function PackageSection({
   whatsappLabel?: string;
   codeLabel?: string;
   wishLabel?: string;
+  cardsClassName?: string;
 }) {
   if (!items.length) return null;
   return (
@@ -428,6 +431,7 @@ function PackageSection({
           whatsappLabel={whatsappLabel}
           codeLabel={codeLabel}
           wishLabel={wishLabel}
+          className={cardsClassName}
         />
       </div>
     </div>

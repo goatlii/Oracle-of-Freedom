@@ -382,6 +382,10 @@ export const pt: Copy = {
         name: "Highlight de casamento íntimo",
         items: ["Um filme da cerimónia, dos retratos e da noite", "Para partilhar com quem não pôde estar", "Entrega em {filmWeeks}"],
       },
+      "elopement-photo-express": {
+        name: "Fotos expresso",
+        items: ["Uma pré-visualização de 15–20 fotos editadas em 48 horas", "Galeria completa em metade do tempo habitual"],
+      },
       "elopement-film-express": {
         name: "Filme expresso",
         items: [
