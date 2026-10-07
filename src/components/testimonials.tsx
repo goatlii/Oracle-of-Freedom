@@ -30,12 +30,12 @@ export function Testimonials({
           ) : (
             <figure
               key={item.id}
-              className="rounded-3xl border border-dashed border-terracotta/50 bg-clay/40 p-6"
+              className="min-w-0 rounded-3xl border border-dashed border-terracotta/50 bg-clay/40 p-6"
             >
               <figcaption className="text-xs font-semibold tracking-[0.16em] text-terracotta-ink uppercase">
                 {badge}
               </figcaption>
-              <blockquote className="mt-4 font-quote text-2xl leading-snug text-ink/80">
+              <blockquote className="mt-4 font-quote text-2xl leading-snug text-pretty break-words text-ink/80">
                 {item.quote[locale]}
               </blockquote>
               <p className="mt-4 text-sm text-ink/70">{note}</p>
@@ -50,12 +50,14 @@ export function Testimonials({
 function RealTestimonial({ item, locale }: { item: Testimonial; locale: Locale }) {
   const shoot = item.shoot?.[locale];
   return (
-    <figure className="rounded-3xl bg-clay/70 p-6">
-      <blockquote className="font-quote text-2xl leading-snug text-ink">{item.quote[locale]}</blockquote>
+    <figure className="min-w-0 rounded-3xl bg-clay/70 p-6">
+      <blockquote className="font-quote text-xl leading-relaxed text-pretty break-words text-ink sm:text-2xl sm:leading-snug">
+        {item.quote[locale]}
+      </blockquote>
       <figcaption className="mt-5">
-        <span className="text-sm font-medium text-ink">{item.name}</span>
+        <span className="text-sm font-medium break-words text-ink">{item.name}</span>
         {shoot ? (
-          <span className="mt-1 block text-xs font-semibold tracking-[0.16em] text-terracotta-ink uppercase">
+          <span className="mt-1 block text-xs font-semibold tracking-[0.16em] text-pretty text-terracotta-ink uppercase">
             {shoot}
           </span>
         ) : null}

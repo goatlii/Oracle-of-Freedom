@@ -31,6 +31,51 @@
       }
     },
     {
+      "id": "rewild",
+      "placeholder": false,
+      "name": "Rewild Festival, Ireland",
+      "shoot": {
+        "en": "Festival reels",
+        "es": "Reels del festival",
+        "pt": "Reels do festival"
+      },
+      "quote": {
+        "en": "The amazing video really captures the magic and essence! 🥳😍 wow thanks soo much",
+        "es": "¡El vídeo es increíble y captura de verdad la magia y la esencia! 🥳😍 wow, muchísimas gracias",
+        "pt": "O vídeo é incrível e capta mesmo a magia e a essência! 🥳😍 wow, muito obrigado"
+      }
+    },
+    {
+      "id": "kliq",
+      "placeholder": false,
+      "name": "Kliq Collective, Ireland",
+      "shoot": {
+        "en": "DJ event aftermovie",
+        "es": "Aftermovie de evento de DJ",
+        "pt": "Aftermovie de evento de DJ"
+      },
+      "quote": {
+        "en": "Agota did an absolutely unreal job, that aftermovie is magic. Thank you so so much 🫶🏼🫶🏼🫶🏼 this is phenomenal work",
+        "es": "Agota hizo un trabajo absolutamente increíble, ese aftermovie es magia. Muchísimas gracias 🫶🏼🫶🏼🫶🏼 este trabajo es fenomenal",
+        "pt": "A Agota fez um trabalho absolutamente incrível, aquele aftermovie é magia. Muito, muito obrigado 🫶🏼🫶🏼🫶🏼 este trabalho é fenomenal"
+      }
+    },
+    {
+      "id": "nixie",
+      "placeholder": false,
+      "name": "Nixie, Costa Rica",
+      "shoot": {
+        "en": "Festival photos",
+        "es": "Fotos del festival",
+        "pt": "Fotos do festival"
+      },
+      "quote": {
+        "en": "Agota brought exactly what the team needed - a phenomenal eye and epic dance moves!",
+        "es": "Agota trajo exactamente lo que el equipo necesitaba: un ojo fenomenal y unos pasos de baile épicos.",
+        "pt": "A Agota trouxe exatamente o que a equipa precisava: um olhar fenomenal e passos de dança épicos."
+      }
+    },
+    {
       "id": "couple",
       "placeholder": true,
       "quote": {
