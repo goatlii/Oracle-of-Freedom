@@ -549,6 +549,7 @@ export const es: Copy = {
     ],
     packagesTitle: "Paquetes",
     filmsTitle: "Vídeo",
+    combosTitle: "Foto + vídeo",
     addonsTitle: "Extras",
     addonsNote:
       "La prioridad de un fin de semana completo empieza desde 200 €. La tarifa sigue los días y las horas de cobertura, la rapidez con la que necesitas los archivos y si quieres fotografías, vídeo o las dos cosas. Foto y vídeo juntos llevan más tiempo que solo las fotografías. El vídeo estándar sigue llegando en {artistFilmWeeks}. Son extras de prioridad, encima de la cobertura. Escríbeme cómo es el encuentro y tendrás la tarifa clara antes de la señal del {deposit}. El vuelo con dron es aparte: un salto el mismo día, mientras ya estoy reservada para ese día de festival. Depende del tiempo y solo donde el espacio aéreo lo permite legalmente. No es la cobertura completa del evento desde el aire.",
@@ -564,7 +565,7 @@ export const es: Copy = {
       },
       "festival-day": {
         name: "Día de festival o evento",
-        items: ["Un día entero de fotografías oficiales", "Selección el mismo día para redes", "Galería completa en {artistWeeks}"],
+        items: ["Un día entero de fotografías oficiales", "Selección el mismo día para redes", "Entrega en 2–4 semanas, según el número de días del evento"],
       },
       "festival-half": {
         name: "Medio día de festival",
@@ -585,6 +586,31 @@ export const es: Copy = {
       "single-reel": {
         name: "Un reel",
         items: ["Un vídeo vertical, listo para publicar", "Entrega en {artistFilmWeeks}"],
+      },
+      "festival-combo": {
+        name: "Día de festival, foto + aftermovie",
+        items: [
+          "Un día entero de fotografías oficiales y un aftermovie corto de ese día",
+          "Selección el mismo día para redes",
+          "Entrega en 3–5 semanas, según la duración del evento",
+        ],
+      },
+      "press-kit-combo": {
+        name: "Kit de prensa + pack de reels",
+        items: [
+          "La sesión de prensa de 2 horas y 20–30 fotos editadas",
+          "Varios reels verticales cortos de la misma sesión",
+          "Entrega en 3–4 semanas",
+        ],
+      },
+      "live-set-combo": {
+        name: "Fotos de set en directo + pack de reels",
+        items: [
+          "Fotos de la actuación y de la sala, esa noche",
+          "Un conjunto de reels montados a partir del set",
+          "Clips del set en 48 horas",
+          "Entrega en 3–4 semanas",
+        ],
       },
       "festival-express-photos": {
         name: "Selección de fotos al día siguiente",
@@ -640,7 +666,7 @@ export const es: Copy = {
       { q: "¿Puedo usar las fotos en mi press kit y en plataformas de streaming?", a: "Sí, el uso promocional está incluido." },
       { q: "¿Trabajas con festivales?", a: "Sí, dentro de equipos de contenido oficiales o asociados, y siempre respetando las normas de foto y de consentimiento de cada festival." },
       { q: "¿Grabas un videoclip completo?", a: "Sí, del concepto a la edición final. Cuéntame tu idea y tu presupuesto." },
-      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotografías, en {artistWeeks}. El vídeo, y la foto con vídeo, en {artistFilmWeeks}: juntos llevan más tiempo que solo las fotografías. La entrega exprés y prioritaria es un extra aparte, presupuestado al trabajo: selección de fotos al día siguiente desde 75–100 €, un adelanto el mismo día desde 100–150 € si la agenda lo permite, y un fin de semana completo desde 200 €. Cuéntame los días, las horas y la rapidez que necesitas. Confirmo la tarifa antes de la señal del {deposit}." },
+      { q: "¿Cuándo llegan los clips?", a: "Los clips del set, en 48 horas. Las fotografías, en {artistWeeks}. El vídeo, y la foto con vídeo, en {artistFilmWeeks}: juntos llevan más tiempo que solo las fotografías. Los paquetes de foto + vídeo están con el resto: un día de festival con aftermovie en 3–5 semanas, según la duración del evento, y un kit de prensa o un set en directo con reels en 3–4 semanas. La entrega exprés y prioritaria es un extra aparte, presupuestado al trabajo: selección de fotos al día siguiente desde 75–100 €, un adelanto el mismo día desde 100–150 € si la agenda lo permite, y un fin de semana completo desde 200 €. Cuéntame los días, las horas y la rapidez que necesitas. Confirmo la tarifa antes de la señal del {deposit}." },
     ],
   },
   places: {
