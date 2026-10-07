@@ -616,7 +616,7 @@ export const en: Copy = {
       },
       "music-video": {
         name: "Music video",
-        items: ["Concept, filming and edit for an organic, performance or nature-based music video", "The final quote depends on the idea", "Delivered in {artistFilmWeeks}"],
+        items: ["Concept, filming and edit for an organic, performance or nature-based music video", "The final quote depends on the idea", "Delivered in 3–4 weeks"],
       },
       "reels-pack": {
         name: "Reels pack",
