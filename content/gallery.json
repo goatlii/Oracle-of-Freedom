@@ -1506,34 +1506,6 @@
       "source": "Agota Urbikaite"
     },
     {
-      "id": "dj-05",
-      "src": "/images/portfolio/dj-05.jpg",
-      "width": 2133,
-      "height": 3200,
-      "blur": "data:image/jpeg;base64,/9j/2wBDABISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////2wBDARISEhITEhQWFhQcHhseHCkmIiImKT4sMCwwLD5eO0U7O0U7XlNlUk1SZVOWdmhodpatkYqRrdK8vNL/+///////wgARCAAMAAgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQG/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAAzacP/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIDABESExQhMaH/2gAIAQEAAT8A26QpG7uwyuLY9Gnlcw4E8al/K//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z",
-      "category": "djs",
-      "categories": [
-        "djs"
-      ],
-      "portfolioTabs": [
-        "all",
-        "djs"
-      ],
-      "pages": [
-        "portfolio"
-      ],
-      "featured": false,
-      "provisional": false,
-      "placeholder": false,
-      "order": 119,
-      "alt": {
-        "en": "Black-and-white close-up of a man singing into a microphone, one hand at his collar and the other holding the mic, shot at a Dutch angle.",
-        "es": "Primer plano en blanco y negro de un hombre cantando al micr\u00f3fono, una mano en el cuello y la otra en el micro, con un \u00e1ngulo holand\u00e9s.",
-        "pt": "Grande plano a preto e branco de um homem a cantar ao microfone, uma m\u00e3o no colarinho e a outra no micro, num \u00e2ngulo holand\u00eas."
-      },
-      "source": "Agota Urbikaite"
-    },
-    {
       "id": "dj-06",
       "src": "/images/portfolio/dj-06.jpg",
       "width": 2133,
