@@ -16,6 +16,21 @@
       }
     },
     {
+      "id": "sage",
+      "placeholder": false,
+      "name": "Sage Farris, US",
+      "shoot": {
+        "en": "DJ press kit",
+        "es": "Kit de prensa de DJ",
+        "pt": "Kit de imprensa de DJ"
+      },
+      "quote": {
+        "en": "The photos are exactly what I had envisioned. Agota nailed it!",
+        "es": "Las fotos son exactamente lo que había imaginado. ¡Agota lo clavó!",
+        "pt": "As fotos são exatamente o que eu tinha imaginado. A Agota acertou em cheio!"
+      }
+    },
+    {
       "id": "couple",
       "placeholder": true,
       "quote": {
