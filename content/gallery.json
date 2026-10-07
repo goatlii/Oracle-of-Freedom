@@ -706,8 +706,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -827,8 +826,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -879,8 +877,7 @@
       "pages": [
         "portraits",
         "people",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1169,10 +1166,9 @@
       "category": "",
       "categories": [],
       "pages": [
-        "experiences",
-        "home"
+        "experiences"
       ],
-      "featured": true,
+      "featured": false,
       "provisional": false,
       "placeholder": false,
       "order": 106,
@@ -1196,8 +1192,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1278,8 +1273,7 @@
       "pages": [
         "experiences",
         "retreats",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1306,8 +1300,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1410,8 +1403,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -1960,8 +1952,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -2041,8 +2032,7 @@
       "pages": [
         "experiences",
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
@@ -2067,8 +2057,7 @@
       ],
       "pages": [
         "festivals",
-        "portfolio",
-        "home"
+        "portfolio"
       ],
       "featured": true,
       "provisional": false,
