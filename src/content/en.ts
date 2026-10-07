@@ -417,6 +417,10 @@ export const en: Copy = {
         name: "Small wedding highlight",
         items: ["A highlight film of the ceremony, portraits and the night", "Made to share with the people who couldn't be there", "Delivered in {filmWeeks}"],
       },
+      "elopement-photo-express": {
+        name: "Express photos",
+        items: ["A sneak peek of 15–20 edited photos within 48 hours", "Full gallery in half the usual delivery time"],
+      },
       "elopement-film-express": {
         name: "Express film",
         items: [
