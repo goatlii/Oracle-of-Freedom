@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import type { Copy } from "@/content/types";
-import { budgetGroup, peopleMode } from "@/lib/lead";
+import { asksCoverageDays, BUDGET_UNSURE, budgetGroup, multiDayCoverage, peopleMode } from "@/lib/lead";
 import { Button } from "@/components/ui/button";
 import { FieldError, Input, Label, Textarea } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -22,6 +22,7 @@ function schemaFor(copy: FormCopy) {
       phone: z.string().optional(),
       service: z.string().min(1, copy.errors.required),
       date: z.string().optional(),
+      dateEnd: z.string().optional(),
       flexible: z.boolean(),
       place: z.string().trim().min(1, copy.errors.required),
       people: z.string().optional(),
@@ -39,8 +40,15 @@ function schemaFor(copy: FormCopy) {
       company: z.string().optional(),
     })
     .superRefine((value, ctx) => {
+      const multiDay = multiDayCoverage(value.service, value.days);
       if (!value.flexible && !value.date) {
         ctx.addIssue({ code: "custom", path: ["date"], message: copy.errors.date });
+      }
+      if (multiDay && !value.flexible && !value.dateEnd) {
+        ctx.addIssue({ code: "custom", path: ["dateEnd"], message: copy.errors.dateEnd });
+      }
+      if (multiDay && value.date && value.dateEnd && value.dateEnd < value.date) {
+        ctx.addIssue({ code: "custom", path: ["dateEnd"], message: copy.errors.dateOrder });
       }
     });
 }
@@ -78,6 +86,7 @@ export function InquiryForm({
       phone: "",
       service: presetService(initialService, copy.services),
       date: "",
+      dateEnd: "",
       flexible: false,
       place: "",
       people: "",
@@ -88,7 +97,7 @@ export function InquiryForm({
       media: "",
       story: "",
       found: "",
-      language: locale === "pt" || locale === "es" ? locale : "en",
+      language: locale === "es" ? "es" : "en",
       consent: false,
       promoCode: "",
       wish: "",
@@ -101,10 +110,26 @@ export function InquiryForm({
   }, [showPromoCode]);
 
   const service = form.watch("service");
+  const days = form.watch("days");
+  const startDate = form.watch("date");
+  const multiDay = multiDayCoverage(service, days);
 
   useEffect(() => {
     if (service !== "portraits") rememberWish("");
   }, [service]);
+
+  useEffect(() => {
+    if (peopleMode(service) === "none" && form.getValues("people")) {
+      form.setValue("people", "");
+    }
+  }, [service, form]);
+
+  useEffect(() => {
+    if (!multiDay && form.getValues("dateEnd")) {
+      form.setValue("dateEnd", "");
+    }
+  }, [multiDay, form]);
+
   const people = form.watch("people");
   const group = budgetGroup(service || "other");
   const mode = peopleMode(service || "other");
@@ -113,7 +138,7 @@ export function InquiryForm({
   async function goNext() {
     const fields: (keyof Values)[][] = [
       ["service"],
-      ["date", "flexible", "place", "budget"],
+      ["date", "dateEnd", "flexible", "place", "budget"],
       ["name", "email", "found", "consent"],
     ];
     const ok = await form.trigger(fields[step]);
@@ -122,10 +147,16 @@ export function InquiryForm({
 
   async function onSubmit(values: Values) {
     setFail(false);
+    const coverageSpan = multiDayCoverage(values.service, values.days);
     const response = await fetch("/api/inquiry", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...values, locale }),
+      body: JSON.stringify({
+        ...values,
+        locale,
+        dateEnd: coverageSpan ? values.dateEnd : "",
+        people: peopleMode(values.service) === "none" ? "" : values.people,
+      }),
     });
     if (!response.ok) {
       setFail(true);
@@ -187,14 +218,48 @@ export function InquiryForm({
 
       {step === 1 ? (
         <div className="grid gap-5">
+          {asksCoverageDays(service) ? (
+            <div>
+              <Label htmlFor="days">{copy.days}</Label>
+              <select id="days" className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4" {...form.register("days")}>
+                <option value="">—</option>
+                {Object.entries(copy.dayOptions).map(([value, label]) => (
+                  <option key={value} value={value}>{label}</option>
+                ))}
+              </select>
+            </div>
+          ) : null}
           <div>
-            <Label htmlFor="date">{copy.date} *</Label>
-            <Input id="date" type="date" {...form.register("date")} aria-invalid={Boolean(error("date"))} />
+            {multiDay ? (
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <Label htmlFor="date">{copy.dateFrom} *</Label>
+                  <Input id="date" type="date" {...form.register("date")} aria-invalid={Boolean(error("date"))} />
+                  <FieldError>{error("date")}</FieldError>
+                </div>
+                <div>
+                  <Label htmlFor="dateEnd">{copy.dateTo} *</Label>
+                  <Input
+                    id="dateEnd"
+                    type="date"
+                    min={startDate || undefined}
+                    {...form.register("dateEnd")}
+                    aria-invalid={Boolean(error("dateEnd"))}
+                  />
+                  <FieldError>{error("dateEnd")}</FieldError>
+                </div>
+              </div>
+            ) : (
+              <>
+                <Label htmlFor="date">{copy.date} *</Label>
+                <Input id="date" type="date" {...form.register("date")} aria-invalid={Boolean(error("date"))} />
+                <FieldError>{error("date")}</FieldError>
+              </>
+            )}
             <label className="mt-2 flex items-center gap-2 text-sm">
               <input type="checkbox" {...form.register("flexible")} />
               {copy.flexible}
             </label>
-            <FieldError>{error("date")}</FieldError>
           </div>
           <div>
             <Label htmlFor="place">{copy.place} *</Label>
@@ -211,17 +276,6 @@ export function InquiryForm({
                 ))}
               </select>
               {showLimit ? <p className="mt-2 rounded-2xl bg-clay p-3 text-sm">{copy.weddingLimit}</p> : null}
-            </div>
-          ) : null}
-          {service === "retreat" || service === "festival" ? (
-            <div>
-              <Label htmlFor="days">{copy.days}</Label>
-              <select id="days" className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4" {...form.register("days")}>
-                <option value="">—</option>
-                {Object.entries(copy.dayOptions).map(([value, label]) => (
-                  <option key={value} value={value}>{label}</option>
-                ))}
-              </select>
             </div>
           ) : null}
           {service === "place" ? (
@@ -245,7 +299,7 @@ export function InquiryForm({
             <Label htmlFor="budget">{copy.budget} *</Label>
             <select id="budget" className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4" {...form.register("budget")} aria-invalid={Boolean(error("budget"))}>
               <option value="">—</option>
-              {copy.budgets[group].map((option) => (
+              {[...copy.budgets[group], { value: BUDGET_UNSURE, label: copy.budgetUnsure }].map((option) => (
                 <option key={option.value} value={option.value}>{option.label}</option>
               ))}
             </select>

@@ -198,6 +198,8 @@ export type Copy = {
     service: string;
     services: Record<string, string>;
     date: string;
+    dateFrom: string;
+    dateTo: string;
     flexible: string;
     place: string;
     people: string;
@@ -209,6 +211,7 @@ export type Copy = {
     placeTypes: Record<string, string>;
     website: string;
     budget: string;
+    budgetUnsure: string;
     budgets: Record<string, BudgetOption[]>;
     media: string;
     mediaOptions: Record<string, string>;

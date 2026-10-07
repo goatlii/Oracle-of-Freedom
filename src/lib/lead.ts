@@ -45,11 +45,25 @@ const LOWEST: Record<string, string> = {
   other: "lt-175",
 };
 
+/** Budget value for people who are unsure or prefer not to share a figure. */
+export const BUDGET_UNSURE = "unsure";
+
+const COVERAGE_DAY_SERVICES = new Set(["retreat", "festival"]);
+
+export function asksCoverageDays(service: string) {
+  return COVERAGE_DAY_SERVICES.has(service);
+}
+
+/** Retreat and festival coverage longer than a single day needs a from–to span. */
+export function multiDayCoverage(service: string, days?: string) {
+  return asksCoverageDays(service) && Boolean(days) && days !== "1";
+}
+
 export function peopleMode(service: string): "people" | "event" | "none" {
+  if (service === "proposal" || service === "festival") return "none";
   if (
     service === "portraits" ||
     service === "couple" ||
-    service === "proposal" ||
     service === "soul-brand" ||
     service === "elopement" ||
     service === "wedding" ||
@@ -57,7 +71,7 @@ export function peopleMode(service: string): "people" | "event" | "none" {
   ) {
     return "people";
   }
-  if (service === "retreat" || service === "festival") return "event";
+  if (service === "retreat") return "event";
   return "none";
 }
 
@@ -72,6 +86,7 @@ export function gradeInquiry(input: {
   const group = budgetGroup(input.service);
   if (input.service === "wedding" && input.people === "30+") return "C";
   if (BELOW_MIN[group]?.has(input.budget)) return "C";
+  if (input.budget === BUDGET_UNSURE) return "B";
 
   const phone = Boolean(input.phone?.trim());
   const lowest = input.budget === LOWEST[group];
