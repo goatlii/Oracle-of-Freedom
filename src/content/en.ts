@@ -265,6 +265,7 @@ export const en: Copy = {
     weddingsTitle: "Boho Weddings & Elopements",
     weddingsBody: "Barefoot vows, small circles of loved ones, ceremonies that feel like you.",
     weddingsPrice: "From {price}",
+    wordsTitle: "Kind words",
   },
   experiences: {
     title: "Experiences",

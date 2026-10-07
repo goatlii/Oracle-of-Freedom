@@ -238,6 +238,7 @@ export const pt: Copy = {
     weddingsTitle: "Casamentos boho e elopements",
     weddingsBody: "Votos descalços, um pequeno círculo de pessoas queridas, cerimónias à vossa imagem.",
     weddingsPrice: "Desde {price}",
+    wordsTitle: "Palavras bonitas",
   },
   experiences: {
     title: "Experiências",

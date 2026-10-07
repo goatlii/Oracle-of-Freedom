@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GalleryGrid } from "@/components/gallery";
+import { Testimonials } from "@/components/testimonials";
 import { getCopy } from "@/content";
 import type { Locale } from "@/i18n/routing";
 import { formatEuro, imagesForPage } from "@/lib/content";
@@ -73,6 +74,13 @@ export default async function PeoplePage({ params }: { params: Promise<{ locale:
           }}
         />
       </section>
+      <Testimonials
+        ids={["india"]}
+        locale={loc}
+        title={copy.people.wordsTitle}
+        badge={copy.common.placeholderTitle}
+        note={copy.common.placeholderBody}
+      />
     </article>
   );
 }
