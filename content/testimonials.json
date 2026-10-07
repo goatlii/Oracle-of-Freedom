@@ -31,6 +31,21 @@
       }
     },
     {
+      "id": "rewild",
+      "placeholder": false,
+      "name": "Rewild Festival",
+      "shoot": {
+        "en": "Festival reels",
+        "es": "Reels del festival",
+        "pt": "Reels do festival"
+      },
+      "quote": {
+        "en": "The amazing video really captures the magic and essence!",
+        "es": "¡El vídeo es increíble y captura de verdad la magia y la esencia!",
+        "pt": "O vídeo é incrível e capta mesmo a magia e a essência!"
+      }
+    },
+    {
       "id": "couple",
       "placeholder": true,
       "quote": {

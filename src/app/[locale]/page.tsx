@@ -179,7 +179,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       <Testimonials
-        ids={["india", "sage", "couple", "retreat", "artist"]}
+        ids={["india", "sage", "rewild", "couple", "retreat", "artist"]}
         locale={loc}
         title={copy.home.wordsTitle}
         badge={copy.common.placeholderTitle}
