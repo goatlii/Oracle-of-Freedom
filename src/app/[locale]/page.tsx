@@ -179,7 +179,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       <Testimonials
-        ids={["india", "sage", "rewild", "kliq", "nixie", "couple", "retreat", "artist"]}
+        ids={["india", "oliwia", "sage", "rewild", "kliq", "nixie", "couple", "retreat", "artist"]}
         locale={loc}
         title={copy.home.wordsTitle}
       />

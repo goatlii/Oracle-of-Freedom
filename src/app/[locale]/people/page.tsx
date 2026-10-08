@@ -74,7 +74,7 @@ export default async function PeoplePage({ params }: { params: Promise<{ locale:
           }}
         />
       </section>
-      <Testimonials ids={["india"]} locale={loc} title={copy.people.wordsTitle} />
+      <Testimonials ids={["india", "oliwia"]} locale={loc} title={copy.people.wordsTitle} />
     </article>
   );
 }

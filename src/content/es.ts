@@ -321,7 +321,7 @@ export const es: Copy = {
       { title: "Revívelo", body: "Llega tu galería privada en {artistWeeks}, lista para descargar, compartir e imprimir. El vídeo y las colecciones foto+vídeo siguen el plazo del vídeo, {artistFilmWeeks}." },
     ],
     wordsTitle: "Palabras bonitas",
-    testimonialIds: ["couple", "soul-brand"],
+    testimonialIds: ["oliwia", "couple", "soul-brand"],
     faqTitle: "Preguntas frecuentes",
     faq: [
       { q: "Somos torpes delante de la cámara, ¿pasa algo?", a: "Para nada, a casi todo el mundo le pasa. No te hago \"posar\": te doy pequeñas indicaciones, caminamos, nos reímos y aparece tu verdadero yo." },
