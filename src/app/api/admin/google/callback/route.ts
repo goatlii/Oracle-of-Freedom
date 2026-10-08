@@ -20,7 +20,7 @@ function sameState(left: string, right: string) {
 
 export async function GET(request: Request) {
   const currentUrl = new URL(request.url);
-  const returnUrl = new URL("/admin/calendar", currentUrl.origin);
+  const returnUrl = new URL("/admin/calendar/settings", currentUrl.origin);
   const jar = await cookies();
   const expected = jar.get("oof_google_oauth_state")?.value || "";
   jar.delete("oof_google_oauth_state");

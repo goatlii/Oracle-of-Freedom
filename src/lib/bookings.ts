@@ -93,7 +93,7 @@ export function shiftMonth(key: string, delta: number) {
 
 export function monthLabel(key: string) {
   const [year, month] = key.split("-").map(Number);
-  return new Intl.DateTimeFormat("en-GB", {
+  return new Intl.DateTimeFormat("es", {
     month: "long",
     year: "numeric",
     timeZone: "UTC",
@@ -102,12 +102,30 @@ export function monthLabel(key: string) {
 
 export function dayLabel(date: string) {
   const [year, month, day] = date.split("-").map(Number);
-  return new Intl.DateTimeFormat("en-GB", {
+  return new Intl.DateTimeFormat("es", {
     weekday: "long",
     day: "numeric",
     month: "long",
     timeZone: "UTC",
   }).format(new Date(Date.UTC(year, month - 1, day)));
+}
+
+export function shiftDate(date: string, days: number) {
+  const [year, month, day] = date.split("-").map(Number);
+  const next = new Date(Date.UTC(year, month - 1, day));
+  next.setUTCDate(next.getUTCDate() + days);
+  return next.toISOString().slice(0, 10);
+}
+
+export function weekOf(date: string) {
+  const [year, month, day] = date.split("-").map(Number);
+  const start = new Date(Date.UTC(year, month - 1, day));
+  start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() + 6) % 7));
+  return Array.from({ length: 7 }, (_, index) => {
+    const next = new Date(start);
+    next.setUTCDate(start.getUTCDate() + index);
+    return next.toISOString().slice(0, 10);
+  });
 }
 
 export function monthGrid(key: string) {

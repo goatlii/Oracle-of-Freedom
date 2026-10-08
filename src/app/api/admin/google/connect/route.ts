@@ -14,7 +14,7 @@ export async function GET(request: Request) {
   }
   const app = googleAppFromConfig(await readCalendarConfig());
   if (!app) {
-    return NextResponse.redirect(new URL("/admin/calendar?google=missing", origin));
+    return NextResponse.redirect(new URL("/admin/calendar/settings?google=missing", origin));
   }
   const state = randomBytes(24).toString("base64url");
   const response = NextResponse.redirect(googleAuthorizationUrl(state, app));

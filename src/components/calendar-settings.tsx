@@ -22,16 +22,16 @@ import type { StorageMode } from "@/lib/pricing";
 type PublicSettings = Omit<CalendarConfig, "google" | "icalToken">;
 
 const days = [
-  ["1", "Monday"],
-  ["2", "Tuesday"],
-  ["3", "Wednesday"],
-  ["4", "Thursday"],
-  ["5", "Friday"],
-  ["6", "Saturday"],
-  ["0", "Sunday"],
+  ["1", "Lunes"],
+  ["2", "Martes"],
+  ["3", "Miércoles"],
+  ["4", "Jueves"],
+  ["5", "Viernes"],
+  ["6", "Sábado"],
+  ["0", "Domingo"],
 ] as const;
 
-function Notice({ state, saved = "Calendar settings saved." }: { state: ActionState; saved?: string }) {
+function Notice({ state, saved = "Ajustes guardados." }: { state: ActionState; saved?: string }) {
   if (!state?.ok && !state?.error) return null;
   return (
     <p
@@ -57,7 +57,7 @@ function CopyButton({ value }: { value: string }) {
         setCopied(true);
       }}
     >
-      {copied ? "Copied" : "Copy"}
+      {copied ? "Copiado" : "Copiar"}
     </Button>
   );
 }
@@ -136,15 +136,15 @@ export function CalendarSettings({
   return (
     <section className="mt-8 grid gap-8">
       <div className="rounded-3xl bg-white/70 p-4 md:p-6">
-        <h2 className="font-serif text-3xl">Public booking page</h2>
+        <h2 className="font-serif text-3xl">Página de reservas</h2>
         <p className="mt-2 text-sm text-ink/70">
-          Choose what visitors can book at <Link href="/book" className="underline underline-offset-4">/book</Link>.
-          Times use Europe/Lisbon.
+          Elige lo que se puede reservar en <Link href="/book" className="underline underline-offset-4">/book</Link>.
+          Las horas son de Lisboa.
         </p>
         <form action={action} className="mt-6 grid gap-7">
           <input type="hidden" name="settings" value={JSON.stringify(settings)} />
           <fieldset className="grid gap-4">
-            <legend className="font-serif text-2xl">Meeting types</legend>
+            <legend className="font-serif text-2xl">Tipos de cita</legend>
             {settings.bookingTypes.map((item) => (
               <div key={item.id} className="grid gap-4 rounded-2xl border border-ink/10 p-4">
                 <div className="flex items-center justify-between gap-3">
@@ -167,7 +167,7 @@ export function CalendarSettings({
                         }))
                       }
                     >
-                      Remove
+                      Quitar
                     </button>
                   ) : null}
                 </div>
@@ -175,7 +175,7 @@ export function CalendarSettings({
                   {(["en", "es", "pt"] as const).map((locale) => (
                     <div key={locale}>
                       <Label htmlFor={`${item.id}-label-${locale}`}>
-                        Name · {locale.toUpperCase()}
+                        Nombre · {locale.toUpperCase()}
                       </Label>
                       <Input
                         id={`${item.id}-label-${locale}`}
@@ -194,7 +194,7 @@ export function CalendarSettings({
                   {(["en", "es", "pt"] as const).map((locale) => (
                     <div key={locale}>
                       <Label htmlFor={`${item.id}-description-${locale}`}>
-                        Description · {locale.toUpperCase()}
+                        Descripción · {locale.toUpperCase()}
                       </Label>
                       <Textarea
                         id={`${item.id}-description-${locale}`}
@@ -215,7 +215,7 @@ export function CalendarSettings({
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
-                    <Label htmlFor={`${item.id}-duration`}>Duration in minutes</Label>
+                    <Label htmlFor={`${item.id}-duration`}>Minutos</Label>
                     <Input
                       id={`${item.id}-duration`}
                       type="number"
@@ -229,7 +229,7 @@ export function CalendarSettings({
                     />
                   </div>
                   <div>
-                    <Label htmlFor={`${item.id}-kind`}>Kind</Label>
+                    <Label htmlFor={`${item.id}-kind`}>Tipo</Label>
                     <select
                       id={`${item.id}-kind`}
                       value={item.kind}
@@ -240,21 +240,21 @@ export function CalendarSettings({
                       }
                       className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
                     >
-                      <option value="meeting">Meeting</option>
-                      <option value="session">Session</option>
-                      <option value="event">Event</option>
+                      <option value="meeting">Reunión</option>
+                      <option value="session">Sesión</option>
+                      <option value="event">Evento</option>
                     </select>
                   </div>
                 </div>
               </div>
             ))}
             <Button type="button" variant="outline" onClick={addType} className="w-full sm:w-auto">
-              Add meeting type
+              Añadir tipo de cita
             </Button>
           </fieldset>
 
           <fieldset className="grid gap-3">
-            <legend className="font-serif text-2xl">Weekly hours</legend>
+            <legend className="font-serif text-2xl">Horario de la semana</legend>
             {days.map(([key, label]) => {
               const value = settings.weekly[key];
               return (
@@ -276,7 +276,7 @@ export function CalendarSettings({
                     {label}
                   </label>
                   <div>
-                    <Label htmlFor={`${key}-start`}>Opens</Label>
+                    <Label htmlFor={`${key}-start`}>Abre</Label>
                     <Input
                       id={`${key}-start`}
                       type="time"
@@ -293,7 +293,7 @@ export function CalendarSettings({
                     />
                   </div>
                   <div>
-                    <Label htmlFor={`${key}-end`}>Closes</Label>
+                    <Label htmlFor={`${key}-end`}>Cierra</Label>
                     <Input
                       id={`${key}-end`}
                       type="time"
@@ -316,7 +316,7 @@ export function CalendarSettings({
 
           <div className="grid gap-4 sm:grid-cols-3">
             <div>
-              <Label htmlFor="days-ahead">Days open ahead</Label>
+              <Label htmlFor="days-ahead">Días abiertos por delante</Label>
               <Input
                 id="days-ahead"
                 type="number"
@@ -329,7 +329,7 @@ export function CalendarSettings({
               />
             </div>
             <div>
-              <Label htmlFor="notice-hours">Minimum notice · hours</Label>
+              <Label htmlFor="notice-hours">Aviso mínimo · horas</Label>
               <Input
                 id="notice-hours"
                 type="number"
@@ -345,7 +345,7 @@ export function CalendarSettings({
               />
             </div>
             <div>
-              <Label htmlFor="buffer-minutes">Buffer · minutes</Label>
+              <Label htmlFor="buffer-minutes">Margen · minutos</Label>
               <Input
                 id="buffer-minutes"
                 type="number"
@@ -363,7 +363,7 @@ export function CalendarSettings({
             </div>
           </div>
           <div>
-            <Label htmlFor="default-location">Default place</Label>
+            <Label htmlFor="default-location">Lugar habitual</Label>
             <Input
               id="default-location"
               value={settings.defaultLocation}
@@ -378,7 +378,7 @@ export function CalendarSettings({
           </div>
           <Notice state={state} />
           <Button type="submit" disabled={pending || mode === "readonly"} className="w-full sm:w-auto">
-            {pending ? "Saving…" : "Save booking settings"}
+            {pending ? "Guardando…" : "Guardar ajustes"}
           </Button>
         </form>
       </div>
@@ -391,48 +391,48 @@ export function CalendarSettings({
           ) : null}
           {googleConnected ? (
             <p className="mt-3 text-sm text-ink/70">
-              Connected{googleAccount ? ` as ${googleAccount}` : ""}. New bookings are written to{" "}
+              Conectado{googleAccount ? ` como ${googleAccount}` : ""}. Las citas nuevas se escriben en{" "}
               <span className="font-medium">{googleSummary}</span>.
             </p>
           ) : (
             <p className="mt-3 text-sm text-ink/70">
-              Press Start, then fill the boxes. The names and the redirect address are already written and can be changed.
+              Pulsa Iniciar y rellena las casillas. Los nombres y la dirección de vuelta ya están escritos y se pueden cambiar.
             </p>
           )}
           {!googleOpen ? (
             <Button type="button" className="mt-4" onClick={() => setGoogleOpen(true)}>
-              Start
+              Iniciar
             </Button>
           ) : (
             <div className="mt-4 grid gap-4">
               <ol className="grid list-decimal gap-4 pl-5 text-sm text-ink/80">
                 <li>
-                  Open{" "}
+                  Abre{" "}
                   <a className="underline underline-offset-4" href="https://console.cloud.google.com/" target="_blank" rel="noreferrer">
                     Google Cloud Console
                   </a>{" "}
-                  and create a project. Use this name, or change it:
-                  <Label htmlFor="google-project-name" className="mt-3">Project name</Label>
+                  y crea un proyecto. Usa este nombre, o cámbialo:
+                  <Label htmlFor="google-project-name" className="mt-3">Nombre del proyecto</Label>
                   <div className="flex gap-2">
                     <Input id="google-project-name" value={projectName} maxLength={80} onChange={(event) => setProjectName(event.target.value)} />
                     <CopyButton value={projectName} />
                   </div>
                 </li>
-                <li>In that project, open APIs & Services, then Library, search for Google Calendar API and press Enable.</li>
-                <li>Open APIs & Services, then OAuth consent screen. Choose External, add the Google account that owns the calendar, and save.</li>
+                <li>En ese proyecto, abre APIs y servicios, luego Biblioteca, busca Google Calendar API y pulsa Habilitar.</li>
+                <li>Abre APIs y servicios, luego Pantalla de consentimiento de OAuth. Elige Externo, añade la cuenta de Google del calendario y guarda.</li>
                 <li>
-                  Open Credentials, then Create credentials, then OAuth client ID. Choose Web application. Use this name, or change it:
-                  <Label htmlFor="google-client-name" className="mt-3">OAuth client name</Label>
+                  Abre Credenciales, luego Crear credenciales, luego ID de cliente de OAuth. Elige Aplicación web. Usa este nombre, o cámbialo:
+                  <Label htmlFor="google-client-name" className="mt-3">Nombre del cliente OAuth</Label>
                   <div className="flex gap-2">
                     <Input id="google-client-name" value={clientName} maxLength={80} onChange={(event) => setClientName(event.target.value)} />
                     <CopyButton value={clientName} />
                   </div>
                 </li>
-                <li>Under Authorised redirect URIs, add the address below exactly as it is written.</li>
+                <li>En URI de redireccionamiento autorizados, añade la dirección de abajo tal como está escrita.</li>
               </ol>
               <form action={googleAction} className="grid gap-4">
                 <div>
-                  <Label htmlFor="google-redirect">Authorised redirect URI</Label>
+                  <Label htmlFor="google-redirect">Dirección de vuelta autorizada</Label>
                   <div className="flex gap-2">
                     <Input
                       id="google-redirect"
@@ -450,7 +450,7 @@ export function CalendarSettings({
                     id="google-client-id"
                     name="clientId"
                     defaultValue={savedClientId}
-                    placeholder="Paste the Client ID"
+                    placeholder="Pega el Client ID"
                     autoComplete="off"
                     spellCheck={false}
                   />
@@ -461,22 +461,22 @@ export function CalendarSettings({
                     id="google-client-secret"
                     name="clientSecret"
                     type="password"
-                    placeholder={secretSaved ? "Already saved. Paste a new secret only to replace it." : "Paste the Client secret"}
+                    placeholder={secretSaved ? "Ya está guardado. Pega uno nuevo solo para cambiarlo." : "Pega el Client secret"}
                     autoComplete="off"
                   />
                 </div>
-                <Notice state={googleState} saved="Google values saved. Press Connect Google Calendar and sign in." />
+                <Notice state={googleState} saved="Datos de Google guardados. Pulsa Conectar Google Calendar e inicia sesión." />
                 <div className="flex flex-wrap gap-3">
                   <Button type="submit" disabled={googlePending || mode === "readonly"}>
-                    {googlePending ? "Saving…" : "Save these values"}
+                    {googlePending ? "Guardando…" : "Guardar estos datos"}
                   </Button>
                   {googleConfigured ? (
                     <Button asChild>
-                      <Link href="/api/admin/google/connect" prefetch={false}>Connect Google Calendar</Link>
+                      <Link href="/api/admin/google/connect" prefetch={false}>Conectar Google Calendar</Link>
                     </Button>
                   ) : null}
                   <Button type="button" variant="outline" onClick={() => setGoogleOpen(false)}>
-                    Close
+                    Cerrar
                   </Button>
                 </div>
               </form>
@@ -484,7 +484,7 @@ export function CalendarSettings({
           )}
           {googleConnected && googleCalendars.length > 1 ? (
             <form action={selectGoogleCalendar} className="mt-4 grid gap-3">
-              <Label htmlFor="google-calendar">Calendar for bookings</Label>
+              <Label htmlFor="google-calendar">Calendario de las citas</Label>
               <select
                 id="google-calendar"
                 name="calendarId"
@@ -493,60 +493,60 @@ export function CalendarSettings({
               >
                 {googleCalendars.map((calendar) => (
                   <option key={calendar.id} value={calendar.id}>
-                    {calendar.summary}{calendar.primary ? " · primary" : ""}
+                    {calendar.summary}{calendar.primary ? " · principal" : ""}
                   </option>
                 ))}
               </select>
-              <Button type="submit" variant="outline">Use this calendar</Button>
+              <Button type="submit" variant="outline">Usar este calendario</Button>
             </form>
           ) : null}
           {googleConnected ? (
             <form action={disconnectGoogleCalendar} className="mt-4">
-              <Button type="submit" variant="outline">Disconnect Google</Button>
+              <Button type="submit" variant="outline">Desconectar Google</Button>
             </form>
           ) : null}
         </section>
 
         <section className="rounded-3xl bg-white/70 p-4 md:p-6">
-          <h2 className="font-serif text-3xl">iCal subscription</h2>
+          <h2 className="font-serif text-3xl">Suscripción iCal</h2>
           <p className="mt-3 text-sm text-ink/70">
-            Press Start, copy the private address, and paste it into the calendar app. The name is ready to change.
+            Pulsa Iniciar, copia la dirección privada y pégala en la app de calendario. El nombre ya está listo para cambiarlo.
           </p>
           {!icalOpen ? (
             <Button type="button" className="mt-4" onClick={() => setIcalOpen(true)}>
-              Start
+              Iniciar
             </Button>
           ) : (
             <div className="mt-4 grid gap-4">
               <div>
-                <Label htmlFor="ical-name">Calendar name</Label>
+                <Label htmlFor="ical-name">Nombre del calendario</Label>
                 <div className="flex gap-2">
                   <Input id="ical-name" value={calendarName} maxLength={80} onChange={(event) => setCalendarName(event.target.value)} />
                   <CopyButton value={calendarName} />
                 </div>
               </div>
               <div>
-                <Label htmlFor="ical-feed">Private feed URL</Label>
+                <Label htmlFor="ical-feed">Dirección privada</Label>
                 <div className="flex gap-2">
                   <Input id="ical-feed" readOnly value={feedUrl} className="text-xs" />
                   <CopyButton value={feedUrl} />
                 </div>
               </div>
               <ol className="grid list-decimal gap-3 pl-5 text-sm text-ink/80">
-                <li>Apple Calendar on a Mac: File, then New Calendar Subscription. Paste the private address. When it asks for a name, use the calendar name above.</li>
-                <li>iPhone: Settings, then Calendar, then Accounts, then Add Account, then Other, then Add Subscribed Calendar. Paste the private address.</li>
-                <li>Outlook: Add calendar, then Subscribe from web. Paste the private address and use the calendar name above.</li>
-                <li>Another Google account: Settings, then Add calendar, then From URL. Paste the private address. Google can take several hours to show new bookings.</li>
+                <li>Calendario de Apple en un Mac: Archivo, luego Nueva suscripción a calendario. Pega la dirección privada. Si pide un nombre, usa el de arriba.</li>
+                <li>iPhone: Ajustes, luego Calendario, luego Cuentas, luego Añadir cuenta, luego Otra, luego Añadir calendario suscrito. Pega la dirección privada.</li>
+                <li>Outlook: Añadir calendario, luego Suscribirse desde la web. Pega la dirección privada y usa el nombre de arriba.</li>
+                <li>Otra cuenta de Google: Ajustes, luego Añadir calendario, luego Desde URL. Pega la dirección privada. Google puede tardar varias horas en mostrar las citas nuevas.</li>
               </ol>
               <div className="flex flex-wrap gap-3">
                 <Button asChild>
-                  <a href={feedUrl.replace(/^https?:/, "webcal:")}>Subscribe</a>
+                  <a href={feedUrl.replace(/^https?:/, "webcal:")}>Suscribirse</a>
                 </Button>
                 <form action={regenerateIcalToken}>
-                  <Button type="submit" variant="outline">Regenerate private link</Button>
+                  <Button type="submit" variant="outline">Crear otro enlace privado</Button>
                 </form>
                 <Button type="button" variant="outline" onClick={() => setIcalOpen(false)}>
-                  Close
+                  Cerrar
                 </Button>
               </div>
             </div>

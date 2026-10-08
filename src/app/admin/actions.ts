@@ -38,7 +38,7 @@ export async function login(_state: ActionState, formData: FormData): Promise<Ac
   const expected = process.env.ADMIN_PASSWORD || "";
   const input = String(formData.get("password") || "");
   if (!adminConfigured() || !passwordsMatch(input, expected)) {
-    return { error: "That password doesn’t match." };
+    return { error: "La contraseña no coincide." };
   }
   const jar = await cookies();
   jar.set(ADMIN_COOKIE, sealSession(), sessionCookieOptions());
@@ -68,7 +68,7 @@ export async function savePrices(_state: ActionState, formData: FormData): Promi
     const raw = String(formData.get(`from:${item.id}`) || "").trim();
     const amount = Number(raw);
     if (!Number.isInteger(amount) || amount < 1 || amount > 20000) {
-      return { error: `Enter a whole euro amount for ${item.label}.` };
+      return { error: `Escribe un precio en euros enteros para ${item.label}.` };
     }
     prices[item.id] = { from: amount, visible };
   }
@@ -80,7 +80,7 @@ export async function savePrices(_state: ActionState, formData: FormData): Promi
     await writeStored(withSchedule({ prices, promos: current.promos }, timingResult.timings, deliveryResult.deliveries));
     refreshSite();
   } catch (error) {
-    return { error: error instanceof Error ? error.message : "The prices didn’t save." };
+    return { error: error instanceof Error ? error.message : "No se pudieron guardar los precios." };
   }
   return { ok: true };
 }
@@ -89,23 +89,23 @@ export async function savePromo(_state: ActionState, formData: FormData): Promis
   await guard();
   const current = await readStored();
   const name = cleanText(formData.get("name"), 80);
-  if (!name) return { error: "Give the promotion a name." };
+  if (!name) return { error: "Ponle un nombre a la promoción." };
   const type = formData.get("type") === "fixed" ? "fixed" : "percent";
   const amount = Number(String(formData.get("amount") || "").trim());
-  if (!Number.isInteger(amount) || amount < 1) return { error: "Enter the discount as a whole number." };
-  if (type === "percent" && amount > 90) return { error: "A percent discount can be at most 90." };
-  if (type === "fixed" && amount > 5000) return { error: "That euro discount is too large." };
+  if (!Number.isInteger(amount) || amount < 1) return { error: "El descuento tiene que ser un número entero." };
+  if (type === "percent" && amount > 90) return { error: "El porcentaje puede ser como mucho 90." };
+  if (type === "fixed" && amount > 5000) return { error: "Ese descuento en euros es demasiado grande." };
   const starts = cleanText(formData.get("starts"), 10);
   const ends = cleanText(formData.get("ends"), 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(starts) || !/^\d{4}-\d{2}-\d{2}$/.test(ends)) {
-    return { error: "Add a start date and an end date." };
+    return { error: "Pon la fecha de inicio y la de fin." };
   }
-  if (ends < starts) return { error: "The end date needs to be on or after the start date." };
+  if (ends < starts) return { error: "La fecha final tiene que ser igual o posterior a la de inicio." };
   const all = formData.get("all") === "on";
   const targets = all ? "all" : catalog.filter((item) => formData.get(`target:${item.id}`) === "on").map((item) => item.id);
-  if (targets !== "all" && targets.length === 0) return { error: "Choose which sessions this applies to, or tick all." };
+  if (targets !== "all" && targets.length === 0) return { error: "Elige las sesiones o marca todas." };
   const code = cleanText(formData.get("code"), 40).toUpperCase();
-  if (code && !/^[A-Z0-9-]+$/.test(code)) return { error: "The promo code can use letters, numbers and hyphens." };
+  if (code && !/^[A-Z0-9-]+$/.test(code)) return { error: "El código puede usar letras, números y guiones." };
   const promo: Promo = {
     id: cleanText(formData.get("id"), 80) || randomUUID(),
     name,
@@ -129,7 +129,7 @@ export async function savePromo(_state: ActionState, formData: FormData): Promis
     await writeStored(withSchedule({ prices: current.prices, promos }, current.timings, current.deliveries));
     refreshSite();
   } catch (error) {
-    return { error: error instanceof Error ? error.message : "The promotion didn’t save." };
+    return { error: error instanceof Error ? error.message : "No se pudo guardar la promoción." };
   }
   return { ok: true };
 }

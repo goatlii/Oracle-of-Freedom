@@ -1,9 +1,14 @@
+import { randomUUID } from "node:crypto";
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 import { getCopy } from "@/content";
 import { en } from "@/content/en";
+import { es } from "@/content/es";
 import { settings } from "@/lib/content";
+import { languageLabel, type Inquiry } from "@/lib/inquiries";
+import { readInquiries, writeInquiries } from "@/lib/inquiry-store";
 import { BUDGET_UNSURE, budgetGroup, gradeInquiry, multiDayCoverage, peopleMode } from "@/lib/lead";
 
 const schema = z.object({
@@ -122,6 +127,39 @@ export async function POST(request: Request) {
     "",
     data.story || "(no story)",
   ];
+
+  const when = data.flexible
+    ? multiDay && data.date && dateEnd
+      ? `Flexible, ${data.date} – ${dateEnd}`
+      : "Fecha flexible"
+    : multiDay && data.date && dateEnd
+      ? `${data.date} – ${dateEnd}`
+      : data.date || "Sin fecha";
+  const inquiry: Inquiry = {
+    id: randomUUID(),
+    createdAt: new Date().toISOString(),
+    status: "new",
+    name: data.name,
+    email: data.email,
+    phone: data.phone?.trim() || "",
+    service: data.service,
+    serviceLabel: label(es.form.services, data.service),
+    when,
+    place: data.place,
+    story: data.story?.trim() || "",
+    language: data.language,
+    languageLabel: languageLabel(data.language),
+    budgetLabel,
+    grade,
+  };
+  try {
+    const current = await readInquiries();
+    await writeInquiries([inquiry, ...current]);
+    revalidatePath("/admin");
+    revalidatePath("/admin/inquiries");
+  } catch (error) {
+    console.error("[inquiry] storage failed", error);
+  }
 
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {

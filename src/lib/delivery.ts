@@ -59,9 +59,18 @@ const SAME_DAY = /the same day, when the schedule|el mismo día, si la agenda|no
 const WEEKEND_PRIORITY = /Express or priority|exprés o prioritaria|expressa ou prioritária/i;
 
 const localeName: Record<DeliveryLocale, string> = {
-  en: "English",
-  es: "Spanish",
-  pt: "Portuguese",
+  en: "inglés",
+  es: "español",
+  pt: "portugués",
+};
+
+const timingLabelEs: Record<TimingKey, string> = {
+  artistGalleryWeeks: "Galerías de fotos",
+  artistFilmWeeks: "Películas y reels",
+  elopementGalleryWeeks: "Fotos de elopement",
+  elopementFilmWeeks: "Películas de elopement",
+  expressPhotoDays: "Fotos exprés",
+  expressFilmDays: "Película exprés",
 };
 
 export function defaultTiming(key: TimingKey) {
@@ -166,7 +175,7 @@ export function timingsFromForm(formData: FormData): { timings?: LiveSettings["t
     const raw = String(formData.get(`timing:${field.key}`) || "").trim();
     if (!raw || raw === settings[field.key]) continue;
     if (raw.length > TIMING_MAX || /[{}\r\n]/.test(raw)) {
-      return { error: `Keep “${field.label}” to a short phrase, like “${settings[field.key]}”.` };
+      return { error: `Deja «${timingLabelEs[field.key]}» en una frase corta, como «${settings[field.key]}».` };
     }
     timings[field.key] = raw;
   }
@@ -185,7 +194,7 @@ export function deliveriesFromForm(
       const fallback = defaults[item.id]?.[locale] ?? "";
       if (!raw || raw === fallback) continue;
       if (raw.length > DELIVERY_MAX || /[\r\n]/.test(raw)) {
-        return { error: `Shorten the ${localeName[locale]} delivery line for ${item.label}.` };
+        return { error: `Acorta el plazo en ${localeName[locale]} de ${item.label}.` };
       }
       row[locale] = raw;
     }

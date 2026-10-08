@@ -8,15 +8,15 @@ export default async function AdminLoginPage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4 py-16">
       <p className="text-xs tracking-[0.22em] text-ember uppercase">Oracle of Freedom</p>
-      <h1 className="mt-3 font-serif text-4xl">Studio</h1>
+      <h1 className="mt-3 font-serif text-4xl">Estudio</h1>
       {adminConfigured() ? (
         <>
-          <p className="mt-3 text-ink/70">Enter the password to manage prices, delivery times, offers and the calendar.</p>
+          <p className="mt-3 text-ink/70">Escribe la contraseña para ver solicitudes, la agenda, los precios y los plazos.</p>
           <LoginForm action={login} />
         </>
       ) : (
         <p className="mt-4 rounded-2xl bg-clay p-4 text-sm">
-          This page is locked until <span className="font-medium">ADMIN_PASSWORD</span> is added in Vercel and the site is redeployed.
+          Esta página sigue cerrada hasta añadir <span className="font-medium">ADMIN_PASSWORD</span> en Vercel y volver a publicar el sitio.
         </p>
       )}
     </main>
