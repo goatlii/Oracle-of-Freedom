@@ -2,18 +2,28 @@
 
 import Image from "next/image";
 import { useEffect, useId, useRef, useState } from "react";
+import { MobileMore } from "@/components/mobile-more";
 import type { GalleryImage } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
-import { isPublishedPhoto } from "@/lib/utils";
+import { cn, isPublishedPhoto } from "@/lib/utils";
+
+const moreCopy = {
+  en: { more: "View more photos", less: "Show less" },
+  es: { more: "Ver más fotos", less: "Ver menos" },
+  pt: { more: "Ver mais fotos", less: "Ver menos" },
+} as const;
 
 export function GalleryGrid({
   images,
   locale,
   labels,
+  foldMobile = false,
 }: {
   images: GalleryImage[];
   locale: Locale;
   labels: { open: string; close: string; previous: string; next: string; placeholder: string };
+  /** Below md, show the first three photos and a button that reveals the rest. */
+  foldMobile?: boolean;
 }) {
   const [active, setActive] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -48,30 +58,40 @@ export function GalleryGrid({
 
   const current = active == null ? null : photos[active];
 
+  const words = moreCopy[locale];
+
   return (
     <>
-      <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
-        {photos.map((image, index) => (
-          <button
-            key={image.id}
-            type="button"
-            className="group mb-3 block w-full break-inside-avoid overflow-hidden rounded-2xl text-left"
-            onClick={() => setActive(index)}
-          >
-            <Image
-              src={image.src}
-              alt={image.alt[locale]}
-              width={image.width}
-              height={image.height}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              placeholder="blur"
-              blurDataURL={image.blur}
-              className="h-auto w-full transition duration-700 group-hover:scale-[1.02]"
-            />
-            <span className="sr-only">{labels.open}</span>
-          </button>
-        ))}
-      </div>
+      <MobileMore enabled={foldMobile} total={photos.length} visible={3} more={words.more} less={words.less}>
+        {({ hide, itemId }) => (
+          <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
+            {photos.map((image, index) => (
+              <button
+                key={image.id}
+                id={itemId(index)}
+                type="button"
+                className={cn(
+                  "group mb-3 block w-full break-inside-avoid overflow-hidden rounded-2xl text-left",
+                  hide(index) && "max-md:hidden",
+                )}
+                onClick={() => setActive(index)}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt[locale]}
+                  width={image.width}
+                  height={image.height}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL={image.blur}
+                  className="h-auto w-full transition duration-700 group-hover:scale-[1.02]"
+                />
+                <span className="sr-only">{labels.open}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </MobileMore>
       <dialog
         ref={dialogRef}
         aria-labelledby={titleId}
