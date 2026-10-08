@@ -5,7 +5,9 @@ import { revalidatePath, revalidateTag } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { ADMIN_COOKIE, adminConfigured, isAdmin, passwordsMatch, sealSession, sessionCookieOptions } from "@/lib/admin-auth";
-import { catalog, type Promo } from "@/lib/pricing";
+import { deliveriesFromForm, timingsFromForm } from "@/lib/delivery";
+import { deliveryDefaults } from "@/lib/delivery-copy";
+import { catalog, type LiveSettings, type Promo } from "@/lib/pricing";
 import { readStored, writeStored } from "@/lib/store";
 
 export type ActionState = { ok?: boolean; error?: string } | null;
@@ -17,6 +19,19 @@ async function guard() {
 function refreshSite() {
   revalidateTag("live-settings", "max");
   revalidatePath("/", "layout");
+}
+
+function withSchedule(
+  base: { prices: LiveSettings["prices"]; promos: Promo[] },
+  timings: LiveSettings["timings"],
+  deliveries: LiveSettings["deliveries"],
+): LiveSettings {
+  return {
+    prices: base.prices,
+    promos: base.promos,
+    ...(timings && Object.keys(timings).length > 0 ? { timings } : {}),
+    ...(deliveries && Object.keys(deliveries).length > 0 ? { deliveries } : {}),
+  };
 }
 
 export async function login(_state: ActionState, formData: FormData): Promise<ActionState> {
@@ -57,8 +72,12 @@ export async function savePrices(_state: ActionState, formData: FormData): Promi
     }
     prices[item.id] = { from: amount, visible };
   }
+  const timingResult = timingsFromForm(formData);
+  if (timingResult.error) return { error: timingResult.error };
+  const deliveryResult = deliveriesFromForm(formData, deliveryDefaults());
+  if (deliveryResult.error) return { error: deliveryResult.error };
   try {
-    await writeStored({ prices, promos: current.promos });
+    await writeStored(withSchedule({ prices, promos: current.promos }, timingResult.timings, deliveryResult.deliveries));
     refreshSite();
   } catch (error) {
     return { error: error instanceof Error ? error.message : "The prices didn’t save." };
@@ -107,7 +126,7 @@ export async function savePromo(_state: ActionState, formData: FormData): Promis
     ? current.promos.map((item) => (item.id === promo.id ? promo : item))
     : [promo, ...current.promos];
   try {
-    await writeStored({ prices: current.prices, promos });
+    await writeStored(withSchedule({ prices: current.prices, promos }, current.timings, current.deliveries));
     refreshSite();
   } catch (error) {
     return { error: error instanceof Error ? error.message : "The promotion didn’t save." };
@@ -119,6 +138,12 @@ export async function deletePromo(formData: FormData) {
   await guard();
   const id = String(formData.get("id") || "");
   const current = await readStored();
-  await writeStored({ prices: current.prices, promos: current.promos.filter((item) => item.id !== id) });
+  await writeStored(
+    withSchedule(
+      { prices: current.prices, promos: current.promos.filter((item) => item.id !== id) },
+      current.timings,
+      current.deliveries,
+    ),
+  );
   refreshSite();
 }

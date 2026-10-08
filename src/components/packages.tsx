@@ -4,7 +4,8 @@ import { TokenText } from "@/components/token-text";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { Button } from "@/components/ui/button";
 import { formatEuro, formatFrom } from "@/lib/content";
-import type { PricedPackage } from "@/lib/pricing";
+import { packageDelivery, resolvePackageItems } from "@/lib/delivery";
+import type { LiveSettings, PricedPackage } from "@/lib/pricing";
 import { cn } from "@/lib/utils";
 
 export function FromPrice({
@@ -63,6 +64,7 @@ export function PackageCards({
   codeLabel,
   wishLabel,
   className,
+  deliveries,
 }: {
   locale: string;
   items: PricedPackage[];
@@ -76,6 +78,7 @@ export function PackageCards({
   codeLabel?: string;
   wishLabel?: string;
   className?: string;
+  deliveries?: LiveSettings["deliveries"];
 }) {
   return (
     <div className={cn("grid gap-4 md:grid-cols-2 xl:grid-cols-3", className)}>
@@ -102,8 +105,8 @@ export function PackageCards({
               <p className="mt-1 text-sm text-moss">{saveTemplate.replace("{amount}", formatEuro(locale, item.save))}</p>
             ) : null}
             <ul className="mt-4 flex-1 space-y-2 text-sm text-ink/80">
-              {text.items.map((line) => (
-                <li key={line}>
+              {resolvePackageItems(text.items, packageDelivery(deliveries, item.id, locale)).map((line, index) => (
+                <li key={`${item.id}-${index}`}>
                   <TokenText text={line} />
                 </li>
               ))}

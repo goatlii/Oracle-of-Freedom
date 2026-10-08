@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { deletePromo, savePrices, savePromo, type ActionState } from "@/app/admin/actions";
 import { promoStatus, type CatalogItem, type LiveSettings, type Promo, type StorageMode } from "@/lib/pricing";
 import { Button } from "@/components/ui/button";
-import { Input, Label } from "@/components/ui/input";
+import { Input, Label, Textarea } from "@/components/ui/input";
 
 const groups = [
   { id: "portraits", label: "Portrait sessions" },
@@ -24,9 +24,23 @@ function kindLabel(kind: CatalogItem["kind"]) {
 }
 
 const storageNote: Record<StorageMode, string> = {
-  blob: "Saves go live on the website within a few seconds. The same price is used in English, Spanish and Portuguese.",
-  local: "This computer only. Saves stay on this machine until Vercel Blob is connected. The public site still uses the starting prices.",
-  readonly: "Saving is switched off until Vercel Blob is connected. Visitors still see the starting prices.",
+  blob: "Saves go live on the website within a few seconds. Prices are the same in English, Spanish and Portuguese. Delivery lines can differ by language.",
+  local: "This computer only. Saves stay on this machine until Vercel Blob is connected. The public site still uses the starting prices and delivery lines.",
+  readonly: "Saving is switched off until Vercel Blob is connected. Visitors still see the starting prices and delivery lines.",
+};
+
+const deliveryLocales = [
+  { id: "en", label: "English" },
+  { id: "es", label: "Spanish" },
+  { id: "pt", label: "Portuguese" },
+] as const;
+
+export type TimingField = {
+  key: string;
+  token: string;
+  label: string;
+  hint: string;
+  value: string;
 };
 
 const statusLabel = { live: "Live", scheduled: "Scheduled", ended: "Ended", off: "Off" };
@@ -77,11 +91,15 @@ export function AdminPanel({
   settings,
   today,
   mode,
+  timingFields,
+  deliveryDefaults,
 }: {
   catalog: CatalogItem[];
   settings: LiveSettings;
   today: string;
   mode: StorageMode;
+  timingFields: TimingField[];
+  deliveryDefaults: Record<string, Record<(typeof deliveryLocales)[number]["id"], string>>;
 }) {
   const router = useRouter();
   const [priceState, savePriceAction, pricePending] = useActionState(savePrices, null);
@@ -121,11 +139,35 @@ export function AdminPanel({
   }
 
   return (
-    <div className="grid gap-8 lg:grid-cols-2">
-      <section className="rounded-3xl bg-white/70 p-4 md:p-6">
-        <h2 className="font-serif text-3xl">Prices</h2>
+    <div className="grid gap-8">
+      <section id="studio-prices" className="rounded-3xl bg-white/70 p-4 md:p-6">
+        <h2 className="font-serif text-3xl">Prices and delivery</h2>
         <p className="mt-2 text-sm text-ink/70">{storageNote[mode]}</p>
         <form action={savePriceAction} className="mt-6 grid gap-8">
+          <fieldset id="shared-delivery" className="grid gap-4">
+            <legend className="font-serif text-2xl">Shared delivery times</legend>
+            <p className="text-sm text-ink/70">
+              These short phrases fill the tokens on every page, including questions and the steps after a booking. Leave a phrase as it is to keep today’s wording. A card below can still use its own sentence.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {timingFields.map((field) => (
+                <div key={field.key}>
+                  <Label htmlFor={`timing-${field.key}`}>
+                    {field.label} <span className="font-normal text-ink/50">{field.token}</span>
+                  </Label>
+                  <Input
+                    id={`timing-${field.key}`}
+                    name={`timing:${field.key}`}
+                    defaultValue={field.value}
+                    maxLength={40}
+                    autoComplete="off"
+                    className="text-base"
+                  />
+                  <p className="mt-1 text-xs text-ink/55">{field.hint}</p>
+                </div>
+              ))}
+            </div>
+          </fieldset>
           {groups.map((group) => (
             <fieldset key={group.id} className="grid gap-4">
               <legend className="font-serif text-2xl">{group.label}</legend>
@@ -135,43 +177,64 @@ export function AdminPanel({
                   const saved = settings.prices[item.id];
                   const amount = saved?.from ?? item.from ?? "";
                   const visible = saved?.visible ?? true;
+                  const lines = deliveryDefaults[item.id] ?? { en: "", es: "", pt: "" };
                   return (
-                    <div key={item.id} className="grid gap-3 border-t border-ink/10 pt-4 sm:grid-cols-[1fr_8rem_auto] sm:items-end">
-                      <div>
-                        <Label htmlFor={`from-${item.id}`}>{item.label}</Label>
-                        <p className="text-xs tracking-[0.12em] text-ink/45 uppercase">
-                          {kindLabel(item.kind)}
-                        </p>
-                        {item.plus ? (
-                          <p className="text-xs text-ink/55">Shown on the site as from €{amount}+</p>
-                        ) : item.to ? (
-                          <p className="text-xs text-ink/55">Shown on the site as from €{amount}–{item.to}</p>
-                        ) : null}
-                      </div>
-                      {item.custom ? (
-                        <p className="text-sm text-ink/60">Quote only</p>
-                      ) : (
+                    <div key={item.id} data-package={item.id} className="grid gap-3 border-t border-ink/10 pt-4">
+                      <div className="grid gap-3 sm:grid-cols-[1fr_8rem_auto] sm:items-end">
                         <div>
-                          <Label htmlFor={`from-${item.id}`} className="sr-only">
-                            Euros for {item.label}
-                          </Label>
-                          <Input
-                            id={`from-${item.id}`}
-                            name={`from:${item.id}`}
-                            type="number"
-                            inputMode="numeric"
-                            min={1}
-                            step={1}
-                            defaultValue={amount}
-                            required
-                            className="text-base"
-                          />
+                          <Label htmlFor={`from-${item.id}`}>{item.label}</Label>
+                          <p className="text-xs tracking-[0.12em] text-ink/45 uppercase">
+                            {kindLabel(item.kind)}
+                          </p>
+                          {item.plus ? (
+                            <p className="text-xs text-ink/55">Shown on the site as from €{amount}+</p>
+                          ) : item.to ? (
+                            <p className="text-xs text-ink/55">Shown on the site as from €{amount}–{item.to}</p>
+                          ) : null}
                         </div>
-                      )}
-                      <label className="flex items-center gap-2 pb-3 text-sm">
-                        <input type="checkbox" name={`visible:${item.id}`} defaultChecked={visible} />
-                        Show
-                      </label>
+                        {item.custom ? (
+                          <p className="text-sm text-ink/60">Quote only</p>
+                        ) : (
+                          <div>
+                            <Label htmlFor={`from-${item.id}`} className="sr-only">
+                              Euros for {item.label}
+                            </Label>
+                            <Input
+                              id={`from-${item.id}`}
+                              name={`from:${item.id}`}
+                              type="number"
+                              inputMode="numeric"
+                              min={1}
+                              step={1}
+                              defaultValue={amount}
+                              required
+                              className="text-base"
+                            />
+                          </div>
+                        )}
+                        <label className="flex items-center gap-2 pb-3 text-sm">
+                          <input type="checkbox" name={`visible:${item.id}`} defaultChecked={visible} />
+                          Show
+                        </label>
+                      </div>
+                      <fieldset className="grid gap-3 md:grid-cols-3">
+                        <legend className="mb-2 text-sm font-medium text-ink">Delivery line</legend>
+                        {deliveryLocales.map((locale) => (
+                          <div key={locale.id}>
+                            <Label htmlFor={`delivery-${item.id}-${locale.id}`}>{locale.label}</Label>
+                            <Textarea
+                              id={`delivery-${item.id}-${locale.id}`}
+                              name={`delivery:${item.id}:${locale.id}`}
+                              rows={2}
+                              maxLength={240}
+                              defaultValue={lines[locale.id]}
+                              placeholder="No delivery line on this card"
+                              autoComplete="off"
+                              className="min-h-20"
+                            />
+                          </div>
+                        ))}
+                      </fieldset>
                     </div>
                   );
                 })}
@@ -179,7 +242,7 @@ export function AdminPanel({
           ))}
           <Notice state={priceState} />
           <Button type="submit" disabled={pricePending || mode === "readonly"} className="w-full sm:w-auto">
-            {pricePending ? "Saving…" : "Save prices"}
+            {pricePending ? "Saving…" : "Save prices and delivery"}
           </Button>
         </form>
       </section>

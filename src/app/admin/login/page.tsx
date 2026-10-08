@@ -11,7 +11,7 @@ export default async function AdminLoginPage() {
       <h1 className="mt-3 font-serif text-4xl">Studio</h1>
       {adminConfigured() ? (
         <>
-          <p className="mt-3 text-ink/70">Enter the password to manage prices, offers and the calendar.</p>
+          <p className="mt-3 text-ink/70">Enter the password to manage prices, delivery times, offers and the calendar.</p>
           <LoginForm action={login} />
         </>
       ) : (
