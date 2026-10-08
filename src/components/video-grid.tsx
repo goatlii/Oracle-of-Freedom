@@ -3,14 +3,33 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { allowEmbeds, readConsent } from "@/components/cookie-banner";
+import { MobileMore } from "@/components/mobile-more";
 import { imageById, videos, type VideoItem } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const chrome = {
-  en: { play: "Play video", youtube: "Plays from YouTube", instagram: "Plays from Instagram" },
-  es: { play: "Reproducir vídeo", youtube: "Se reproduce desde YouTube", instagram: "Se reproduce desde Instagram" },
-  pt: { play: "Reproduzir vídeo", youtube: "Reproduz a partir do YouTube", instagram: "Reproduz a partir do Instagram" },
+  en: {
+    play: "Play video",
+    youtube: "Plays from YouTube",
+    instagram: "Plays from Instagram",
+    more: "View more films",
+    less: "Show less",
+  },
+  es: {
+    play: "Reproducir vídeo",
+    youtube: "Se reproduce desde YouTube",
+    instagram: "Se reproduce desde Instagram",
+    more: "Ver más vídeos",
+    less: "Ver menos",
+  },
+  pt: {
+    play: "Reproduzir vídeo",
+    youtube: "Reproduz a partir do YouTube",
+    instagram: "Reproduz a partir do Instagram",
+    more: "Ver mais filmes",
+    less: "Ver menos",
+  },
 } as const;
 
 function captionOf(video: VideoItem, locale: Locale) {
@@ -31,6 +50,7 @@ export function VideoGrid({
   note,
   variant = "section",
   tone = "light",
+  foldMobile,
 }: {
   locale: Locale;
   title?: string;
@@ -38,11 +58,14 @@ export function VideoGrid({
   /** section: festivals page block. plain: drop into an existing section. */
   variant?: "section" | "plain";
   tone?: "light" | "night";
+  /** Collapse after the first film below md. Section blocks fold unless this is false. */
+  foldMobile?: boolean;
 }) {
   const [consent, setConsent] = useState(false);
   const [active, setActive] = useState<string | null>(null);
   const words = chrome[locale];
   const captionClass = tone === "night" ? "mt-3 text-sm text-sand/60" : "mt-3 text-sm text-ink/60";
+  const fold = (foldMobile ?? variant === "section") && videos.items.length > 1;
 
   useEffect(() => {
     const sync = () => {
@@ -55,9 +78,17 @@ export function VideoGrid({
     return () => window.removeEventListener("oof-consent", sync);
   }, []);
 
-  const grid = (
+  const grid = ({
+    hide,
+    hiddenClass,
+    itemId,
+  }: {
+    hide: (index: number) => boolean;
+    hiddenClass: string;
+    itemId: (index: number) => string | undefined;
+  }) => (
     <div className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">
-      {videos.items.map((video) => {
+      {videos.items.map((video, index) => {
         const poster = imageById(video.posterId);
         const caption = captionOf(video, locale);
         const alt = posterAlt(video, locale);
@@ -76,7 +107,11 @@ export function VideoGrid({
         };
 
         return (
-          <figure key={video.id} className={cn(wide && "sm:col-span-2 xl:col-span-4")}>
+          <figure
+            key={video.id}
+            id={itemId(index)}
+            className={cn(wide && "sm:col-span-2 xl:col-span-4", hide(index) && hiddenClass)}
+          >
             {playing ? (
               <iframe
                 title={alt}
@@ -116,7 +151,20 @@ export function VideoGrid({
     </div>
   );
 
-  if (variant === "plain") return grid;
+  const films = (
+    <MobileMore
+      enabled={fold}
+      total={videos.items.length}
+      visible={1}
+      more={words.more}
+      less={words.less}
+      tone={tone}
+    >
+      {grid}
+    </MobileMore>
+  );
+
+  if (variant === "plain") return films;
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
@@ -124,7 +172,7 @@ export function VideoGrid({
       {note ? (
         <p className={cn("mt-3 max-w-2xl text-sm", tone === "night" ? "text-sand/70" : "text-ink/70")}>{note}</p>
       ) : null}
-      <div className={title || note ? "mt-8" : undefined}>{grid}</div>
+      <div className={title || note ? "mt-8" : undefined}>{films}</div>
     </section>
   );
 }

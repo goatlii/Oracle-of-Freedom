@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GalleryGrid } from "@/components/gallery";
+import { VideoGrid } from "@/components/video-grid";
 import { getCopy } from "@/content";
 import type { Locale } from "@/i18n/routing";
 import { formatEuro, imagesForPage } from "@/lib/content";
@@ -85,6 +86,9 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
             placeholder: copy.a11y.photoPlaceholder,
           }}
         />
+        <div className="mt-16">
+          <VideoGrid locale={loc} variant="plain" foldMobile tone="light" />
+        </div>
       </section>
     </article>
   );

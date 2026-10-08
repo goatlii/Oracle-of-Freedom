@@ -362,7 +362,7 @@ export const en: Copy = {
       { title: "You relive it", body: "Your private gallery arrives in {artistWeeks}, ready to download, share and print. Films and photo+film collections follow the film timeline, {artistFilmWeeks}." },
     ],
     wordsTitle: "Kind words",
-    testimonialIds: ["oliwia", "couple", "soul-brand"],
+    testimonialIds: ["oliwia", "india", "couple", "soul-brand"],
     faqTitle: "Questions",
     faq: [
       { q: "We're awkward in front of the camera. Is that okay?", a: "Totally. Most people are. I don't make you \"pose\" — I give you little prompts, we walk, we laugh, and the real you shows up." },

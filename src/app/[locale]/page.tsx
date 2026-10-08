@@ -168,6 +168,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <GalleryGrid
           images={featuredImages()}
           locale={loc}
+          foldMobile
           labels={{
             open: copy.a11y.openPhoto,
             close: copy.a11y.close,
@@ -182,6 +183,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         ids={["india", "oliwia", "sage", "rewild", "kliq", "nixie", "couple", "retreat", "artist"]}
         locale={loc}
         title={copy.home.wordsTitle}
+        foldAfter={5}
       />
 
       <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-8 md:grid-cols-2 md:px-6">
