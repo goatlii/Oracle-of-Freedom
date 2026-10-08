@@ -275,7 +275,7 @@ export async function ServiceView({
           <GalleryGrid
             images={images}
             locale={locale}
-            foldMobile={group !== "places"}
+            foldMobile
             labels={{
               open: a11y.openPhoto,
               close: a11y.close,

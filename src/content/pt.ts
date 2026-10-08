@@ -327,7 +327,7 @@ export const pt: Copy = {
       { title: "Revive tudo", body: "Chega a tua galeria privada em {artistWeeks}, pronta a descarregar, partilhar e imprimir. Os filmes e as coleções foto+vídeo seguem o prazo do filme, {artistFilmWeeks}." },
     ],
     wordsTitle: "Palavras bonitas",
-    testimonialIds: ["oliwia", "couple", "soul-brand"],
+    testimonialIds: ["oliwia", "india", "couple", "soul-brand"],
     faqTitle: "Perguntas frequentes",
     faq: [
       { q: "Somos desajeitados à frente da câmara. Faz mal?", a: "Nada. Acontece a quase toda a gente. Não vos ponho a \"posar\": dou pequenas sugestões, caminhamos, rimo-nos e o vosso verdadeiro eu aparece." },
