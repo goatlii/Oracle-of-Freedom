@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import type { StaticPathname } from "@/i18n/routing";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { OmMark } from "@/components/om-mark";
 import { settings, whatsappHref } from "@/lib/content";
 import { isPlaceholder } from "@/lib/utils";
 
@@ -22,7 +23,10 @@ export function SiteFooter({
     <footer className="grain bg-night text-sand">
       <div className="relative z-10 mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-[1.4fr_1fr] md:px-6">
         <div>
-          <p className="font-serif text-3xl">Oracle of Freedom</p>
+          <div className="flex items-center gap-3">
+            <OmMark className="h-10 w-10 shrink-0" />
+            <p className="font-serif text-3xl">Oracle of Freedom</p>
+          </div>
           <p className="mt-3 max-w-md text-sand/75">{blurb}</p>
         </div>
         <div className="space-y-2 text-sm text-sand/80">
