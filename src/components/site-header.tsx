@@ -33,7 +33,7 @@ export function SiteHeader({
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-sand/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 md:h-20 md:px-6">
         <Link href="/" className="flex items-center gap-2.5 text-ink" aria-label={homeLabel}>
-          <OmMark className="h-8 w-8 shrink-0 md:h-10 md:w-10" />
+          <OmMark className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
           <span className="font-serif text-lg leading-none md:text-xl">Oracle of Freedom</span>
         </Link>
         <nav className="ml-auto hidden items-center gap-5 lg:flex" aria-label="Main">

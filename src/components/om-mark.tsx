@@ -5,8 +5,8 @@ export function OmMark({ className = "h-8 w-8" }: { className?: string }) {
     <Image
       src="/images/brand/om-logo.png"
       alt=""
-      width={128}
-      height={128}
+      width={247}
+      height={247}
       className={className}
       unoptimized
       aria-hidden="true"
