@@ -67,6 +67,7 @@ export default async function LocaleLayout({
     { href: "/portfolio", label: copy.nav.portfolio },
     { href: "/about", label: copy.nav.about },
     { href: "/journal", label: copy.nav.journal },
+    { href: "/book", label: copy.nav.book },
   ];
 
   return (
@@ -89,7 +90,7 @@ export default async function LocaleLayout({
           <SiteFooter
             locale={locale}
             blurb={copy.footer.blurb}
-            whatsappLabel={copy.whatsapp.button}
+            whatsappMessage={copy.whatsapp.general}
             privacyLabel={copy.footer.privacy}
             rights={copy.footer.rights}
           />

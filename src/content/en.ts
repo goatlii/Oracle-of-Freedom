@@ -117,6 +117,11 @@ export const en: Copy = {
         "Tell me your story: date, place and dream. I reply within 48 hours. WhatsApp or email welcome.",
       keywords: "book Algarve photographer; book Lisbon photographer; contact Oracle of Freedom",
     },
+    book: {
+      title: "Book a call · Oracle of Freedom",
+      description: "Choose a time to meet photographer and filmmaker Agota Urbikaite.",
+      keywords: "book Agota Urbikaite; book Algarve photographer; book Lisbon photographer",
+    },
     privacy: {
       title: "Privacy · Oracle of Freedom",
       description:
@@ -143,6 +148,7 @@ export const en: Copy = {
     portfolio: "Portfolio",
     about: "About",
     journal: "Journal",
+    book: "Book",
     inquire: "Inquire",
   },
   footer: {
@@ -845,7 +851,7 @@ export const en: Copy = {
   },
   privacy: {
     title: "Privacy notice",
-    updated: "Updated 29 September 2026. This is a short notice, not a full legal policy.",
+    updated: "Updated 7 October 2026. This is a short notice, not a full legal policy.",
     sections: [
       {
         title: "Who",
@@ -858,7 +864,7 @@ export const en: Copy = {
         body: [
           "Your name, email, the story you choose to tell, and any optional phone number, date, place, budget and how you found the site. You send it so Agota can reply about a possible collaboration.",
           "Messages are emailed to agota@oracleoffreedom.com through Resend when that service is configured. Until then, the form still runs, but nothing is delivered.",
-          "PLACEHOLDER: confirm how long inquiries are kept. The intention is to keep them only as long as needed to reply and follow the conversation, then delete them.",
+          "Inquiries are kept only as long as needed to reply and follow the conversation, then deleted.",
         ],
       },
       {

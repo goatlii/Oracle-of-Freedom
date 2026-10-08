@@ -7,13 +7,13 @@ import { isPlaceholder } from "@/lib/utils";
 export function SiteFooter({
   locale,
   blurb,
-  whatsappLabel,
+  whatsappMessage,
   privacyLabel,
   rights,
 }: {
   locale: string;
   blurb: string;
-  whatsappLabel: string;
+  whatsappMessage: string;
   privacyLabel: string;
   rights: string;
 }) {
@@ -41,7 +41,7 @@ export function SiteFooter({
             </a>
           </p>
           <p>
-            <a className="underline decoration-white/30 underline-offset-4 hover:text-white" href={whatsappHref(whatsappLabel)}>
+            <a className="underline decoration-white/30 underline-offset-4 hover:text-white" href={whatsappHref(whatsappMessage)}>
               WhatsApp{" "}
               <span className={isPlaceholder(settings.whatsappDisplay) || settings.whatsappIsPlaceholder ? "placeholder-chip" : undefined}>
                 {settings.whatsappDisplay}

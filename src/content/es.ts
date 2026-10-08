@@ -110,6 +110,11 @@ export const es: Copy = {
       description: "Cuéntame tu historia: fecha, lugar y sueño. Respondo en 48 horas. También por WhatsApp o email.",
       keywords: "contactar fotógrafa Algarve; contactar fotógrafa Lisboa",
     },
+    book: {
+      title: "Reserva una llamada · Oracle of Freedom",
+      description: "Elige una hora para conocer a la fotógrafa y videógrafa Agota Urbikaite.",
+      keywords: "reservar Agota Urbikaite; reservar fotógrafa Algarve; reservar fotógrafa Lisboa",
+    },
     privacy: {
       title: "Privacidad · Oracle of Freedom",
       description: "Cómo Oracle of Freedom usa los datos del formulario, las cookies y los vídeos incrustados. Un aviso breve de RGPD.",
@@ -135,6 +140,7 @@ export const es: Copy = {
     portfolio: "Portfolio",
     about: "Sobre mí",
     journal: "Journal",
+    book: "Reservar",
     inquire: "Contacto",
   },
   footer: {
@@ -798,7 +804,7 @@ export const es: Copy = {
   },
   privacy: {
     title: "Aviso de privacidad",
-    updated: "Actualizado el 29 de septiembre de 2026. Es un aviso breve, no una política legal completa.",
+    updated: "Actualizado el 7 de octubre de 2026. Es un aviso breve, no una política legal completa.",
     sections: [
       { title: "Quién", body: ["Oracle of Freedom es Agota Urbikaite, con base del Algarve a Lisboa. Email: agota@oracleoffreedom.com."] },
       {
@@ -806,7 +812,7 @@ export const es: Copy = {
         body: [
           "Tu nombre, email, la historia que quieras contar y, si los das, teléfono, fecha, lugar, presupuesto y cómo me encontraste. Lo envías para que Agota pueda responder sobre una posible colaboración.",
           "Los mensajes se envían a agota@oracleoffreedom.com a través de Resend cuando ese servicio está configurado. Hasta entonces el formulario funciona, pero no se entrega nada.",
-          "PENDIENTE: confirmar cuánto tiempo se guardan las consultas. La intención es conservarlas solo el tiempo necesario para responder y seguir la conversación, y después borrarlas.",
+          "Las consultas se conservan solo el tiempo necesario para responder y seguir la conversación, y después se borran.",
         ],
       },
       {

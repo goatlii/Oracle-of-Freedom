@@ -110,6 +110,11 @@ export const pt: Copy = {
       description: "Conta-me a tua história: data, local e sonho. Respondo em 48 horas. Também por WhatsApp ou email.",
       keywords: "contactar fotógrafa Algarve; contactar fotógrafa Lisboa",
     },
+    book: {
+      title: "Marca uma chamada · Oracle of Freedom",
+      description: "Escolhe uma hora para conhecer a fotógrafa e videógrafa Agota Urbikaite.",
+      keywords: "marcar Agota Urbikaite; marcar fotógrafa Algarve; marcar fotógrafa Lisboa",
+    },
     privacy: {
       title: "Privacidade · Oracle of Freedom",
       description: "Como a Oracle of Freedom usa os dados do formulário, as cookies e os vídeos incorporados. Um aviso breve de RGPD.",
@@ -135,6 +140,7 @@ export const pt: Copy = {
     portfolio: "Portefólio",
     about: "Sobre mim",
     journal: "Journal",
+    book: "Marcar",
     inquire: "Contacto",
   },
   footer: {
@@ -798,7 +804,7 @@ export const pt: Copy = {
   },
   privacy: {
     title: "Aviso de privacidade",
-    updated: "Atualizado a 29 de setembro de 2026. É um aviso breve, não uma política jurídica completa.",
+    updated: "Atualizado a 7 de outubro de 2026. É um aviso breve, não uma política jurídica completa.",
     sections: [
       { title: "Quem", body: ["Oracle of Freedom é a Agota Urbikaite, com base do Algarve a Lisboa. Email: agota@oracleoffreedom.com."] },
       {
@@ -806,7 +812,7 @@ export const pt: Copy = {
         body: [
           "O teu nome, email, a história que quiseres contar e, se os deres, telefone, data, local, orçamento e como me encontraste. Envias isto para a Agota poder responder sobre uma possível colaboração.",
           "As mensagens seguem para agota@oracleoffreedom.com através da Resend quando esse serviço está configurado. Até lá o formulário funciona, mas nada é entregue.",
-          "PENDENTE: confirmar durante quanto tempo os pedidos são guardados. A intenção é conservá-los só o tempo necessário para responder e acompanhar a conversa, e depois apagá-los.",
+          "Os pedidos conservam-se só o tempo necessário para responder e acompanhar a conversa, e depois apagam-se.",
         ],
       },
       {

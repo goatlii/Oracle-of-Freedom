@@ -67,6 +67,7 @@ export type Copy = {
     portfolio: string;
     about: string;
     journal: string;
+    book: string;
     inquire: string;
   };
   footer: { blurb: string; privacy: string; rights: string };

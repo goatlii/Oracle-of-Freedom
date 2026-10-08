@@ -17,7 +17,7 @@ const sans = Karla({
 });
 
 export const metadata: Metadata = {
-  title: "Prices & offers · Oracle of Freedom",
+  title: "Studio · Oracle of Freedom",
   robots: { index: false, follow: false },
 };
 
