@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { GalleryGrid } from "@/components/gallery";
+import { VideoGrid } from "@/components/video-grid";
 import type { GalleryImage } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
@@ -53,7 +54,16 @@ export function PortfolioBrowser({
           </button>
         ))}
       </div>
-      {visible.length ? <GalleryGrid images={visible} locale={locale} labels={labels} /> : <p>{empty}</p>}
+      {visible.length ? (
+        <GalleryGrid images={visible} locale={locale} labels={labels} />
+      ) : filter === "film" ? null : (
+        <p>{empty}</p>
+      )}
+      {filter === "film" ? (
+        <div className={visible.length ? "mt-10" : undefined}>
+          <VideoGrid locale={locale} variant="plain" />
+        </div>
+      ) : null}
     </div>
   );
 }

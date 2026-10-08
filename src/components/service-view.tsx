@@ -280,13 +280,7 @@ export async function ServiceView({
 
         {showVideos && copy.videosTitle ? (
           <div className="bg-night text-sand">
-            <VideoGrid
-              locale={locale}
-              title={copy.videosTitle}
-              note={copy.videosNote || ""}
-              play={locale === "en" ? "Play" : locale === "es" ? "Reproducir" : "Reproduzir"}
-              allow={locale === "en" ? "Allow video to play" : locale === "es" ? "Acepta los vídeos para reproducir" : "Aceita os vídeos para reproduzir"}
-            />
+            <VideoGrid locale={locale} title={copy.videosTitle} note={copy.videosNote || ""} tone="night" />
           </div>
         ) : null}
 

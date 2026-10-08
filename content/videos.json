@@ -1,33 +1,53 @@
 {
-  "note": "PLACEHOLDER — confirm which Instagram link matches which still (fire, bonfire, drums, DJ). Replace posters with real frames when the films are uploaded.",
+  "note": "Portfolio films shared by the Portfolio film filter and the Experiences festivals section. label is the public caption in EN, ES and PT. Leave a language empty until Agota names that film. Instagram cards link out; the YouTube film plays from youtube-nocookie after the visitor allows embeds.",
   "items": [
-    {
-      "id": "ig-1",
-      "platform": "instagram",
-      "url": "https://www.instagram.com/p/DZV1Sx6M3EJ/",
-      "posterId": "film-01",
-      "verify": true
-    },
     {
       "id": "ig-2",
       "platform": "instagram",
       "url": "https://www.instagram.com/p/DYfToHuh_bu/",
       "posterId": "film-02",
-      "verify": true
+      "verify": false,
+      "label": {
+        "en": "",
+        "es": "",
+        "pt": ""
+      }
+    },
+    {
+      "id": "ig-1",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DZV1Sx6M3EJ/",
+      "posterId": "film-01",
+      "verify": false,
+      "label": {
+        "en": "",
+        "es": "",
+        "pt": ""
+      }
     },
     {
       "id": "ig-3",
       "platform": "instagram",
       "url": "https://www.instagram.com/p/DVq-Kd2FfV2/",
       "posterId": "film-03",
-      "verify": true
+      "verify": false,
+      "label": {
+        "en": "",
+        "es": "",
+        "pt": ""
+      }
     },
     {
       "id": "ig-4",
       "platform": "instagram",
       "url": "https://www.instagram.com/p/DN5gtBOCIH7/",
-      "posterId": "fire-01",
-      "verify": true
+      "posterId": "film-04",
+      "verify": false,
+      "label": {
+        "en": "",
+        "es": "",
+        "pt": ""
+      }
     },
     {
       "id": "yt-music-video",
@@ -35,7 +55,12 @@
       "url": "https://www.youtube.com/watch?v=eSWG_FdrtlM",
       "youtubeId": "eSWG_FdrtlM",
       "posterId": "music-video",
-      "verify": false
+      "verify": false,
+      "label": {
+        "en": "Music video",
+        "es": "Videoclip",
+        "pt": "Videoclipe"
+      }
     }
   ]
 }

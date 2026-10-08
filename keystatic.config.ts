@@ -154,6 +154,23 @@ export default config({
             youtubeId: fields.text({ label: "YouTube id", description: "Only for YouTube" }),
             posterId: fields.text({ label: "Poster image id" }),
             verify: fields.checkbox({ label: "Still needs a match check" }),
+            label: fields.object({
+              en: fields.text({
+                label: "Caption (English)",
+                description: "Short line under the film. Leave empty to show no caption.",
+                validation: { isRequired: false },
+              }),
+              es: fields.text({
+                label: "Caption (Español)",
+                description: "Línea breve bajo el vídeo. Vacío: sin pie.",
+                validation: { isRequired: false },
+              }),
+              pt: fields.text({
+                label: "Caption (Português)",
+                description: "Linha breve por baixo do filme. Vazio: sem legenda.",
+                validation: { isRequired: false },
+              }),
+            }),
           }),
           { label: "Films", itemLabel: (props) => props.fields.id.value },
         ),

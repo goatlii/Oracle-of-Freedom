@@ -54,11 +54,22 @@ export type Testimonial = {
   quote: Record<Locale, string>;
 };
 
+export type VideoItem = {
+  id: string;
+  platform: string;
+  url: string;
+  youtubeId?: string;
+  posterId: string;
+  verify?: boolean;
+  /** Public caption under the film. Empty in a language means no caption. */
+  label: Record<Locale, string>;
+};
+
 export const settings = settingsJson;
 export const packages = packagesJson;
 export const gallery = galleryJson.images as GalleryImage[];
 export const testimonials = testimonialsJson.items as Testimonial[];
-export const videos = videosJson;
+export const videos = videosJson as { note: string; items: VideoItem[] };
 
 export function imageById(id: string) {
   const image = gallery.find((item) => item.id === id);
