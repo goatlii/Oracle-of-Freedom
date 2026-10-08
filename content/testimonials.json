@@ -16,6 +16,21 @@
       }
     },
     {
+      "id": "oliwia",
+      "placeholder": false,
+      "name": "Oliwia, Ireland",
+      "shoot": {
+        "en": "Portrait session",
+        "es": "Sesión de retrato",
+        "pt": "Sessão de retrato"
+      },
+      "quote": {
+        "en": "Agota is so lovely to work with. She made the whole session feel completely natural and comfortable — she’s a real natural at what she does. I’m absolutely delighted with the photos and the whole experience. She’s incredibly talented, relaxed and made me feel so at ease. She has such a lovely eye for capturing you in the most natural way.",
+        "es": "Agota es un encanto para trabajar con ella. Hizo que toda la sesión se sintiera completamente natural y cómoda — se le da de verdad lo que hace. Estoy absolutamente encantada con las fotos y con toda la experiencia. Es increíblemente talentosa, relajada, y me hizo sentir muy a gusto. Tiene un ojo precioso para capturarte de la forma más natural.",
+        "pt": "A Agota é um amor para trabalhar com ela. Fez com que toda a sessão parecesse completamente natural e confortável — é mesmo uma natural naquilo que faz. Estou absolutamente encantada com as fotos e com toda a experiência. É incrivelmente talentosa, descontraída, e fez-me sentir tão à vontade. Tem um olhar lindo para te captar da forma mais natural."
+      }
+    },
+    {
       "id": "sage",
       "placeholder": false,
       "name": "Sage Farris, US",
