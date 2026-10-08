@@ -29,9 +29,21 @@ export type Promo = {
   active: boolean;
 };
 
+export type TimingKey =
+  | "artistGalleryWeeks"
+  | "artistFilmWeeks"
+  | "elopementGalleryWeeks"
+  | "elopementFilmWeeks"
+  | "expressPhotoDays"
+  | "expressFilmDays";
+
+export type DeliveryCopy = Partial<Record<"en" | "es" | "pt", string>>;
+
 export type LiveSettings = {
   prices: Record<string, { from?: number; visible: boolean }>;
   promos: Promo[];
+  timings?: Partial<Record<TimingKey, string>>;
+  deliveries?: Record<string, DeliveryCopy>;
 };
 
 export type StorageMode = "blob" | "local" | "readonly";

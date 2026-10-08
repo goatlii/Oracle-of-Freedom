@@ -6,13 +6,14 @@ import { GalleryGrid } from "@/components/gallery";
 import { FromPrice, PackageCards } from "@/components/packages";
 import { WhatsAppLink } from "@/components/whatsapp-link";
 import { Testimonials } from "@/components/testimonials";
-import { TokenText, replaceTokens } from "@/components/token-text";
+import { TokenText } from "@/components/token-text";
 import { VideoGrid } from "@/components/video-grid";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
 import { gallery, imagesForPage, settings, siteUrl } from "@/lib/content";
-import { getCatalog } from "@/lib/offers";
-import type { PricedPackage } from "@/lib/pricing";
+import { applyTokens, buildTokenMap } from "@/lib/delivery";
+import { getSettings } from "@/lib/offers";
+import { mergeCatalog, type LiveSettings, type PricedPackage } from "@/lib/pricing";
 import type { Locale } from "@/i18n/routing";
 import type { Copy } from "@/content/types";
 
@@ -50,7 +51,9 @@ export async function ServiceView({
   const images = imagesForPage(page).filter((image) => image.id !== "cover-wide");
   const hero =
     (heroId ? gallery.find((image) => image.id === heroId) : undefined) ?? images[0];
-  const catalog = await getCatalog();
+  const stored = await getSettings();
+  const tokens = buildTokenMap(stored.timings);
+  const catalog = mergeCatalog(stored);
   const visible = catalog.filter((item) => item.group === group && item.visible);
   const photos = visible.filter((item) => item.kind === "photo");
   const films = visible.filter((item) => item.kind === "video");
@@ -94,7 +97,7 @@ export async function ServiceView({
           mainEntity: copy.faq.map((item) => ({
             "@type": "Question",
             name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: replaceTokens(item.a) },
+            acceptedAnswer: { "@type": "Answer", text: applyTokens(item.a, tokens) },
           })),
         }}
       />
@@ -181,6 +184,7 @@ export async function ServiceView({
             whatsappLabel={copy.personalizeWhatsapp}
             codeLabel={locale === "en" ? "Promo code" : "Código promocional"}
             wishLabel={locale === "en" ? "What I would like" : locale === "es" ? "Qué me gustaría" : "O que gostava"}
+            deliveries={stored.deliveries}
           />
           <PackageSection
             title={copy.filmsTitle || (locale === "en" ? "Film" : "Vídeo")}
@@ -190,6 +194,7 @@ export async function ServiceView({
             cta={copy.cta}
             offer={common.offer}
             saveTemplate={common.saveSeparately}
+            deliveries={stored.deliveries}
           />
           <PackageSection
             title={copy.combosTitle || (locale === "en" ? "Photo + film" : "Foto + vídeo")}
@@ -199,6 +204,7 @@ export async function ServiceView({
             cta={copy.cta}
             offer={common.offer}
             saveTemplate={common.saveSeparately}
+            deliveries={stored.deliveries}
           />
           <PackageSection
             title={copy.addonsTitle || (locale === "en" ? "Express delivery" : locale === "es" ? "Entrega exprés" : "Entrega expressa")}
@@ -210,6 +216,7 @@ export async function ServiceView({
             offer={common.offer}
             saveTemplate={common.saveSeparately}
             cardsClassName={group === "elopements" ? "xl:grid-cols-2" : undefined}
+            deliveries={stored.deliveries}
           />
           {copy.travelNote ? (
             <p className="mt-6 text-sm text-ink/70">
@@ -393,6 +400,7 @@ function PackageSection({
   codeLabel,
   wishLabel,
   cardsClassName,
+  deliveries,
 }: {
   title: string;
   note?: string;
@@ -408,6 +416,7 @@ function PackageSection({
   codeLabel?: string;
   wishLabel?: string;
   cardsClassName?: string;
+  deliveries?: LiveSettings["deliveries"];
 }) {
   if (!items.length) return null;
   return (
@@ -432,6 +441,7 @@ function PackageSection({
           codeLabel={codeLabel}
           wishLabel={wishLabel}
           className={cardsClassName}
+          deliveries={deliveries}
         />
       </div>
     </div>

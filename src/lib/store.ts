@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { readDeliveries, readTimings } from "@/lib/delivery";
 import type { LiveSettings, StorageMode } from "@/lib/pricing";
 
 const EMPTY: LiveSettings = { prices: {}, promos: [] };
@@ -15,8 +16,17 @@ export function storageMode(): StorageMode {
 function asSettings(value: unknown): LiveSettings | null {
   if (!value || typeof value !== "object") return null;
   const record = value as Partial<LiveSettings>;
-  if (!record.prices || typeof record.prices !== "object" || !Array.isArray(record.promos)) return null;
-  return { prices: record.prices, promos: record.promos };
+  if (!record.prices || typeof record.prices !== "object" || Array.isArray(record.prices) || !Array.isArray(record.promos)) {
+    return null;
+  }
+  const timings = readTimings(record.timings);
+  const deliveries = readDeliveries(record.deliveries);
+  return {
+    prices: record.prices,
+    promos: record.promos,
+    ...(timings ? { timings } : {}),
+    ...(deliveries ? { deliveries } : {}),
+  };
 }
 
 async function readBlob(): Promise<LiveSettings | null> {

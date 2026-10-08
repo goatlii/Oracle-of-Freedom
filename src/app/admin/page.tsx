@@ -2,6 +2,8 @@ import { redirect } from "next/navigation";
 import { AdminHeader } from "@/components/admin-header";
 import { AdminPanel } from "@/components/admin-panel";
 import { isAdmin } from "@/lib/admin-auth";
+import { defaultTiming, TIMING_FIELDS } from "@/lib/delivery";
+import { deliveryDefaults } from "@/lib/delivery-copy";
 import { catalog, lisbonToday } from "@/lib/pricing";
 import { readStored, storageMode } from "@/lib/store";
 
@@ -12,9 +14,22 @@ export default async function AdminPage() {
   const settings = await readStored();
   return (
     <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
-      <AdminHeader current="prices" title="Prices & offers" />
+      <AdminHeader current="prices" title="Prices & delivery" />
       <div className="mt-8">
-        <AdminPanel catalog={catalog} settings={settings} today={lisbonToday()} mode={storageMode()} />
+        <AdminPanel
+          catalog={catalog}
+          settings={settings}
+          today={lisbonToday()}
+          mode={storageMode()}
+          timingFields={TIMING_FIELDS.map((field) => ({
+            key: field.key,
+            token: field.token,
+            label: field.label,
+            hint: field.hint,
+            value: settings.timings?.[field.key] ?? defaultTiming(field.key),
+          }))}
+          deliveryDefaults={deliveryDefaults()}
+        />
       </div>
     </main>
   );

@@ -1,4 +1,5 @@
 import { unstable_cache } from "next/cache";
+import { cache } from "react";
 import { mergeCatalog } from "@/lib/pricing";
 import { readStored } from "@/lib/store";
 
@@ -13,9 +14,7 @@ async function loadSettings() {
 
 const cachedSettings = unstable_cache(loadSettings, ["live-settings"], { tags: ["live-settings"] });
 
-export async function getSettings() {
-  return cachedSettings();
-}
+export const getSettings = cache(async () => cachedSettings());
 
 export async function getCatalog() {
   return mergeCatalog(await getSettings());

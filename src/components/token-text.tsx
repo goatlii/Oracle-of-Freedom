@@ -1,31 +1,21 @@
-import { settings } from "@/lib/content";
+import { cache } from "react";
+import { applyTokens, buildTokenMap, splitTokenText } from "@/lib/delivery";
+import { getSettings } from "@/lib/offers";
 import { isPlaceholder } from "@/lib/utils";
 
-const TOKENS: Record<string, string> = {
-  "{baseArea}": settings.baseArea,
-  "{deposit}": settings.depositPercent,
-  "{weeks}": settings.elopementGalleryWeeks,
-  "{artistWeeks}": settings.artistGalleryWeeks,
-  "{filmWeeks}": settings.elopementFilmWeeks,
-  "{artistFilmWeeks}": settings.artistFilmWeeks,
-  "{expressPhoto}": settings.expressPhotoDays,
-  "{expressFilm}": settings.expressFilmDays,
-  "{languages}": settings.languagesSpoken,
-};
+export const liveTokenMap = cache(async () => buildTokenMap((await getSettings()).timings));
 
-const TOKEN_SPLIT =
-  /(\{(?:baseArea|deposit|artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm|languages)\})/g;
-
-export function replaceTokens(text: string) {
-  return text.replace(TOKEN_SPLIT, (match) => TOKENS[match] ?? match);
+export async function replaceTokens(text: string) {
+  return applyTokens(text, await liveTokenMap());
 }
 
-export function TokenText({ text, className }: { text: string; className?: string }) {
-  const parts = text.split(TOKEN_SPLIT);
+export async function TokenText({ text, className }: { text: string; className?: string }) {
+  const tokens = await liveTokenMap();
+  const parts = splitTokenText(text);
   return (
     <span className={className}>
       {parts.map((part, index) => {
-        const value = TOKENS[part];
+        const value = tokens[part];
         if (!value) return <span key={index}>{part}</span>;
         if (isPlaceholder(value)) {
           return (
