@@ -80,9 +80,11 @@ export function VideoGrid({
 
   const grid = ({
     hide,
+    hiddenClass,
     itemId,
   }: {
     hide: (index: number) => boolean;
+    hiddenClass: string;
     itemId: (index: number) => string | undefined;
   }) => (
     <div className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">
@@ -108,7 +110,7 @@ export function VideoGrid({
           <figure
             key={video.id}
             id={itemId(index)}
-            className={cn(wide && "sm:col-span-2 xl:col-span-4", hide(index) && "max-md:hidden")}
+            className={cn(wide && "sm:col-span-2 xl:col-span-4", hide(index) && hiddenClass)}
           >
             {playing ? (
               <iframe

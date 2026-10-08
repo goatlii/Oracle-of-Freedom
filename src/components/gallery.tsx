@@ -63,7 +63,7 @@ export function GalleryGrid({
   return (
     <>
       <MobileMore enabled={foldMobile} total={photos.length} visible={3} more={words.more} less={words.less}>
-        {({ hide, itemId }) => (
+        {({ hide, hiddenClass, itemId }) => (
           <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
             {photos.map((image, index) => (
               <button
@@ -72,7 +72,7 @@ export function GalleryGrid({
                 type="button"
                 className={cn(
                   "group mb-3 block w-full break-inside-avoid overflow-hidden rounded-2xl text-left",
-                  hide(index) && "max-md:hidden",
+                  hide(index) && hiddenClass,
                 )}
                 onClick={() => setActive(index)}
               >

@@ -2,11 +2,13 @@
 
 import { useId, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 /**
- * Mobile-only disclosure. Extra items stay in the caller's layout and are
- * hidden below the md breakpoint with `max-md:hidden`, so desktop columns and
- * grids are unchanged and the first paint matches the server.
+ * Disclosure for extra items that stay in the caller's own layout.
+ * `mobile` hides them only below md. `any` hides them at every width when
+ * the list is longer than `visible`. The button is omitted when there is
+ * nothing further to show.
  */
 export function MobileMore({
   enabled,
@@ -15,6 +17,7 @@ export function MobileMore({
   more,
   less,
   tone = "light",
+  scope = "mobile",
   children,
 }: {
   enabled: boolean;
@@ -23,14 +26,18 @@ export function MobileMore({
   more: string;
   less: string;
   tone?: "light" | "night";
+  /** mobile: phones only. any: every viewport, once the list passes `visible`. */
+  scope?: "mobile" | "any";
   children: (api: {
     hide: (index: number) => boolean;
+    hiddenClass: string;
     itemId: (index: number) => string | undefined;
   }) => ReactNode;
 }) {
   const [expanded, setExpanded] = useState(false);
   const prefix = useId().replace(/:/g, "");
   const folding = enabled && total > visible;
+  const hiddenClass = scope === "mobile" ? "max-md:hidden" : "hidden";
   const hide = (index: number) => folding && !expanded && index >= visible;
   const itemId = (index: number) => (folding && index >= visible ? `${prefix}-more-${index}` : undefined);
   const controls = folding
@@ -39,12 +46,12 @@ export function MobileMore({
 
   return (
     <>
-      {children({ hide, itemId })}
+      {children({ hide, hiddenClass, itemId })}
       {folding ? (
         <Button
           type="button"
           variant={tone === "night" ? "ghost" : "outline"}
-          className="mt-6 w-full md:hidden"
+          className={cn("mt-6 w-full", scope === "mobile" && "md:hidden")}
           aria-expanded={expanded}
           aria-controls={controls}
           onClick={() => setExpanded((open) => !open)}
