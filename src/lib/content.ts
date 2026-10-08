@@ -59,6 +59,8 @@ export type VideoItem = {
   platform: string;
   url: string;
   youtubeId?: string;
+  /** Official iframe URL. When set, the film plays here after embeds are allowed. */
+  embedUrl?: string;
   posterId: string;
   verify?: boolean;
   /** Public caption under the film. Empty in a language means no caption. */

@@ -62,25 +62,27 @@ export function VideoGrid({
         const caption = captionOf(video, locale);
         const alt = posterAlt(video, locale);
         const wide = video.platform === "youtube";
-        const playing = wide && active === video.id && consent;
-        const youtubeSrc =
-          video.youtubeId != null
+        const embedSrc = wide
+          ? video.youtubeId
             ? `https://www.youtube-nocookie.com/embed/${video.youtubeId}?autoplay=1`
-            : "";
+            : ""
+          : video.embedUrl;
+        const canEmbed = Boolean(embedSrc);
+        const playing = canEmbed && active === video.id && consent;
 
         return (
           <figure key={video.id} className={cn(wide && "sm:col-span-2 xl:col-span-4")}>
             {playing ? (
               <iframe
                 title={alt}
-                src={youtubeSrc}
-                className="aspect-video w-full rounded-3xl bg-night"
+                src={embedSrc}
+                className={cn("w-full rounded-3xl bg-night", wide ? "aspect-video" : "aspect-[9/16]")}
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allow="autoplay; encrypted-media; picture-in-picture"
                 allowFullScreen
               />
-            ) : wide && consent ? (
+            ) : canEmbed && consent ? (
               <button
                 type="button"
                 className="relative block w-full overflow-hidden rounded-3xl text-left"

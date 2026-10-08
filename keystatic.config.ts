@@ -152,6 +152,11 @@ export default config({
             platform: fields.text({ label: "Platform", description: "instagram or youtube" }),
             url: fields.text({ label: "URL" }),
             youtubeId: fields.text({ label: "YouTube id", description: "Only for YouTube" }),
+            embedUrl: fields.text({
+              label: "Embed URL",
+              description: "Official iframe URL, such as an Instagram reel embed. Leave empty to link out instead.",
+              validation: { isRequired: false },
+            }),
             posterId: fields.text({ label: "Poster image id" }),
             verify: fields.checkbox({ label: "Still needs a match check" }),
             label: fields.object({

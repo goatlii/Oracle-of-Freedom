@@ -684,7 +684,7 @@ export const en: Copy = {
       "Artist sessions from the Algarve to Lisbon include travel. Festivals and commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
     videosTitle: "Watch",
     videosNote:
-      "Instagram films open on Instagram. The music video plays here once you allow embeds.",
+      "Some films open on Instagram. The ones that play here load only after you allow embeds and press play.",
     processTitle: "How it works",
     process: [
       { title: "Tell me the vision", body: "Artist, event, date, what you need it for." },

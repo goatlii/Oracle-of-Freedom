@@ -1,5 +1,5 @@
 {
-  "note": "Portfolio films shared by the Portfolio film filter and the Experiences festivals section. label is the public caption in EN, ES and PT. Leave a language empty until Agota names that film. Instagram cards link out; the YouTube film plays from youtube-nocookie after the visitor allows embeds.",
+  "note": "Portfolio films shared by the Portfolio film filter and the Experiences festivals section. label is the public caption in EN, ES and PT. Leave a language empty until Agota names that film. Set embedUrl to play an official iframe after the visitor allows embeds. Instagram films without embedUrl link out. YouTube plays from youtube-nocookie.",
   "items": [
     {
       "id": "ig-2",
@@ -40,13 +40,14 @@
     {
       "id": "ig-4",
       "platform": "instagram",
-      "url": "https://www.instagram.com/p/DN5gtBOCIH7/",
+      "url": "https://www.instagram.com/reel/DN5gtBOCIH7/",
+      "embedUrl": "https://www.instagram.com/reel/DN5gtBOCIH7/embed/",
       "posterId": "film-04",
       "verify": false,
       "label": {
-        "en": "",
-        "es": "",
-        "pt": ""
+        "en": "Event aftermovie",
+        "es": "Aftermovie del evento",
+        "pt": "Aftermovie do evento"
       }
     },
     {
