@@ -12,6 +12,15 @@ export const dynamic = "force-dynamic";
 export default async function AdminPage() {
   if (!(await isAdmin())) redirect("/admin/login");
   const settings = await readStored();
+  const defaults = deliveryDefaults();
+  for (const [id, row] of Object.entries(settings.deliveries ?? {})) {
+    const current = defaults[id] ?? { en: "", es: "", pt: "" };
+    defaults[id] = {
+      en: row.en || current.en,
+      es: row.es || current.es,
+      pt: row.pt || current.pt,
+    };
+  }
   return (
     <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
       <AdminHeader current="prices" title="Prices & delivery" />
@@ -28,7 +37,7 @@ export default async function AdminPage() {
             hint: field.hint,
             value: settings.timings?.[field.key] ?? defaultTiming(field.key),
           }))}
-          deliveryDefaults={deliveryDefaults()}
+          deliveryDefaults={defaults}
         />
       </div>
     </main>
