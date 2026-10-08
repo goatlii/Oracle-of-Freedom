@@ -78,6 +78,8 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
         <GalleryGrid
           images={imagesForPage("experiences")}
           locale={loc}
+          foldMobile
+          mobileVisible={4}
           labels={{
             open: copy.a11y.openPhoto,
             close: copy.a11y.close,

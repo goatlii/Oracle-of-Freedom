@@ -65,6 +65,8 @@ export default async function PeoplePage({ params }: { params: Promise<{ locale:
         <GalleryGrid
           images={imagesForPage("people")}
           locale={loc}
+          foldMobile
+          mobileVisible={4}
           labels={{
             open: copy.a11y.openPhoto,
             close: copy.a11y.close,
@@ -74,7 +76,7 @@ export default async function PeoplePage({ params }: { params: Promise<{ locale:
           }}
         />
       </section>
-      <Testimonials ids={["india", "oliwia"]} locale={loc} title={copy.people.wordsTitle} />
+      <Testimonials ids={["india", "oliwia"]} locale={loc} title={copy.people.wordsTitle} foldAfter={4} />
     </article>
   );
 }

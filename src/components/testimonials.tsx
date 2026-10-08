@@ -15,7 +15,7 @@ export function Testimonials({
   ids,
   locale,
   title,
-  foldAfter,
+  foldAfter = 4,
 }: {
   ids: string[];
   locale: Locale;

@@ -18,12 +18,15 @@ export function GalleryGrid({
   locale,
   labels,
   foldMobile = false,
+  mobileVisible = 3,
 }: {
   images: GalleryImage[];
   locale: Locale;
   labels: { open: string; close: string; previous: string; next: string; placeholder: string };
-  /** Below md, show the first three photos and a button that reveals the rest. */
+  /** Below md, show the first `mobileVisible` photos and a button that reveals the rest. */
   foldMobile?: boolean;
+  /** Photos kept visible below md when `foldMobile` is set. Service pages and the homepage use 3. */
+  mobileVisible?: number;
 }) {
   const [active, setActive] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -62,7 +65,7 @@ export function GalleryGrid({
 
   return (
     <>
-      <MobileMore enabled={foldMobile} total={photos.length} visible={3} more={words.more} less={words.less}>
+      <MobileMore enabled={foldMobile} total={photos.length} visible={mobileVisible} more={words.more} less={words.less}>
         {({ hide, hiddenClass, itemId }) => (
           <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
             {photos.map((image, index) => (
