@@ -7,8 +7,9 @@ import { parseMonth } from "@/lib/bookings";
 import { readBookings, writeBookings } from "@/lib/booking-store";
 import { readCalendarConfig } from "@/lib/calendar-config-store";
 import {
-  googleOAuthConfigured,
+  googleAppFromConfig,
   listGoogleCalendars,
+  suggestedGoogleRedirectUri,
   syncLinkedGoogleBookings,
   type GoogleCalendarOption,
 } from "@/lib/google-calendar";
@@ -44,9 +45,10 @@ export default async function CalendarPage({
     console.error("[calendar] Google event sync failed", error);
   }
   let googleCalendars: GoogleCalendarOption[] = [];
-  if (config.google && googleOAuthConfigured()) {
+  const googleApp = googleAppFromConfig(config);
+  if (config.google && googleApp) {
     try {
-      googleCalendars = await listGoogleCalendars(config.google);
+      googleCalendars = await listGoogleCalendars(config);
     } catch (error) {
       console.error("[calendar] Google calendar list failed", error);
     }
@@ -63,7 +65,7 @@ export default async function CalendarPage({
     googleResult === "connected"
       ? "Google Calendar connected."
       : googleResult === "missing"
-        ? "Add the Google OAuth environment variables first."
+        ? "Press Start and paste the Client ID and Client secret."
         : googleResult === "error"
           ? "Google Calendar could not be connected. Check the OAuth settings and try again."
           : undefined;
@@ -75,7 +77,10 @@ export default async function CalendarPage({
         initial={publicSettings}
         mode={storageMode()}
         feedUrl={`${siteUrl()}/api/calendar/feed?token=${config.icalToken}`}
-        googleConfigured={googleOAuthConfigured()}
+        redirectUri={config.googleApp?.redirectUri || suggestedGoogleRedirectUri()}
+        savedClientId={config.googleApp?.clientId || ""}
+        secretSaved={Boolean(config.googleApp?.encryptedClientSecret)}
+        googleConfigured={Boolean(googleApp)}
         googleConnected={Boolean(config.google)}
         googleCalendarId={config.google?.calendarId || ""}
         googleSummary={config.google?.calendarSummary || ""}

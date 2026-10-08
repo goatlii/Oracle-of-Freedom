@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import { isAdmin } from "@/lib/admin-auth";
 import {
   exchangeGoogleCode,
+  googleAppFromConfig,
   initialGoogleConnection,
 } from "@/lib/google-calendar";
 import {
@@ -32,7 +33,10 @@ export async function GET(request: Request) {
   }
 
   try {
-    const tokens = await exchangeGoogleCode(code);
+    const config = await readCalendarConfig();
+    const app = googleAppFromConfig(config);
+    if (!app) throw new Error("Google Calendar credentials are not configured.");
+    const tokens = await exchangeGoogleCode(code, app);
     if (!tokens.refresh_token || !tokens.access_token) {
       throw new Error("Google did not return a refresh token.");
     }
@@ -40,7 +44,6 @@ export async function GET(request: Request) {
       tokens.refresh_token,
       tokens.access_token,
     );
-    const config = await readCalendarConfig();
     await writeCalendarConfig({ ...config, google: connection });
     returnUrl.searchParams.set("google", "connected");
   } catch (error) {

@@ -6,6 +6,7 @@ import {
   disconnectGoogleCalendar,
   regenerateIcalToken,
   saveCalendarSettings,
+  saveGoogleAppSettings,
   selectGoogleCalendar,
 } from "@/app/admin/calendar/settings-actions";
 import type { ActionState } from "@/app/admin/actions";
@@ -30,7 +31,7 @@ const days = [
   ["0", "Sunday"],
 ] as const;
 
-function Notice({ state }: { state: ActionState }) {
+function Notice({ state, saved = "Calendar settings saved." }: { state: ActionState; saved?: string }) {
   if (!state?.ok && !state?.error) return null;
   return (
     <p
@@ -39,8 +40,25 @@ function Notice({ state }: { state: ActionState }) {
       }`}
       role={state.error ? "alert" : "status"}
     >
-      {state.error || "Calendar settings saved."}
+      {state.error || saved}
     </p>
+  );
+}
+
+function CopyButton({ value }: { value: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <Button
+      type="button"
+      variant="outline"
+      className="shrink-0"
+      onClick={async () => {
+        await navigator.clipboard.writeText(value);
+        setCopied(true);
+      }}
+    >
+      {copied ? "Copied" : "Copy"}
+    </Button>
   );
 }
 
@@ -48,6 +66,9 @@ export function CalendarSettings({
   initial,
   mode,
   feedUrl,
+  redirectUri,
+  savedClientId,
+  secretSaved,
   googleConfigured,
   googleConnected,
   googleCalendarId,
@@ -59,6 +80,9 @@ export function CalendarSettings({
   initial: PublicSettings;
   mode: StorageMode;
   feedUrl: string;
+  redirectUri: string;
+  savedClientId: string;
+  secretSaved: boolean;
   googleConfigured: boolean;
   googleConnected: boolean;
   googleCalendarId: string;
@@ -69,6 +93,13 @@ export function CalendarSettings({
 }) {
   const [settings, setSettings] = useState(initial);
   const [state, action, pending] = useActionState(saveCalendarSettings, null);
+  const [googleState, googleAction, googlePending] = useActionState(saveGoogleAppSettings, null);
+  const [googleOpen, setGoogleOpen] = useState(Boolean(googleNotice));
+  const [icalOpen, setIcalOpen] = useState(false);
+  const [projectName, setProjectName] = useState("Oracle of Freedom");
+  const [clientName, setClientName] = useState("Oracle of Freedom Studio");
+  const [calendarName, setCalendarName] = useState("Oracle of Freedom");
+  const [redirectValue, setRedirectValue] = useState(redirectUri);
 
   function updateType(id: string, patch: Partial<PublicBookingType>) {
     setSettings((current) => ({
@@ -358,60 +389,168 @@ export function CalendarSettings({
           {googleNotice ? (
             <p className="mt-3 rounded-2xl bg-clay p-3 text-sm">{googleNotice}</p>
           ) : null}
-          {!googleConfigured ? (
+          {googleConnected ? (
             <p className="mt-3 text-sm text-ink/70">
-              Add the Google OAuth environment variables to connect an account.
+              Connected{googleAccount ? ` as ${googleAccount}` : ""}. New bookings are written to{" "}
+              <span className="font-medium">{googleSummary}</span>.
             </p>
-          ) : googleConnected ? (
-            <>
-              <p className="mt-3 text-sm text-ink/70">
-                Connected{googleAccount ? ` as ${googleAccount}` : ""}. New bookings are written to{" "}
-                <span className="font-medium">{googleSummary}</span>.
-              </p>
-              {googleCalendars.length > 1 ? (
-                <form action={selectGoogleCalendar} className="mt-4 grid gap-3">
-                  <Label htmlFor="google-calendar">Calendar for bookings</Label>
-                  <select
-                    id="google-calendar"
-                    name="calendarId"
-                    defaultValue={googleCalendarId}
-                    className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
-                  >
-                    {googleCalendars.map((calendar) => (
-                      <option key={calendar.id} value={calendar.id}>
-                        {calendar.summary}{calendar.primary ? " · primary" : ""}
-                      </option>
-                    ))}
-                  </select>
-                  <Button type="submit" variant="outline">Use this calendar</Button>
-                </form>
-              ) : null}
-              <form action={disconnectGoogleCalendar} className="mt-4">
-                <Button type="submit" variant="outline">Disconnect Google</Button>
-              </form>
-            </>
           ) : (
-            <Button asChild className="mt-4">
-              <Link href="/api/admin/google/connect" prefetch={false}>Connect Google Calendar</Link>
-            </Button>
+            <p className="mt-3 text-sm text-ink/70">
+              Press Start, then fill the boxes. The names and the redirect address are already written and can be changed.
+            </p>
           )}
+          {!googleOpen ? (
+            <Button type="button" className="mt-4" onClick={() => setGoogleOpen(true)}>
+              Start
+            </Button>
+          ) : (
+            <div className="mt-4 grid gap-4">
+              <ol className="grid list-decimal gap-4 pl-5 text-sm text-ink/80">
+                <li>
+                  Open{" "}
+                  <a className="underline underline-offset-4" href="https://console.cloud.google.com/" target="_blank" rel="noreferrer">
+                    Google Cloud Console
+                  </a>{" "}
+                  and create a project. Use this name, or change it:
+                  <Label htmlFor="google-project-name" className="mt-3">Project name</Label>
+                  <div className="flex gap-2">
+                    <Input id="google-project-name" value={projectName} maxLength={80} onChange={(event) => setProjectName(event.target.value)} />
+                    <CopyButton value={projectName} />
+                  </div>
+                </li>
+                <li>In that project, open APIs & Services, then Library, search for Google Calendar API and press Enable.</li>
+                <li>Open APIs & Services, then OAuth consent screen. Choose External, add the Google account that owns the calendar, and save.</li>
+                <li>
+                  Open Credentials, then Create credentials, then OAuth client ID. Choose Web application. Use this name, or change it:
+                  <Label htmlFor="google-client-name" className="mt-3">OAuth client name</Label>
+                  <div className="flex gap-2">
+                    <Input id="google-client-name" value={clientName} maxLength={80} onChange={(event) => setClientName(event.target.value)} />
+                    <CopyButton value={clientName} />
+                  </div>
+                </li>
+                <li>Under Authorised redirect URIs, add the address below exactly as it is written.</li>
+              </ol>
+              <form action={googleAction} className="grid gap-4">
+                <div>
+                  <Label htmlFor="google-redirect">Authorised redirect URI</Label>
+                  <div className="flex gap-2">
+                    <Input
+                      id="google-redirect"
+                      name="redirectUri"
+                      value={redirectValue}
+                      className="text-xs"
+                      onChange={(event) => setRedirectValue(event.target.value)}
+                    />
+                    <CopyButton value={redirectValue} />
+                  </div>
+                </div>
+                <div>
+                  <Label htmlFor="google-client-id">Client ID</Label>
+                  <Input
+                    id="google-client-id"
+                    name="clientId"
+                    defaultValue={savedClientId}
+                    placeholder="Paste the Client ID"
+                    autoComplete="off"
+                    spellCheck={false}
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="google-client-secret">Client secret</Label>
+                  <Input
+                    id="google-client-secret"
+                    name="clientSecret"
+                    type="password"
+                    placeholder={secretSaved ? "Already saved. Paste a new secret only to replace it." : "Paste the Client secret"}
+                    autoComplete="off"
+                  />
+                </div>
+                <Notice state={googleState} saved="Google values saved. Press Connect Google Calendar and sign in." />
+                <div className="flex flex-wrap gap-3">
+                  <Button type="submit" disabled={googlePending || mode === "readonly"}>
+                    {googlePending ? "Saving…" : "Save these values"}
+                  </Button>
+                  {googleConfigured ? (
+                    <Button asChild>
+                      <Link href="/api/admin/google/connect" prefetch={false}>Connect Google Calendar</Link>
+                    </Button>
+                  ) : null}
+                  <Button type="button" variant="outline" onClick={() => setGoogleOpen(false)}>
+                    Close
+                  </Button>
+                </div>
+              </form>
+            </div>
+          )}
+          {googleConnected && googleCalendars.length > 1 ? (
+            <form action={selectGoogleCalendar} className="mt-4 grid gap-3">
+              <Label htmlFor="google-calendar">Calendar for bookings</Label>
+              <select
+                id="google-calendar"
+                name="calendarId"
+                defaultValue={googleCalendarId}
+                className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
+              >
+                {googleCalendars.map((calendar) => (
+                  <option key={calendar.id} value={calendar.id}>
+                    {calendar.summary}{calendar.primary ? " · primary" : ""}
+                  </option>
+                ))}
+              </select>
+              <Button type="submit" variant="outline">Use this calendar</Button>
+            </form>
+          ) : null}
+          {googleConnected ? (
+            <form action={disconnectGoogleCalendar} className="mt-4">
+              <Button type="submit" variant="outline">Disconnect Google</Button>
+            </form>
+          ) : null}
         </section>
 
         <section className="rounded-3xl bg-white/70 p-4 md:p-6">
           <h2 className="font-serif text-3xl">iCal subscription</h2>
           <p className="mt-3 text-sm text-ink/70">
-            This private link shows the studio calendar in Apple Calendar, Outlook and other calendar apps.
+            Press Start, copy the private address, and paste it into the calendar app. The name is ready to change.
           </p>
-          <Label htmlFor="ical-feed" className="mt-4">Private feed URL</Label>
-          <Input id="ical-feed" readOnly value={feedUrl} className="text-xs" />
-          <div className="mt-4 flex flex-wrap gap-3">
-            <Button asChild>
-              <a href={feedUrl.replace(/^https?:/, "webcal:")}>Subscribe</a>
+          {!icalOpen ? (
+            <Button type="button" className="mt-4" onClick={() => setIcalOpen(true)}>
+              Start
             </Button>
-            <form action={regenerateIcalToken}>
-              <Button type="submit" variant="outline">Regenerate private link</Button>
-            </form>
-          </div>
+          ) : (
+            <div className="mt-4 grid gap-4">
+              <div>
+                <Label htmlFor="ical-name">Calendar name</Label>
+                <div className="flex gap-2">
+                  <Input id="ical-name" value={calendarName} maxLength={80} onChange={(event) => setCalendarName(event.target.value)} />
+                  <CopyButton value={calendarName} />
+                </div>
+              </div>
+              <div>
+                <Label htmlFor="ical-feed">Private feed URL</Label>
+                <div className="flex gap-2">
+                  <Input id="ical-feed" readOnly value={feedUrl} className="text-xs" />
+                  <CopyButton value={feedUrl} />
+                </div>
+              </div>
+              <ol className="grid list-decimal gap-3 pl-5 text-sm text-ink/80">
+                <li>Apple Calendar on a Mac: File, then New Calendar Subscription. Paste the private address. When it asks for a name, use the calendar name above.</li>
+                <li>iPhone: Settings, then Calendar, then Accounts, then Add Account, then Other, then Add Subscribed Calendar. Paste the private address.</li>
+                <li>Outlook: Add calendar, then Subscribe from web. Paste the private address and use the calendar name above.</li>
+                <li>Another Google account: Settings, then Add calendar, then From URL. Paste the private address. Google can take several hours to show new bookings.</li>
+              </ol>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild>
+                  <a href={feedUrl.replace(/^https?:/, "webcal:")}>Subscribe</a>
+                </Button>
+                <form action={regenerateIcalToken}>
+                  <Button type="submit" variant="outline">Regenerate private link</Button>
+                </form>
+                <Button type="button" variant="outline" onClick={() => setIcalOpen(false)}>
+                  Close
+                </Button>
+              </div>
+            </div>
+          )}
         </section>
       </div>
     </section>

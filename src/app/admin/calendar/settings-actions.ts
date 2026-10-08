@@ -13,10 +13,14 @@ import {
   readCalendarConfig,
   writeCalendarConfig,
 } from "@/lib/calendar-config-store";
-import { listGoogleCalendars } from "@/lib/google-calendar";
+import { encryptGoogleToken, listGoogleCalendars } from "@/lib/google-calendar";
 
 async function guard() {
   if (!(await isAdmin())) redirect("/admin/login");
+}
+
+function clean(value: FormDataEntryValue | null, max: number) {
+  return String(value || "").trim().slice(0, max);
 }
 
 function refresh() {
@@ -42,6 +46,7 @@ export async function saveCalendarSettings(
     ...(submitted as Partial<CalendarConfig>),
     icalToken: current.icalToken,
     google: current.google,
+    googleApp: current.googleApp,
   });
   if (!candidate) {
     return {
@@ -72,7 +77,7 @@ export async function selectGoogleCalendar(formData: FormData) {
   if (!current.google) return;
   const id = String(formData.get("calendarId") || "").slice(0, 500);
   if (!id) return;
-  const calendars = await listGoogleCalendars(current.google);
+  const calendars = await listGoogleCalendars(current);
   const selected = calendars.find((calendar) => calendar.id === id);
   if (!selected) return;
   await writeCalendarConfig({
@@ -84,6 +89,56 @@ export async function selectGoogleCalendar(formData: FormData) {
     },
   });
   refresh();
+}
+
+export async function saveGoogleAppSettings(
+  _state: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  await guard();
+  const clientId = clean(formData.get("clientId"), 200);
+  const clientSecret = String(formData.get("clientSecret") || "").trim().slice(0, 300);
+  const redirectUri = clean(formData.get("redirectUri"), 300);
+  if (!/^[A-Za-z0-9._-]{8,200}$/.test(clientId)) {
+    return { error: "Paste the Client ID from Google Cloud into the Client ID box." };
+  }
+  let redirect: URL;
+  try {
+    redirect = new URL(redirectUri);
+  } catch {
+    return { error: "The redirect address needs to be a full web address." };
+  }
+  const local = redirect.hostname === "localhost";
+  if (
+    (redirect.protocol !== "https:" && !(local && redirect.protocol === "http:")) ||
+    redirect.pathname !== "/api/admin/google/callback"
+  ) {
+    return { error: "The redirect address must end with /api/admin/google/callback." };
+  }
+  const current = await readCalendarConfig();
+  let encrypted = current.googleApp?.encryptedClientSecret || "";
+  if (clientSecret) {
+    try {
+      encrypted = encryptGoogleToken(clientSecret);
+    } catch (error) {
+      return {
+        error: error instanceof Error ? error.message : "The Client secret could not be saved.",
+      };
+    }
+  }
+  if (!encrypted) return { error: "Paste the Client secret from Google Cloud into the Client secret box." };
+  try {
+    await writeCalendarConfig({
+      ...current,
+      googleApp: { clientId, encryptedClientSecret: encrypted, redirectUri },
+    });
+    refresh();
+    return { ok: true };
+  } catch (error) {
+    return {
+      error: error instanceof Error ? error.message : "The Google setup did not save.",
+    };
+  }
 }
 
 export async function disconnectGoogleCalendar() {

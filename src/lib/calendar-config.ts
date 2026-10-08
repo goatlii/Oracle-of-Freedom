@@ -29,6 +29,12 @@ export type GoogleConnection = {
   connectedAt: string;
 };
 
+export type GoogleAppSettings = {
+  clientId: string;
+  encryptedClientSecret: string;
+  redirectUri: string;
+};
+
 export type CalendarConfig = {
   bookingTypes: PublicBookingType[];
   weekly: Record<string, DaySchedule>;
@@ -38,6 +44,7 @@ export type CalendarConfig = {
   defaultLocation: string;
   icalToken: string;
   google?: GoogleConnection;
+  googleApp?: GoogleAppSettings;
 };
 
 const timePattern = /^([01]\d|2[0-3]):[0-5]\d$/;
@@ -162,5 +169,21 @@ export function parseCalendarConfig(value: unknown): CalendarConfig | null {
   ) {
     return null;
   }
+  if (item.googleApp && !validGoogleApp(item.googleApp)) delete item.googleApp;
   return item as CalendarConfig;
+}
+
+function validGoogleApp(value: unknown): value is GoogleAppSettings {
+  if (!value || typeof value !== "object") return false;
+  const app = value as Partial<GoogleAppSettings>;
+  return (
+    typeof app.clientId === "string" &&
+    app.clientId.length >= 8 &&
+    app.clientId.length <= 200 &&
+    typeof app.encryptedClientSecret === "string" &&
+    app.encryptedClientSecret.split(".").length === 3 &&
+    typeof app.redirectUri === "string" &&
+    app.redirectUri.startsWith("https://") &&
+    app.redirectUri.length <= 300
+  );
 }

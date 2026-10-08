@@ -62,28 +62,45 @@ function decryptGoogleToken(value: string) {
   return Buffer.concat([decipher.update(encrypted), decipher.final()]).toString("utf8");
 }
 
-export function googleOAuthConfigured() {
-  return Boolean(
-    process.env.GOOGLE_CLIENT_ID &&
-      process.env.GOOGLE_CLIENT_SECRET &&
-      encryptionSecret(),
-  );
+export type GoogleAppCredentials = {
+  clientId: string;
+  clientSecret: string;
+  redirectUri: string;
+};
+
+export function suggestedGoogleRedirectUri() {
+  return process.env.GOOGLE_REDIRECT_URI || `${siteUrl()}/api/admin/google/callback`;
 }
 
-export function googleRedirectUri() {
-  return (
-    process.env.GOOGLE_REDIRECT_URI ||
-    `${siteUrl()}/api/admin/google/callback`
-  );
-}
-
-export function googleAuthorizationUrl(state: string) {
-  if (!googleOAuthConfigured()) {
-    throw new Error("Google Calendar credentials are not configured.");
+export function googleAppFromConfig(config: CalendarConfig): GoogleAppCredentials | null {
+  if (config.googleApp && encryptionSecret()) {
+    try {
+      const clientSecret = decryptGoogleToken(config.googleApp.encryptedClientSecret);
+      if (clientSecret) {
+        return {
+          clientId: config.googleApp.clientId,
+          clientSecret,
+          redirectUri: config.googleApp.redirectUri,
+        };
+      }
+    } catch (error) {
+      console.error("[calendar] stored Google app credentials could not be read", error);
+    }
   }
+  const clientId = process.env.GOOGLE_CLIENT_ID || "";
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET || "";
+  if (!clientId || !clientSecret || !encryptionSecret()) return null;
+  return {
+    clientId,
+    clientSecret,
+    redirectUri: suggestedGoogleRedirectUri(),
+  };
+}
+
+export function googleAuthorizationUrl(state: string, app: GoogleAppCredentials) {
   const query = new URLSearchParams({
-    client_id: process.env.GOOGLE_CLIENT_ID!,
-    redirect_uri: googleRedirectUri(),
+    client_id: app.clientId,
+    redirect_uri: app.redirectUri,
     response_type: "code",
     access_type: "offline",
     prompt: "consent",
@@ -108,24 +125,26 @@ async function tokenRequest(body: URLSearchParams) {
   return result;
 }
 
-export async function exchangeGoogleCode(code: string) {
+export async function exchangeGoogleCode(code: string, app: GoogleAppCredentials) {
   return tokenRequest(
     new URLSearchParams({
       code,
-      client_id: process.env.GOOGLE_CLIENT_ID || "",
-      client_secret: process.env.GOOGLE_CLIENT_SECRET || "",
-      redirect_uri: googleRedirectUri(),
+      client_id: app.clientId,
+      client_secret: app.clientSecret,
+      redirect_uri: app.redirectUri,
       grant_type: "authorization_code",
     }),
   );
 }
 
-async function accessToken(connection: GoogleConnection) {
+async function accessToken(config: CalendarConfig) {
+  const app = googleAppFromConfig(config);
+  if (!app || !config.google) throw new Error("Google Calendar credentials are not configured.");
   const result = await tokenRequest(
     new URLSearchParams({
-      refresh_token: decryptGoogleToken(connection.encryptedRefreshToken),
-      client_id: process.env.GOOGLE_CLIENT_ID || "",
-      client_secret: process.env.GOOGLE_CLIENT_SECRET || "",
+      refresh_token: decryptGoogleToken(config.google.encryptedRefreshToken),
+      client_id: app.clientId,
+      client_secret: app.clientSecret,
       grant_type: "refresh_token",
     }),
   );
@@ -156,8 +175,9 @@ async function googleFetch<T>(
   return { status: response.status, data: (await response.json()) as T };
 }
 
-export async function listGoogleCalendars(connection: GoogleConnection) {
-  const access = await accessToken(connection);
+export async function listGoogleCalendars(config: CalendarConfig) {
+  if (!config.google || !googleAppFromConfig(config)) return [];
+  const access = await accessToken(config);
   const result = await googleFetch<{
     items?: Array<{ id?: string; summary?: string; primary?: boolean; accessRole?: string }>;
   }>(access, "/users/me/calendarList?minAccessRole=writer&showHidden=false");
@@ -191,8 +211,8 @@ export async function googleBusy(
   from: Date,
   to: Date,
 ): Promise<BusyInterval[]> {
-  if (!config.google || !googleOAuthConfigured()) return [];
-  const access = await accessToken(config.google);
+  if (!config.google || !googleAppFromConfig(config)) return [];
+  const access = await accessToken(config);
   const result = await googleFetch<{
     calendars?: Record<string, { busy?: BusyInterval[] }>;
   }>(access, "/freeBusy", {
@@ -242,8 +262,8 @@ function eventBody(booking: Booking) {
 }
 
 export async function upsertGoogleEvent(config: CalendarConfig, booking: Booking) {
-  if (!config.google || !googleOAuthConfigured()) return booking;
-  const access = await accessToken(config.google);
+  if (!config.google || !googleAppFromConfig(config)) return booking;
+  const access = await accessToken(config);
   const calendar = encodeURIComponent(config.google.calendarId);
   const result = await googleFetch<GoogleEvent>(
     access,
@@ -259,8 +279,8 @@ export async function upsertGoogleEvent(config: CalendarConfig, booking: Booking
 }
 
 export async function deleteGoogleEvent(config: CalendarConfig, booking: Booking) {
-  if (!config.google || !booking.googleEventId || !googleOAuthConfigured()) return;
-  const access = await accessToken(config.google);
+  if (!config.google || !booking.googleEventId || !googleAppFromConfig(config)) return;
+  const access = await accessToken(config);
   await googleFetch(
     access,
     `/calendars/${encodeURIComponent(config.google.calendarId)}/events/${encodeURIComponent(booking.googleEventId)}?sendUpdates=none`,
@@ -275,7 +295,7 @@ export async function syncLinkedGoogleBookings(
   from: string,
   to: string,
 ) {
-  if (!config.google || !googleOAuthConfigured()) return { bookings, changed: false };
+  if (!config.google || !googleAppFromConfig(config)) return { bookings, changed: false };
   const candidates = bookings.filter(
     (booking) =>
       booking.googleEventId &&
@@ -284,7 +304,7 @@ export async function syncLinkedGoogleBookings(
       booking.date <= to,
   );
   if (candidates.length === 0) return { bookings, changed: false };
-  const access = await accessToken(config.google);
+  const access = await accessToken(config);
   const calendar = encodeURIComponent(config.google.calendarId);
   let changed = false;
   const updates = new Map<string, Booking>();
