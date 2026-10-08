@@ -684,7 +684,7 @@ export const en: Copy = {
       "Artist sessions from the Algarve to Lisbon include travel. Festivals and commercial shoots further away — the rest of Portugal, Europe and beyond — are quoted at cost.",
     videosTitle: "Watch",
     videosNote:
-      "Some films open on Instagram. The ones that play here load only after you allow embeds and press play.",
+      "Some films open on Instagram. Press play and the others start here.",
     processTitle: "How it works",
     process: [
       { title: "Tell me the vision", body: "Artist, event, date, what you need it for." },
@@ -878,7 +878,7 @@ export const en: Copy = {
         title: "Cookies and embeds",
         body: [
           "A language cookie remembers EN, ES or PT. That is essential for the site to stay in the language you chose.",
-          "Instagram and YouTube are not loaded until you accept embeds and then press play. If you choose essential only, those films stay as still images and links.",
+          "Instagram and YouTube load when you press play on a film. If you choose essential only, those films stay as still images and links until you press play.",
           "The site can use Vercel Web Analytics, which does not use marketing cookies.",
           "Hosting is on Vercel. Email delivery, when switched on, is Resend. Their own privacy terms apply to that processing.",
         ],
