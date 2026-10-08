@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GalleryGrid } from "@/components/gallery";
+import { VideoGrid } from "@/components/video-grid";
 import { getCopy } from "@/content";
 import type { Locale } from "@/i18n/routing";
 import { formatEuro, imagesForPage } from "@/lib/content";
@@ -28,18 +29,25 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
   const catalog = await getCatalog();
   const retreatFrom = openingPrice(catalog, "retreats") ?? 400;
   const artistFrom = openingPrice(catalog, "festivals") ?? 190;
-  const doors = [
+  const doors: {
+    href: "/retreats-gatherings" | "/festivals-artists";
+    title: string;
+    body: string;
+    price: string;
+    titleId?: string;
+  }[] = [
     {
-      href: "/retreats-gatherings" as const,
+      href: "/retreats-gatherings",
       title: copy.experiences.retreatsTitle,
       body: copy.experiences.retreatsBody,
       price: copy.experiences.retreatsPrice.replace("{price}", formatEuro(locale, retreatFrom)),
     },
     {
-      href: "/festivals-artists" as const,
+      href: "/festivals-artists",
       title: copy.experiences.festivalsTitle,
       body: copy.experiences.festivalsBody,
       price: copy.experiences.festivalsPrice.replace("{price}", formatEuro(locale, artistFrom)),
+      titleId: "experiences-festivals",
     },
   ];
 
@@ -50,15 +58,22 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
         <h1 className="mt-3 max-w-4xl font-serif text-5xl leading-[1.05] md:text-7xl">{copy.experiences.title}</h1>
         <p className="mt-5 max-w-2xl text-lg text-ink/80">{copy.experiences.dek}</p>
       </header>
-      <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-6 md:grid-cols-2 md:px-6">
-        {doors.map((door) => (
-          <Link key={door.href} href={door.href} className="rounded-3xl bg-night p-8 text-sand transition-colors hover:bg-ink">
-            <h2 className="font-serif text-4xl">{door.title}</h2>
-            <p className="mt-3 text-sand/80">{door.body}</p>
-            <p className="mt-4 text-ember">{door.price}</p>
-            <p className="mt-6 text-sm underline underline-offset-4">{copy.common.explore}</p>
-          </Link>
-        ))}
+      <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+        <div className="grid gap-4 md:grid-cols-2">
+          {doors.map((door) => (
+            <Link key={door.href} href={door.href} className="rounded-3xl bg-night p-8 text-sand transition-colors hover:bg-ink">
+              <h2 id={door.titleId} className="font-serif text-4xl">
+                {door.title}
+              </h2>
+              <p className="mt-3 text-sand/80">{door.body}</p>
+              <p className="mt-4 text-ember">{door.price}</p>
+              <p className="mt-6 text-sm underline underline-offset-4">{copy.common.explore}</p>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-8" aria-labelledby="experiences-festivals">
+          <VideoGrid locale={loc} variant="plain" />
+        </div>
       </section>
       <section className="bg-moss text-sand">
         <div className="mx-auto max-w-3xl px-4 py-16 md:px-6">

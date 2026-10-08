@@ -320,8 +320,8 @@
       "order": 49,
       "alt": {
         "en": "Sage-green Range Rover on a gravel shore beside turquoise water, under palm fronds and festoon lights, with coffee and a bottle on a wooden ledge in front.",
-        "es": "Range Rover verde salvia en una orilla de grava junto al agua turquesa, bajo palmeras y luces de guirnalda, con café y una botella sobre un saliente de madera en primer plano.",
-        "pt": "Range Rover verde-sálvia numa margem de gravilha junto a água turquesa, sob palmeiras e luzes de festão, com café e uma garrafa num parapeito de madeira em primeiro plano."
+        "es": "Range Rover verde salvia en una orilla de grava junto al agua turquesa, bajo palmeras y luces de guirnalda, con caf\u00e9 y una botella sobre un saliente de madera en primer plano.",
+        "pt": "Range Rover verde-s\u00e1lvia numa margem de gravilha junto a \u00e1gua turquesa, sob palmeiras e luzes de fest\u00e3o, com caf\u00e9 e uma garrafa num parapeito de madeira em primeiro plano."
       },
       "source": "Agota Urbikaite"
     },
@@ -688,8 +688,8 @@
       "order": 51,
       "alt": {
         "en": "A couple kissing in the ocean at golden hour: she wears long dark braids with gold cuffs and a leopard bikini, he is bald and bearded in matching leopard trunks.",
-        "es": "Una pareja besándose en el océano a la hora dorada: ella con trenzas oscuras largas, puños de oro y bikini de leopardo; él calvo y con barba, en bañador de leopardo a juego.",
-        "pt": "Um casal a beijar-se no oceano à hora dourada: ela com tranças escuras longas, punhos de ouro e biquíni de leopardo; ele careca e de barba, com calções de leopardo a condizer."
+        "es": "Una pareja bes\u00e1ndose en el oc\u00e9ano a la hora dorada: ella con trenzas oscuras largas, pu\u00f1os de oro y bikini de leopardo; \u00e9l calvo y con barba, en ba\u00f1ador de leopardo a juego.",
+        "pt": "Um casal a beijar-se no oceano \u00e0 hora dourada: ela com tran\u00e7as escuras longas, punhos de ouro e biqu\u00edni de leopardo; ele careca e de barba, com cal\u00e7\u00f5es de leopardo a condizer."
       },
       "source": "Agota Urbikaite"
     },
@@ -935,9 +935,9 @@
       "placeholder": true,
       "order": 80,
       "alt": {
-        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
-        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
-        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+        "en": "Film still by Agota Urbikaite.",
+        "es": "Fotograma de Agota Urbikaite.",
+        "pt": "Fotograma de Agota Urbikaite."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
@@ -957,9 +957,9 @@
       "placeholder": true,
       "order": 81,
       "alt": {
-        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
-        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
-        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+        "en": "Film still by Agota Urbikaite.",
+        "es": "Fotograma de Agota Urbikaite.",
+        "pt": "Fotograma de Agota Urbikaite."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
@@ -979,17 +979,39 @@
       "placeholder": true,
       "order": 82,
       "alt": {
-        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
-        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
-        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+        "en": "Film still by Agota Urbikaite.",
+        "es": "Fotograma de Agota Urbikaite.",
+        "pt": "Fotograma de Agota Urbikaite."
+      },
+      "source": "Agota Urbikaite Portfolio 2026 PDF"
+    },
+    {
+      "id": "film-04",
+      "src": "/images/portfolio/film-04.jpg",
+      "width": 697,
+      "height": 1045,
+      "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCjO3ETxRnIYhuOooqtNPIgGGJ5B5oqbGlz/9k=",
+      "category": "film",
+      "categories": [
+        "film"
+      ],
+      "pages": [],
+      "featured": false,
+      "provisional": false,
+      "placeholder": true,
+      "order": 83,
+      "alt": {
+        "en": "Film still by Agota Urbikaite.",
+        "es": "Fotograma de Agota Urbikaite.",
+        "pt": "Fotograma de Agota Urbikaite."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },
     {
       "id": "music-video",
       "src": "/images/portfolio/music-video.jpg",
-      "width": 1068,
-      "height": 594,
+      "width": 1065,
+      "height": 590,
       "blur": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAHAAwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCj25BfPJwCPWrUBiMfzDJzRRWU1oNH//Z",
       "category": "film",
       "categories": [
@@ -1001,9 +1023,9 @@
       "placeholder": true,
       "order": 90,
       "alt": {
-        "en": "Film still by Agota Urbikaite. Low-resolution placeholder from the 2026 portfolio \u2014 replace with the high-resolution original. Confirm which video this frame belongs to.",
-        "es": "Fotograma de Agota Urbikaite. Marcador en baja resoluci\u00f3n del portfolio 2026: sustituir por el original en alta. Confirmar a qu\u00e9 v\u00eddeo corresponde.",
-        "pt": "Fotograma de Agota Urbikaite. Marcador em baixa resolu\u00e7\u00e3o do portef\u00f3lio 2026 \u2014 substituir pelo original em alta resolu\u00e7\u00e3o. Confirmar a que v\u00eddeo corresponde."
+        "en": "Music video still by Agota Urbikaite.",
+        "es": "Fotograma de un videoclip de Agota Urbikaite.",
+        "pt": "Fotograma de um videoclipe de Agota Urbikaite."
       },
       "source": "Agota Urbikaite Portfolio 2026 PDF"
     },

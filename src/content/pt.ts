@@ -643,7 +643,7 @@ export const pt: Copy = {
     travelNote:
       "As sessões de artista do Algarve a Lisboa incluem a deslocação. Festivais e trabalhos comerciais mais longe — o resto de Portugal, a Europa e mais além — orçamentam-se ao custo real.",
     videosTitle: "Vê",
-    videosNote: "PENDENTE — confirmar que link é fogo, fogueira, tambores ou DJ. Só carregam quando escolhes reproduzir.",
+    videosNote: "Alguns vídeos abrem no Instagram. Os que se reproduzem aqui só carregam quando aceitas os vídeos e carregas em reproduzir.",
     processTitle: "Como funciona",
     process: [
       { title: "Conta-me a visão", body: "Artista, evento, data e para que precisas." },
