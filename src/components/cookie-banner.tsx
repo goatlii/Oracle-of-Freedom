@@ -18,6 +18,12 @@ export function readConsent(): Consent | null {
   }
 }
 
+export function allowEmbeds() {
+  if (typeof window === "undefined" || readConsent()?.embeds) return;
+  localStorage.setItem(KEY, JSON.stringify({ necessary: true, embeds: true }));
+  window.dispatchEvent(new Event("oof-consent"));
+}
+
 export function CookieBanner({
   text,
   accept,
@@ -32,10 +38,13 @@ export function CookieBanner({
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
-      setVisible(readConsent() == null);
-    });
-    return () => window.cancelAnimationFrame(frame);
+    const sync = () => setVisible(readConsent() == null);
+    const frame = window.requestAnimationFrame(sync);
+    window.addEventListener("oof-consent", sync);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("oof-consent", sync);
+    };
   }, []);
 
   if (!visible) return null;

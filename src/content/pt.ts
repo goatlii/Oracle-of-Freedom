@@ -643,7 +643,7 @@ export const pt: Copy = {
     travelNote:
       "As sessões de artista do Algarve a Lisboa incluem a deslocação. Festivais e trabalhos comerciais mais longe — o resto de Portugal, a Europa e mais além — orçamentam-se ao custo real.",
     videosTitle: "Vê",
-    videosNote: "Alguns vídeos abrem no Instagram. Os que se reproduzem aqui só carregam quando aceitas os vídeos e carregas em reproduzir.",
+    videosNote: "Alguns vídeos abrem no Instagram. Carrega em reproduzir e os outros começam aqui.",
     processTitle: "Como funciona",
     process: [
       { title: "Conta-me a visão", body: "Artista, evento, data e para que precisas." },
@@ -826,7 +826,7 @@ export const pt: Copy = {
         title: "Cookies e vídeos",
         body: [
           "Uma cookie de língua lembra EN, ES ou PT. É necessária para o site ficar na língua que escolheste.",
-          "O Instagram e o YouTube não carregam até aceitares os vídeos e carregares em reproduzir. Se escolheres só o essencial, ficam como imagem e ligação.",
+          "O Instagram e o YouTube carregam quando carregas em reproduzir num vídeo. Se escolheres só o essencial, ficam como imagem e ligação até carregares em reproduzir.",
           "O site pode usar o Vercel Web Analytics, que não usa cookies de marketing.",
           "O alojamento é na Vercel. O envio de email, quando estiver ativo, é a Resend. Aplicam-se os termos deles.",
         ],

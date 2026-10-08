@@ -2,15 +2,15 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { readConsent } from "@/components/cookie-banner";
+import { allowEmbeds, readConsent } from "@/components/cookie-banner";
 import { imageById, videos, type VideoItem } from "@/lib/content";
 import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const chrome = {
-  en: { play: "Play", allow: "Allow video to play" },
-  es: { play: "Reproducir", allow: "Acepta los vídeos para reproducir" },
-  pt: { play: "Reproduzir", allow: "Aceita os vídeos para reproduzir" },
+  en: { play: "Play video", youtube: "Plays from YouTube", instagram: "Plays from Instagram" },
+  es: { play: "Reproducir vídeo", youtube: "Se reproduce desde YouTube", instagram: "Se reproduce desde Instagram" },
+  pt: { play: "Reproduzir vídeo", youtube: "Reproduz a partir do YouTube", instagram: "Reproduz a partir do Instagram" },
 } as const;
 
 function captionOf(video: VideoItem, locale: Locale) {
@@ -69,6 +69,11 @@ export function VideoGrid({
           : video.embedUrl;
         const canEmbed = Boolean(embedSrc);
         const playing = canEmbed && active === video.id && consent;
+        const play = () => {
+          allowEmbeds();
+          setConsent(true);
+          setActive(video.id);
+        };
 
         return (
           <figure key={video.id} className={cn(wide && "sm:col-span-2 xl:col-span-4")}>
@@ -82,24 +87,26 @@ export function VideoGrid({
                 allow="autoplay; encrypted-media; picture-in-picture"
                 allowFullScreen
               />
-            ) : canEmbed && consent ? (
+            ) : canEmbed ? (
               <button
                 type="button"
-                className="relative block w-full overflow-hidden rounded-3xl text-left"
-                onClick={() => setActive(video.id)}
+                aria-label={words.play}
+                className="relative block w-full overflow-hidden rounded-3xl text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember"
+                onClick={play}
               >
-                <Poster poster={poster} alt={alt} wide />
-                <PlayPill>{words.play}</PlayPill>
+                <Poster poster={poster} alt="" wide={wide} />
+                <PlayMark note={consent ? undefined : wide ? words.youtube : words.instagram} />
               </button>
             ) : (
               <a
                 href={video.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block overflow-hidden rounded-3xl"
+                aria-label={words.play}
+                className="relative block overflow-hidden rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember"
               >
-                <Poster poster={poster} alt={alt} wide={wide} />
-                <PlayPill>{wide ? words.allow : words.play}</PlayPill>
+                <Poster poster={poster} alt="" wide={wide} />
+                <PlayMark />
               </a>
             )}
             {caption ? <figcaption className={captionClass}>{caption}</figcaption> : null}
@@ -143,10 +150,15 @@ function Poster({
   );
 }
 
-function PlayPill({ children }: { children: string }) {
+function PlayMark({ note }: { note?: string }) {
   return (
-    <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
-      <span className="rounded-full bg-sand px-4 py-2 text-sm text-ink">{children}</span>
+    <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-night/25">
+      <span className="flex h-16 w-16 items-center justify-center rounded-full bg-sand text-ink shadow-[0_8px_30px_rgba(42,24,16,0.28)]">
+        <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7" aria-hidden="true">
+          <path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.14-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14Z" />
+        </svg>
+      </span>
+      {note ? <span className="absolute inset-x-3 bottom-3 text-center text-[11px] leading-tight text-sand">{note}</span> : null}
     </span>
   );
 }

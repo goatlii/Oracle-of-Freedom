@@ -1,7 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GalleryGrid } from "@/components/gallery";
-import { VideoGrid } from "@/components/video-grid";
 import { getCopy } from "@/content";
 import type { Locale } from "@/i18n/routing";
 import { formatEuro, imagesForPage } from "@/lib/content";
@@ -34,7 +33,6 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
     title: string;
     body: string;
     price: string;
-    titleId?: string;
   }[] = [
     {
       href: "/retreats-gatherings",
@@ -47,7 +45,6 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
       title: copy.experiences.festivalsTitle,
       body: copy.experiences.festivalsBody,
       price: copy.experiences.festivalsPrice.replace("{price}", formatEuro(locale, artistFrom)),
-      titleId: "experiences-festivals",
     },
   ];
 
@@ -62,17 +59,12 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ lo
         <div className="grid gap-4 md:grid-cols-2">
           {doors.map((door) => (
             <Link key={door.href} href={door.href} className="rounded-3xl bg-night p-8 text-sand transition-colors hover:bg-ink">
-              <h2 id={door.titleId} className="font-serif text-4xl">
-                {door.title}
-              </h2>
+              <h2 className="font-serif text-4xl">{door.title}</h2>
               <p className="mt-3 text-sand/80">{door.body}</p>
               <p className="mt-4 text-ember">{door.price}</p>
               <p className="mt-6 text-sm underline underline-offset-4">{copy.common.explore}</p>
             </Link>
           ))}
-        </div>
-        <div className="mt-8" aria-labelledby="experiences-festivals">
-          <VideoGrid locale={loc} variant="plain" />
         </div>
       </section>
       <section className="bg-moss text-sand">
