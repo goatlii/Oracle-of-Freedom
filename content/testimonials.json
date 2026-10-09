@@ -91,6 +91,36 @@
       }
     },
     {
+      "id": "bliss-burn",
+      "placeholder": false,
+      "name": "Bliss Burn Organizer",
+      "shoot": {
+        "en": "Festival photos",
+        "es": "Fotos del festival",
+        "pt": "Fotos do festival"
+      },
+      "quote": {
+        "en": "We are so grateful to have Agota on our team. She delivered a stunning collection for our 2026 event and we cannot wait to have her back!",
+        "es": "Estamos muy agradecidos de tener a Agota en nuestro equipo. Entregó una colección deslumbrante para nuestro evento de 2026 y estamos deseando que vuelva.",
+        "pt": "Estamos muito gratos por ter a Agota na nossa equipa. Entregou uma coleção deslumbrante para o nosso evento de 2026 e temos muita vontade de a ter de volta."
+      }
+    },
+    {
+      "id": "anael",
+      "placeholder": false,
+      "name": "Anael Bonsorte",
+      "shoot": {
+        "en": "Festival photos",
+        "es": "Fotos del festival",
+        "pt": "Fotos do festival"
+      },
+      "quote": {
+        "en": "Agota embeds herself quietly into the environment to capture people and moments without disturbance.",
+        "es": "Agota se integra en silencio en el entorno para captar a las personas y los momentos sin perturbar.",
+        "pt": "A Agota integra-se em silêncio no ambiente para captar pessoas e momentos sem os perturbar."
+      }
+    },
+    {
       "id": "couple",
       "placeholder": true,
       "quote": {
