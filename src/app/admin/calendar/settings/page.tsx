@@ -12,6 +12,8 @@ import {
   type GoogleCalendarOption,
 } from "@/lib/google-calendar";
 import { storageMode } from "@/lib/store";
+import { studioCopy } from "@/lib/studio-copy";
+import { studioLang } from "@/lib/studio-locale.server";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +23,7 @@ export default async function CalendarSettingsPage({
   searchParams: Promise<{ google?: string }>;
 }) {
   if (!(await isAdmin())) redirect("/admin/login");
+  const t = studioCopy(await studioLang());
   const { google: googleResult } = await searchParams;
   const config = await readCalendarConfig();
   let googleCalendars: GoogleCalendarOption[] = [];
@@ -34,22 +37,22 @@ export default async function CalendarSettingsPage({
   }
   const googleNotice =
     googleResult === "connected"
-      ? "Google Calendar conectado."
+      ? t.settings.googleConnected
       : googleResult === "missing"
-        ? "Pulsa Iniciar y pega el Client ID y el Client secret."
+        ? t.settings.googleMissing
         : googleResult === "error"
-          ? "No se pudo conectar Google Calendar. Revisa los datos y vuelve a intentarlo."
+          ? t.settings.googleError
           : undefined;
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-8 pb-28 md:py-12 md:pb-12">
-      <AdminHeader current="calendar" title="Ajustes" />
+    <main className="studio-page mx-auto max-w-6xl px-4 py-4 md:py-12">
+      <AdminHeader current="calendar" title={t.settings.title} />
       <p className="mt-4 flex flex-wrap gap-4 text-sm">
         <Link href="/admin/calendar" className="underline underline-offset-4">
-          Volver a la agenda
+          {t.settings.back}
         </Link>
         <Link href="/" className="underline underline-offset-4">
-          Ver el sitio
+          {t.settings.viewSite}
         </Link>
       </p>
       <CalendarSettings

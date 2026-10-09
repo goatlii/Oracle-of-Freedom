@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { useStudioCopy } from "@/components/studio-lang";
 
 type InstallPrompt = Event & {
   prompt: () => Promise<void>;
@@ -16,8 +17,9 @@ function runningAsApp() {
 }
 
 export function InstallAppButton() {
+  const t = useStudioCopy();
   const pathname = usePathname();
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const stripRef = useRef<HTMLDivElement>(null);
   const [promptEvent, setPromptEvent] = useState<InstallPrompt | null>(null);
   const [installed, setInstalled] = useState(false);
   const [narrow, setNarrow] = useState(false);
@@ -48,31 +50,31 @@ export function InstallAppButton() {
     };
   }, []);
 
-  const inFooter = narrow && pathname !== "/admin/login";
+  const strip = narrow && pathname !== "/admin/login" && !installed;
 
   useEffect(() => {
-    const button = buttonRef.current;
-    if (!button || installed || !inFooter) {
-      document.documentElement.style.setProperty("--studio-install-gap", "0px");
+    const node = stripRef.current;
+    if (!strip || !node) {
+      document.body.style.setProperty("--studio-install", "0px");
       return;
     }
     const apply = () => {
-      document.documentElement.style.setProperty("--studio-install-gap", `${button.offsetWidth + 20}px`);
+      document.body.style.setProperty("--studio-install", `${node.offsetHeight}px`);
     };
     apply();
     const observer = new ResizeObserver(apply);
-    observer.observe(button);
+    observer.observe(node);
     return () => {
       observer.disconnect();
-      document.documentElement.style.setProperty("--studio-install-gap", "0px");
+      document.body.style.setProperty("--studio-install", "0px");
     };
-  }, [installed, inFooter, pending]);
+  }, [strip, hint, pending]);
 
   if (installed) return null;
 
   async function install() {
     if (!promptEvent) {
-      setHint("En Chrome, abre el menú ⋮ y pulsa Instalar app.");
+      setHint(t.installHint);
       return;
     }
     setPending(true);
@@ -84,20 +86,40 @@ export function InstallAppButton() {
       const choice = await event.userChoice;
       if (choice.outcome === "accepted") setInstalled(true);
     } catch {
-      setHint("En Chrome, abre el menú ⋮ y pulsa Instalar app.");
+      setHint(t.installHint);
     } finally {
       setPending(false);
     }
   }
 
+  if (strip) {
+    return (
+      <div
+        ref={stripRef}
+        className="fixed inset-x-0 z-[45] border-t border-ink/10 bg-sand/95 px-3 py-1.5"
+        style={{ bottom: "var(--studio-nav)" }}
+      >
+        {hint ? (
+          <p className="mb-1 text-center text-xs text-ink/70" role="status">
+            {hint}
+          </p>
+        ) : null}
+        <button
+          type="button"
+          onClick={install}
+          disabled={pending}
+          className="min-h-12 w-full rounded-full bg-terracotta text-sm font-medium text-white"
+        >
+          {pending ? t.installing : t.install}
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div
       className="fixed right-3 z-[45] flex flex-col items-end"
-      style={{
-        bottom: inFooter
-          ? "max(0.35rem, env(safe-area-inset-bottom))"
-          : "max(1rem, env(safe-area-inset-bottom))",
-      }}
+      style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
     >
       {hint ? (
         <p className="mb-2 w-56 rounded-2xl bg-ink px-3 py-2 text-sm text-sand shadow" role="status">
@@ -105,13 +127,12 @@ export function InstallAppButton() {
         </p>
       ) : null}
       <button
-        ref={buttonRef}
         type="button"
         onClick={install}
         disabled={pending}
-        className="min-h-11 rounded-full bg-terracotta px-4 text-sm font-medium text-white shadow-md"
+        className="min-h-12 rounded-full bg-terracotta px-4 text-sm font-medium text-white shadow-md"
       >
-        {pending ? "Instalando…" : "Instalar la app"}
+        {pending ? t.installing : t.install}
       </button>
     </div>
   );

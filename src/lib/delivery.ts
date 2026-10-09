@@ -1,4 +1,5 @@
 import { settings } from "@/lib/content";
+import type { StudioLang } from "@/lib/studio-locale";
 import { catalog, type DeliveryCopy, type LiveSettings, type TimingKey } from "@/lib/pricing";
 
 export const DELIVERY_LOCALES = ["en", "es", "pt"] as const;
@@ -58,10 +59,9 @@ const NEXT_DAY = /selects the next day|selección al día siguiente|seleção no
 const SAME_DAY = /the same day, when the schedule|el mismo día, si la agenda|no próprio dia, quando a agenda/i;
 const WEEKEND_PRIORITY = /Express or priority|exprés o prioritaria|expressa ou prioritária/i;
 
-const localeName: Record<DeliveryLocale, string> = {
-  en: "inglés",
-  es: "español",
-  pt: "portugués",
+const localeName: Record<StudioLang, Record<DeliveryLocale, string>> = {
+  en: { en: "English", es: "Spanish", pt: "Portuguese" },
+  es: { en: "inglés", es: "español", pt: "portugués" },
 };
 
 const timingLabelEs: Record<TimingKey, string> = {
@@ -169,13 +169,21 @@ export function readDeliveries(value: unknown): LiveSettings["deliveries"] {
   return Object.keys(deliveries).length > 0 ? deliveries : undefined;
 }
 
-export function timingsFromForm(formData: FormData): { timings?: LiveSettings["timings"]; error?: string } {
+export function timingsFromForm(
+  formData: FormData,
+  lang: StudioLang = "es",
+): { timings?: LiveSettings["timings"]; error?: string } {
   const timings: Partial<Record<TimingKey, string>> = {};
   for (const field of TIMING_FIELDS) {
     const raw = String(formData.get(`timing:${field.key}`) || "").trim();
     if (!raw || raw === settings[field.key]) continue;
     if (raw.length > TIMING_MAX || /[{}\r\n]/.test(raw)) {
-      return { error: `Deja «${timingLabelEs[field.key]}» en una frase corta, como «${settings[field.key]}».` };
+      const label = lang === "en" ? field.label : timingLabelEs[field.key];
+      const error =
+        lang === "en"
+          ? `Keep “${label}” to a short phrase, like “${settings[field.key]}”.`
+          : `Deja «${label}» en una frase corta, como «${settings[field.key]}».`;
+      return { error };
     }
     timings[field.key] = raw;
   }
@@ -185,6 +193,7 @@ export function timingsFromForm(formData: FormData): { timings?: LiveSettings["t
 export function deliveriesFromForm(
   formData: FormData,
   defaults: Record<string, Record<DeliveryLocale, string>>,
+  lang: StudioLang = "es",
 ): { deliveries?: LiveSettings["deliveries"]; error?: string } {
   const deliveries: NonNullable<LiveSettings["deliveries"]> = {};
   for (const item of catalog) {
@@ -194,7 +203,12 @@ export function deliveriesFromForm(
       const fallback = defaults[item.id]?.[locale] ?? "";
       if (!raw || raw === fallback) continue;
       if (raw.length > DELIVERY_MAX || /[\r\n]/.test(raw)) {
-        return { error: `Acorta el plazo en ${localeName[locale]} de ${item.label}.` };
+        return {
+          error:
+            lang === "en"
+              ? `Shorten the ${localeName[lang][locale]} delivery line for ${item.label}.`
+              : `Acorta el plazo en ${localeName[lang][locale]} de ${item.label}.`,
+        };
       }
       row[locale] = raw;
     }

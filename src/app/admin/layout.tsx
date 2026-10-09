@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Serif_Display, Karla } from "next/font/google";
 import { InstallAppButton } from "@/components/install-app-button";
+import { StudioLangProvider } from "@/components/studio-lang";
+import { studioLang } from "@/lib/studio-locale.server";
 import "../globals.css";
 
 const serif = DM_Serif_Display({
@@ -17,17 +19,21 @@ const sans = Karla({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Estudio · Oracle of Freedom",
-  applicationName: "Estudio",
-  manifest: "/admin/manifest.webmanifest",
-  robots: { index: false, follow: false },
-  appleWebApp: {
-    capable: true,
-    title: "Estudio",
-    statusBarStyle: "default",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const lang = await studioLang();
+  const name = lang === "en" ? "Studio" : "Estudio";
+  return {
+    title: `${name} · Oracle of Freedom`,
+    applicationName: name,
+    manifest: "/admin/manifest.webmanifest",
+    robots: { index: false, follow: false },
+    appleWebApp: {
+      capable: true,
+      title: name,
+      statusBarStyle: "default",
+    },
+  };
+}
 
 export const viewport: Viewport = {
   themeColor: "#f4ece1",
@@ -36,12 +42,15 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  const lang = await studioLang();
   return (
-    <html lang="es" className={`${serif.variable} ${sans.variable}`}>
-      <body className="min-h-screen bg-sand font-sans text-ink antialiased">
-        {children}
-        <InstallAppButton />
+    <html lang={lang} className={`${serif.variable} ${sans.variable}`}>
+      <body className="studio-app min-h-screen bg-sand font-sans text-ink antialiased">
+        <StudioLangProvider lang={lang}>
+          {children}
+          <InstallAppButton />
+        </StudioLangProvider>
       </body>
     </html>
   );

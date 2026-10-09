@@ -1,8 +1,9 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
+import { useActionState, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useStudioCopy, useStudioLang } from "@/components/studio-lang";
 import { deleteBooking, saveBooking } from "@/app/admin/calendar/actions";
 import type { ActionState } from "@/app/admin/actions";
 import { Button } from "@/components/ui/button";
@@ -21,27 +22,6 @@ import {
 } from "@/lib/bookings";
 import type { StorageMode } from "@/lib/pricing";
 import { cn } from "@/lib/utils";
-
-const weekdays = ["Lu", "Ma", "Mi", "Ju", "Vi", "Sá", "Do"];
-const weekdayShort = ["lu", "ma", "mi", "ju", "vi", "sá", "do"];
-
-const statusEs: Record<BookingStatus, string> = {
-  hold: "En espera",
-  confirmed: "Confirmada",
-  done: "Hecha",
-  cancelled: "Cancelada",
-};
-const kindEs: Record<BookingKind, string> = {
-  meeting: "Reunión",
-  session: "Sesión",
-  event: "Evento",
-};
-
-const storageNote: Record<StorageMode, string> = {
-  blob: "Guardado en el calendario privado. Esta pantalla no se publica en la web.",
-  local: "Guardado solo en este ordenador. Esta pantalla no se publica en la web.",
-  readonly: "No se puede guardar hasta conectar Vercel Blob.",
-};
 
 type Draft = {
   id: string;
@@ -113,8 +93,8 @@ function chipClass(booking: Booking, clash: boolean) {
   );
 }
 
-function whenLabel(booking: Booking) {
-  if (booking.allDay) return "Todo el día";
+function whenLabel(booking: Booking, allDay: string) {
+  if (booking.allDay) return allDay;
   return `${booking.start}–${booking.end}`;
 }
 
@@ -130,6 +110,17 @@ export function CalendarBoard({
   mode: StorageMode;
 }) {
   const router = useRouter();
+  const lang = useStudioLang();
+  const t = useStudioCopy();
+  const weekdays = useMemo(
+    () =>
+      Array.from({ length: 7 }, (_, index) =>
+        new Intl.DateTimeFormat(lang, { weekday: "short", timeZone: "UTC" }).format(
+          new Date(Date.UTC(2024, 0, 1 + index)),
+        ),
+      ),
+    [lang],
+  );
   const initialDate = today.startsWith(month) ? today : `${month}-01`;
   const [selected, setSelected] = useState(initialDate);
   const [draft, setDraft] = useState<Draft>(blank(initialDate));
@@ -184,15 +175,13 @@ export function CalendarBoard({
   }
 
   return (
-    <div className="mt-8 grid gap-8">
-      <p className="max-w-2xl text-sm text-ink/70">
-        Reuniones, sesiones y eventos se quedan en el estudio. En espera se marca con línea discontinua. El borde terracota avisa de que esa hora se cruza con otra.
-      </p>
-      <p className="text-sm text-ink/70">{storageNote[mode]}</p>
+    <div className="mt-4 grid gap-4 md:mt-8 md:gap-8">
+      <p className="max-w-2xl text-sm text-ink/70">{t.calendar.intro}</p>
+      <p className="hidden text-sm text-ink/70 md:block">{t.calendar.storage[mode]}</p>
 
       {upcoming.length > 0 ? (
         <section className="hidden md:block">
-          <h2 className="font-serif text-2xl">Próximas</h2>
+          <h2 className="font-serif text-2xl">{t.calendar.upcoming}</h2>
           <ul className="mt-3 flex gap-2 overflow-x-auto pb-1">
             {upcoming.map((booking) => (
               <li key={booking.id} className="shrink-0">
@@ -202,11 +191,11 @@ export function CalendarBoard({
                   className="rounded-2xl bg-white/70 px-4 py-3 text-left"
                 >
                   <span className="block text-xs tracking-[0.14em] text-ink/50 uppercase">
-                    {dayLabel(booking.date)}
+                    {dayLabel(booking.date, lang)}
                   </span>
                   <span className="mt-1 block font-medium">{booking.title}</span>
                   <span className="text-sm text-ink/60">
-                    {whenLabel(booking)} · {statusEs[booking.status]}
+                    {whenLabel(booking, t.calendar.allDay)} · {t.calendar.bookingStatus[booking.status]}
                   </span>
                 </button>
               </li>
@@ -218,15 +207,15 @@ export function CalendarBoard({
       <section className="md:hidden">
         <div className="flex items-center justify-between gap-3">
           <button type="button" onClick={() => moveWeek(-1)} className="min-h-11 rounded-full px-3 text-sm underline underline-offset-4">
-            Anterior
+            {t.calendar.previous}
           </button>
-          <h2 className="font-serif text-2xl">{monthLabel(selected.slice(0, 7))}</h2>
+          <h2 className="font-serif text-2xl">{monthLabel(selected.slice(0, 7), lang)}</h2>
           <button type="button" onClick={() => moveWeek(1)} className="min-h-11 rounded-full px-3 text-sm underline underline-offset-4">
-            Siguiente
+            {t.calendar.next}
           </button>
         </div>
         <div className="mt-4 grid grid-cols-7 gap-1 text-center text-xs tracking-[0.12em] text-ink/45 uppercase">
-          {weekdayShort.map((day) => (
+          {weekdays.map((day) => (
             <div key={day}>{day}</div>
           ))}
         </div>
@@ -257,17 +246,17 @@ export function CalendarBoard({
       <section className="hidden rounded-3xl bg-white/70 p-3 md:block md:p-6">
         <div className="flex items-center justify-between gap-3">
           <Link href={`/admin/calendar?month=${shiftMonth(month, -1)}`} className="rounded-full px-3 py-2 text-sm underline-offset-4 hover:underline">
-            Anterior
+            {t.calendar.previous}
           </Link>
-          <h2 className="font-serif text-3xl">{monthLabel(month)}</h2>
+          <h2 className="font-serif text-3xl">{monthLabel(month, lang)}</h2>
           <div className="flex items-center gap-2">
             {month !== today.slice(0, 7) ? (
               <Link href="/admin/calendar" className="rounded-full px-3 py-2 text-sm underline-offset-4 hover:underline">
-                Hoy
+                {t.calendar.today}
               </Link>
             ) : null}
             <Link href={`/admin/calendar?month=${shiftMonth(month, 1)}`} className="rounded-full px-3 py-2 text-sm underline-offset-4 hover:underline">
-              Siguiente
+              {t.calendar.next}
             </Link>
           </div>
         </div>
@@ -296,7 +285,7 @@ export function CalendarBoard({
                   type="button"
                   onClick={() => pickDay(cell.date)}
                   aria-pressed={active}
-                  aria-label={`${dayLabel(cell.date)}, ${items.length} citas`}
+                  aria-label={t.calendar.dayCount(dayLabel(cell.date, lang), items.length)}
                   className={cn(
                     "flex h-6 w-6 items-center justify-center rounded-full text-xs",
                     cell.date === today && "bg-ember text-night",
@@ -313,7 +302,7 @@ export function CalendarBoard({
                           type="button"
                           onClick={() => openBooking(booking)}
                           className={chipClass(booking, clash)}
-                          title={`${booking.title}, ${whenLabel(booking)}`}
+                          title={`${booking.title}, ${whenLabel(booking, t.calendar.allDay)}`}
                         >
                           <span className="md:hidden">{booking.allDay ? "•" : booking.start}</span>
                           <span className="hidden md:inline">
@@ -339,19 +328,9 @@ export function CalendarBoard({
 
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <section className="rounded-3xl bg-white/70 p-4 md:p-6">
-          <h2 className="font-serif text-3xl">{dayLabel(selected)}</h2>
-          <Button
-            type="button"
-            className="mt-4 w-full md:hidden"
-            onClick={() => {
-              setDraft(blank(selected));
-              setComposerOpen(true);
-            }}
-          >
-            Nueva cita
-          </Button>
+          <h2 className="font-serif text-2xl md:text-3xl">{dayLabel(selected, lang)}</h2>
           <ul className="mt-4 grid gap-2">
-            {onDay.length === 0 ? <li className="text-sm text-ink/60">Nada este día.</li> : null}
+            {onDay.length === 0 ? <li className="text-sm text-ink/60">{t.calendar.emptyDay}</li> : null}
             {onDay.map((booking) => {
               const clash = bookings.some((other) => overlaps(booking, other));
               return (
@@ -366,18 +345,18 @@ export function CalendarBoard({
                   >
                     <span className="font-medium">{booking.title}</span>
                     <span className="mt-1 block text-sm text-ink/65">
-                      {whenLabel(booking)} · {kindEs[booking.kind]} · {statusEs[booking.status]}
+                      {whenLabel(booking, t.calendar.allDay)} · {t.calendar.kind[booking.kind]} · {t.calendar.bookingStatus[booking.status]}
                       {booking.client ? ` · ${booking.client}` : ""}
                       {booking.place ? ` · ${booking.place}` : ""}
                     </span>
-                    {clash ? <span className="mt-1 block text-sm text-terracotta-ink">Se cruza con otra cita.</span> : null}
+                    {clash ? <span className="mt-1 block text-sm text-terracotta-ink">{t.calendar.overlap}</span> : null}
                   </button>
                 </li>
               );
             })}
           </ul>
           <Link href="/admin/calendar/settings" className="mt-6 inline-flex min-h-11 items-center text-sm underline underline-offset-4">
-            Ajustes de reservas
+            {t.calendar.settings}
           </Link>
         </section>
 
@@ -388,7 +367,7 @@ export function CalendarBoard({
           )}
         >
           <div className="flex items-start justify-between gap-3">
-            <h2 className="font-serif text-3xl">{draft.id ? "Editar cita" : "Nueva cita"}</h2>
+            <h2 className="font-serif text-2xl md:text-3xl">{draft.id ? t.calendar.editBooking : t.calendar.newBooking}</h2>
             <button
               type="button"
               onClick={() => {
@@ -397,54 +376,23 @@ export function CalendarBoard({
               }}
               className="min-h-11 text-sm underline underline-offset-4 md:hidden"
             >
-              Cerrar
+              {t.calendar.close}
             </button>
             {draft.id ? (
               <button type="button" onClick={() => setDraft(blank(selected))} className="hidden text-sm underline underline-offset-4 md:inline">
-                Crear otra
+                {t.calendar.another}
               </button>
             ) : null}
           </div>
           <form action={saveAction} className="mt-5 grid gap-4" onSubmit={() => setNoticeFor(draftKey)}>
             <input type="hidden" name="id" value={draft.id} />
             <div>
-              <Label htmlFor="title">Título</Label>
+              <Label htmlFor="title">{t.calendar.titleField}</Label>
               <Input id="title" name="title" value={draft.title} onChange={(event) => setField("title", event.target.value)} required maxLength={120} />
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div>
-                <Label htmlFor="kind">Tipo</Label>
-                <select
-                  id="kind"
-                  name="kind"
-                  value={draft.kind}
-                  onChange={(event) => setField("kind", event.target.value as BookingKind)}
-                  className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
-                >
-                  <option value="meeting">Reunión</option>
-                  <option value="session">Sesión</option>
-                  <option value="event">Evento</option>
-                </select>
-              </div>
-              <div>
-                <Label htmlFor="status">Estado</Label>
-                <select
-                  id="status"
-                  name="status"
-                  value={draft.status}
-                  onChange={(event) => setField("status", event.target.value as BookingStatus)}
-                  className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
-                >
-                  <option value="hold">En espera</option>
-                  <option value="confirmed">Confirmada</option>
-                  <option value="done">Hecha</option>
-                  <option value="cancelled">Cancelada</option>
-                </select>
-              </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-end">
               <div>
-                <Label htmlFor="date">Fecha</Label>
+                <Label htmlFor="date">{t.calendar.date}</Label>
                 <Input
                   id="date"
                   name="date"
@@ -459,42 +407,71 @@ export function CalendarBoard({
               </div>
               <label className="flex h-12 items-center gap-2 text-sm">
                 <input type="checkbox" name="allDay" checked={draft.allDay} onChange={(event) => setField("allDay", event.target.checked)} />
-                Todo el día
+                {t.calendar.allDay}
               </label>
             </div>
             {draft.allDay ? null : (
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <Label htmlFor="start">Empieza</Label>
+                  <Label htmlFor="start">{t.calendar.starts}</Label>
                   <Input id="start" name="start" type="time" value={draft.start} onChange={(event) => setField("start", event.target.value)} required />
                 </div>
                 <div>
-                  <Label htmlFor="end">Termina</Label>
+                  <Label htmlFor="end">{t.calendar.ends}</Label>
                   <Input id="end" name="end" type="time" value={draft.end} onChange={(event) => setField("end", event.target.value)} required />
                 </div>
               </div>
             )}
+            <div>
+              <Label htmlFor="client">{t.calendar.with}</Label>
+              <Input id="client" name="client" value={draft.client} onChange={(event) => setField("client", event.target.value)} maxLength={120} />
+            </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <Label htmlFor="client">Con</Label>
-                <Input id="client" name="client" value={draft.client} onChange={(event) => setField("client", event.target.value)} maxLength={120} />
+                <Label htmlFor="kind">{t.calendar.type}</Label>
+                <select
+                  id="kind"
+                  name="kind"
+                  value={draft.kind}
+                  onChange={(event) => setField("kind", event.target.value as BookingKind)}
+                  className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
+                >
+                  <option value="meeting">{t.calendar.kind.meeting}</option>
+                  <option value="session">{t.calendar.kind.session}</option>
+                  <option value="event">{t.calendar.kind.event}</option>
+                </select>
               </div>
               <div>
-                <Label htmlFor="contact">Contacto</Label>
-                <Input id="contact" name="contact" value={draft.contact} onChange={(event) => setField("contact", event.target.value)} maxLength={160} />
+                <Label htmlFor="status">{t.calendar.status}</Label>
+                <select
+                  id="status"
+                  name="status"
+                  value={draft.status}
+                  onChange={(event) => setField("status", event.target.value as BookingStatus)}
+                  className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
+                >
+                  <option value="hold">{t.calendar.bookingStatus.hold}</option>
+                  <option value="confirmed">{t.calendar.bookingStatus.confirmed}</option>
+                  <option value="done">{t.calendar.bookingStatus.done}</option>
+                  <option value="cancelled">{t.calendar.bookingStatus.cancelled}</option>
+                </select>
               </div>
             </div>
             <div>
-              <Label htmlFor="place">Lugar</Label>
+              <Label htmlFor="contact">{t.calendar.contact}</Label>
+              <Input id="contact" name="contact" value={draft.contact} onChange={(event) => setField("contact", event.target.value)} maxLength={160} />
+            </div>
+            <div>
+              <Label htmlFor="place">{t.calendar.place}</Label>
               <Input id="place" name="place" value={draft.place} onChange={(event) => setField("place", event.target.value)} maxLength={160} />
             </div>
             <div>
-              <Label htmlFor="notes">Nota</Label>
+              <Label htmlFor="notes">{t.calendar.note}</Label>
               <Textarea id="notes" name="notes" value={draft.notes} onChange={(event) => setField("notes", event.target.value)} maxLength={2000} className="min-h-24" />
             </div>
             {clashes.length > 0 ? (
               <p className="text-sm text-terracotta-ink">
-                Se cruza con {clashes.map((item) => `${item.title} (${whenLabel(item)})`).join(", ")}. Puedes guardarla igual.
+                {t.calendar.clash(clashes.map((item) => `${item.title} (${whenLabel(item, t.calendar.allDay)})`).join(", "))}
               </p>
             ) : null}
             {showNotice && saveState?.error ? (
@@ -504,16 +481,16 @@ export function CalendarBoard({
             ) : null}
             {showNotice && saveState?.ok ? (
               <p className="rounded-2xl bg-moss/15 px-4 py-3 text-sm text-moss" role="status">
-                Guardada.
+                {t.calendar.saved}
               </p>
             ) : null}
-            <div className="sticky bottom-0 z-10 -mx-4 flex flex-wrap gap-3 bg-sand/95 px-4 py-3 md:static md:mx-0 md:bg-transparent md:px-0">
+            <div className="sticky bottom-0 z-10 -mx-4 flex flex-wrap gap-3 bg-sand/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:static md:mx-0 md:bg-transparent md:px-0 md:py-0">
               <Button type="submit" disabled={pending || mode === "readonly"} className="w-full sm:w-auto">
-                {pending ? "Guardando…" : draft.id ? "Guardar cambios" : "Guardar cita"}
+                {pending ? t.calendar.saving : draft.id ? t.calendar.saveChanges : t.calendar.saveBooking}
               </Button>
               {draft.id ? (
                 <Button type="submit" form="delete-booking" variant="outline" disabled={mode === "readonly"} className="w-full sm:w-auto">
-                  Borrar
+                  {t.calendar.delete}
                 </Button>
               ) : null}
             </div>
@@ -533,6 +510,20 @@ export function CalendarBoard({
           ) : null}
         </section>
       </div>
+      {composerOpen ? null : (
+        <div className="studio-dock border-t border-ink/10 bg-sand/95 px-4 py-3 md:hidden">
+          <Button
+            type="button"
+            className="w-full"
+            onClick={() => {
+              setDraft(blank(selected));
+              setComposerOpen(true);
+            }}
+          >
+            {t.calendar.newBooking}
+          </Button>
+        </div>
+      )}
     </div>
   );
 }

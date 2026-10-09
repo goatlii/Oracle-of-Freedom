@@ -16,6 +16,8 @@ import { readCalendarConfig } from "@/lib/calendar-config-store";
 import { deleteGoogleEvent, upsertGoogleEvent } from "@/lib/google-calendar";
 import { isAdmin } from "@/lib/admin-auth";
 import type { ActionState } from "@/app/admin/actions";
+import { studioCopy } from "@/lib/studio-copy";
+import { studioLang } from "@/lib/studio-locale.server";
 
 async function guard() {
   if (!(await isAdmin())) redirect("/admin/login");
@@ -33,10 +35,11 @@ function refresh() {
 
 export async function saveBooking(_state: ActionState, formData: FormData): Promise<ActionState> {
   await guard();
+  const t = studioCopy(await studioLang());
   const kind = clean(formData.get("kind"), 20);
   const status = clean(formData.get("status"), 20);
-  if (!BOOKING_KINDS.includes(kind as BookingKind)) return { error: "Elige reunión, sesión o evento." };
-  if (!BOOKING_STATUSES.includes(status as BookingStatus)) return { error: "Elige un estado." };
+  if (!BOOKING_KINDS.includes(kind as BookingKind)) return { error: t.errors.bookingKind };
+  if (!BOOKING_STATUSES.includes(status as BookingStatus)) return { error: t.errors.bookingStatus };
 
   const allDay = formData.get("allDay") === "on";
   const start = allDay ? "" : clean(formData.get("start"), 5);
@@ -56,9 +59,9 @@ export async function saveBooking(_state: ActionState, formData: FormData): Prom
     notes: clean(formData.get("notes"), 2000),
   };
 
-  if (!booking.title) return { error: "Escribe un título." };
-  if (!isBooking(booking)) return { error: "Revisa la fecha y las horas." };
-  if (!allDay && end <= start) return { error: "La hora final tiene que ser posterior a la de inicio." };
+  if (!booking.title) return { error: t.errors.bookingTitle };
+  if (!isBooking(booking)) return { error: t.errors.bookingWhen };
+  if (!allDay && end <= start) return { error: t.errors.bookingEnd };
 
   const current = await readBookings();
   const previous = current.find((item) => item.id === booking.id);
@@ -68,17 +71,17 @@ export async function saveBooking(_state: ActionState, formData: FormData): Prom
   booking.publicToken = previous?.publicToken;
   booking.googleEventId = previous?.googleEventId;
   if (current.length >= 1000 && !current.some((item) => item.id === booking.id)) {
-    return { error: "La agenda está llena. Borra una cita antigua." };
+    return { error: t.errors.bookingFull };
   }
   const exists = current.some((item) => item.id === booking.id);
-  if (clean(formData.get("id"), 80) && !exists) return { error: "Esa cita ya no está en la agenda." };
+  if (clean(formData.get("id"), 80) && !exists) return { error: t.errors.bookingMissing };
   const next = exists ? current.map((item) => (item.id === booking.id ? booking : item)) : [booking, ...current];
 
   try {
     await writeBookings(next);
   } catch (error) {
     return {
-      error: error instanceof Error ? error.message : "No se pudo guardar la cita.",
+      error: error instanceof Error ? error.message : t.errors.bookingSave,
     };
   }
   try {
@@ -96,8 +99,8 @@ export async function saveBooking(_state: ActionState, formData: FormData): Prom
     return {
       error:
         error instanceof Error
-          ? `Guardada en el estudio. Google no se actualizó: ${error.message}`
-          : "No se pudo guardar la cita.",
+          ? t.errors.googlePartial(error.message)
+          : t.errors.bookingSave,
     };
   }
   refresh();

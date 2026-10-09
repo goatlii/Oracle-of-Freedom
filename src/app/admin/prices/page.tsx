@@ -6,11 +6,14 @@ import { defaultTiming, TIMING_FIELDS } from "@/lib/delivery";
 import { deliveryDefaults } from "@/lib/delivery-copy";
 import { catalog, lisbonToday } from "@/lib/pricing";
 import { readStored, storageMode } from "@/lib/store";
+import { studioCopy } from "@/lib/studio-copy";
+import { studioLang } from "@/lib/studio-locale.server";
 
 export const dynamic = "force-dynamic";
 
 export default async function PricesPage() {
   if (!(await isAdmin())) redirect("/admin/login");
+  const t = studioCopy(await studioLang());
   const settings = await readStored();
   const defaults = deliveryDefaults();
   for (const [id, row] of Object.entries(settings.deliveries ?? {})) {
@@ -22,9 +25,9 @@ export default async function PricesPage() {
     };
   }
   return (
-    <main className="mx-auto max-w-6xl px-4 py-8 pb-44 md:py-12 md:pb-12">
-      <AdminHeader current="prices" title="Precios" />
-      <div className="mt-8">
+    <main className="studio-page-dock mx-auto max-w-6xl px-4 py-4 md:py-12">
+      <AdminHeader current="prices" title={t.prices.title} />
+      <div className="mt-4 md:mt-8">
         <AdminPanel
           catalog={catalog}
           settings={settings}

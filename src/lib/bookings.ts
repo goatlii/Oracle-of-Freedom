@@ -91,18 +91,18 @@ export function shiftMonth(key: string, delta: number) {
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
 }
 
-export function monthLabel(key: string) {
+export function monthLabel(key: string, lang: "en" | "es" = "es") {
   const [year, month] = key.split("-").map(Number);
-  return new Intl.DateTimeFormat("es", {
+  return new Intl.DateTimeFormat(lang, {
     month: "long",
     year: "numeric",
     timeZone: "UTC",
   }).format(new Date(Date.UTC(year, month - 1, 1)));
 }
 
-export function dayLabel(date: string) {
+export function dayLabel(date: string, lang: "en" | "es" = "es") {
   const [year, month, day] = date.split("-").map(Number);
-  return new Intl.DateTimeFormat("es", {
+  return new Intl.DateTimeFormat(lang, {
     weekday: "long",
     day: "numeric",
     month: "long",

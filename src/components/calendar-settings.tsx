@@ -2,6 +2,7 @@
 
 import { useActionState, useState } from "react";
 import Link from "next/link";
+import { useStudioCopy, useStudioLang } from "@/components/studio-lang";
 import {
   disconnectGoogleCalendar,
   regenerateIcalToken,
@@ -18,20 +19,13 @@ import type {
 } from "@/lib/calendar-config";
 import type { GoogleCalendarOption } from "@/lib/google-calendar";
 import type { StorageMode } from "@/lib/pricing";
+import { cn } from "@/lib/utils";
 
 type PublicSettings = Omit<CalendarConfig, "google" | "icalToken">;
 
-const days = [
-  ["1", "Lunes"],
-  ["2", "Martes"],
-  ["3", "Miércoles"],
-  ["4", "Jueves"],
-  ["5", "Viernes"],
-  ["6", "Sábado"],
-  ["0", "Domingo"],
-] as const;
+const dayKeys = ["1", "2", "3", "4", "5", "6", "0"] as const;
 
-function Notice({ state, saved = "Ajustes guardados." }: { state: ActionState; saved?: string }) {
+function Notice({ state, saved }: { state: ActionState; saved: string }) {
   if (!state?.ok && !state?.error) return null;
   return (
     <p
@@ -46,6 +40,7 @@ function Notice({ state, saved = "Ajustes guardados." }: { state: ActionState; s
 }
 
 function CopyButton({ value }: { value: string }) {
+  const t = useStudioCopy();
   const [copied, setCopied] = useState(false);
   return (
     <Button
@@ -57,7 +52,7 @@ function CopyButton({ value }: { value: string }) {
         setCopied(true);
       }}
     >
-      {copied ? "Copiado" : "Copiar"}
+      {copied ? t.settings.copied : t.settings.copy}
     </Button>
   );
 }
@@ -91,11 +86,20 @@ export function CalendarSettings({
   googleCalendars: GoogleCalendarOption[];
   googleNotice?: string;
 }) {
+  const lang = useStudioLang();
+  const t = useStudioCopy();
+  const days = dayKeys.map((key, index) => [
+    key,
+    new Intl.DateTimeFormat(lang, { weekday: "long", timeZone: "UTC" }).format(
+      new Date(Date.UTC(2024, 0, 1 + index)),
+    ),
+  ] as const);
   const [settings, setSettings] = useState(initial);
   const [state, action, pending] = useActionState(saveCalendarSettings, null);
   const [googleState, googleAction, googlePending] = useActionState(saveGoogleAppSettings, null);
   const [googleOpen, setGoogleOpen] = useState(Boolean(googleNotice));
   const [icalOpen, setIcalOpen] = useState(false);
+  const [phonePane, setPhonePane] = useState<"hours" | "google" | "ical" | null>(googleNotice ? "google" : null);
   const [projectName, setProjectName] = useState("Oracle of Freedom");
   const [clientName, setClientName] = useState("Oracle of Freedom Studio");
   const [calendarName, setCalendarName] = useState("Oracle of Freedom");
@@ -134,17 +138,29 @@ export function CalendarSettings({
   }
 
   return (
-    <section className="mt-8 grid gap-8">
+    <section className="mt-4 grid gap-4 md:mt-8 md:gap-8">
       <div className="rounded-3xl bg-white/70 p-4 md:p-6">
-        <h2 className="font-serif text-3xl">Página de reservas</h2>
-        <p className="mt-2 text-sm text-ink/70">
-          Elige lo que se puede reservar en <Link href="/book" className="underline underline-offset-4">/book</Link>.
-          Las horas son de Lisboa.
+        <h2 className="font-serif text-2xl md:text-3xl">
+          <span className="md:hidden">{t.settings.hours}</span>
+          <span className="hidden md:inline">{t.settings.page}</span>
+        </h2>
+        <Button
+          type="button"
+          className={cn("mt-4 md:hidden", phonePane === "hours" && "hidden")}
+          onClick={() => setPhonePane("hours")}
+        >
+          {t.settings.start}
+        </Button>
+        <div className={cn(phonePane === "hours" ? "mt-4" : "max-md:hidden")}>
+        <p className="text-sm text-ink/70">
+          {t.settings.pageHelpBefore}
+          <Link href="/book" className="underline underline-offset-4">/book</Link>
+          {t.settings.pageHelpAfter}
         </p>
         <form action={action} className="mt-6 grid gap-7">
           <input type="hidden" name="settings" value={JSON.stringify(settings)} />
           <fieldset className="grid gap-4">
-            <legend className="font-serif text-2xl">Tipos de cita</legend>
+            <legend className="font-serif text-2xl">{t.settings.types}</legend>
             {settings.bookingTypes.map((item) => (
               <div key={item.id} className="grid gap-4 rounded-2xl border border-ink/10 p-4">
                 <div className="flex items-center justify-between gap-3">
@@ -154,7 +170,7 @@ export function CalendarSettings({
                       checked={item.active}
                       onChange={(event) => updateType(item.id, { active: event.target.checked })}
                     />
-                    Visible
+                    {t.settings.visible}
                   </label>
                   {settings.bookingTypes.length > 1 ? (
                     <button
@@ -167,7 +183,7 @@ export function CalendarSettings({
                         }))
                       }
                     >
-                      Quitar
+                      {t.settings.remove}
                     </button>
                   ) : null}
                 </div>
@@ -175,7 +191,7 @@ export function CalendarSettings({
                   {(["en", "es", "pt"] as const).map((locale) => (
                     <div key={locale}>
                       <Label htmlFor={`${item.id}-label-${locale}`}>
-                        Nombre · {locale.toUpperCase()}
+                        {t.settings.nameLocale(locale.toUpperCase())}
                       </Label>
                       <Input
                         id={`${item.id}-label-${locale}`}
@@ -194,7 +210,7 @@ export function CalendarSettings({
                   {(["en", "es", "pt"] as const).map((locale) => (
                     <div key={locale}>
                       <Label htmlFor={`${item.id}-description-${locale}`}>
-                        Descripción · {locale.toUpperCase()}
+                        {t.settings.descriptionLocale(locale.toUpperCase())}
                       </Label>
                       <Textarea
                         id={`${item.id}-description-${locale}`}
@@ -215,7 +231,7 @@ export function CalendarSettings({
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
-                    <Label htmlFor={`${item.id}-duration`}>Minutos</Label>
+                    <Label htmlFor={`${item.id}-duration`}>{t.settings.minutes}</Label>
                     <Input
                       id={`${item.id}-duration`}
                       type="number"
@@ -229,7 +245,7 @@ export function CalendarSettings({
                     />
                   </div>
                   <div>
-                    <Label htmlFor={`${item.id}-kind`}>Tipo</Label>
+                    <Label htmlFor={`${item.id}-kind`}>{t.settings.type}</Label>
                     <select
                       id={`${item.id}-kind`}
                       value={item.kind}
@@ -240,21 +256,21 @@ export function CalendarSettings({
                       }
                       className="h-12 w-full rounded-2xl border border-ink/15 bg-white/70 px-4"
                     >
-                      <option value="meeting">Reunión</option>
-                      <option value="session">Sesión</option>
-                      <option value="event">Evento</option>
+                      <option value="meeting">{t.calendar.kind.meeting}</option>
+                      <option value="session">{t.calendar.kind.session}</option>
+                      <option value="event">{t.calendar.kind.event}</option>
                     </select>
                   </div>
                 </div>
               </div>
             ))}
             <Button type="button" variant="outline" onClick={addType} className="w-full sm:w-auto">
-              Añadir tipo de cita
+              {t.settings.addType}
             </Button>
           </fieldset>
 
           <fieldset className="grid gap-3">
-            <legend className="font-serif text-2xl">Horario de la semana</legend>
+            <legend className="font-serif text-2xl">{t.settings.week}</legend>
             {days.map(([key, label]) => {
               const value = settings.weekly[key];
               return (
@@ -276,7 +292,7 @@ export function CalendarSettings({
                     {label}
                   </label>
                   <div>
-                    <Label htmlFor={`${key}-start`}>Abre</Label>
+                    <Label htmlFor={`${key}-start`}>{t.settings.opens}</Label>
                     <Input
                       id={`${key}-start`}
                       type="time"
@@ -293,7 +309,7 @@ export function CalendarSettings({
                     />
                   </div>
                   <div>
-                    <Label htmlFor={`${key}-end`}>Cierra</Label>
+                    <Label htmlFor={`${key}-end`}>{t.settings.closes}</Label>
                     <Input
                       id={`${key}-end`}
                       type="time"
@@ -316,7 +332,7 @@ export function CalendarSettings({
 
           <div className="grid gap-4 sm:grid-cols-3">
             <div>
-              <Label htmlFor="days-ahead">Días abiertos por delante</Label>
+              <Label htmlFor="days-ahead">{t.settings.daysAhead}</Label>
               <Input
                 id="days-ahead"
                 type="number"
@@ -329,7 +345,7 @@ export function CalendarSettings({
               />
             </div>
             <div>
-              <Label htmlFor="notice-hours">Aviso mínimo · horas</Label>
+              <Label htmlFor="notice-hours">{t.settings.notice}</Label>
               <Input
                 id="notice-hours"
                 type="number"
@@ -345,7 +361,7 @@ export function CalendarSettings({
               />
             </div>
             <div>
-              <Label htmlFor="buffer-minutes">Margen · minutos</Label>
+              <Label htmlFor="buffer-minutes">{t.settings.buffer}</Label>
               <Input
                 id="buffer-minutes"
                 type="number"
@@ -363,7 +379,7 @@ export function CalendarSettings({
             </div>
           </div>
           <div>
-            <Label htmlFor="default-location">Lugar habitual</Label>
+            <Label htmlFor="default-location">{t.settings.usualPlace}</Label>
             <Input
               id="default-location"
               value={settings.defaultLocation}
@@ -376,63 +392,69 @@ export function CalendarSettings({
               }
             />
           </div>
-          <Notice state={state} />
+          <Notice state={state} saved={t.settings.saved} />
           <Button type="submit" disabled={pending || mode === "readonly"} className="w-full sm:w-auto">
-            {pending ? "Guardando…" : "Guardar ajustes"}
+            {pending ? t.settings.saving : t.settings.save}
+          </Button>
+          <Button type="button" variant="outline" className="w-full md:hidden" onClick={() => setPhonePane(null)}>
+            {t.settings.close}
           </Button>
         </form>
+        </div>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-2">
         <section className="rounded-3xl bg-white/70 p-4 md:p-6">
-          <h2 className="font-serif text-3xl">Google Calendar</h2>
+          <h2 className="font-serif text-2xl md:text-3xl">Google Calendar</h2>
           {googleNotice ? (
             <p className="mt-3 rounded-2xl bg-clay p-3 text-sm">{googleNotice}</p>
           ) : null}
           {googleConnected ? (
             <p className="mt-3 text-sm text-ink/70">
-              Conectado{googleAccount ? ` como ${googleAccount}` : ""}. Las citas nuevas se escriben en{" "}
-              <span className="font-medium">{googleSummary}</span>.
+              {t.settings.connected(googleAccount, googleSummary)}
             </p>
           ) : (
-            <p className="mt-3 text-sm text-ink/70">
-              Pulsa Iniciar y rellena las casillas. Los nombres y la dirección de vuelta ya están escritos y se pueden cambiar.
-            </p>
+            <p className="mt-3 text-sm text-ink/70">{t.settings.googleIntro}</p>
           )}
-          {!googleOpen ? (
-            <Button type="button" className="mt-4" onClick={() => setGoogleOpen(true)}>
-              Iniciar
-            </Button>
-          ) : (
-            <div className="mt-4 grid gap-4">
+          <Button
+            type="button"
+            className={cn("mt-4", googleOpen && "md:hidden", phonePane === "google" && "max-md:hidden")}
+            onClick={() => {
+              setGoogleOpen(true);
+              setPhonePane("google");
+            }}
+          >
+            {t.settings.start}
+          </Button>
+          <div className={cn("mt-4 gap-4", phonePane === "google" ? "max-md:grid" : "max-md:hidden", googleOpen ? "md:grid" : "md:hidden")}>
               <ol className="grid list-decimal gap-4 pl-5 text-sm text-ink/80">
                 <li>
-                  Abre{" "}
+                  {t.settings.projectOpen}{" "}
                   <a className="underline underline-offset-4" href="https://console.cloud.google.com/" target="_blank" rel="noreferrer">
                     Google Cloud Console
                   </a>{" "}
-                  y crea un proyecto. Usa este nombre, o cámbialo:
-                  <Label htmlFor="google-project-name" className="mt-3">Nombre del proyecto</Label>
+                  {t.settings.projectAfter}
+                  <Label htmlFor="google-project-name" className="mt-3">{t.settings.projectName}</Label>
                   <div className="flex gap-2">
                     <Input id="google-project-name" value={projectName} maxLength={80} onChange={(event) => setProjectName(event.target.value)} />
                     <CopyButton value={projectName} />
                   </div>
                 </li>
-                <li>En ese proyecto, abre APIs y servicios, luego Biblioteca, busca Google Calendar API y pulsa Habilitar.</li>
-                <li>Abre APIs y servicios, luego Pantalla de consentimiento de OAuth. Elige Externo, añade la cuenta de Google del calendario y guarda.</li>
+                <li>{t.settings.enableApi}</li>
+                <li>{t.settings.consent}</li>
                 <li>
-                  Abre Credenciales, luego Crear credenciales, luego ID de cliente de OAuth. Elige Aplicación web. Usa este nombre, o cámbialo:
-                  <Label htmlFor="google-client-name" className="mt-3">Nombre del cliente OAuth</Label>
+                  {t.settings.clientBefore}
+                  <Label htmlFor="google-client-name" className="mt-3">{t.settings.clientName}</Label>
                   <div className="flex gap-2">
                     <Input id="google-client-name" value={clientName} maxLength={80} onChange={(event) => setClientName(event.target.value)} />
                     <CopyButton value={clientName} />
                   </div>
                 </li>
-                <li>En URI de redireccionamiento autorizados, añade la dirección de abajo tal como está escrita.</li>
+                <li>{t.settings.redirectHelp}</li>
               </ol>
               <form action={googleAction} className="grid gap-4">
                 <div>
-                  <Label htmlFor="google-redirect">Dirección de vuelta autorizada</Label>
+                  <Label htmlFor="google-redirect">{t.settings.redirect}</Label>
                   <div className="flex gap-2">
                     <Input
                       id="google-redirect"
@@ -450,7 +472,7 @@ export function CalendarSettings({
                     id="google-client-id"
                     name="clientId"
                     defaultValue={savedClientId}
-                    placeholder="Pega el Client ID"
+                    placeholder={t.settings.pasteClientId}
                     autoComplete="off"
                     spellCheck={false}
                   />
@@ -461,30 +483,36 @@ export function CalendarSettings({
                     id="google-client-secret"
                     name="clientSecret"
                     type="password"
-                    placeholder={secretSaved ? "Ya está guardado. Pega uno nuevo solo para cambiarlo." : "Pega el Client secret"}
+                    placeholder={secretSaved ? t.settings.secretSaved : t.settings.pasteSecret}
                     autoComplete="off"
                   />
                 </div>
-                <Notice state={googleState} saved="Datos de Google guardados. Pulsa Conectar Google Calendar e inicia sesión." />
+                <Notice state={googleState} saved={t.settings.googleSaved} />
                 <div className="flex flex-wrap gap-3">
                   <Button type="submit" disabled={googlePending || mode === "readonly"}>
-                    {googlePending ? "Guardando…" : "Guardar estos datos"}
+                    {googlePending ? t.settings.saving : t.settings.saveDetails}
                   </Button>
                   {googleConfigured ? (
                     <Button asChild>
-                      <Link href="/api/admin/google/connect" prefetch={false}>Conectar Google Calendar</Link>
+                      <Link href="/api/admin/google/connect" prefetch={false}>{t.settings.connect}</Link>
                     </Button>
                   ) : null}
-                  <Button type="button" variant="outline" onClick={() => setGoogleOpen(false)}>
-                    Cerrar
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => {
+                      setGoogleOpen(false);
+                      setPhonePane((current) => (current === "google" ? null : current));
+                    }}
+                  >
+                    {t.settings.close}
                   </Button>
                 </div>
               </form>
-            </div>
-          )}
+          </div>
           {googleConnected && googleCalendars.length > 1 ? (
             <form action={selectGoogleCalendar} className="mt-4 grid gap-3">
-              <Label htmlFor="google-calendar">Calendario de las citas</Label>
+              <Label htmlFor="google-calendar">{t.settings.calendarOf}</Label>
               <select
                 id="google-calendar"
                 name="calendarId"
@@ -493,64 +521,73 @@ export function CalendarSettings({
               >
                 {googleCalendars.map((calendar) => (
                   <option key={calendar.id} value={calendar.id}>
-                    {calendar.summary}{calendar.primary ? " · principal" : ""}
+                    {calendar.summary}{calendar.primary ? t.settings.primary : ""}
                   </option>
                 ))}
               </select>
-              <Button type="submit" variant="outline">Usar este calendario</Button>
+              <Button type="submit" variant="outline">{t.settings.useCalendar}</Button>
             </form>
           ) : null}
           {googleConnected ? (
             <form action={disconnectGoogleCalendar} className="mt-4">
-              <Button type="submit" variant="outline">Desconectar Google</Button>
+              <Button type="submit" variant="outline">{t.settings.disconnect}</Button>
             </form>
           ) : null}
         </section>
 
         <section className="rounded-3xl bg-white/70 p-4 md:p-6">
-          <h2 className="font-serif text-3xl">Suscripción iCal</h2>
-          <p className="mt-3 text-sm text-ink/70">
-            Pulsa Iniciar, copia la dirección privada y pégala en la app de calendario. El nombre ya está listo para cambiarlo.
-          </p>
-          {!icalOpen ? (
-            <Button type="button" className="mt-4" onClick={() => setIcalOpen(true)}>
-              Iniciar
-            </Button>
-          ) : (
-            <div className="mt-4 grid gap-4">
+          <h2 className="font-serif text-2xl md:text-3xl">{t.settings.ical}</h2>
+          <p className="mt-3 text-sm text-ink/70">{t.settings.icalIntro}</p>
+          <Button
+            type="button"
+            className={cn("mt-4", icalOpen && "md:hidden", phonePane === "ical" && "max-md:hidden")}
+            onClick={() => {
+              setIcalOpen(true);
+              setPhonePane("ical");
+            }}
+          >
+            {t.settings.start}
+          </Button>
+          <div className={cn("mt-4 gap-4", phonePane === "ical" ? "max-md:grid" : "max-md:hidden", icalOpen ? "md:grid" : "md:hidden")}>
               <div>
-                <Label htmlFor="ical-name">Nombre del calendario</Label>
+                <Label htmlFor="ical-name">{t.settings.calendarName}</Label>
                 <div className="flex gap-2">
                   <Input id="ical-name" value={calendarName} maxLength={80} onChange={(event) => setCalendarName(event.target.value)} />
                   <CopyButton value={calendarName} />
                 </div>
               </div>
               <div>
-                <Label htmlFor="ical-feed">Dirección privada</Label>
+                <Label htmlFor="ical-feed">{t.settings.privateAddress}</Label>
                 <div className="flex gap-2">
                   <Input id="ical-feed" readOnly value={feedUrl} className="text-xs" />
                   <CopyButton value={feedUrl} />
                 </div>
               </div>
               <ol className="grid list-decimal gap-3 pl-5 text-sm text-ink/80">
-                <li>Calendario de Apple en un Mac: Archivo, luego Nueva suscripción a calendario. Pega la dirección privada. Si pide un nombre, usa el de arriba.</li>
-                <li>iPhone: Ajustes, luego Calendario, luego Cuentas, luego Añadir cuenta, luego Otra, luego Añadir calendario suscrito. Pega la dirección privada.</li>
-                <li>Outlook: Añadir calendario, luego Suscribirse desde la web. Pega la dirección privada y usa el nombre de arriba.</li>
-                <li>Otra cuenta de Google: Ajustes, luego Añadir calendario, luego Desde URL. Pega la dirección privada. Google puede tardar varias horas en mostrar las citas nuevas.</li>
+                <li>{t.settings.appleMac}</li>
+                <li>{t.settings.iphone}</li>
+                <li>{t.settings.outlook}</li>
+                <li>{t.settings.otherGoogle}</li>
               </ol>
               <div className="flex flex-wrap gap-3">
                 <Button asChild>
-                  <a href={feedUrl.replace(/^https?:/, "webcal:")}>Suscribirse</a>
+                  <a href={feedUrl.replace(/^https?:/, "webcal:")}>{t.settings.subscribe}</a>
                 </Button>
                 <form action={regenerateIcalToken}>
-                  <Button type="submit" variant="outline">Crear otro enlace privado</Button>
+                  <Button type="submit" variant="outline">{t.settings.newLink}</Button>
                 </form>
-                <Button type="button" variant="outline" onClick={() => setIcalOpen(false)}>
-                  Cerrar
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => {
+                    setIcalOpen(false);
+                    setPhonePane((current) => (current === "ical" ? null : current));
+                  }}
+                >
+                  {t.settings.close}
                 </Button>
               </div>
             </div>
-          )}
         </section>
       </div>
     </section>

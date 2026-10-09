@@ -14,6 +14,8 @@ import {
   writeCalendarConfig,
 } from "@/lib/calendar-config-store";
 import { encryptGoogleToken, listGoogleCalendars } from "@/lib/google-calendar";
+import { studioCopy } from "@/lib/studio-copy";
+import { studioLang } from "@/lib/studio-locale.server";
 
 async function guard() {
   if (!(await isAdmin())) redirect("/admin/login");
@@ -37,12 +39,13 @@ export async function saveCalendarSettings(
   formData: FormData,
 ): Promise<ActionState> {
   await guard();
+  const t = studioCopy(await studioLang());
   const current = await readCalendarConfig();
   let submitted: unknown;
   try {
     submitted = JSON.parse(String(formData.get("settings") || ""));
   } catch {
-    return { error: "Estos ajustes de la agenda no son válidos." };
+    return { error: t.errors.settingsInvalid };
   }
   const candidate = parseCalendarConfig({
     ...(submitted as Partial<CalendarConfig>),
@@ -52,7 +55,7 @@ export async function saveCalendarSettings(
   });
   if (!candidate) {
     return {
-      error: "Revisa los tipos de cita, el horario y los límites de reserva.",
+      error: t.errors.settingsCheck,
     };
   }
   try {
@@ -61,7 +64,7 @@ export async function saveCalendarSettings(
     return { ok: true };
   } catch (error) {
     return {
-      error: error instanceof Error ? error.message : "The settings did not save.",
+      error: error instanceof Error ? error.message : t.errors.settingsSave,
     };
   }
 }
@@ -98,24 +101,25 @@ export async function saveGoogleAppSettings(
   formData: FormData,
 ): Promise<ActionState> {
   await guard();
+  const t = studioCopy(await studioLang());
   const clientId = clean(formData.get("clientId"), 200);
   const clientSecret = String(formData.get("clientSecret") || "").trim().slice(0, 300);
   const redirectUri = clean(formData.get("redirectUri"), 300);
   if (!/^[A-Za-z0-9._-]{8,200}$/.test(clientId)) {
-    return { error: "Pega el Client ID de Google Cloud en la casilla Client ID." };
+    return { error: t.errors.clientId };
   }
   let redirect: URL;
   try {
     redirect = new URL(redirectUri);
   } catch {
-    return { error: "La dirección de vuelta tiene que ser una dirección web completa." };
+    return { error: t.errors.redirectUrl };
   }
   const local = redirect.hostname === "localhost";
   if (
     (redirect.protocol !== "https:" && !(local && redirect.protocol === "http:")) ||
     redirect.pathname !== "/api/admin/google/callback"
   ) {
-    return { error: "La dirección de vuelta tiene que terminar en /api/admin/google/callback." };
+    return { error: t.errors.redirectPath };
   }
   const current = await readCalendarConfig();
   let encrypted = current.googleApp?.encryptedClientSecret || "";
@@ -124,11 +128,11 @@ export async function saveGoogleAppSettings(
       encrypted = encryptGoogleToken(clientSecret);
     } catch (error) {
       return {
-        error: error instanceof Error ? error.message : "No se pudo guardar el Client secret.",
+        error: error instanceof Error ? error.message : t.errors.secretSave,
       };
     }
   }
-  if (!encrypted) return { error: "Pega el Client secret de Google Cloud en la casilla Client secret." };
+  if (!encrypted) return { error: t.errors.secretMissing };
   try {
     await writeCalendarConfig({
       ...current,
@@ -138,7 +142,7 @@ export async function saveGoogleAppSettings(
     return { ok: true };
   } catch (error) {
     return {
-      error: error instanceof Error ? error.message : "No se guardó la configuración de Google.",
+      error: error instanceof Error ? error.message : t.errors.googleSave,
     };
   }
 }

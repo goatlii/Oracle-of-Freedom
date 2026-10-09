@@ -36,6 +36,49 @@ body {
   outline-offset: 3px;
 }
 
+.studio-app {
+  --studio-nav: 0px;
+  --studio-install: 0px;
+}
+
+@media (max-width: 767px) {
+  .studio-app {
+    --studio-nav: calc(3.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+.studio-page {
+  padding-bottom: calc(var(--studio-nav) + var(--studio-install) + 1.25rem);
+}
+
+.studio-page-dock {
+  padding-bottom: calc(var(--studio-nav) + var(--studio-install) + 5.75rem);
+}
+.studio-page-reply {
+  padding-bottom: calc(var(--studio-nav) + var(--studio-install) + 9.5rem);
+}
+
+@media (min-width: 768px) {
+  .studio-page,
+  .studio-page-dock,
+  .studio-page-reply {
+    padding-bottom: 3rem;
+  }
+}
+
+.studio-dock {
+  position: fixed;
+  inset-inline: 0;
+  z-index: 30;
+  bottom: calc(var(--studio-nav) + var(--studio-install));
+}
+
+@media (min-width: 768px) {
+  .studio-dock {
+    position: static;
+  }
+}
+
 .grain {
   position: relative;
 }
