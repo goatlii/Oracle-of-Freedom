@@ -28,16 +28,29 @@ export function InstallAppButton() {
 
   useEffect(() => {
     setInstalled(runningAsApp());
+    const remembered = (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall;
+    if (remembered) setPromptEvent(remembered);
     const onPrompt = (event: Event) => {
       event.preventDefault();
-      setPromptEvent(event as InstallPrompt);
+      const prompt = event as InstallPrompt;
+      (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall = prompt;
+      setPromptEvent(prompt);
       setHint("");
+    };
+    const onReady = () => {
+      const saved = (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall;
+      if (saved) {
+        setPromptEvent(saved);
+        setHint("");
+      }
     };
     const onInstalled = () => {
       setInstalled(true);
       setPromptEvent(null);
+      (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall = null;
     };
     window.addEventListener("beforeinstallprompt", onPrompt);
+    window.addEventListener("oof-install", onReady);
     window.addEventListener("appinstalled", onInstalled);
     const media = window.matchMedia("(max-width: 767px)");
     const apply = () => setNarrow(media.matches);
@@ -45,6 +58,7 @@ export function InstallAppButton() {
     media.addEventListener("change", apply);
     return () => {
       window.removeEventListener("beforeinstallprompt", onPrompt);
+      window.removeEventListener("oof-install", onReady);
       window.removeEventListener("appinstalled", onInstalled);
       media.removeEventListener("change", apply);
     };
@@ -72,24 +86,25 @@ export function InstallAppButton() {
 
   if (installed) return null;
 
-  async function install() {
-    if (!promptEvent) {
+  function install() {
+    const event =
+      promptEvent || (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall || null;
+    if (!event) {
       setHint(t.installHint);
       return;
     }
     setPending(true);
     setHint("");
-    const event = promptEvent;
     setPromptEvent(null);
-    try {
-      await event.prompt();
-      const choice = await event.userChoice;
-      if (choice.outcome === "accepted") setInstalled(true);
-    } catch {
-      setHint(t.installHint);
-    } finally {
-      setPending(false);
-    }
+    (window as Window & { __oofInstall?: InstallPrompt | null }).__oofInstall = null;
+    event
+      .prompt()
+      .then(() => event.userChoice)
+      .then((choice) => {
+        if (choice.outcome === "accepted") setInstalled(true);
+      })
+      .catch(() => setHint(t.installHint))
+      .finally(() => setPending(false));
   }
 
   if (strip) {
@@ -100,7 +115,7 @@ export function InstallAppButton() {
         style={{ bottom: "var(--studio-nav)" }}
       >
         {hint ? (
-          <p className="mb-1 text-center text-xs text-ink/70" role="status">
+          <p className="mb-2 rounded-2xl bg-ink px-3 py-2 text-center text-sm text-sand" role="status">
             {hint}
           </p>
         ) : null}

@@ -15,8 +15,8 @@ export function studioCopy(lang: StudioLang) {
     install: en ? "Install the app" : "Instalar la app",
     installing: en ? "Installing…" : "Instalando…",
     installHint: en
-      ? "In Chrome, open the ⋮ menu and tap Install app."
-      : "En Chrome, abre el menú ⋮ y pulsa Instalar app.",
+      ? "Chrome did not open the installer. Open the ⋮ menu and tap Install app."
+      : "Chrome no abrió el instalador. Abre el menú ⋮ y pulsa Instalar app.",
     offline: en
       ? "Offline. The studio cannot refresh."
       : "Sin conexión. No se puede actualizar el estudio.",

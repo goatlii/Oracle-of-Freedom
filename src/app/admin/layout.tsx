@@ -47,6 +47,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   return (
     <html lang={lang} className={`${serif.variable} ${sans.variable}`}>
       <body className="studio-app min-h-screen bg-sand font-sans text-ink antialiased">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(window.__oofInstallBound)return;window.__oofInstallBound=true;window.addEventListener("beforeinstallprompt",function(event){event.preventDefault();window.__oofInstall=event;window.dispatchEvent(new Event("oof-install"));});if("serviceWorker"in navigator){navigator.serviceWorker.register("/studio-sw.js").catch(function(){});}})();`,
+          }}
+        />
         <StudioLangProvider lang={lang}>
           {children}
           <InstallAppButton />
