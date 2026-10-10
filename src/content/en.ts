@@ -501,7 +501,7 @@ export const en: Copy = {
     packagesTitle: "Packages",
     addonsTitle: "Add-ons",
     addonsNote:
-      "Added to a retreat day you're already booking. A quiet flight when the weather is kind and the airspace allows — not a separate aerial day.",
+      "Added to coverage you're already booking: reels for a one-day retreat, or a drone flight when the weather and the airspace allow.",
     packages: {
       "retreat-day": {
         name: "Retreat · 1 day",
@@ -533,6 +533,21 @@ export const en: Copy = {
           "We fly when the weather is kind and the airspace allows",
         ],
       },
+      "retreat-drone-addon-story": {
+        name: "Drone stills + video add-on",
+        items: [
+          "Aerial stills plus a short aerial video clip, added to retreat coverage you're already booking",
+          "One flight beside the ground coverage, not a separate aerial day",
+          "We fly when the weather is kind and the airspace allows",
+        ],
+      },
+      "retreat-reels-addon": {
+        name: "Reels add-on",
+        items: [
+          "3 short vertical reels for Instagram, TikTok and your listings",
+          "Added to a 1-day retreat you're already booking",
+        ],
+      },
     },
     travelNote:
       "Retreats on the coast from the Algarve to Lisbon include my travel. Further retreats — the rest of Portugal, Europe and beyond — are quoted at cost. Accommodation and meals on site are usually covered by the retreat.",
@@ -556,7 +571,7 @@ export const en: Copy = {
     faq: [
       { q: "Will a photographer disturb the energy of the group?", a: "Not when they're part of it. I move gently, respect silence and step away when needed." },
       { q: "Can I use the images for ads and listings?", a: "Yes — a commercial licence is included for your own marketing." },
-      { q: "Do you also film?", a: "Yes, reels and short films are part of the Journey package or available as an add-on." },
+      { q: "Do you also film?", a: "Yes. The 3-day package includes 5 short vertical reels, and for a 1-day retreat you can add 3 reels or drone video." },
       { q: "Do guests need to sign anything?", a: "I'll share a simple consent approach with you before the retreat, and anyone can opt out." },
       { q: "Do you travel abroad?", a: "Yes. Retreats are one of the projects I leave the Algarve–Lisbon coast for: the rest of Portugal, Spain, Europe and tropical destinations, with travel quoted at cost." },
       { q: "How early should I book?", a: "2–3 months ahead is ideal, especially for May–October." },
