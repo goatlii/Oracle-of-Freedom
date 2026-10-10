@@ -670,11 +670,11 @@ export const pt: Copy = {
     testimonialIds: ["rewild", "kliq", "nixie", "bliss-burn", "anael", "sage", "artist"],
     faqTitle: "Perguntas frequentes",
     faq: [
-      { q: "Fotografas em clubes escuros e à noite?", a: "Sim: pouca luz, luzes de palco, fumo e fogo são a minha zona de conforto." },
+      { q: "Fotografas em clubes escuros e à noite?", a: "Sim, adapto-me à luz de cada evento. Cada sala é diferente, por isso falamos antes sobre o que é possível — flash, luzes extra ou só luz natural — e encontramos o que fica bem para ti e para o espaço." },
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set, em 48 horas. As fotografias, em {artistWeeks}. O filme, e a foto com filme, em {artistFilmWeeks}: juntos demoram mais do que só as fotografias. Os pacotes de foto + vídeo estão com os restantes: um dia de festival com aftermovie em 3–5 semanas, conforme a duração do evento, e um kit de imprensa ou um set ao vivo com reels em 3–4 semanas. A entrega expressa e prioritária é um extra à parte, orçamentado ao trabalho: seleção de fotos no dia seguinte desde 75–100 €, uma antevisão no próprio dia desde 100–150 € quando a agenda permite, e um fim de semana completo desde 200 €. Conta-me os dias, as horas e a rapidez de que precisas. Confirmo o valor antes do sinal de {deposit}." },
+      { q: "Quando chegam os clips?", a: "Os clips do set em 48 horas e as fotografias em 1–2 semanas. Os filmes demoram um pouco mais, 2–5 semanas conforme o projeto. Precisas de mais rapidez? A entrega expressa está disponível." },
     ],
   },
   places: {
