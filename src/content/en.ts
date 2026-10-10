@@ -711,11 +711,11 @@ export const en: Copy = {
     testimonialIds: ["rewild", "kliq", "nixie", "bliss-burn", "anael", "sage", "artist"],
     faqTitle: "Questions",
     faq: [
-      { q: "Do you shoot in dark clubs and at night?", a: "Yes — low light, stage lights, smoke and fire are my comfort zone." },
+      { q: "Do you shoot in dark clubs and at night?", a: "Yes, I adapt to the light of each event. Every venue is different, so we'll chat beforehand about what's possible — flash, extra lights or natural light only — and find what feels right for you and the space." },
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours. Photographs in {artistWeeks}. Films, and photo with film, in {artistFilmWeeks} — together they take longer than photographs alone. Photo + film bundles are with the packages: a festival day with aftermovie in 3–5 weeks, depending on event length, and a press kit or live set with reels in 3–4 weeks. Express and priority delivery is a separate add-on, quoted to the job: next-day photo selects from €75–100, a same-day teaser from €100–150 when the schedule allows, and a full weekend from €200. Tell me the days, the hours and how fast you need it. I’ll confirm the fee before the {deposit} deposit." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours and photographs in 1–2 weeks. Films take a little longer, 2–5 weeks depending on the project. Need it faster? Express delivery is available." },
     ],
   },
   places: {
