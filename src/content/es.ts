@@ -330,8 +330,8 @@ export const es: Copy = {
     testimonialIds: ["oliwia", "india", "couple", "soul-brand"],
     faqTitle: "Preguntas frecuentes",
     faq: [
-      { q: "Somos torpes delante de la cámara, ¿pasa algo?", a: "Para nada, a casi todo el mundo le pasa. No te hago \"posar\": te doy pequeñas indicaciones, caminamos, nos reímos y aparece tu verdadero yo." },
-      { q: "¿Qué nos ponemos?", a: "Colores suaves y naturales y telas que se muevan con el viento. Tras reservar te envío una pequeña guía de estilo." },
+      { q: "Somos torpes delante de la cámara, ¿pasa algo?", a: "¡No hay problema! A casi todo el mundo le pasa. No te hago \"posar\": te doy pequeñas indicaciones, caminamos, nos reímos y aparece tu verdadero yo." },
+      { q: "¿Qué nos ponemos?", a: "Depende de la sesión, de vuestras ideas, de mi visión y del objetivo final. Tras reservar os envío una guía breve." },
       { q: "¿Cuál es la mejor hora?", a: "La hora dorada, justo después del amanecer o antes del atardecer. Yo elijo el horario según fecha y lugar." },
       { q: "¿Y si llueve?", a: "Cambiamos la sesión de día o abrazamos el drama de las nubes: tú decides." },
       { q: "¿Me ayudas con una pedida sorpresa?", a: "Sí. Te ayudo a elegir el sitio y el momento, y me escondo a plena vista." },

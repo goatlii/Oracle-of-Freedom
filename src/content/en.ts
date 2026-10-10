@@ -365,8 +365,8 @@ export const en: Copy = {
     testimonialIds: ["oliwia", "india", "couple", "soul-brand"],
     faqTitle: "Questions",
     faq: [
-      { q: "We're awkward in front of the camera. Is that okay?", a: "Totally. Most people are. I don't make you \"pose\" — I give you little prompts, we walk, we laugh, and the real you shows up." },
-      { q: "What should we wear?", a: "Soft, natural colours and textures that move in the wind work beautifully. I send a short style guide after booking." },
+      { q: "We're awkward in front of the camera. Is that okay?", a: "Not a problem! Most people are. I don't make you \"pose\" — I give you little prompts, we walk, we laugh, and the real you shows up." },
+      { q: "What should we wear?", a: "It depends on the shoot, your ideas, my vision and the end goal. I'll send a short guide after booking." },
       { q: "What time is best?", a: "Golden hour — the hour after sunrise or before sunset. I'll pick the timing for your date and place." },
       { q: "What if it rains?", a: "We move the session to another day free of charge, or we embrace the drama of the clouds — your choice." },
       { q: "Can you help plan a surprise proposal?", a: "Yes. I'll help you pick the spot and timing, and hide in plain sight." },
