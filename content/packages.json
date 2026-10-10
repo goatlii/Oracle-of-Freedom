@@ -317,6 +317,22 @@
       "inquiry": "retreat"
     },
     {
+      "id": "retreat-drone-addon-story",
+      "group": "retreats",
+      "kind": "addon",
+      "label": "Drone stills + video add-on",
+      "from": 285,
+      "inquiry": "retreat"
+    },
+    {
+      "id": "retreat-reels-addon",
+      "group": "retreats",
+      "kind": "addon",
+      "label": "Reels add-on",
+      "from": 185,
+      "inquiry": "retreat"
+    },
+    {
       "id": "elopement-drone-stills",
       "group": "elopements",
       "kind": "addon",

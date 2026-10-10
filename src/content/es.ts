@@ -465,7 +465,7 @@ export const es: Copy = {
     packagesTitle: "Paquetes",
     addonsTitle: "Extras",
     addonsNote:
-      "Se añade a un día de retiro que ya estás reservando. Un vuelo tranquilo cuando el tiempo acompaña y el espacio aéreo lo permite: no es un día aéreo aparte.",
+      "Se añaden a la cobertura que ya estás reservando: reels para un retiro de un día, o un vuelo de dron cuando el tiempo y el espacio aéreo lo permiten.",
     packages: {
       "retreat-day": {
         name: "Retiro · 1 día",
@@ -497,6 +497,21 @@ export const es: Copy = {
           "Volamos cuando el tiempo acompaña y el espacio aéreo lo permite",
         ],
       },
+      "retreat-drone-addon-story": {
+        name: "Extra de fotos + vídeo con dron",
+        items: [
+          "Fotos aéreas y un clip de vídeo aéreo corto, añadidos a la cobertura de retiro que ya estás reservando",
+          "Un vuelo junto a la cobertura en tierra, no un día aéreo aparte",
+          "Volamos cuando el tiempo acompaña y el espacio aéreo lo permite",
+        ],
+      },
+      "retreat-reels-addon": {
+        name: "Extra de reels",
+        items: [
+          "3 reels verticales cortos para Instagram, TikTok y tus anuncios",
+          "Se añade a un retiro de 1 día que ya estás reservando",
+        ],
+      },
     },
     travelNote:
       "Los retiros en la costa del Algarve a Lisboa incluyen mi desplazamiento. Los que quedan más lejos — el resto de Portugal, Europa y más allá — se presupuestan a coste real. El alojamiento y las comidas en el lugar suelen correr a cargo del retiro.",
@@ -520,10 +535,10 @@ export const es: Copy = {
     faq: [
       { q: "¿Una fotógrafa no altera la energía del grupo?", a: "No cuando forma parte de él. Me muevo con suavidad, respeto el silencio y me aparto cuando hace falta." },
       { q: "¿Puedo usar las imágenes en anuncios y en plataformas?", a: "Sí, la licencia comercial para tu propio marketing está incluida." },
-      { q: "¿También grabas vídeo?", a: "Sí, los reels y las películas cortas forman parte del paquete Journey o se añaden como extra." },
+      { q: "¿También grabas vídeo?", a: "Sí. El paquete de 3 días incluye 5 reels verticales cortos, y en un retiro de 1 día puedes añadir 3 reels o vídeo de dron." },
       { q: "¿Tienen que firmar algo los participantes?", a: "Antes del retiro te comparto un sistema sencillo de consentimiento, y cualquiera puede decir que no." },
       { q: "¿Viajas al extranjero?", a: "Sí. Los retiros son uno de los proyectos por los que salgo de la costa del Algarve a Lisboa: el resto de Portugal, España, Europa y destinos tropicales, con el viaje a coste real." },
-      { q: "¿Con cuánta antelación reservo?", a: "Lo ideal es con 2–3 meses, sobre todo entre mayo y octubre." },
+      { q: "¿Con cuánta antelación reservo?", a: "Unos 4 meses antes es lo ideal, pero a veces bastan unas semanas, así que pregúntame." },
     ],
     guide: { post: "retreat", label: "Cómo fotografiar tu retiro para llenar el próximo" },
   },
