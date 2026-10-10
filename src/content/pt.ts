@@ -330,8 +330,8 @@ export const pt: Copy = {
     testimonialIds: ["oliwia", "india", "couple", "soul-brand"],
     faqTitle: "Perguntas frequentes",
     faq: [
-      { q: "Somos desajeitados à frente da câmara. Faz mal?", a: "Nada. Acontece a quase toda a gente. Não vos ponho a \"posar\": dou pequenas sugestões, caminhamos, rimo-nos e o vosso verdadeiro eu aparece." },
-      { q: "O que devemos vestir?", a: "Cores suaves e naturais e tecidos que se mexam com o vento. Depois da marcação envio um pequeno guia de estilo." },
+      { q: "Somos desajeitados à frente da câmara. Faz mal?", a: "Não há problema! Acontece a quase toda a gente. Não vos ponho a \"posar\": dou pequenas sugestões, caminhamos, rimo-nos e o vosso verdadeiro eu aparece." },
+      { q: "O que devemos vestir?", a: "Depende da sessão, das vossas ideias, da minha visão e do objetivo final. Depois da marcação envio um guia breve." },
       { q: "Qual é a melhor hora?", a: "A hora dourada, logo a seguir ao nascer do sol ou antes do pôr do sol. Eu escolho o horário conforme a data e o local." },
       { q: "E se chover?", a: "Mudamos a sessão para outro dia ou abraçamos o drama das nuvens: vocês decidem." },
       { q: "Ajudas num pedido de casamento surpresa?", a: "Sim. Ajudo-te a escolher o sítio e o momento, e escondo-me à vista de todos." },
