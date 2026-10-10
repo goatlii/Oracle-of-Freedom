@@ -11,7 +11,8 @@ import { VideoGrid } from "@/components/video-grid";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
 import { gallery, imagesForPage, settings, siteUrl } from "@/lib/content";
-import { applyTokens, buildTokenMap } from "@/lib/delivery";
+import { festivalFilmSpan } from "@/lib/delivery-copy";
+import { applyTokens, buildTokenMap, displayTiming } from "@/lib/delivery";
 import { getSettings } from "@/lib/offers";
 import { mergeCatalog, type LiveSettings, type PricedPackage } from "@/lib/pricing";
 import type { Locale } from "@/i18n/routing";
@@ -53,6 +54,13 @@ export async function ServiceView({
     (heroId ? gallery.find((image) => image.id === heroId) : undefined) ?? images[0];
   const stored = await getSettings();
   const tokens = buildTokenMap(stored.timings);
+  const faqTokens = {
+    ...tokens,
+    "{festivalFilmSpan}": festivalFilmSpan(locale, stored),
+    ...(group === "festivals"
+      ? { "{artistWeeks}": displayTiming(tokens["{artistWeeks}"] ?? "", locale) }
+      : {}),
+  };
   const catalog = mergeCatalog(stored);
   const visible = catalog.filter((item) => item.group === group && item.visible);
   const photos = visible.filter((item) => item.kind === "photo");
@@ -97,7 +105,7 @@ export async function ServiceView({
           mainEntity: copy.faq.map((item) => ({
             "@type": "Question",
             name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: applyTokens(item.a, tokens) },
+            acceptedAnswer: { "@type": "Answer", text: applyTokens(item.a, faqTokens) },
           })),
         }}
       />
@@ -319,9 +327,7 @@ export async function ServiceView({
                 <summary className="cursor-pointer list-none font-medium [&::-webkit-details-marker]:hidden">
                   {item.q}
                 </summary>
-                <p className="pt-3 text-ink/80">
-                  <TokenText text={item.a} />
-                </p>
+                <p className="pt-3 text-ink/80">{applyTokens(item.a, faqTokens)}</p>
               </details>
             ))}
           </div>

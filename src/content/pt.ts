@@ -674,7 +674,7 @@ export const pt: Copy = {
       { q: "Posso usar as fotografias no press kit e nas plataformas de streaming?", a: "Sim, a utilização promocional está incluída." },
       { q: "Trabalhas com festivais?", a: "Sim, integrada em equipas de conteúdo oficiais ou parceiras, e sempre dentro das regras de fotografia e consentimento de cada festival." },
       { q: "Filmas um videoclipe completo?", a: "Sim, do conceito à edição final. Conta-me a tua ideia e o teu orçamento." },
-      { q: "Quando chegam os clips?", a: "Os clips do set em 48 horas e as fotografias em 1–2 semanas. Os filmes demoram um pouco mais, 2–5 semanas conforme o projeto. Precisas de mais rapidez? A entrega expressa está disponível." },
+      { q: "Quando chegam os clips?", a: "Os clips do set em 48 horas e as fotografias em {artistWeeks}. Os filmes demoram um pouco mais, {festivalFilmSpan} conforme o projeto. Precisas de mais rapidez? A entrega expressa está disponível." },
     ],
   },
   places: {

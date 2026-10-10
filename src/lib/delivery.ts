@@ -47,8 +47,75 @@ export const TIMING_FIELDS = [
   },
 ] as const satisfies readonly { key: TimingKey; token: string; label: string; hint: string }[];
 
-const TOKEN_SOURCE = "\\{(?:baseArea|deposit|artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm|languages)\\}";
+const TOKEN_SOURCE = "\\{(?:baseArea|deposit|artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm|languages|festivalFilmSpan)\\}";
 const TIMING_TOKEN = /\{(?:artistFilmWeeks|artistWeeks|filmWeeks|weeks|expressPhoto|expressFilm)\}/;
+const UNIT_WORD = "weeks|week|semanas|semana|days|day|días|día|dias|dia";
+
+export type DeliverySpan = { min: number; max: number; unit: "weeks" | "days" };
+
+function spanUnit(word: string): DeliverySpan["unit"] {
+  return /day|d[ií]a/i.test(word) ? "days" : "weeks";
+}
+
+export function parseDeliveryRanges(line: string): DeliverySpan[] {
+  const ranges: DeliverySpan[] = [];
+  const ranged = new RegExp(`(\\d+)\\s*[–—-]\\s*(\\d+)\\s*(${UNIT_WORD})`, "gi");
+  const written = new RegExp(`(\\d+)\\s+a\\s+(\\d+)\\s*(${UNIT_WORD})`, "gi");
+  for (const match of line.matchAll(ranged)) {
+    ranges.push({ min: Number(match[1]), max: Number(match[2]), unit: spanUnit(match[3]) });
+  }
+  for (const match of line.matchAll(written)) {
+    ranges.push({ min: Number(match[1]), max: Number(match[2]), unit: spanUnit(match[3]) });
+  }
+  if (ranges.length > 0) return ranges;
+  const single = new RegExp(`(\\d+)\\s*(${UNIT_WORD})`, "gi");
+  for (const match of line.matchAll(single)) {
+    const value = Number(match[1]);
+    ranges.push({ min: value, max: value, unit: spanUnit(match[2]) });
+  }
+  return ranges;
+}
+
+function unitWord(locale: DeliveryLocale, unit: DeliverySpan["unit"], count: number) {
+  if (unit === "days") {
+    if (locale === "es") return count === 1 ? "día" : "días";
+    if (locale === "pt") return count === 1 ? "dia" : "dias";
+    return count === 1 ? "day" : "days";
+  }
+  if (locale === "en") return count === 1 ? "week" : "weeks";
+  return count === 1 ? "semana" : "semanas";
+}
+
+export function formatDeliverySpan(
+  locale: DeliveryLocale,
+  min: number,
+  max: number,
+  unit: DeliverySpan["unit"],
+  style: "dash" | "sentence" = "dash",
+) {
+  const low = Math.min(min, max);
+  const high = Math.max(min, max);
+  if (style === "sentence" && locale === "es" && low !== high) {
+    return `de ${low} a ${high} ${unitWord(locale, unit, high)}`;
+  }
+  if (low === high) return `${low} ${unitWord(locale, unit, low)}`;
+  return `${low}–${high} ${unitWord(locale, unit, high)}`;
+}
+
+/** Localize a plain admin timing phrase. A custom sentence is kept as written. */
+export function displayTiming(phrase: string, locale: DeliveryLocale) {
+  const text = phrase.trim();
+  if (locale === "en") return text;
+  const tilde = text.startsWith("~");
+  const body = (tilde ? text.slice(1) : text).trim().replace(/[—-]/g, "–").replace(/\s+/g, " ");
+  const ranges = parseDeliveryRanges(body);
+  if (ranges.length !== 1) return text;
+  const [range] = ranges;
+  if (body !== formatDeliverySpan("en", range.min, range.max, range.unit)) return text;
+  const localized = formatDeliverySpan(locale, range.min, range.max, range.unit);
+  return tilde ? `~${localized}` : localized;
+}
+
 const DELIVERED_LINE = /^(Delivered in|Entrega en|Entrega em)\b/;
 const GALLERY_LINE = /^(Full gallery in|Gallery in|Galería completa|Galeria completa|Galería en|Galeria em)\b/;
 const RUSH_LINE = /^(Ready in|Lista en|Pronto em|Both in|Las dos en|Os dois em)\b/;
