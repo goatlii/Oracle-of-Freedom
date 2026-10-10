@@ -715,7 +715,7 @@ export const en: Copy = {
       { q: "Can I use the photos for my press kit and streaming platforms?", a: "Yes, promotional use is included." },
       { q: "Do you work with festivals?", a: "Yes, as part of official or partner content teams, always within each festival's photo and consent rules." },
       { q: "Can you film a full music video?", a: "Yes, from concept to final edit. Tell me your idea and budget." },
-      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours and photographs in 1–2 weeks. Films take a little longer, 2–5 weeks depending on the project. Need it faster? Express delivery is available." },
+      { q: "How fast are clips delivered?", a: "Live-set clips within 48 hours and photographs in {artistWeeks}. Films take a little longer, {festivalFilmSpan} depending on the project. Need it faster? Express delivery is available." },
     ],
   },
   places: {
