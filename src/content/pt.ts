@@ -538,7 +538,7 @@ export const pt: Copy = {
       { q: "Também filmas?", a: "Sim. O pacote de 3 dias inclui 5 reels verticais curtos, e num retiro de 1 dia podes acrescentar 3 reels ou vídeo de drone." },
       { q: "Os participantes têm de assinar alguma coisa?", a: "Antes do retiro partilho contigo um sistema simples de consentimento, e qualquer pessoa pode dizer que não." },
       { q: "Viajas para o estrangeiro?", a: "Sim. Os retiros são um dos projetos pelos quais saio da costa do Algarve a Lisboa: o resto de Portugal, Espanha, a Europa e destinos tropicais, com a viagem ao custo real." },
-      { q: "Com quanta antecedência devo marcar?", a: "O ideal são 2–3 meses, sobretudo entre maio e outubro." },
+      { q: "Com quanta antecedência devo marcar?", a: "Cerca de 4 meses antes é o ideal, mas às vezes bastam algumas semanas, por isso é só perguntarem." },
     ],
     guide: { post: "retreat", label: "Como fotografar o teu retiro para encher o próximo" },
   },

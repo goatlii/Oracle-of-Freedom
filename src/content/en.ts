@@ -574,7 +574,7 @@ export const en: Copy = {
       { q: "Do you also film?", a: "Yes. The 3-day package includes 5 short vertical reels, and for a 1-day retreat you can add 3 reels or drone video." },
       { q: "Do guests need to sign anything?", a: "I'll share a simple consent approach with you before the retreat, and anyone can opt out." },
       { q: "Do you travel abroad?", a: "Yes. Retreats are one of the projects I leave the Algarve–Lisbon coast for: the rest of Portugal, Spain, Europe and tropical destinations, with travel quoted at cost." },
-      { q: "How early should I book?", a: "2–3 months ahead is ideal, especially for May–October." },
+      { q: "How early should I book?", a: "Around 4 months ahead is ideal, but sometimes a few weeks is enough, so just ask." },
     ],
     guide: { post: "retreat", label: "How to photograph your retreat so it sells out next time" },
   },

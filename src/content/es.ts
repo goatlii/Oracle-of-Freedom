@@ -538,7 +538,7 @@ export const es: Copy = {
       { q: "¿También grabas vídeo?", a: "Sí. El paquete de 3 días incluye 5 reels verticales cortos, y en un retiro de 1 día puedes añadir 3 reels o vídeo de dron." },
       { q: "¿Tienen que firmar algo los participantes?", a: "Antes del retiro te comparto un sistema sencillo de consentimiento, y cualquiera puede decir que no." },
       { q: "¿Viajas al extranjero?", a: "Sí. Los retiros son uno de los proyectos por los que salgo de la costa del Algarve a Lisboa: el resto de Portugal, España, Europa y destinos tropicales, con el viaje a coste real." },
-      { q: "¿Con cuánta antelación reservo?", a: "Lo ideal es con 2–3 meses, sobre todo entre mayo y octubre." },
+      { q: "¿Con cuánta antelación reservo?", a: "Unos 4 meses antes es lo ideal, pero a veces bastan unas semanas, así que pregúntame." },
     ],
     guide: { post: "retreat", label: "Cómo fotografiar tu retiro para llenar el próximo" },
   },
